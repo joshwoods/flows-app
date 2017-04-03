@@ -1,8 +1,6 @@
-    //
-//  MainViewController.m
-//  newFlows
 //
-//  Created by Matt Riddoch on 9/25/15.
+//  MainViewController.m
+//
 //  Copyright © 2015 Matt Riddoch. All rights reserved.
 //
 
@@ -10,35 +8,17 @@
 #import "MainTableViewCell.h"
 #import "UIScrollView+EmptyDataSet.h"
 #import "AppDelegate.h"
-
-
 #import "SwipeViewController.h"
-//#import "UIView+Facade.h"
 #import <QuartzCore/QuartzCore.h>
-//#import "ODRefreshControl.h"
 #import <JTMaterialSpinner/JTMaterialSpinner.h>
-
 #import <PromiseKit/PromiseKit.h>
-
-
-//#import "KFOpenWeatherMapAPIClient.h"
-//#import "KFOWMDailyForecastResponseModel.h"
-//#import "KFOWMDailyForecastListModel.h"
-//#import "KFOWMWeatherModel.h"
-//#import "KFOWMForecastTemperatureModel.h"
-//#import "KFOWMCityModel.h"
-
 #import "Forecastr.h"
-
 #import "UIColor+Hexadecimal.h"
 #import "customNavBar.h"
 #import "pushAnimator.h"
 #import "popAnimator.h"
-
 #import "NSDate+HumanizedTime.h"
-
 #import "Reachability.h"
-
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
 

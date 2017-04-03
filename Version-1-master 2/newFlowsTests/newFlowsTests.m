@@ -1,8 +1,6 @@
 //
 //  newFlowsTests.m
-//  newFlowsTests
 //
-//  Created by Matt Riddoch on 9/25/15.
 //  Copyright © 2015 Matt Riddoch. All rights reserved.
 //
 

@@ -1,8 +1,6 @@
 //
 //  NewAboutViewController.m
-//  newFlows
 //
-//  Created by Matt Riddoch on 3/18/16.
 //  Copyright © 2016 Matt Riddoch. All rights reserved.
 //
 
