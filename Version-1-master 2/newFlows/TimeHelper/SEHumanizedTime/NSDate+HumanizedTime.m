@@ -24,13 +24,13 @@
     int secondsInAWeek =  3600*24*7;
     int secondsInAMonth =  3600*24*30; //To fix, not precise
     int secondsInAYear = 3600*24*365;
-    int yearsDiff = abs(timeInterval/secondsInAYear);
-    int monthsDiff = abs(timeInterval/secondsInAMonth);
-    int weeksDiff = abs(timeInterval/secondsInAWeek);
-    int daysDiff = abs(timeInterval/secondsInADay);
-    int hoursDiff = abs((abs(timeInterval) - (daysDiff * secondsInADay)) / 3600);
-    int minutesDiff = abs((abs(timeInterval) - ((daysDiff * secondsInADay) + (hoursDiff * 60))) / 60);
-    int secondsDiff = abs((abs(timeInterval) - ((daysDiff * secondsInADay) + (minutesDiff * 60))));
+    int yearsDiff = fabs(timeInterval/secondsInAYear);
+    int monthsDiff = fabs(timeInterval/secondsInAMonth);
+    int weeksDiff = fabs(timeInterval/secondsInAWeek);
+    int daysDiff = fabs(timeInterval/secondsInADay);
+    int hoursDiff = fabs((fabs(timeInterval) - (daysDiff * secondsInADay)) / 3600);
+    int minutesDiff = fabs((fabs(timeInterval) - ((daysDiff * secondsInADay) + (hoursDiff * 60))) / 60);
+    int secondsDiff = fabs((fabs(timeInterval) - ((daysDiff * secondsInADay) + (minutesDiff * 60))));
   
     NSString *yearString;
     NSString *dateString;

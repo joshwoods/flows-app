@@ -891,9 +891,7 @@
         
         //forecastr.cacheExpirationInMinutes = 10;
         forecastr.cacheEnabled = NO;
-        
-        double timeStamp = [[NSDate date] timeIntervalSince1970];
-        
+                
         [forecastr getForecastForLatitude:[stationDict[@"latTotal"] doubleValue] longitude:[stationDict[@"longTotal"] doubleValue] time:nil exclusions:tmpExclusions extend:nil success:^(id JSON) {
             //NSError *e = nil;
             //NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData: JSON options: NSJSONReadingMutableContainers error: &e];
