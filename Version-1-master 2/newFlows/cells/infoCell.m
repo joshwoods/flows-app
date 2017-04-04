@@ -8,6 +8,4 @@
 
 @implementation infoCell
 
-@synthesize mainLabel;
-
 @end

@@ -17,6 +17,4 @@
 @property (nonatomic, assign) NSString *p25Va;
 @property (nonatomic, assign) NSString *p75Va;
 
-
-
 @end

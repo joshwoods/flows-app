@@ -8,6 +8,7 @@
 #import <SSDynamicText.h>
 
 @interface infoCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet SSDynamicLabel *mainLabel;
 
 @end

@@ -105,7 +105,6 @@ typedef NS_ENUM(NSUInteger, SwipeViewAlignment)
 @protocol SwipeViewDataSource <NSObject>
 
 - (NSInteger)numberOfItemsInSwipeView:(SwipeView *)swipeView;
-//- (UIView *)swipeView:(SwipeView *)swipeView viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view;
 - (CustomSwipeview *)swipeView:(SwipeView *)swipeView viewForItemAtIndex:(NSInteger)index reusingView:(CustomSwipeview *)view;
 
 @end

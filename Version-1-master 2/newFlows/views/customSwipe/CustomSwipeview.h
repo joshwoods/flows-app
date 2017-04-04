@@ -14,19 +14,16 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mainMap;
 @property (weak, nonatomic) IBOutlet UIImageView *backGroundImage;
 
-
 //top container
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
-
 
 //result container
 
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UILabel *averageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cfsLabel;
-
 
 //weather container
 
@@ -45,7 +42,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *weatherThreeImageView;
 @property (weak, nonatomic) IBOutlet UILabel *weatherThreeResultLabel;
 
-
 @property (weak, nonatomic) IBOutlet UIView *mainContainerView;
 
 @property (weak, nonatomic) IBOutlet UIView *weatherOneContainer;
@@ -60,6 +56,5 @@
 @property (weak, nonatomic) IBOutlet UIView *weatherContainerView;
 @property (weak, nonatomic) IBOutlet UIView *resultContainerView;
 @property (weak, nonatomic) IBOutlet UIView *titleContainerView;
-
 
 @end

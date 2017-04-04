@@ -17,7 +17,6 @@
 #import "customNavBar.h"
 #import "pushAnimator.h"
 #import "popAnimator.h"
-#import "NSDate+HumanizedTime.h"
 #import "Reachability.h"
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
@@ -28,7 +27,6 @@
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (weak, nonatomic) IBOutlet JTMaterialSpinner *spinnerView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
-//@property (weak, nonatomic) UIBarButtonItem *rightItem;
 
 @property (strong, nonatomic) NSString *updateString;
 
@@ -72,25 +70,22 @@
     [self.mainTable setSeparatorColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                             forBarMetrics:UIBarMetricsDefault];
+                                                  forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
     
     _refreshControl = [[UIRefreshControl alloc] init];
     [_refreshControl addTarget:self action:@selector(pullToRefresh) forControlEvents:UIControlEventValueChanged];
-    [_mainTable addSubview:_refreshControl]; //assumes tableView is @property
-    
-    //resultArray = [NSMutableArray new];
-    //minMaxArray = [NSMutableArray new];
+    [_mainTable addSubview:_refreshControl];
     
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"infoicon"]
-                                                                  style:UIBarButtonItemStylePlain
-                                                                 target:self action:@selector(leftButtonPressed:)];
+                                                                 style:UIBarButtonItemStylePlain
+                                                                target:self action:@selector(leftButtonPressed:)];
     [leftItem setTintColor:[UIColor colorWithRed:0.60 green:0.60 blue:0.60 alpha:1.0]];
     
     rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIcon"]
-                                                                 style:UIBarButtonItemStylePlain
-                                                                target:self action:@selector(addClicked:)];
+                                                 style:UIBarButtonItemStylePlain
+                                                target:self action:@selector(addClicked:)];
     [rightItem setTintColor:[UIColor colorWithRed:0.60 green:0.60 blue:0.60 alpha:1.0]];
     
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -101,25 +96,8 @@
     
     defaults = [NSUserDefaults standardUserDefaults];
     
-    
     _mainTable.allowsMultipleSelectionDuringEditing = NO;
-
-    //TODO redundent pulls
-    
-    //AppDelegate *appDel=(AppDelegate*)[[UIApplication sharedApplication] delegate];
-    
-    
     selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
-    
-    //[_spinnerView beginRefreshing];
-    
-//    if (selectedStationArray.count>0) {
-//        [_spinnerView beginRefreshing];
-//        [[[UIApplication sharedApplication] delegate] performSelector:@selector(runLiveUpdate)];
-//        //[self runLiveUpdate];
-//    }
-    
-
     
     // A little trick for removing the cell separators
     _mainTable.tableFooterView = [UIView new];
@@ -134,12 +112,9 @@
                         [self.navigationController setNavigationBarHidden: NO animated: NO];
                     }
                     completion: nil ];
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    
     [super viewWillAppear:YES];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(receiveLiveUpdateNotification:)
@@ -155,12 +130,9 @@
                                              selector:@selector(receiveRefreshSpinNotification:)
                                                  name:@"RefreshSpinNotification"
                                                object:nil];
-
-    
 }
 
 - (void)pullToRefresh{
-    
     NSDate *lastUSGSupdateDate = [defaults objectForKey:@"lastUSGSupdateDate"];
     //NSDate *currentDate = [NSDate date];
     NSTimeInterval secondsSinceUpdateInterval = [lastUSGSupdateDate timeIntervalSinceNow];
@@ -170,17 +142,13 @@
     }else{
         [_refreshControl endRefreshing];
     }
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    
     [super viewDidAppear:animated];
     selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
-    //BOOL segueBool = [defaults boolForKey:@"segueToRivers"];
     
     Reachability* reach = [Reachability reachabilityWithHostname:@"www.apple.com"];
-    
     
     NetworkStatus internetStatus = [reach currentReachabilityStatus];
     
@@ -204,7 +172,7 @@
         [defaults setObject:[NSNumber numberWithBool:NO] forKey:@"shouldUpdate"];
         [[[UIApplication sharedApplication] delegate] performSelector:@selector(refreshData)];
     }else if (![defaults boolForKey:@"oneTwoFix"] && [defaults boolForKey:@"reachable"]){
-         [_spinnerView forceBeginRefreshing];
+        [_spinnerView forceBeginRefreshing];
         [defaults setBool:YES forKey:@"oneTwoFix"];
         [[[UIApplication sharedApplication] delegate] performSelector:@selector(runLiveUpdate)];
     }else if (![defaults boolForKey:@"reachable"]){
@@ -225,10 +193,8 @@
                 [_spinnerView forceBeginRefreshing];
                 [[[UIApplication sharedApplication] delegate] performSelector:@selector(runLiveUpdate)];
             }
-            
         }
     }
-    
     
     if (selectedStationArray.count == 10) {
         self.navigationItem.rightBarButtonItem = nil;
@@ -236,40 +202,15 @@
         rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIconEmpty"]
                                                      style:UIBarButtonItemStylePlain
                                                     target:self action:@selector(addNoneClicked:)];
-        //[self.navigationItem.rightBarButtonItem setImage:[UIImage imageNamed:@"AddIconEmpty"]];
         [self.navigationItem.rightBarButtonItem setEnabled:NO];
         [self.navigationController.navigationBar setNeedsLayout];
-        //[self.navigationItem.rightBarButtonItem setTintColor:[UIColor clearColor]];
     }else if (selectedStationArray.count < 10){
-        //self.navigationItem.rightBarButtonItem = nil;
-        //rightItem = nil;
         rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIcon"]
                                                      style:UIBarButtonItemStylePlain
                                                     target:self action:@selector(addClicked:)];
-        //[self.navigationItem.rightBarButtonItem setImage:[UIImage imageNamed:@"AddIcon"]];
         [self.navigationItem.rightBarButtonItem setEnabled:YES];
         [self.navigationController.navigationBar setNeedsLayout];
-        //[self.navigationItem.rightBarButtonItem setTintColor:[UIColor colorWithRed:0.60 green:0.60 blue:0.60 alpha:1.0]];
     }
-    
-//    if ([[NSDate date] compare:[defaults objectForKey:@""]]) {
-//        //pull data
-//    }
-    
-    
-}
-
-
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    
-    //[[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
@@ -286,9 +227,7 @@
     return nil;
 }
 
-
 - (void)receiveLiveUpdateNotification:(NSNotification *) notification{
-    
     resultArray = [defaults objectForKey:@"resultArray"];
     minMaxArray = [defaults objectForKey:@"minMaxArray"];
     [_mainTable reloadData];
@@ -298,13 +237,10 @@
                               animated:YES];
 #pragma mark - TODO refresh
     [_refreshControl endRefreshing];
-    //[activityIndicatorView stopAnimating];
     [_spinnerView endRefreshing];
-    
 }
 
 - (void)receiveRefreshNotification:(NSNotification *) notification{
-    
     resultArray = [defaults objectForKey:@"resultArray"];
     minMaxArray = [defaults objectForKey:@"minMaxArray"];
     [_refreshControl endRefreshing];
@@ -314,86 +250,45 @@
 }
 
 - (void)receiveRefreshSpinNotification:(NSNotification *) notification{
-    
     resultArray = [defaults objectForKey:@"resultArray"];
     minMaxArray = [defaults objectForKey:@"minMaxArray"];
     [_mainTable reloadData];
 #pragma mark - TODO refresh
     [_refreshControl endRefreshing];
-    //[activityIndicatorView stopAnimating];
     [_spinnerView endRefreshing];
-    
 }
+
 - (IBAction)addNoneClicked:(id)sender {
     //should never hit? nil method
 }
+
 - (IBAction)addClicked:(id)sender {
-    
-    
     // for the moment total stations are capped at 10?
     // test for station array count and hasPurchased bool
     NSLog(@"%@", [NSNumber numberWithBool:[defaults boolForKey:@"upgradePurchased"]]);
     
-    
-    
     if ([defaults boolForKey:@"upgradePurchased"]) {
-        
         // in-app upgrade
         if (selectedStationArray.count < 10) {
             [self performSegueWithIdentifier:@"addStationSegue" sender:self];
         }else{
             // at max stations
         }
-        
-        
     }else{
-        
         // free version
         if (selectedStationArray.count < 3) {
             [self performSegueWithIdentifier:@"addStationSegue" sender:self];
         }else{
             [self performSegueWithIdentifier:@"purchaseSegue" sender:self];
         }
-        
     }
-    
-    
-//    if (selectedStationArray.count <=2) {
-//        
-//        [self performSegueWithIdentifier:@"addStationSegue" sender:self];
-//        
-//    }else if (selectedStationArray.count <=9 && [defaults boolForKey:@"upgradePurchased"]){
-//        
-//        [self performSegueWithIdentifier:@"addStationSegue" sender:self];
-//        
-//    }else if (selectedStationArray.count ==3 && ![defaults boolForKey:@"upgradePurchased"]){
-//        
-//        [self performSegueWithIdentifier:@"purchaseSegue" sender:self];
-//        
-//    }else{
-//        //ten station max
-//        
-//        // should never hit
-//        
-////        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are at your maximum stations"
-////                                                        message:@"Delete a stations text here?"
-////                                                       delegate:self
-////                                              cancelButtonTitle:@"OK"
-////                                              otherButtonTitles:nil];
-////        [alert show];
-//    }
-    
-    
 }
 
 - (void)leftButtonPressed:(id)sender{
     [self performSegueWithIdentifier:@"aboutSegue" sender:self];
 }
 
-
-
 #pragma mark - EmptyDataset
-
 
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
 {
@@ -411,10 +306,8 @@
     return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
 
-
 - (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
 {
-    
     NSString *text = nil;
     UIFont *font = nil;
     UIColor *textColor = nil;
@@ -428,22 +321,15 @@
     if (textColor) [attributes setObject:textColor forKey:NSForegroundColorAttributeName];
     
     return [[NSAttributedString alloc] initWithString:@"Add a Station" attributes:attributes];
-    
 }
-
-
-//- (UIImage *)buttonImageForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state{
 
 - (UIImage *)buttonBackgroundImageForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state{
     NSString *imageName = @"addStation.png";
-        return [[[UIImage imageNamed:imageName] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] imageWithAlignmentRectInsets:UIEdgeInsetsMake(0, -self.view.bounds.size.width/4, 0, -self.view.bounds.size.width/4)];
+    return [[[UIImage imageNamed:imageName] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] imageWithAlignmentRectInsets:UIEdgeInsetsMake(0, -self.view.bounds.size.width/4, 0, -self.view.bounds.size.width/4)];
 }
-
-
 
 - (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView
 {
-    
     return self.view.bounds.size.height/8;
 }
 
@@ -461,9 +347,7 @@
     }else{
         return YES;
     }
-    
 }
-
 
 #pragma mark - UITableviewDelegate
 
@@ -472,25 +356,19 @@
     return 1;
 }
 
-
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    
     return 27.0f;
-    
 }
-
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     header = (UITableViewHeaderFooterView *)view;
     if ([view isKindOfClass:[UITableViewHeaderFooterView class]] && selectedStationArray.count != 0) {
         ((UITableViewHeaderFooterView *)view).backgroundView.backgroundColor = [UIColor colorWithRed:0.09 green:0.09 blue:0.09 alpha:1.0];
         
-        
         UIView *bottomSeperatorView = [[UIView alloc] initWithFrame:CGRectMake(0, view.bounds.size.height-0.5f, view.bounds.size.width, 0.5f)];
         [bottomSeperatorView setBackgroundColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
         
-        //[view addSubview:topHeaderSeperator];
         [view addSubview:bottomSeperatorView];
         
         if (header.textLabel.text.length > 0) {
@@ -505,11 +383,9 @@
         header.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:11.0f];
         header.textLabel.textAlignment = NSTextAlignmentCenter;
     }
-    
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    
     if (selectedStationArray.count > 0) {
         NSString *updateString = [defaults objectForKey:@"updateString"];
         if (updateString.length == 0) {
@@ -524,30 +400,19 @@
     }
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //if (chosenObjectArray.count == 0) {
-    //    return 1;
-    //}else{
     return selectedStationArray.count;
-    //}
-    
 }
 
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return YES if you want the specified item to be editable.
     return YES;
 }
 
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        //add code here for when you hit delete
-        
         if (selectedStationArray.count == 10) {
-            //[self.navigationItem.rightBarButtonItem setTintColor:[UIColor colorWithRed:0.60 green:0.60 blue:0.60 alpha:1.0]];
             rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIcon"]
                                                          style:UIBarButtonItemStylePlain
                                                         target:self action:@selector(addClicked:)];
@@ -556,7 +421,6 @@
             [self.navigationItem.rightBarButtonItem setEnabled:YES];
             [self.navigationController.navigationBar setNeedsLayout];
         }
-
         
         [selectedStationArray removeObjectAtIndex:indexPath.row];
         
@@ -571,13 +435,8 @@
             [_mainTable reloadEmptyDataSet];
             [_mainTable endUpdates];
         }
-        
-        
     }
 }
-
-
-
 
 #pragma mark -
 
@@ -587,24 +446,11 @@
     [_spinnerView beginRefreshing];
 }
 
-
-
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Remove seperator inset
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
-        [cell setSeparatorInset:UIEdgeInsetsZero];
-    }
-    
-    // Prevent the cell from inheriting the Table View's margin settings
-    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
-        [cell setPreservesSuperviewLayoutMargins:NO];
-    }
-    
-    // Explictly set your cell's layout margins
-    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
-        [cell setLayoutMargins:UIEdgeInsetsZero];
-    }
+    [cell setSeparatorInset:UIEdgeInsetsZero];
+    [cell setPreservesSuperviewLayoutMargins:NO];
+    [cell setLayoutMargins:UIEdgeInsetsZero];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -612,8 +458,6 @@
     static NSString *CellIdentifier = @"mainCell";
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    //cell.separatorInset = UIEdgeInsetsZero;
-    //NSDictionary *cellDict = selectedStationArray[indexPath.row];
     NSMutableDictionary *cellDict = selectedStationArray[indexPath.row];
     NSMutableDictionary *titleDict = [NSMutableDictionary new];
     if (cellDict[@"cleanedTitle"]){
@@ -622,18 +466,13 @@
         [titleDict setObject:cellDict[@"stationTitle"] forKey:@"nameHolder"];
     }
     if (resultArray.count > 0 && minMaxArray.count > 0) {
-        //NSDictionary *resultDict = resultArray[indexPath.row];
-        for (NSDictionary *resultDict in resultArray) { 
+        for (NSDictionary *resultDict in resultArray) {
             if ([resultDict[@"siteNumber"] isEqualToString:cellDict[@"stationNumber"]]) {
-                
-                
                 if ([resultDict[@"siteValue"] doubleValue] > 0) {
                     cell.resultLabel.text = resultDict[@"siteValue"];
                 }else{
                     cell.resultLabel.text = @"N/A";
                 }
-                
-                
                 
                 for (NSDictionary *meanDict in minMaxArray) {
                     
@@ -652,7 +491,6 @@
                                 cell.resultLabel.text = @"N/A";
                                 [cell.resultLabel setTextColor:[UIColor whiteColor]];
                             }else{
-                                
                                 if ([resultDict[@"siteValue"] doubleValue] < [meanDict[@"25Value"] doubleValue] && meanDict[@"25Value"] != [NSNull null]) {
                                     //red
                                     [cell.resultLabel setTextColor:[UIColor colorWithRed:0.93 green:0.39 blue:0.25 alpha:1.0]];
@@ -663,22 +501,12 @@
                                     //green
                                     [cell.resultLabel setTextColor:[UIColor colorWithRed:0.42 green:0.91 blue:0.46 alpha:1.0]];
                                 }
-                                
-
                             }
-                            
-                            
                         }
                     }
-                    
-                    
-                    }
-                
-                
-                
+                }
             }
         }
-        
     }
     //strip new line /n chars
     
@@ -699,18 +527,14 @@
     [_spinnerView beginRefreshing];
     if (!hasTappedRow) {
         hasTappedRow = YES;
-        
-        
+
         [defaults setInteger:indexPath.row forKey:@"selectedIndex"];
-        
         
         BOOL pullNewWeather = [defaults boolForKey:@"pullNewWeather"];
         
         NSDate *lastWeatherPullDate = [defaults objectForKey:@"updatedWeatherDate"];
         
         selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
-        
-        //[self pullFromDarkWeather:selectedStationArray];
         
         if (lastWeatherPullDate == nil) {
             [self pullFromDarkWeather:selectedStationArray];
@@ -727,128 +551,8 @@
                 hasTappedRow = NO;
                 [self performSegueWithIdentifier:@"swipeSegue" sender:self];
             }
-            
-            
-            
         }
-        
     }
-}
-
-- (void)testWeatherWithArray:(NSMutableArray*)incomingLocations{
-    
-//    NSMutableArray *weatherDataArray = [NSMutableArray new];
-//    
-//    KFOpenWeatherMapAPIClient *apiClient = [[KFOpenWeatherMapAPIClient alloc] initWithAPIKey:@"c25c6e80d777846d79d2b0f464f5b7f3" andAPIVersion:@"2.5"];
-//    //[apiClient dailyForecastForCoordinate:stationLocation numberOfDays:3 withResultBlock:^(BOOL success, id responseData, NSError *error)
-//    
-//    
-//    
-//    NSMutableArray *locations = [NSMutableArray new];
-//    
-//    for (NSDictionary *innerDict in incomingLocations) {
-//        [locations addObject:innerDict[@"weatherStationId"]];
-//    }
-//    
-//    
-//    dispatch_group_t group = dispatch_group_create();
-//    
-//    for (int i = 0; i < locations.count; i++) {
-//        // Enter the group for each request we create
-//        dispatch_group_enter(group);
-//        
-//        NSLog(@"pause here");
-//        [NSThread sleepForTimeInterval:0.1];
-//        
-//        [apiClient dailyForecastForCityId:locations[i] numberOfDays:3 withResultBlock:^(BOOL success, id responseData, NSError *error)
-//         
-//         {
-//             
-//             NSLog(@"top of loop");
-//             
-//             if (success)
-//             {
-//                 
-//                 KFOWMDailyForecastResponseModel *responseModel = (KFOWMDailyForecastResponseModel *)responseData;
-//                 
-//                 NSMutableArray *intermediateArray = [NSMutableArray new];
-//                 NSLog(@"response:%@", responseData);
-//                 
-//                 for (int i = 0; i < responseModel.list.count; i++) {
-//                     
-//                     KFOWMDailyForecastListModel *listModel = responseModel.list[i];
-//                     
-//                     
-//                     
-//                     //KFOWMForecastTemperatureModel *tempArray = listModel.temperature;
-//                     
-//                     NSNumber *lowNum = [self kelvinToFahrenheit:listModel.temperature.min];
-//                     NSNumber *highNum = [self kelvinToFahrenheit:listModel.temperature.max];
-//                     
-//                     
-//                     NSDate *testDate = listModel.dt; //innerDict[@"dt"];
-//                     NSDateFormatter *df = [[NSDateFormatter alloc] init];
-//                     //df.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-//                     df.locale = [NSLocale currentLocale];
-//                     [df setDateFormat:@"EEEE"];
-//                     
-//                     
-//                     NSDate *currentDateWithOffset = [NSDate dateWithTimeIntervalSinceNow:[[NSTimeZone localTimeZone] secondsFromGMT]];
-//                     NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
-//                     float timeZoneOffset = [destinationTimeZone secondsFromGMTForDate:testDate] / 3600.0;
-//                     NSLog(@"sourceDate=%@ timeZoneOffset=%f", testDate, timeZoneOffset);
-//                     
-//                     
-//                     NSString *dateString = [df stringFromDate:testDate];
-//                     NSArray *weatherHolder = listModel.weather;
-//                     KFOWMWeatherModel *weatherModel = weatherHolder[0];
-//                     NSString *iconString = weatherModel.icon;
-//                    
-//                     
-//                     NSDictionary *weatherDict = [[NSDictionary alloc] initWithObjectsAndKeys:lowNum, @"lowNum", highNum, @"highNum", dateString, @"dateString", iconString, @"iconString", responseModel.city.cityId, @"cityId", nil];
-//                     
-//                     [intermediateArray addObject:weatherDict];
-//                     
-//                 }
-//                 
-//                 [weatherDataArray addObject:intermediateArray];
-//                 dispatch_group_leave(group);
-//                 
-//             }else{
-//                 
-//                 NSLog(@"could not get weather: %@", error);
-//                 NSMutableArray *intermediateArray = [NSMutableArray new];
-//                 NSMutableDictionary *errorDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"error occured", @"error", nil];
-//                 [intermediateArray addObject:errorDict];
-//                 [weatherDataArray addObject:intermediateArray];
-//                 dispatch_group_leave(group);
-//                 
-//             }
-//             
-//         }];
-//
-//        
-//        
-//        
-//        
-//    }
-//    
-//    // Here we wait for all the requests to finish
-//    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-//        // Do whatever you need to do when all requests are finished
-//        [defaults setObject:weatherDataArray forKey:@"weatherArray"];
-//#pragma mark - TODO refresh
-//        //[activityIndicatorView stopAnimating];
-//        [_spinnerView endRefreshing];
-//        hasTappedRow = NO;
-//        [defaults setObject:[NSDate date] forKey:@"updatedWeatherDate"];
-//        [defaults setObject:[NSNumber numberWithBool:NO] forKey:@"pullNewWeather"];
-//        
-//        [self performSegueWithIdentifier:@"swipeSegue" sender:self];
-//        NSLog(@"finished?");
-//    });
-
-    
 }
 
 - (void)pullFromDarkWeather:(NSMutableArray*)incomingDataArray{
@@ -857,25 +561,15 @@
     
     dispatch_group_t group = dispatch_group_create();
     
-    
     for (NSMutableDictionary *stationDict in incomingDataArray) {
         //code here
-        
         dispatch_group_enter(group);
-        
-        //stub out new weather call
-        
-        //[NSThread sleepForTimeInterval:0.1];
         
         NSArray *tmpExclusions = @[kFCAlerts, kFCFlags, kFCMinutelyForecast, kFCHourlyForecast];
         
-        //forecastr.cacheExpirationInMinutes = 10;
         forecastr.cacheEnabled = NO;
-                
+        
         [forecastr getForecastForLatitude:[stationDict[@"latTotal"] doubleValue] longitude:[stationDict[@"longTotal"] doubleValue] time:nil exclusions:tmpExclusions extend:nil success:^(id JSON) {
-            //NSError *e = nil;
-            //NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData: JSON options: NSJSONReadingMutableContainers error: &e];
-            
             NSDictionary *testRespDict = [NSDictionary dictionaryWithDictionary:JSON];
             
             NSDictionary *dailyDict = testRespDict[@"daily"];
@@ -884,10 +578,8 @@
             
             NSArray *dailyArray = dailyDict[@"data"];
             
-            
             NSMutableArray *intermediateArray = [NSMutableArray new];
             
-            //for (NSDictionary *innerDict in dailyArray) {
             for (int i=0; i<4; i++){
                 NSDictionary *innerDict = dailyArray[i];
                 NSNumber *secondsPerHour = @(3600);
@@ -898,7 +590,6 @@
                 NSDate *preOffsetDate = [NSDate dateWithTimeIntervalSince1970:[innerDict[@"time"] intValue]];
                 NSDate *date = [NSDate dateWithTimeIntervalSince1970:finalSeconds];
                 
-                
                 formatter.locale = [NSLocale currentLocale];
                 [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
                 
@@ -908,16 +599,11 @@
                 
                 NSString *dateString = [df stringFromDate:preOffsetDate];
                 
-                
                 NSLog(@"intial %@", [formatter stringFromDate:preOffsetDate]);
                 NSLog(@"intial %@", [df stringFromDate:preOffsetDate]);
                 NSLog(@"%@", [formatter stringFromDate:date]);
                 NSLog(@"%@", [df stringFromDate:date]);
-                //handle offset if needed
-                
-                //handle the data
-                
-                
+
                 NSNumber *lowNum = innerDict[@"temperatureMin"];
                 NSNumber *highNum = innerDict[@"temperatureMax"];
                 
@@ -926,67 +612,30 @@
                 NSDictionary *weatherDict = [[NSDictionary alloc] initWithObjectsAndKeys:lowNum, @"lowNum", highNum, @"highNum", dateString, @"dateString", iconString, @"iconString", stationDict[@"stationNumber"], @"stationNumber", nil];
                 
                 [intermediateArray addObject:weatherDict];
-                
-                
             }
             
             [weatherDataArray addObject:intermediateArray];
             dispatch_group_leave(group);
             NSLog(@"test");
-            
-           // NSLog(@"JSON Response (w/ exclusions: %@) was: %@", tmpExclusions, JSON);
         } failure:^(NSError *error, id response) {
             NSLog(@"Error while retrieving forecast: %@", [forecastr messageForError:error withResponse:response]);
         }];
-        
-        
     }
-    
     
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         // Do whatever you need to do when all requests are finished
         [defaults setObject:weatherDataArray forKey:@"weatherArray"];
 #pragma mark - TODO refresh
-        //[activityIndicatorView stopAnimating];
         [_spinnerView endRefreshing];
         hasTappedRow = NO;
-        //[defaults setObject:[NSDate date] forKey:@"updatedWeatherDate"];
-        //[defaults setObject:[NSNumber numberWithBool:NO] forKey:@"pullNewWeather"];
-        
         [self performSegueWithIdentifier:@"swipeSegue" sender:self];
         NSLog(@"finished?");
     });
-    
-    
 }
-
 
 - (IBAction)unwindToHome:(UIStoryboardSegue *)unwindSegue
 {
     
 }
-
-#pragma mark - segue
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Make sure your segue name in storyboard is the same as this line
-    
-    if ([segue.identifier isEqualToString:@"addStationSegue"]) {
-        
-}
-    
-
-    
-    
-}
-
-
-
-- (NSNumber *)kelvinToFahrenheit:(NSNumber *)kelvin
-{
-    return @((kelvin.floatValue * 9.0f/5.0f) - 459.67f);
-}
-
 
 @end
