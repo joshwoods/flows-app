@@ -9,10 +9,7 @@
 #import <MapKit/MapKit.h>
 #import "UIView+Facade.h"
 #import <QuartzCore/QuartzCore.h>
-
 #import <PromiseKit/PromiseKit.h>
-
-
 #import "CustomSwipeview.h"
 
 #define METERS_PER_MILE 1609.344
@@ -45,12 +42,7 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    //set up data
-    //your swipeView should always be driven by an array of
-    //data of some kind - don't store data in your item views
-    //or the recycling mechanism will destroy your data once
-    //your item views move off-screen
-    
+
     defaults = [NSUserDefaults standardUserDefaults];
     
     incomingData = [defaults objectForKey:@"detailData"];
@@ -60,7 +52,6 @@
     weatherCacheArray = [defaults objectForKey:@"weatherArray"];
 }
 
-#pragma mark -
 #pragma mark View lifecycle
 
 - (void)viewDidLoad
@@ -110,7 +101,6 @@
     }
 }
 
-#pragma mark -
 #pragma mark iCarousel methods
 
 - (NSInteger)numberOfItemsInSwipeView:(SwipeView *)swipeView
