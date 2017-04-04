@@ -27,19 +27,10 @@
     GDIIndexBar *indexBar;
     NSString *stateToPass;
     NSString *longStateToPass;
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-//                                                  forBarMetrics:UIBarMetricsDefault];
-//    self.navigationController.navigationBar.shadowImage = [UIImage new];
-//    self.navigationController.navigationBar.translucent = YES;
-    
-    
     
     [self.mainTable setSeparatorColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
     
@@ -58,73 +49,37 @@
     
     NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0], NSForegroundColorAttributeName: [UIColor colorWithHex:@"ACACAC"]};
     [[UIBarButtonItem appearance] setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];
-    
-    
-    //self.navigationItem.title = @"Add Station";
-    
-//    [self.navigationController.navigationBar setTitleTextAttributes:
-//     @{NSForegroundColorAttributeName:[UIColor colorWithHex:@"ACACAC"]}];
-    
-    
-    
+
     [self.navigationItem setHidesBackButton:YES animated:NO];
     
-    //UIView *backView = [UIView new];
-    //[self.navigationItem.backBarButtonItem setTitle:@" "];
-    //self.navigationBar.tintColor = [UIColor clearColor];
-    
-//    [self.navigationController.navigationItem.backBarButtonItem setBackgroundVerticalPositionAdjustment:-50 forBarMetrics:UIBarMetricsDefault];
-    
     _mainTable.tableFooterView = [UIView new];
-    
-//    float my_offset_plus_or_minus = -20.0f;
-//    
-//    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithTitle:@"Back"
-//                                                              style:UIBarButtonItemStylePlain
-//                                                             target:self action:@selector(backClicked:)];
-//    
-//    [item setBackgroundVerticalPositionAdjustment:my_offset_plus_or_minus forBarMetrics:UIBarMetricsDefault];
-//    self.navigationItem.leftBarButtonItem = item;
     
     stateHolder = [[NSMutableArray alloc] initWithObjects:@"Alabama", @"Alaska", @"Arizona", @"Arkansas", @"California", @"Colorado", @"Connecticut", @"Delaware", @"Dist. of Columbia", @"Florida", @"Georgia", @"Hawaii", @"Idaho", @"Illinois", @"Indiana", @"Iowa", @"Kansas", @"Kentucky", @"Louisiana", @"Maine", @"Maryland", @"Massachusetts", @"Michigan", @"Minnesota", @"Montana", @"Nebraska", @"Nevada", @"New Hampshire", @"New Mexico", @"New York", @"North Carolina", @"North Dakota", @"Ohio", @"Oklahoma", @"Oregon", @"Pennsylvania", @"Puerto Rico", @"Rhode Island", @"South Carolina", @"South Dakota", @"Tennessee", @"Texas", @"Utah", @"Vermont", @"Virginia", @"Washington", @"West Virginia", @"Wisconsin", @"Wyoming", nil];
     queryHolder = [[NSMutableArray alloc] initWithObjects:@"al", @"ak", @"az", @"ar", @"ca", @"co", @"ct", @"de", @"dc", @"fl", @"ga", @"hi", @"id", @"il", @"in", @"ia", @"ks", @"ky", @"la", @"me", @"md", @"ma", @"mi", @"mn", @"mt", @"ne", @"nv", @"nh", @"nm", @"ny", @"nc", @"nd", @"oh", @"ok", @"or", @"pa", @"pr", @"ri", @"sc", @"sd", @"tn", @"tx", @"ut", @"vt", @"va", @"wa", @"wv", @"wi", @"wy", nil];
     
-    //riverAlphabetsArray = [[NSMutableArray alloc] init];
     alphabetsArray = [[NSMutableArray alloc] init];
     [self createAlphabetArray];
     
     [_mainTable setBackgroundColor:[UIColor clearColor]];
-    //self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     indexBar = [[GDIIndexBar alloc] initWithTableView:_mainTable];
-    //[[GDIIndexBar appearance] setTextColor:[UIColor blackColor]];
     [[GDIIndexBar appearance] setTextColor:[UIColor colorWithHex:@"ACACAC"]];
-    //[[GDIIndexBar appearance] setTextShadowColor:[UIColor grayColor]];
     [[GDIIndexBar appearance] setBackgroundColor:[UIColor clearColor]];
     [[GDIIndexBar appearance] setBarBackgroundColor:[UIColor clearColor]];
     indexBar.textFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0f];
-    //[[GDIIndexBar appearance] setBarBackgroundColor:[UIColor blueColor]];
     indexBar.delegate = self;
     [indexBar setTextOffset:UIOffsetMake(5.0, 0.0)];
     [self.view addSubview:indexBar];
     
     
-    
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"segueToRivers"]) {
-        //[[NSUserDefaults standardUserDefaults] setBool:@NO forKey:@"segueToRivers"];
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"segueToRivers"];
     }
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     self.navigationController.delegate = self;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
@@ -142,25 +97,19 @@
 }
 
 - (IBAction)backClicked:(id)sender{
-    
-    //[self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popViewControllerAnimated:NO];
     NSLog(@"back clicked");
 }
-
 
 #pragma mark - TableView Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    
     return alphabetsArray.count;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-        //return stateHolder.count;
     NSArray *sectionArray = [stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [alphabetsArray objectAtIndex:section]]];
     return sectionArray.count;
     
@@ -168,22 +117,10 @@
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Remove seperator inset
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
         [cell setSeparatorInset:UIEdgeInsetsZero];
-    }
-    
-    // Prevent the cell from inheriting the Table View's margin settings
-    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
         [cell setPreservesSuperviewLayoutMargins:NO];
-    }
-    
-    // Explictly set your cell's layout margins
-    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsZero];
-    }
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -195,10 +132,8 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
     NSArray *sectionArray = [stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [alphabetsArray objectAtIndex:indexPath.section]]];
-    //cell.textLabel.text = [sectionArray objectAtIndex:indexPath.row];
     
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f],
-                                 NSForegroundColorAttributeName: [UIColor whiteColor]};//[UIColor colorWithHex:@"ACACAC"]};
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f], NSForegroundColorAttributeName: [UIColor whiteColor]};
     
     NSAttributedString *cellString = [[NSAttributedString alloc] initWithString:[sectionArray objectAtIndex:indexPath.row] attributes:attributes];
     
@@ -217,7 +152,6 @@
     return 50;
 }
 
-
 #pragma mark - TableView Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -231,13 +165,9 @@
 
 #pragma mark - index bar
 
-
 - (NSUInteger)numberOfIndexesForIndexBar:(GDIIndexBar *)indexBar
 {
-    
     return alphabetsArray.count;
-    
-    
 }
 
 - (NSString *)stringForIndex:(NSUInteger)index
@@ -257,17 +187,14 @@
 #pragma mark - Create Alphabet Array
 - (void)createAlphabetArray {
     [alphabetsArray removeAllObjects];
-    //NSMutableArray *tempFirstLetterArray = [[NSMutableArray alloc] init];
+
     for (int i = 0; i < [stateHolder count]; i++) {
         NSString *letterString = [[stateHolder objectAtIndex:i] substringToIndex:1];
         if (![alphabetsArray containsObject:letterString]) {
             [alphabetsArray addObject:letterString];
         }
     }
-    //alphabetsArray = tempFirstLetterArray;
-    
 }
-
 
 - (IBAction)cancelClicked:(id)sender {
     [self.navigationController popViewControllerAnimated:NO];
@@ -281,10 +208,5 @@
     [vc setIncomingValue:stateToPass];
     [vc setSelectedState:longStateToPass];
 }
-
-//- (IBAction)backClicked:(id)sender {
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
-
 
 @end
