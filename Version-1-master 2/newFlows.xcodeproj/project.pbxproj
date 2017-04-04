@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4214C3E51CDEF0220016B473 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4214C3DF1CDEF0220016B473 /* Localizable.strings */; };
 		4214C3E61CDEF0220016B473 /* Localizable_full.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4214C3E11CDEF0220016B473 /* Localizable_full.strings */; };
-		4214C3E71CDEF0220016B473 /* NSDate+HumanizedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 4214C3E41CDEF0220016B473 /* NSDate+HumanizedTime.m */; };
 		421884781CD12A960039BCCB /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421884771CD12A960039BCCB /* CustomNavigationViewController.m */; };
 		4218847A1CD5189E0039BCCB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421884791CD5189E0039BCCB /* StoreKit.framework */; };
 		421884801CD6803A0039BCCB /* MKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4218847E1CD6803A0039BCCB /* MKStoreKit.m */; };
@@ -231,8 +230,6 @@
 /* Begin PBXFileReference section */
 		4214C3E01CDEF0220016B473 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4214C3E21CDEF0220016B473 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable_full.strings; sourceTree = "<group>"; };
-		4214C3E31CDEF0220016B473 /* NSDate+HumanizedTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanizedTime.h"; sourceTree = "<group>"; };
-		4214C3E41CDEF0220016B473 /* NSDate+HumanizedTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanizedTime.m"; sourceTree = "<group>"; };
 		421884761CD12A960039BCCB /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		421884771CD12A960039BCCB /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
 		421884791CD5189E0039BCCB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -515,8 +512,6 @@
 			children = (
 				4214C3DF1CDEF0220016B473 /* Localizable.strings */,
 				4214C3E11CDEF0220016B473 /* Localizable_full.strings */,
-				4214C3E31CDEF0220016B473 /* NSDate+HumanizedTime.h */,
-				4214C3E41CDEF0220016B473 /* NSDate+HumanizedTime.m */,
 			);
 			path = SEHumanizedTime;
 			sourceTree = "<group>";
@@ -1306,7 +1301,6 @@
 				421884801CD6803A0039BCCB /* MKStoreKit.m in Sources */,
 				4228A9221CC934B1003B7DA7 /* pushAnimator.m in Sources */,
 				42BEDAC31C8535A900113431 /* SwipeView.m in Sources */,
-				4214C3E71CDEF0220016B473 /* NSDate+HumanizedTime.m in Sources */,
 				421884841CD859E70039BCCB /* PurchaseViewController.m in Sources */,
 				42A35B151BB5D7FF00470D6D /* Reachability.m in Sources */,
 				4228A9251CC934C2003B7DA7 /* popAnimator.m in Sources */,
