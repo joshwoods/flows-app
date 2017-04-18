@@ -1,0 +1,468 @@
+#
+#
+# US Geological Survey
+# retrieved: 2017-04-17 22:17:40 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
+#
+# The Site File stores location and general information about groundwater,
+# surface water, and meteorological sites
+# for sites in USA.
+#
+# The following selected fields are included in this output:
+#
+#  agency_cd       -- Agency
+#  site_no         -- Site identification number
+#  station_nm      -- Site name
+#
+#
+# query started 2017-04-17 22:17:40 EDT
+#
+# there are 444 sites matching the search criteria.
+#
+#
+agency_cd	site_no	station_nm
+5s	15s	50s
+USGS	05490600	Des Moines River at St. Francisville, MO
+USGS	05495000	Fox River at Wayland, MO
+USGS	05496000	Wyaconda River above Canton, MO
+USGS	05497150	North Fabius River near Ewing, MO
+USGS	05498150	Middle Fabius River near Ewing, MO
+USGS	05498700	South Fabius River above Newark, MO
+USGS	05500000	South Fabius River near Taylor, MO
+USGS	05501000	North River at Palmyra, MO
+USGS	05502000	Bear Creek at Hannibal, MO
+USGS	05502300	North Fork Salt River at Hagers Grove, MO
+USGS	05502500	North Fork Salt River near Shelbina, MO
+USGS	05503100	Black Creek below Shelbyville, MO
+USGS	05503800	Crooked Creek near Paris, MO
+USGS	05504800	South Fork Salt River above Santa Fe, MO
+USGS	05506100	Long Branch near Santa Fe, MO
+USGS	05506350	Middle Fork Salt River near Holliday, MO
+USGS	05506800	Elk Fork Salt River near Madison, MO
+USGS	05507600	Lick Creek at Perry, MO
+USGS	05507800	Salt River near Center, MO
+USGS	05507820	Monroe City Lake near Monroe City, MO
+USGS	05508000	Salt River near New London, MO
+USGS	05508805	Spencer Creek below Plum Creek near Frankford, MO
+USGS	05514500	Cuivre River near Troy, MO
+USGS	05514840	Dardenne Creek at O'Fallon, MO
+USGS	05514860	Dardenne Creek at Old Town St. Peters, MO
+USGS	06810030	Main Ditch Number Six at Levee Rd near Hamburg, IA
+USGS	06813000	Tarkio River at Fairfax, MO
+USGS	06817500	Nodaway River near Burlington Junction, MO
+USGS	06817700	Nodaway River near Graham, MO
+USGS	06818000	Missouri River at St. Joseph, MO
+USGS	06819500	One Hundred and Two River at Maryville, MO
+USGS	06820410	One Hundred Two River near Bolckow, MO
+USGS	06820500	Platte River near Agency, MO
+USGS	06821080	Little Platte River near Plattsburg, MO
+USGS	06821140	Smithville Reservoir near Smithville, MO
+USGS	06821150	Little Platte River at Smithville, MO
+USGS	06821190	Platte River at Sharps Station, MO
+USGS	06821250	Missouri River above Parkville, MO
+USGS	06893000	Missouri River at Kansas City, MO
+USGS	06893060	Missouri River at Randolph, MO
+USGS	06893150	Blue River at Blue Ridge Blvd Ext in KC, MO
+USGS	06893195	Blue River at Red Bridge Road, Kansas City, Mo
+USGS	06893400	Indian Creek at 103rd St in Kansas City, MO
+USGS	06893500	Blue River at Kansas City, MO
+USGS	06893510	Blue River at Highway 71, Kansas City, Mo
+USGS	06893530	Blue River at 63rd Street, Kansas City, Mo
+USGS	06893553	Blue River at Colorado Avenue, Kansas City, Mo
+USGS	06893557	Brush Creek at Ward Parkway in Kansas City, MO
+USGS	06893562	Brush Creek at Rockhill Road in Kansas City, MO
+USGS	06893578	Blue River at Stadium Drive in Kansas City, MO
+USGS	06893588	Blue River at 17th Street, Kansas City, Mo
+USGS	06893590	Blue River at 12th Street in Kansas City, MO
+USGS	06893620	Rock Creek at Kentucky Road in Independence, MO
+USGS	06893791	Longview Reservoir at Kansas City, MO
+USGS	06893820	Little Blue R. at Lees Summit Rd in Independence
+USGS	06893830	Adair Creek at Independence, MO
+USGS	06893885	Blue Springs Reservoir near Blue Springs, MO
+USGS	06893890	East Fork Little Blue River near Blue Springs, MO
+USGS	06893970	Spring Branch Ck at Holke Rd in Independence, MO
+USGS	06894000	Little Blue River near Lake City, MO
+USGS	06894200	Fishing River above Mosby, MO
+USGS	06894650	Missouri River at Napoleon, MO
+USGS	06895000	Crooked River near Richmond, MO
+USGS	06895500	Missouri River at Waverly, MO
+USGS	06896000	Wakenda Creek at Carrollton, MO
+USGS	06896189	Stanberry Lake near Gentry, MO
+USGS	06896400	East Fork Grand River at Albany, MO
+USGS	06896900	Grand River near Pattonsburg, MO
+USGS	06897000	East Fork Big Creek near Bethany, MO
+USGS	06897500	Grand River near Gallatin, MO
+USGS	06899500	Thompson River at Trenton, MO
+USGS	06899680	Grand River at Chillicothe, MO
+USGS	06899700	Shoal Creek near Braymer, MO
+USGS	06899900	Medicine Creek at Lucerne, MO
+USGS	06900050	Medicine Creek near Laredo, MO
+USGS	06900640	Muddy Creek near Chula, MO
+USGS	06900800	Grand River near Fountain Grove, MO
+USGS	06901205	East Locust Creek near Boynton, MO
+USGS	06901250	Little East Locust Creek near Browning, MO
+USGS	06901500	Locust Creek near Linneus, MO
+USGS	06902000	Grand River near Sumner, MO
+USGS	06902100	Grand River below Sumner, MO (auxiliary gage)
+USGS	06902990	Marceline Lake near Marceline, MO
+USGS	06902995	Hickory Branch near Mendon, MO
+USGS	06904050	Chariton River at Livonia, MO
+USGS	06904500	Chariton River at Novinger, MO
+USGS	06904650	Spring Creek at Stahl, MO
+USGS	06905500	Chariton River near Prairie Hill, MO
+USGS	06906000	Mussel Fork near Musselfork, MO
+USGS	06906150	Long Branch Creek near Atlanta, MO
+USGS	06906190	Long Branch Reservoir near Macon, MO
+USGS	06906200	East Fork Little Chariton River near Macon, MO
+USGS	06906500	Missouri River at Glasgow, MO
+USGS	06906800	Lamine River near Otterville, MO
+USGS	06907700	Blackwater River at Valley City, MO
+USGS	06907720	Concordia Lake near Concordia, MO
+USGS	06908000	Blackwater River at Blue Lick, MO
+USGS	06909000	Missouri River at Boonville, MO
+USGS	06909500	Moniteau Creek near Fayette, MO
+USGS	06909950	Petite Saline Creek at Hwy U nr Boonville, M0
+USGS	06910230	Hinkson Creek at Columbia, MO
+USGS	06910450	Missouri River at Jefferson City, MO
+USGS	06910750	Moreau River near Jefferson City, MO
+USGS	06917060	Little Osage River at Horton, MO
+USGS	06917560	Marmaton River near Richards, MO
+USGS	06917630	East Drywood Creek at Prairie State Park
+USGS	06918060	Marmaton River near Nevada, MO
+USGS	06918070	Osage River above Schell City, MO
+USGS	06918250	Osage River at Taberville, MO
+USGS	06918440	Sac River near Dadeville, MO
+USGS	06918460	Turnback Creek above Greenfield, MO
+USGS	06918493	South Fork Dry Sac River near Springfield, MO
+USGS	06918740	Little Sac River near Morrisville, MO
+USGS	06918990	Stockton Lake near Stockton, MO
+USGS	06919000	Sac River near Stockton, MO
+USGS	06919020	Sac River at Hwy J below Stockton, MO
+USGS	06919500	Cedar Creek near Pleasant View, MO
+USGS	06919900	Sac River near Caplinger Mills, MO
+USGS	06920520	Weaubleau Creek near Weaubleau, MO
+USGS	06921070	Pomme de Terre River near Polk, MO
+USGS	06921200	Lindley Creek near Polk, MO
+USGS	06921325	Pomme de Terre Lake near Hermitage, MO
+USGS	06921350	Pomme de Terre River near Hermitage, MO
+USGS	06921500	Pomme de Terre River at Hermitage, MO
+USGS	06921590	South Grand River at Archie, MO
+USGS	06921600	South Grand River at Urich, MO
+USGS	06921720	Big Creek near Blairstown, MO
+USGS	06921760	South Grand River near Clinton, MO
+USGS	06922440	Harry S. Truman Dam and Res. at Warsaw, MO
+USGS	06922500	Osage River at Warsaw, MO
+USGS	06923250	Niangua River at Windyville, MO
+USGS	06923500	Bennett Spring at Bennett Springs, MO
+USGS	06923940	Niangua River ab Lake Niangua nr Macks Creek, MO
+USGS	06923950	Niangua River at Tunnel Dam near Macks Creek, MO
+USGS	06925250	Little Niangua River near Macks Creek, MO
+USGS	06926000	Osage River near Bagnell, MO
+USGS	06926080	Osage River at Tuscumbia, MO
+USGS	06926290	Tavern Creek below St. Elizabeth, MO
+USGS	06926510	Osage River below St. Thomas, MO
+USGS	06927000	Maries River at Westphalia, MO
+USGS	06927240	Auxvasse Creek near Reform, MO
+USGS	06928000	Gasconade River near Hazelgreen, MO
+USGS	06928300	Roubidoux Creek above Fort Leonard Wood, MO
+USGS	06928420	Roubidoux Creek at Polla Rd bl Ft. Leonard Wood
+USGS	06930000	Big Piney River near Big Piney, MO
+USGS	06930060	Big Piney below Fort Leonard Wood, MO
+USGS	06932000	Little Piney Creek at Newburg, MO
+USGS	06933500	Gasconade River at Jerome, MO
+USGS	06934000	Gasconade River near Rich Fountain, MO
+USGS	06934500	Missouri River at Hermann, MO
+USGS	06935450	Missouri River at Washington, MO
+USGS	06935550	Missouri River near Labadie, MO
+USGS	06935755	Bonhomme Creek near Ellisville, MO
+USGS	06935770	Bonhomme Creek near Clarkson Valley, MO
+USGS	06935830	Caulks Creek at Chesterfield, MO
+USGS	06935850	Creve Coeur Creek at Chesterfield, MO
+USGS	06935890	Creve Coeur Creek near Creve Coeur, MO
+USGS	06935955	Fee Fee Creek near Bridgeton, MO
+USGS	06935965	Missouri River at St. Charles, MO
+USGS	06935980	Cowmire Creek at Bridgeton, MO
+USGS	06935997	Mill Creek near Florissant, MO
+USGS	06936475	Coldwater Creek near Black Jack, MO
+USGS	06936530	Spanish Lake Trib. nr Black Jack, MO
+USGS	07001910	Watkins Creek near Bellefontaine Neighbors, MO
+USGS	07001985	Watkins Creek at Bellefontaine Neighbors, MO
+USGS	07005000	Maline Creek at Bellefontaine Neighbors, MO
+USGS	07010000	Mississippi River at St. Louis, MO
+USGS	07010022	River Des Peres near University City, MO
+USGS	07010030	River Des Peres Tributary at Pagedale, MO
+USGS	07010035	Engelholm Creek near Wellston, MO
+USGS	07010038	River Des Peres at Macklind Ave, St Louis, MO
+USGS	07010040	Denny Creek at Ladue, MO
+USGS	07010055	Deer Creek at Litzinger Road at Ladue, MO
+USGS	07010061	Two Mile Creek at Ladue, MO
+USGS	07010070	Sebago Creek near Rock Hill, MO
+USGS	07010075	Deer Creek at Ladue, MO
+USGS	07010082	Black Creek near Brentwood, MO
+USGS	07010086	Deer Creek at Maplewood, MO
+USGS	07010088	River Des Peres at Shrewsbury, MO
+USGS	07010090	MacKenzie Creek near Shrewsbury, MO
+USGS	07010094	Grammond Creek near Wilbur Park, MO
+USGS	07010097	River Des Peres at St. Louis, MO
+USGS	07010180	Gravois Creek near Mehlville, MO
+USGS	07010208	Martigney Creek near Arnold, MO
+USGS	07010350	Meramec River at Cook Station, MO
+USGS	07013000	Meramec River near Steelville, MO
+USGS	07014000	Huzzah Creek near Steelville, MO
+USGS	07014500	Meramec River near Sullivan, MO
+USGS	07015720	Bourbeuse River near High Gate, MO
+USGS	07016500	Bourbeuse River at Union, MO
+USGS	07017020	Meramec River at Pacific, MO
+USGS	07017200	Big River at Irondale, MO
+USGS	07017260	Big River below Desloge, MO
+USGS	07017610	Big River below Bonne Terre, MO
+USGS	07018100	Big River near Richwoods, MO
+USGS	07018500	Big River at Byrnesville, MO
+USGS	07019000	Meramec River near Eureka, MO
+USGS	07019072	Kiefer Creek near Ballwin, MO
+USGS	07019090	Williams Creek near Peerless Park, MO
+USGS	07019120	Fishpot Creek at Valley Park, MO
+USGS	07019130	Meramec River at Valley Park, MO
+USGS	07019150	Grand Glaize Creek near Manchester, MO
+USGS	07019175	Sugar Creek at Kirkwood, MO
+USGS	07019185	Grand Glaize Creek near Valley Park, MO
+USGS	07019195	Yarnell Creek at Fenton, MO
+USGS	07019210	Meramec River at Fenton, MO
+USGS	07019220	Fenton Creek near Fenton, MO
+USGS	07019300	Meramec River at Arnold, MO
+USGS	07019317	Mattese Creek near Mattese, MO
+USGS	07020550	South Fork Saline Creek near Perryville, MO
+USGS	07020850	Mississippi River at Cape Girardeau, MO
+USGS	07021000	Castor River at Zalma, MO
+USGS	07021020	Castor River at Greenbriar, MO
+USGS	07024175	Mississippi River at New Madrid, MO
+USGS	07035000	Little St. Francis River at Fredericktown, MO
+USGS	07035800	St. Francis River near Mill Creek, MO
+USGS	07036100	St. Francis River near Saco, MO
+USGS	07037300	Big Creek at Sam A Baker State Park, MO
+USGS	07037500	St. Francis River near Patterson, MO
+USGS	07039500	St. Francis River at Wappapello, MO
+USGS	07043500	Little River Ditch No. 1 near Morehouse, MO
+USGS	07050152	Roaring River at Roaring River State Park
+USGS	07050690	Pearson Creek near Springfield, MO
+USGS	07050700	James River near Springfield, MO
+USGS	07052000	Wilson Creek at Springfield, MO
+USGS	07052100	Wilson Creek near Springfield, MO
+USGS	07052120	South Creek near Springfield, MO
+USGS	07052152	Wilson Creek near Brookline, MO
+USGS	07052250	James River near Boaz, MO
+USGS	07052345	Finley Creek below Riverdale, MO
+USGS	07052500	James River at Galena, MO
+USGS	07052820	Flat Creek below Jenkins, MO
+USGS	07053450	White River bl Table Rock Dam near Branson, MO
+USGS	07053600	Lake Taneycomo at School of the Ozarks, MO
+USGS	07053810	Bull Creek near Walnut Shade, MO
+USGS	07053820	Lake Taneycomo at Ozark Beach Dam, MO
+USGS	07054080	Beaver Creek at Bradleyville, MO
+USGS	07057500	North Fork River near Tecumseh, MO
+USGS	07058000	Bryant Creek near Tecumseh, MO
+USGS	07061270	East Fork Black River near Lesterville, MO
+USGS	07061290	E. Fk. Black R. bl Lower Taum Sauk Reservoir
+USGS	07061500	Black River near Annapolis, MO
+USGS	07061600	Black River below Annapolis, MO
+USGS	07061900	Logan Creek at Ellington, MO
+USGS	07062000	Clearwater Lake near Piedmont, MO
+USGS	07062050	Clearwater Tailwater near Piedmont, MO
+USGS	07062500	Black River at Leeper, MO
+USGS	07062575	Black River above Williamsville, MO
+USGS	07063000	Black River at Poplar Bluff, MO
+USGS	07064440	Current River at Montauk State Park, MO
+USGS	07064533	Current River above Akers, MO
+USGS	07065200	Jacks Fork near Mountain View, MO
+USGS	07065495	Jacks Fork at Alley Spring, MO
+USGS	07066000	Jacks Fork at Eminence, MO
+USGS	07066510	Current River above Powder Mill, MO
+USGS	07067000	Current River at Van Buren, MO
+USGS	07067500	Big Spring near Van Buren, MO
+USGS	07068000	Current River at Doniphan, MO
+USGS	07068510	Little Black River below Fairdealing, MO
+USGS	07071000	Greer Spring at Greer, MO
+USGS	07071500	Eleven Point River near Bardley, MO
+USGS	07185700	Spring River at La Russell, MO
+USGS	07185765	Spring River at Carthage, MO
+USGS	07185910	North Fork Spring River near Purcell, MO
+USGS	07186000	Spring River near Waco, MO
+USGS	07186480	Center Creek near Smithfield, MO
+USGS	07187000	Shoal Creek above Joplin, MO
+USGS	07188653	Big Sugar Creek near Powell, MO
+USGS	07188838	Little Sugar Creek near Pineville, MO
+USGS	07188885	Indian Creek near Lanagan, MO
+USGS	07189000	Elk River near Tiff City, Mo
+USGS	07189100	Buffalo Creek at Tiff City, MO
+USGS	360252090173201	Cardwell Alluvial Aquifer
+USGS	360252090173202	Cardwell McNairy Formation
+USGS	360425089485001	Steele
+USGS	361145089394101	Caruthersville
+USGS	362718089552301	Gideon
+USGS	362955089581801	Malden
+USGS	363236094290301	Noel
+USGS	363436092391001	Theodosia
+USGS	363442090364301	Naylor
+USGS	363539091384501	Koshkonong
+USGS	363551090152801	Qulin
+USGS	363721094173801	Big Sugar Creek State Park
+USGS	363728093150401	Cooper Creek
+USGS	363855093134701	Branson
+USGS	364006093200301	Silver Dollar City
+USGS	364059093520001	Cassville
+USGS	364313094121101	Longview
+USGS	364324091515001	West Plains
+USGS	364453093543601	Butterfield Springfield Plateau Aquifer
+USGS	364453093543602	Butterfield Ozark Aquifer
+USGS	364643089212301	East Prairie
+USGS	364818094185301	Neosho Springfield Plateau Aquifer
+USGS	364818094185302	Neosho Ozark Aquifer
+USGS	365319089331001	Sikeston
+USGS	365415093342301	Crane
+USGS	365451093555501	Monett #10
+USGS	365559092030001	Noblett Lake
+USGS	365602092395101	Ava
+USGS	365634093542701	Monett Well 16
+USGS	365644094001301	Pierce City
+USGS	365645093431601	Aurora
+USGS	365654091001301	Big Spring
+USGS	365949091421401	Mountain View
+USGS	370005093122401	Ozark
+USGS	370224094320201	Joplin
+USGS	370236093174401	Nixa
+USGS	370248090042601	Duck Creek
+USGS	370354093325901	Billings
+USGS	370539093494001	Mt. Vernon Ozark Aquifer
+USGS	370539093494002	Mt. Vernon Springfield Plateau Aquifer
+USGS	370600094223501	Atlas Powder
+USGS	370624092244701	Norwood Well
+USGS	370655093035301	Rogersville
+USGS	370828094274101	Webb City 6
+USGS	370907093144101	Springfield-Valley Park
+USGS	371036094171301	Carthage
+USGS	371125089445301	Delta
+USGS	371220094302401	Oronogo
+USGS	371435093134701	Springfield
+USGS	371548093144701	Valley Water Mills Springfield Plateau Aquifer
+USGS	371548093144702	Valley Water Mills Ozark Aquifer
+USGS	371558093181901	McDaniel Lake
+USGS	371800092094801	Fairview
+USGS	371801093260401	Willard
+USGS	372022092542201	Marshfield
+USGS	372153091322301	Akers
+USGS	372202094370201	Asbury Springfield Plateau Aquifer
+USGS	372202094370202	Asbury Ozark Aquifer
+USGS	372338094052801	Golden City
+USGS	372521089362401	Jackson
+USGS	372715090510701	Lesterville
+USGS	372853091061801	Viburnum Trend Well 6
+USGS	372958094161001	Lamar
+USGS	373056091063801	Viburnum Trend Well 5
+USGS	373210090180601	Fredericktown
+USGS	373559090082901	National Lead
+USGS	373620093470301	North Hawker Point
+USGS	373653091330101	Wofford Farm
+USGS	373701093151601	Halfway
+USGS	373905091071001	Viburnum Trend Well 2
+USGS	373906092385201	Lebanon
+USGS	373955091065901	Bixby
+USGS	374254094524501	St. Joseph
+USGS	374649090242601	Farmington Well 10
+USGS	375259093181401	Pomme de Terre State Park
+USGS	375306090125301	Weingarten
+USCE	375410089511000	RAIN GAGE AT MISSISSIPPI RIVER AT CHESTER, IL
+USGS	375429092300701	Ozark Fisheries
+USGS	375617090465401	Potosi
+USGS	375625091480401	Ramada Inn Rolla
+USGS	375749091475001	Dept of Conservation Rolla
+USGS	375907091432201	Rolla Industrial Park
+USGS	375920092463001	Ha Ha Tonka State Park
+USGS	380038092442701	Camdenton
+USGS	380229093464701	Osceola
+USGS	380322091142601	Onondaga Cave State Park
+USGS	380435090281301	South Jefferson County
+USGS	380501090335501	Desoto
+USGS	380545094213501	Rich Hill
+USGS	380717092395401	Lake of the Ozarks State Park
+USGS	380900091153901	Bourbon
+USGS	381045091564801	Vienna
+USGS	381217091104501	Sullivan
+USGS	381405090260301	Festus
+USGS	381641093214601	Lost Valley Hatchery
+USGS	381652093215501	Warsaw
+USGS	382100090592801	St. Clair
+USGS	382726093121601	Cole Camp
+USGS	382745091275701	Drake
+USGS	382748093595101	Urich
+USGS	382835094254301	Archie
+USGS	382836091502301	Linn
+USGS	383031090384101	Eureka
+USGS	383151092081601	Lincoln University Carver Farm
+USGS	383226092054001	Jefferson City East
+USGS	383302090420201	Wildwood
+USGS	383357090502101	Ameren Power Plant near Labadie, MO
+USGS	383550092094201	Jefferson City
+USGS	383628090411901	Babler State Park
+USGS	383644091124901	New Haven
+USGS	383707092311701	California
+USGS	383906090511401	Daniel Boone Home
+USGS	383929092464901	Tipton
+USGS	384147093101901	Sedalia East
+USGS	384258091243001	Hermann 4
+USGS	384455093201001	Dresden R-12 School
+USGS	384534093431101	Warrensburg
+USGS	384545093331601	Knob Noster
+USGS	384713091474301	Reform
+USGS	384737090372001	St. Peters
+USGS	384832093192501	Sedalia
+USGS	384846090510301	Wentzville
+USGS	384849090092001	Columbia Bottoms
+USGS	384917091594401	Fulton
+USGS	385156092263202	Eagle Bluffs
+USGS	385428091265001	New Florence
+USGS	385432091343201	Graham Cave State Park
+USGS	385718092234201	Columbia
+USGS	385837090594701	Troy (2)
+USGS	385845090583801	Troy (1)
+USGS	385853092592801	Blackwater
+USGS	390150090542801	Cuivre River State Park
+USGS	390207092570801	Arrow Rock
+USGS	390651092125101	Hallsville
+USGS	390750093233401	Mt. Leonard
+USGS	390945091494001	Mexico
+USGS	390945094234001	Independence
+USGS	391149092072901	Centralia
+USGS	391222093185501	Marshall
+USGS	391236094170201	Atherton
+USGS	391622093161001	Van Meter State Park
+USGS	391825091285101	Vandalia
+USGS	392045093302401	Carrollton
+USGS	392147090541901	Clarksville
+USGS	392228094473101	Platte City
+USGS	392310094154301	Watkins Woolen Mill State Park
+USGS	392321092153901	Middle Grove
+USGS	392336094550403	Weston
+USGS	392954095013101	Little Bean Marsh Conservation Area
+USGS	393218095032601	Lewis and Clark State Park
+USGS	393544093075601	Mendon
+USGS	393640092303901	Bee Hollow Conservation Area
+USCE	393810091145600	RAIN GAGE AT MISS R AT L & D 22 NR SAVERTON, MO
+USGS	394013093400201	Dawn
+USGS	394156092030201	Shelbina
+USGS	394201093181101	Fountain Grove Wldlf Area
+USGS	394508093132101	Pershing State Park
+USGS	395043091262601	Hannibal
+USGS	395355095051601	Forest City 7
+USGS	400105093591601	Jameson
+USGS	400251094485901	Rosendale
+USGS	400458093582001	Coffey
+USGS	401057091494501	Deer Ridge Wildlife Area
+USGS	401444093442001	Spickard
+USGS	401920092130301	Indian Hills
+USGS	402618095222701	Tarkio Glacial Drift Aquifer
+USGS	402627095220601	Tarkio Alluvial Aquifer
+USGS	402657093470201	Cainsville
+USGS	403055094364701	Sheridan
+USGS	403301094492301	Hopkins
+USGS	403452092292901	Vandike Farms
+USGS	403501091420401	Battle of Athens SP
