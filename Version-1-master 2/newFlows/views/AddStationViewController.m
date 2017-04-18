@@ -115,7 +115,7 @@
 {
     static NSString *CellIdentifier = @"addCell";
     
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
