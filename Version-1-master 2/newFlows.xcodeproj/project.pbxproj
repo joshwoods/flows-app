@@ -83,13 +83,6 @@
 		427B345A1CFE96C50032C5D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B34591CFE96C50032C5D5 /* SystemConfiguration.framework */; };
 		427B345C1CFE96D10032C5D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B345B1CFE96D10032C5D5 /* UIKit.framework */; };
 		4295AA571C9CB7CA006C729C /* NewAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4295AA561C9CB7CA006C729C /* NewAboutViewController.m */; };
-		42A34C121BBD8CAD004F7FB7 /* ak in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BDE1BBD8CAD004F7FB7 /* ak */; };
-		42A34C131BBD8CAD004F7FB7 /* al in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BDF1BBD8CAD004F7FB7 /* al */; };
-		42A34C141BBD8CAD004F7FB7 /* aq in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE01BBD8CAD004F7FB7 /* aq */; };
-		42A34C151BBD8CAD004F7FB7 /* ar in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE11BBD8CAD004F7FB7 /* ar */; };
-		42A34C161BBD8CAD004F7FB7 /* az in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE21BBD8CAD004F7FB7 /* az */; };
-		42A34C171BBD8CAD004F7FB7 /* ca in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE31BBD8CAD004F7FB7 /* ca */; };
-		42A34C181BBD8CAD004F7FB7 /* co in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE41BBD8CAD004F7FB7 /* co */; };
 		42A34C191BBD8CAD004F7FB7 /* ct in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE51BBD8CAD004F7FB7 /* ct */; };
 		42A34C1A1BBD8CAD004F7FB7 /* dc in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE61BBD8CAD004F7FB7 /* dc */; };
 		42A34C1B1BBD8CAD004F7FB7 /* de in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE71BBD8CAD004F7FB7 /* de */; };
@@ -209,6 +202,12 @@
 		42EB71E91C38B94100D6215E /* 50n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EB71A01C38B94100D6215E /* 50n@3x.png */; };
 		77893ED3D290D7940455110C /* libPods-newFlows.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E248833100223D1832BE3B /* libPods-newFlows.a */; };
 		916362061EA5AEDD00E6D982 /* mo in Resources */ = {isa = PBXBuildFile; fileRef = 916362051EA5AEDD00E6D982 /* mo */; };
+		916362081EA5B0B800E6D982 /* al in Resources */ = {isa = PBXBuildFile; fileRef = 916362071EA5B0B800E6D982 /* al */; };
+		9163620A1EA5B0DA00E6D982 /* ak in Resources */ = {isa = PBXBuildFile; fileRef = 916362091EA5B0DA00E6D982 /* ak */; };
+		9163620C1EA5B4D500E6D982 /* ar in Resources */ = {isa = PBXBuildFile; fileRef = 9163620B1EA5B4D500E6D982 /* ar */; };
+		9163620E1EA5B51A00E6D982 /* az in Resources */ = {isa = PBXBuildFile; fileRef = 9163620D1EA5B51A00E6D982 /* az */; };
+		916362101EA5B55700E6D982 /* ca in Resources */ = {isa = PBXBuildFile; fileRef = 9163620F1EA5B55700E6D982 /* ca */; };
+		916362121EA5B5A300E6D982 /* co in Resources */ = {isa = PBXBuildFile; fileRef = 916362111EA5B5A300E6D982 /* co */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,13 +322,6 @@
 		427B345B1CFE96D10032C5D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4295AA551C9CB7CA006C729C /* NewAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAboutViewController.h; sourceTree = "<group>"; };
 		4295AA561C9CB7CA006C729C /* NewAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAboutViewController.m; sourceTree = "<group>"; };
-		42A34BDE1BBD8CAD004F7FB7 /* ak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ak; sourceTree = "<group>"; };
-		42A34BDF1BBD8CAD004F7FB7 /* al */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = al; sourceTree = "<group>"; };
-		42A34BE01BBD8CAD004F7FB7 /* aq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aq; sourceTree = "<group>"; };
-		42A34BE11BBD8CAD004F7FB7 /* ar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ar; sourceTree = "<group>"; };
-		42A34BE21BBD8CAD004F7FB7 /* az */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = az; sourceTree = "<group>"; };
-		42A34BE31BBD8CAD004F7FB7 /* ca */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca; sourceTree = "<group>"; };
-		42A34BE41BBD8CAD004F7FB7 /* co */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = co; sourceTree = "<group>"; };
 		42A34BE51BBD8CAD004F7FB7 /* ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct; sourceTree = "<group>"; };
 		42A34BE61BBD8CAD004F7FB7 /* dc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dc; sourceTree = "<group>"; };
 		42A34BE71BBD8CAD004F7FB7 /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = de; sourceTree = "<group>"; };
@@ -465,6 +457,12 @@
 		5CD113D332DFD3F5240DA9BE /* Pods-newFlows.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlows.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newFlows/Pods-newFlows.debug.xcconfig"; sourceTree = "<group>"; };
 		79E248833100223D1832BE3B /* libPods-newFlows.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newFlows.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		916362051EA5AEDD00E6D982 /* mo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mo; sourceTree = "<group>"; };
+		916362071EA5B0B800E6D982 /* al */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = al; sourceTree = "<group>"; };
+		916362091EA5B0DA00E6D982 /* ak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ak; sourceTree = "<group>"; };
+		9163620B1EA5B4D500E6D982 /* ar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ar; sourceTree = "<group>"; };
+		9163620D1EA5B51A00E6D982 /* az */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = az; sourceTree = "<group>"; };
+		9163620F1EA5B55700E6D982 /* ca */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca; sourceTree = "<group>"; };
+		916362111EA5B5A300E6D982 /* co */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = co; sourceTree = "<group>"; };
 		C12774532E8824C2AB33B483 /* Pods-newFlows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlows.release.xcconfig"; path = "Pods/Target Support Files/Pods-newFlows/Pods-newFlows.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -645,13 +643,12 @@
 		42A34BDD1BBD8CAD004F7FB7 /* stationData */ = {
 			isa = PBXGroup;
 			children = (
-				42A34BDE1BBD8CAD004F7FB7 /* ak */,
-				42A34BDF1BBD8CAD004F7FB7 /* al */,
-				42A34BE01BBD8CAD004F7FB7 /* aq */,
-				42A34BE11BBD8CAD004F7FB7 /* ar */,
-				42A34BE21BBD8CAD004F7FB7 /* az */,
-				42A34BE31BBD8CAD004F7FB7 /* ca */,
-				42A34BE41BBD8CAD004F7FB7 /* co */,
+				916362091EA5B0DA00E6D982 /* ak */,
+				916362071EA5B0B800E6D982 /* al */,
+				9163620B1EA5B4D500E6D982 /* ar */,
+				9163620D1EA5B51A00E6D982 /* az */,
+				9163620F1EA5B55700E6D982 /* ca */,
+				916362111EA5B5A300E6D982 /* co */,
 				42A34BE51BBD8CAD004F7FB7 /* ct */,
 				42A34BE61BBD8CAD004F7FB7 /* dc */,
 				42A34BE71BBD8CAD004F7FB7 /* de */,
@@ -1059,17 +1056,16 @@
 			files = (
 				42EB71B11C38B94100D6215E /* infoicon.png in Resources */,
 				42A34C241BBD8CAD004F7FB7 /* ks in Resources */,
-				42A34C181BBD8CAD004F7FB7 /* co in Resources */,
 				42296B691D5ECF8E004F38B1 /* rain.png in Resources */,
 				42A34C2C1BBD8CAD004F7FB7 /* mt in Resources */,
-				42A34C171BBD8CAD004F7FB7 /* ca in Resources */,
+				916362121EA5B5A300E6D982 /* co in Resources */,
 				4272F6EC1C1CC8140062161F /* abbreviations.plist in Resources */,
 				42C8A95A1C8A17A9006BF832 /* city.json in Resources */,
 				42A34C1D1BBD8CAD004F7FB7 /* ga in Resources */,
+				9163620E1EA5B51A00E6D982 /* az in Resources */,
 				42A34C3F1BBD8CAD004F7FB7 /* va in Resources */,
 				42296B731D5ECF8E004F38B1 /* wind@2x.png in Resources */,
 				42EB71B21C38B94100D6215E /* infoicon@2x.png in Resources */,
-				42A34C161BBD8CAD004F7FB7 /* az in Resources */,
 				42EB71D01C38B94100D6215E /* 09n@2x.png in Resources */,
 				4253B9801C979ECD008AF6BA /* try.png in Resources */,
 				4253B9731C970F1B008AF6BA /* button_highlight.png in Resources */,
@@ -1097,7 +1093,6 @@
 				42EB71C61C38B94100D6215E /* 04d.png in Resources */,
 				42296B6D1D5ECF8E004F38B1 /* sleet@2x.png in Resources */,
 				42A34C271BBD8CAD004F7FB7 /* ma in Resources */,
-				42A34C121BBD8CAD004F7FB7 /* ak in Resources */,
 				42EB71B01C38B94100D6215E /* HeaderLogo@3x.png in Resources */,
 				42A34C291BBD8CAD004F7FB7 /* me in Resources */,
 				423AEB411D1CBEBB00FFB7E3 /* New_Close_Icon.png in Resources */,
@@ -1118,7 +1113,6 @@
 				42BEDABC1C85252A00113431 /* SwipeView.xib in Resources */,
 				42A34C2E1BBD8CAD004F7FB7 /* nd in Resources */,
 				42296B601D5ECF8E004F38B1 /* fog.png in Resources */,
-				42A34C151BBD8CAD004F7FB7 /* ar in Resources */,
 				42A34C391BBD8CAD004F7FB7 /* ri in Resources */,
 				42734B1A1C7C23740061FAA2 /* Default-568h@2x.png in Resources */,
 				4253B9681C937CE3008AF6BA /* BlueMapIcon@3x.png in Resources */,
@@ -1162,6 +1156,7 @@
 				42EB71AF1C38B94100D6215E /* HeaderLogo@2x.png in Resources */,
 				42EB71A61C38B94100D6215E /* background@3x.png in Resources */,
 				42EB71E71C38B94100D6215E /* 50n.png in Resources */,
+				916362101EA5B55700E6D982 /* ca in Resources */,
 				42EB71C91C38B94100D6215E /* 04n.png in Resources */,
 				42EB71DB1C38B94100D6215E /* 11n.png in Resources */,
 				423ED4AB1BB5BC58007772C8 /* LaunchScreen.storyboard in Resources */,
@@ -1196,6 +1191,7 @@
 				42734B131C7C1C3D0061FAA2 /* icon29@2x.png in Resources */,
 				42296B611D5ECF8E004F38B1 /* fog@2x.png in Resources */,
 				4253B96C1C96669A008AF6BA /* addStation.png in Resources */,
+				9163620C1EA5B4D500E6D982 /* ar in Resources */,
 				42A34C1C1BBD8CAD004F7FB7 /* fl in Resources */,
 				42EB71A81C38B94100D6215E /* BackIcon@2x.png in Resources */,
 				42A34C211BBD8CAD004F7FB7 /* id in Resources */,
@@ -1216,11 +1212,11 @@
 				42EB71C81C38B94100D6215E /* 04d@3x.png in Resources */,
 				42EB71A71C38B94100D6215E /* BackIcon.png in Resources */,
 				42A34C451BBD8CAD004F7FB7 /* wy in Resources */,
+				9163620A1EA5B0DA00E6D982 /* ak in Resources */,
 				42296B5D1D5ECF8E004F38B1 /* cloudy.png in Resources */,
 				42296B721D5ECF8E004F38B1 /* wind.png in Resources */,
 				42A34C441BBD8CAD004F7FB7 /* wv in Resources */,
-				42A34C131BBD8CAD004F7FB7 /* al in Resources */,
-				42A34C141BBD8CAD004F7FB7 /* aq in Resources */,
+				916362081EA5B0B800E6D982 /* al in Resources */,
 				42EB71AD1C38B94100D6215E /* GreyMapIcon@3x.png in Resources */,
 				42A34C2D1BBD8CAD004F7FB7 /* nc in Resources */,
 				42A34C331BBD8CAD004F7FB7 /* ny in Resources */,
