@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:08:37 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 23:14:44 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,14 +15,15 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:08:37 EDT
+# query started 2017-04-17 23:14:44 EDT
 #
-# there are 141 sites matching the search criteria.
+# there are 239 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
 5s	15s	50s
 USGS	07148400	Salt Fork Arkansas River nr Alva, OK
+USGS	07149520	Salt Fork Arkansas River at SH 11 nr Cherokee, Ok
 USGS	07151000	Salt Fork Arkansas River at Tonkawa, OK
 USGS	07152000	Chikaskia River near Blackwell, OK
 USGS	07152500	Arkansas River at Ralston, OK
@@ -31,10 +32,13 @@ USGS	07154500	Cimarron River near Kenton, OK
 USGS	07157950	Cimarron River near Buffalo, OK
 USGS	07158000	Cimarron River near Waynoka, OK
 USGS	07159100	Cimarron River near Dover, OK
+USGS	07159550	Lake Hefner at Oklahoma City, OK
+USGS	07159750	Cottonwood Creek near Seward, OK
 USGS	07160000	Cimarron River near Guthrie, OK
 USGS	07160350	Skeleton Creek at Enid, OK
 USGS	07160500	Skeleton Creek near Lovell, OK
 USGS	07161450	Cimarron River near Ripley, OK
+USGS	07163300	Cimarron River near Yale, OK
 USGS	07164500	Arkansas River at Tulsa, OK
 USGS	07164600	Joe Creek at 61st St at Tulsa, OK
 USGS	07165562	Haikey Creek at 101st St South at Tulsa, OK
@@ -42,28 +46,43 @@ USGS	07165565	Little Haikey Creek at 101st St South at Tulsa, OK
 USGS	07165570	Arkansas River near Haskell, OK
 USGS	07171000	Verdigris River near Lenapah, OK
 USGS	07174400	Caney River above Coon Creek at Bartlesville, OK
+USGS	07174470	Caney River at Tuxedo Blvd at Bartlesville, Ok
+USGS	07174618	Sand Creek Below Little Rock Creek near Okesa, OK
 USGS	07175500	Caney River near Ramona, OK
 USGS	07176000	Verdigris River near Claremore, OK
+USGS	07176321	Bird Creek at SH 99 at Pawhuska, Ok
 USGS	07176500	Bird Creek at Avant, OK
+USGS	07176950	Hominy Creek near Hominy, OK
 USGS	07177500	Bird Creek near Sperry, OK
 USGS	07177650	Flat Rock Creek at Cincinnati Ave at Tulsa, OK
 USGS	07177800	Coal Creek at Tulsa, OK
 USGS	07178000	Bird Creek near Owasso, OK
 USGS	07178200	Bird Ck at State Highway 266 near Catoosa, OK
+USGS	07178452	Verdigris River near Catoosa, OK
+USGS	07178645	Verdigris River near Wagoner, Ok.
 USGS	07185000	Neosho River near Commerce, OK
+USGS	07185030	Elm Creek near Commerce, OK
+USGS	07185080	Neosho River at Miami, OK
 USGS	07185090	Tar Creek near Commerce, OK
 USGS	07185095	Tar Creek at 22nd Street Bridge at Miami, OK
 USGS	07188000	Spring River near Quapaw, OK
+USGS	07188005	Beaver Creek near Quapaw, Ok
 USGS	07189540	Cave Springs Branch near South West City, MO
 USGS	07189542	Honey Creek near South West City, MO
+USGS	07190000	Lake O' the Cherokees at Langley, OK
+USGS	07190100	Neosho River (service road) near Langley, OK
 USGS	07190500	Neosho River near Langley, OK
 USGS	07191000	Big Cabin Creek near Big Cabin, OK
 USGS	07191220	Spavinaw Creek near Sycamore, OK
 USGS	071912213	Spavinaw Creek near Colcord, OK
 USGS	07191222	Beaty Creek near Jay, OK
+USGS	07191285	Lake Eucha near Eucha, OK
 USGS	07191288	Spavinaw Creek near Eucha, OK
+USGS	07191300	Spavinaw Lake at Spavinaw, OK
+USGS	07191400	Lake Hudson near Locust Grove, OK
 USGS	07191500	Neosho River near Chouteau, OK
 USGS	07194500	Arkansas River near Muskogee, OK
+USGS	07194555	Arkansas River at Gore, Ok
 USGS	07195500	Illinois River near Watts, OK
 USGS	07195855	Flint Creek near West Siloam Springs, OK
 USGS	07195865	Sager Creek near West Siloam Springs, OK
@@ -77,6 +96,9 @@ USGS	07228500	Canadian River at Bridgeport, OK
 USGS	07228940	Canadian River near Mustang, OK
 USGS	07229050	Canadian River at Norman, OK
 USGS	07229200	Canadian River at Purcell, OK
+USGS	07229300	Walnut Creek at Purcell, OK
+USGS	07229445	Stanley Draper Lake near Oklahoma City, OK
+USGS	07229900	Lake Thunderbird near Norman, OK
 USGS	07230000	Little River blw Lk Thunderbird nr Norman, OK
 USGS	07230500	Little River near Tecumseh, OK
 USGS	07231000	Little River near Sasakwa, OK
@@ -86,20 +108,27 @@ USGS	07234000	Beaver River at Beaver, OK
 USGS	07235600	Wolf Creek nr Gage, OK
 USGS	07237500	North Canadian River at Woodward, OK
 USGS	07238000	North Canadian River near Seiling, OK
+USGS	07238500	Canton Lake near Canton, OK
 USGS	07239000	North Canadian River at Canton, OK
 USGS	07239300	North Canadian River blw Weavers Ck nr Watonga, OK
 USGS	07239450	North Canadian River near Calumet, OK
 USGS	07239500	North Canadian River near El Reno, OK
 USGS	07239700	North Canadian River near Yukon, OK
 USGS	07240000	Lake Hefner Canal near Oklahoma City, OK
+USGS	07240200	North Canadian R at Hwy 66 at Oklahoma City, OK
+USGS	07240500	Lake Overholser near Oklahoma City, OK
 USGS	07241000	North Canadian River blw Lk Overholser nr OKC, OK
 USGS	07241520	North Canadian River at Britton Rd at OKC, OK
 USGS	07241550	North Canadian River near Harrah, OK
+USGS	07241588	Wes Watkins Reservoir near McLoud, Ok
+USGS	07241600	Shawnee Reservoir at Shawnee, OK
+USGS	07241780	Squirrel Creek at Shawnee, OK
 USGS	07241800	North Canadian River at Shawnee, OK
 USGS	07242000	North Canadian River near Wetumka, OK
 USGS	07242380	Deep Fork at Warwick, OK
 USGS	07243500	Deep Fork near Beggs, OK
 USGS	07245000	Canadian River near Whitefield, OK
+USGS	07246500	Arkansas River near Sallisaw, OK
 USGS	07247015	Poteau River at Loving, OK
 USGS	07247250	Black Fork below Big Creek nr Page, OK
 USGS	07247500	Fourche Maline near Red Oak, OK
@@ -110,21 +139,33 @@ USGS	07249985	Lee Creek near Short, OK
 USGS	07300500	Salt Fork Red River at Mangum, OK
 USGS	07301110	Salt Fork Red River near Elmer, OK
 USGS	07301420	Sweetwater Creek near Sweetwater, OK
+USGS	07301481	North Fork Red River near Sayre, OK
 USGS	07301500	North Fork Red River near Carter, OK
+USGS	07302500	Lake Altus at Lugert, OK
 USGS	07303000	North Fork Red River blw Altus Dam nr Lugert, OK
 USGS	07303400	Elm Fork of North Fork Red River nr Carl, OK
 USGS	07305000	North Fork Red River near Headrick, OK
 USGS	07307010	Otter Creek near Snyder, OK
 USGS	07307028	North Fork Red River near Tipton, OK
+USGS	07308990	Lake Ellsworth near Elgin, OK
 USGS	07309435	Jimmy Creek nr Meers, OK
+USGS	07309500	Lake Lawtonka near Lawton, OK
+USGS	07309990	East Cache Creek nr Lawton, Ok
 USGS	07311000	East Cache Creek near Walters, OK
+USGS	07311230	West Cache Creek at Faxon, Ok
+USGS	07311240	West Cache Creek near Cookietown, OK
+USGS	07311415	Lake Frederick nr Frederick, OK
 USGS	07311500	Deep Red Creek near Randlett, OK
+USGS	07312920	Beaver Creek nr Hulen, OK
+USGS	07313000	Little Beaver Creek near Duncan, OK
+USGS	07313585	Cow Creek nr Addington, OK
 USGS	07315500	Red Rv nr Terral, OK
 USGS	07315650	Red River nr Courtney, OK
 USGS	07315700	Mud Creek near Courtney, OK
 USGS	07316000	Red River near Gainesville, TX
 USGS	07316500	Washita River near Cheyenne, OK
 USGS	07324200	Washita River near Hammon, OK
+USGS	07324300	Foss Reservoir near Foss, OK
 USGS	07324400	Washita River near Foss, OK
 USGS	07325000	Washita River near Clinton, OK
 USGS	07325500	Washita River at Carnegie, OK
@@ -132,6 +173,7 @@ USGS	07325800	Cobb Creek near Eakly, OK
 USGS	07325840	Lake Creek near Sickles, OK
 USGS	07325850	Lake Creek near Eakly, OK
 USGS	07325860	Willow Creek near Albert, OK
+USGS	07325900	Fort Cobb Reservoir near Fort Cobb, OK
 USGS	07326000	Cobb Creek near Fort Cobb, OK
 USGS	07326500	Washita River at Anadarko, OK
 USGS	07327442	Little Washita River near Cyril, OK
@@ -140,26 +182,82 @@ USGS	07327550	Little Washita River East of Ninnekah, OK
 USGS	07328100	Washita River at Alex, OK
 USGS	07328180	North Criner Creek near Criner, OK
 USGS	07328500	Washita River near Pauls Valley, OK
+USGS	07329605	Lake Humphreys near Duncan, Ok
+USGS	07329610	Lake Fuqua near Duncan, Ok
+USGS	07329700	Wildhorse Creek near Hoover, OK
 USGS	07329780	Honey Creek below Turner Falls near Davis, OK
 USGS	07329849	01S-03E-01 ABB 1 Antelope Spring at Sulphur, OK
 USGS	073298507	Travertine Creek above U.S. 177 at Sulphur
 USGS	07329852	Rock Creek at Sulphur, OK
 USGS	07331000	Washita River near Dickson, OK
 USGS	07331200	Mill Creek near Mill Creek, OK
+USGS	07331290	Washita River near Tishomingo, OK
+USGS	07331295	Pennington Creek East of Mill Creek, OK
 USGS	07331300	Pennington Creek near Reagan, OK
 USGS	07331383	Pennington Creek at Capitol Ave at Tishomingo, Ok
+USGS	07331455	Lake Texoma at Cumberland Cut nr Cumberland, Ok
 USGS	07332390	Blue River near Connerville, OK
 USGS	07332500	Blue River near Blue, OK
+USGS	07333010	Atoka Reservoir near Stringtown, OK
+USGS	07333900	McGee Creek Reservoir near Farris, OK
 USGS	07334000	Muddy Boggy Creek near Farris, OK
-USGS	07334200	02N-06E-34 CCD 1 Byrds Mill Spring nr Fittstown,OK
 USGS	07334238	Sheep Creek Spring near Fittstown, Ok
 USGS	07334800	Clear Boggy Creek abv Caney Creek nr Caney, OK
 USGS	07335300	Muddy Boggy Creek near Unger, OK
 USGS	07335500	Red River at Arthur City, TX
 USGS	07335700	Kiamichi River near Big Cedar, OK
+USGS	07335775	Sardis Lake near Clayton, OK
 USGS	07335790	Kiamichi River near Clayton, OK
+USGS	07335840	Pine Creek at Eubanks, OK
 USGS	07336200	Kiamichi River near Antlers, OK
+USGS	07337300	Pine Creek Lake near Wright City, OK
 USGS	07337900	Glover River near Glover, OK
 USGS	07338500	Little River blw Lukfata Creek, nr Idabel, OK
 USGS	07338750	Mountain Fork at Smithville, OK
 USGS	07339000	Mountain Fork near Eagletown, OK
+USGS	340042095051801	06S-21E-27 AAA 1 MCCURTAIN 27
+USGS	340643095044601	CORPS OF ENGINEERS MONITOR SITE 2
+USGS	340643095044801	CORPS OF ENGINEERS MONITOR SITE 1
+USGS	342500095530001	McGee Creek Wildlife weather station
+USGS	342527096493301	01S-05E-31 CBD JOHNSTON 31
+USGS	342633096494401	01S-04E-25 ADD Johnston 25
+USGS	342835099230401	01S-21W-15 ABC 1 SFR02
+USGS	343017096561501	01S-03E-01 ABA 1 CNRA GW WELL 2
+USGS	343022096565701	01S-03E-01 BBB 1 CNRA GW WELL 1
+USGS	343457096404501	01N-06E-04 CAD 1  Fittstown GW well
+USGS	343537099234301	01N-21W-03 ABB 1 SFR01
+USGS	344749098350301	04N-13W-29 AAB 1 Meers GW Well
+USGS	344750099480801	04N-25W-26 BAB 1 SFR05
+USGS	344758099265101	04N-21W-19 DCD 1 SFR03
+USGS	345131099415301	05N-24W-35 DDC 1 SFR04
+USGS	345146099583501	05N-26W-31 DAA 1 SFR06
+USGS	345302096412401	05N-06E-29 ABA 1 Konawa
+USGS	345740097210801	05N-01W-09 ABB 1 Purcell
+USGS	345824097484201	06N-06W-22 DDA 1 W34003
+USGS	350748098231101	08N-11W-32 BBA 1 GRACEMONT
+USGS	351004097270101	08N-02W-18 BDD 3 NLF TS5
+USGS	351223099480001	Erick Rain Gage
+USGS	351308098341601	09N-13W-28 DDD 1        Alfalfa GW Well
+USGS	351722097313601	09N-03W-04 BBA 1 Indian Hills
+USGS	351727098290401	10N-12W-32 DDD 1, CORE 2 GW Well
+USGS	352423098341701	11N-13W-21 DDD 1        Eakly GW Well
+USGS	352523097032101	11N-02E-14 DDA 1 MCLOUD GW
+USGS	352537099234301	Elk City Weather Station
+USGS	352802098191601	12N-11W-36 CCA 1 HINTON
+USGS	352959097114001	12N-01E-22 BCC 1 Harrah South
+USGS	353002097114002	12N-01E-22 BCC 2 Harrah North
+USGS	353211098191501	12N-11W-01 BDD 1 Bridgeport 1
+USGS	353215099004101	12N-17W-09 BBB 1 WSH05
+USGS	353626099340901	13N-22W-17 BBD 1 WSH03
+USGS	353821099395901	14N-23W-32 DCC 1 WSH02
+USGS	354022099202701	14N-21W-21 CDC 1 WSH04
+USGS	354529099565501	15N-26W-22 DCA 1 WSH01
+USGS	355510096293501	17N-08E-30 CBB 1 Creek 30 GW
+USGS	360022098525501	18N-16W-26 CBA 1 Taloga
+USGS	360110099215001	18N-20W-20 CBC 1 Camargo
+USGS	361739099323301	21N-22W-15 CAD Woodward 15
+USGS	363033101440701	01N-12E-35 BDD 1        Texhoma GW Well
+USGS	364337096315401	26N-07E-15 DDD 1 Burbank
+USGS	364821098144901	27N-09W-24 AAC 1 GSP Refuge GW WELL 1
+USGS	364831098120201	27N-09W-19 AAD 1 GSP Refuge GW WELL 2
+USGS	365942094504203	29N-23E-17 BCA 1 (SLIM JIM WELL)

@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:08:29 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 23:13:55 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,28 +15,40 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:08:29 EDT
+# query started 2017-04-17 23:13:55 EDT
 #
-# there are 192 sites matching the search criteria.
+# there are 368 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
 5s	15s	50s
+USGS	03086500	Mahoning River at Alliance OH
+USGS	03090000	Berlin Lake near Berlin Center OH
 USGS	03090500	Mahoning River bl Berlin Dam nr Berlin Center OH
+USGS	03091000	Milton Reservoir near Pricetown OH
 USGS	03091500	Mahoning River at Pricetown OH
+USGS	03092090	West Branch Mahoning River near Ravenna OH
+USGS	03092450	Michael J Kirwan Reservoir at Wayland OH
 USGS	03092460	West Branch Mahoning River at Wayland OH
 USGS	03093000	Eagle Creek at Phalanx Station OH
 USGS	03094000	Mahoning River at Leavittsburg OH
 USGS	03094704	Mosquito Creek near Greene Center OH
+USGS	03095000	Mosquito Creek Lake near Cortland OH
 USGS	03095500	Mosquito Creek bl Mosquito Ck Dam nr Cortland OH
 USGS	03098600	Mahoning River below West Ave at Youngstown OH
+USGS	03098700	Crab Creek at Youngstown OH
 USGS	03099500	Mahoning River at Lowellville OH
+USGS	03102950	Pymatuning Creek at Kinsman OH
 USGS	03109500	Little Beaver Creek near East Liverpool OH
 USGS	03110000	Yellow Creek near Hammondsville OH
+USGS	03110685	OHIO R AT NEW CUMBERLAND LOCK & DAM (UPPER), OH
+USGS	03110690	OHIO R AT NEW CUMBERLAND LOCK & DAM (LOWER), OH
 USGS	03111500	Short Creek near Dillonvale OH
 USGS	03111548	Wheeling Creek below Blaine OH
 USGS	03113990	Captina Creek at S.R. 148 at Armstrongs Mills OH
-USGS	03114306	Ohio River above Sardis, OH
+USGS	03114275	OHIO RIVER AT HANNIBAL LOCK AND DAM (UPPER), OH
+USGS	03114280	OHIO RIVER AT HANNIBAL LOCK AND DAM (LOWER), OH
+USGS	03114306	OHIO RIVER ABOVE SARDIS, OH
 USGS	03115400	Little Muskingum River at Bloomfield OH
 USGS	03115644	East Fork Duck Creek near Harrietsville OH
 USGS	03115712	West Fork Duck Creek at Macksburg OH
@@ -45,35 +57,88 @@ USGS	03116077	Chippewa Creek at Miller Rd at Sterling OH
 USGS	03117000	Tuscarawas River at Massillon OH
 USGS	03117500	Sandy Creek at Waynesburg OH
 USGS	03118000	Middle Branch Nimishillen Creek at Canton OH
+USGS	03118050	East Branch Nimishillen Creek at Louisville OH
+USGS	03118131	E Branch Nimishillen Crk at Trump Ave nr Canton OH
+USGS	03118209	West Branch Nimishillen Creek at North Canton OH
+USGS	03118258	Zimber Ditch at North Canton OH
+USGS	03118299	W Br Nimishillen Crk at Tuscarawas St at Canton OH
 USGS	03118500	Nimishillen Creek at North Industry OH
+USGS	03119341	McGuire Creek above Leesville Lake OH
+USGS	03119971	North Fork McGuire Creek near Carrollton OH
+USGS	03119979	Bear Hole Run near Carrollton OH
+USGS	03120000	Leesville Lake near Leesville OH
+USGS	03120500	McGuire Creek near Leesville OH
+USGS	03120820	Indian Fork at Dellroy OH
+USGS	03120869	Willow Run near Dellroy OH
+USGS	03120961	Unnamed Tributary near Dellroy OH
+USGS	03121000	Atwood Lake near New Cumberland OH
+USGS	03121500	Indian Fork bl Atwood Dam near New Cumberland OH
 USGS	03121850	Huff Run at Mineral City OH
-USGS	03124500	Sugar Creek at Strasburg OH
+USGS	03122500	Tuscarawas River below Dover Dam near Dover OH
+USGS	03124000	Sugar Creek bl Beach City Dam near Beach City OH
 USGS	03124800	Tuscarawas River at New Philadelphia OH
+USGS	03125338	Stillwater Creek above Piedmont Lake OH
+USGS	03125500	Piedmont Lake at Piedmont OH
+USGS	03125900	Boggs Fork at Piedmont OH
+USGS	03126000	Stillwater Creek at Piedmont OH
+USGS	03126395	Brushy Fork above Clendening Lake OH
+USGS	03126500	Clendening Lake at Tippecanoe OH
+USGS	03126910	Brushy Fork near Tippecanoe OH
 USGS	03127000	Stillwater Creek at Tippecanoe OH
+USGS	03127500	Stillwater Creek at Uhrichsville OH
+USGS	03127980	Clear Fork above Tappan Lake OH
+USGS	03127986	Standingstone Fork above Tappan Lake OH
+USGS	03127989	Beaverdam Run above Tappan Lake OH
+USGS	03128000	Tappan Lake at Tappan OH
+USGS	03128500	Little Stillwater Creek bl Tappan Dam at Tappan OH
 USGS	03129000	Tuscarawas River at Newcomerstown OH
 USGS	03129197	Black Fork Mohican River at Shelby OH
+USGS	03130000	Black Fork below Charles Mill Dam near Mifflin OH
+USGS	03131500	Black Fork at Loudonville OH
+USGS	03131898	Clear Fork Reservoir near Lexington OH
+USGS	03131982	Clear Fork Mohican River at Bellville OH
+USGS	03133500	Clear Fork bl Pleasant Hill Dam nr Perrysville OH
+USGS	03135000	Lake Fork bl Mohicanville Dam near Mohicanville OH
 USGS	03136500	Kokosing River at Mount Vernon OH
+USGS	03138500	Walhonding River below Mohawk Dam at Nellie OH
+USGS	03138791	Little Killbuck Creek near Burbank OH
 USGS	03139000	Killbuck Creek at Killbuck OH
+USGS	03139850	Walhonding River below Randle OH
 USGS	03140000	Mill Creek near Coshocton OH
 USGS	03140500	Muskingum River near Coshocton OH
+USGS	03140853	Seneca Fork above Senecaville Lake OH
+USGS	03140900	South Fork above Senecaville Lake OH
+USGS	03140950	Beaver Creek above Senecaville Lake OH
+USGS	03141000	Senecaville Lake near Senecaville OH
+USGS	03141500	Seneca Fork bl Senecaville Dam near Senecaville OH
+USGS	03141700	Wills Creek at Derwent OH
 USGS	03141870	Leatherwood Creek near Kipling OH
 USGS	03142000	Wills Creek at Cambridge OH
+USGS	03143500	Wills Creek bl Wills Creek Dam at Wills Creek OH
 USGS	03144000	Wakatomika Creek near Frazeysburg OH
 USGS	03144500	Muskingum River at Dresden OH
 USGS	03144816	South Fork Licking River at Kirkersville OH
+USGS	03144950	South Fork Licking River near Buckeye Lake OH
 USGS	03145000	South Fork Licking River near Hebron OH
 USGS	03145173	South Fork Licking River at Heath OH
 USGS	03145483	Raccoon Creek near Granville OH
 USGS	03145534	Raccoon Cr. bl. Wilson Street at Newark OH
 USGS	03146000	North Fork Licking River at Utica OH
+USGS	03146277	North Fork Licking River at Newark OH
 USGS	03146402	N. Fk. Licking River at E. Main St. at Newark OH
+USGS	03146405	North Fork Licking River at Ohio Street, Newark OH
 USGS	03146500	Licking River near Newark OH
+USGS	03147500	Licking River bl Dillon Dam near Dillon Falls OH
+USGS	03148000	Muskingum River at Zanesville OH-USGS 03148000
 USGS	03149500	Salt Creek near Chandlersville OH
 USGS	03150000	Muskingum River at McConnelsville OH
 USGS	03150500	Muskingum River at Beverly OH
+USGS	03150700	OHIO RIVER AT MARIETTA, OH
 USGS	03157000	Clear Creek near Rockbridge OH
 USGS	03157500	Hocking River at Enterprise OH
 USGS	03158200	Monday Creek at Doanville OH
+USGS	03158510	Sunday Creek near Burr Oak OH
+USGS	03159000	Sunday Creek at Glouster OH
 USGS	03159246	Sunday Creek below Millfield OH
 USGS	03159500	Hocking River at Athens OH
 USGS	03159540	Shade River near Chester OH
@@ -81,20 +146,29 @@ USGS	03201902	Raccoon Creek near Bolins Mills OH
 USGS	03201980	Little Raccoon Creek near Ewington OH
 USGS	03202000	Raccoon Creek at Adamsville OH
 USGS	03205470	Symmes Creek at Aid OH
+USGS	03216070	OHIO RIVER AT IRONTON, OH
+USGS	03217200	OHIO RIVER AT PORTSMOUTH, OH
 USGS	03217500	Scioto River at La Rue OH
 USGS	03219500	Scioto River near Prospect OH
 USGS	03220000	Mill Creek near Bellepoint OH
+USGS	03220500	O'Shaughnessy Reservoir near Dublin OH
+USGS	03220510	Scioto R. at O'Shaughnessy Dam near Dublin OH
 USGS	03221000	Scioto River below O'Shaughnessy Dam nr Dublin OH
+USGS	03221500	Griggs Reservoir at Columbus OH
 USGS	03221646	Scioto River at 5th Ave at Columbus OH
+USGS	03223000	Olentangy River at Claridon OH
 USGS	03223425	Whetstone Creek at Mt Gilead OH
 USGS	03225500	Olentangy River near Delaware OH
 USGS	03226800	Olentangy River near Worthington OH
 USGS	03227107	Olentangy River at J H Herrick Dr at Columbus OH
 USGS	03227500	Scioto River at Columbus OH
+USGS	03228039	Scioto River above Shadeville OH
 USGS	03228300	Big Walnut Creek at Sunbury OH
+USGS	03228400	Hoover Reservoir at Central College OH
 USGS	03228500	Big Walnut Creek at Central College OH
 USGS	03228750	Alum Creek near Kilbourne OH
 USGS	03228805	Alum Creek at Africa OH
+USGS	03229000	Alum Creek at Columbus OH
 USGS	03229500	Big Walnut Creek at Rees OH
 USGS	03229610	Scioto River near Commercial Point OH
 USGS	03229796	Walnut Creek at Ashville OH
@@ -103,8 +177,12 @@ USGS	03230450	Hellbranch Run near Harrisburg OH
 USGS	03230500	Big Darby Creek at Darbyville OH
 USGS	03230700	Scioto River at Circleville OH
 USGS	03230800	Deer Creek at Mount Sterling OH
+USGS	03230900	Deer Creek near Pancoastburg OH
+USGS	03231000	Deer Creek at Williamsport OH
 USGS	03231500	Scioto River at Chillicothe OH
 USGS	03232000	Paint Creek near Greenfield OH
+USGS	03232300	Rattlesnake Creek at Centerfield OH
+USGS	03232470	Paint Creek near Bainbridge OH
 USGS	03232500	Rocky Fork near Barretts Mills OH
 USGS	03234000	Paint Creek near Bourneville OH
 USGS	03234300	Paint Creek at Chillicothe OH
@@ -115,12 +193,23 @@ USGS	03237500	Ohio Brush Creek near West Union OH
 USGS	03238495	White Oak Creek above Georgetown OH
 USGS	03240000	Little Miami River near Oldtown OH
 USGS	03241500	Massies Creek at Wilberforce OH
+USGS	03242050	Little Miami River near Spring Valley OH
+USGS	03242340	Caesar Creek Lake at Wellman OH
+USGS	03242350	Caesar Creek near Wellman OH
 USGS	03244936	O'Bannon Creek near Loveland OH
 USGS	03245500	Little Miami River at Milford OH
 USGS	03246500	East Fork Little Miami River at Williamsburg OH
+USGS	03247040	East Fork Lake near Bantam OH
+USGS	03247041	E Fk Little Miami River bl Harsha Dam nr Bantam OH
 USGS	03247500	East Fork Little Miami River at Perintown OH
-USGS	03255349	Mill Creek at East Sharon Rd at Sharonville OH
+USGS	03255000	OHIO RIVER AT CINCINNATI, OH
+USGS	03255300	Mill Creek at Kemper Road at Sharonville OH
+USGS	03255390	Sharon Creek at Sharonville OH
+USGS	03255420	Mill Creek at Evendale OH
+USGS	03255500	Mill Creek at Reading OH
+USGS	03256500	West Fork Mill Creek Reservoir near Greenhills OH
 USGS	03259000	Mill Creek at Carthage OH
+USGS	03259198	Congress Run near Carthage OH
 USGS	03260706	Bokengehalas Creek at De Graff OH
 USGS	03261500	Great Miami River at Sidney OH
 USGS	03261950	Loramie Creek near Newport OH
@@ -134,17 +223,21 @@ USGS	03266000	Stillwater River at Englewood OH
 USGS	03266560	Mad River at West Liberty OH - 03266560
 USGS	03267000	Mad River near Urbana OH
 USGS	03267900	Mad River at St Paris Pike at Eagle City OH
+USGS	03268090	Clarence J Brown Reservoir near Springfield OH
 USGS	03269500	Mad River near Springfield OH
 USGS	03270000	Mad River near Dayton OH
 USGS	03270500	Great Miami River at Dayton OH
 USGS	03271000	Wolf Creek at Dayton OH
+USGS	03271207	G Miami River at Sellars Rd at West Carrollton OH
 USGS	03271300	Holes Creek near Kettering OH
+USGS	03271500	Great Miami River at Miamisburg OH
 USGS	03271601	Great Miami River below Miamisburg OH
 USGS	03271620	Great Miami River at Franklin OH
 USGS	03272000	Twin Creek near Germantown OH
 USGS	03272100	Great Miami River at Middletown OH
 USGS	03272700	Sevenmile Creek at Camden OH
 USGS	03274000	Great Miami River at Hamilton OH
+USGS	03274615	Great Miami River at Miamitown OH
 USGS	03322485	Beaver Creek near Celina OH
 USGS	04177000	Ottawa River at University of Toledo, Toledo OH
 USGS	04178000	ST. JOSEPH RIVER NEAR NEWVILLE, IN
@@ -156,6 +249,7 @@ USGS	04185318	Tiffin River near Evansport OH
 USGS	04185440	Unnamed Tributary to Lost Creek near Farmer OH
 USGS	04186500	Auglaize River near Fort Jennings OH
 USGS	04187100	Ottawa River at Lima OH
+USGS	04188100	Ottawa River near Kalida OH
 USGS	04188337	Blanchard River below Mt. Blanchard OH
 USGS	04188400	Blanchard River above Findlay OH
 USGS	04188433	Lye Creek above Findlay OH
@@ -165,11 +259,17 @@ USGS	04189131	Blanchard River at Gilboa OH
 USGS	04189174	Riley Creek below Pandora OH
 USGS	04189260	Blanchard River at Ottawa OH
 USGS	04190000	Blanchard River near Dupont OH
+USGS	04190200	Auglaize River near Dupont OH
 USGS	04191058	Little Auglaize River at Melrose OH
+USGS	04191378	Flatrock Creek at State Route 613 near Payne OH
+USGS	04191444	Little Flatrock Creek near Junction OH
 USGS	04191500	Auglaize River near Defiance OH
 USGS	04192500	Maumee River near Defiance OH
+USGS	04192574	West Creek near Hamler OH
+USGS	04192599	South Turkeyfoot Creek near Shunk OH
+USGS	04193490	Maumee River near Waterville OH
 USGS	04193500	Maumee River at Waterville OH
-USGS	04194085	Berger Ditch near Oregon OH
+USGS	04193999	Wolf Creek at Holland OH
 USGS	04195500	Portage River at Woodville OH
 USGS	04195820	Portage River near Elmore OH
 USGS	04196000	Sandusky River near Bucyrus OH
@@ -177,40 +277,116 @@ USGS	04196500	Sandusky River near Upper Sandusky OH
 USGS	04196800	Tymochtee Creek at Crawford OH
 USGS	04197100	Honey Creek at Melmore OH
 USGS	04197137	Sandusky River at Tiffin OH
+USGS	04197152	Rock Creek near Republic OH
 USGS	04197170	Rock Creek at Tiffin OH
 USGS	04198000	Sandusky River near Fremont OH
 USGS	04199000	Huron River at Milan OH
 USGS	04199155	Old Woman Creek at Berlin Rd near Huron OH
 USGS	04199500	Vermilion River near Vermilion OH
 USGS	04200500	Black River at Elyria OH
+USGS	04201400	West Branch Rocky River at West View OH
+USGS	04201404	Baker Creek at Olmsted Falls OH
+USGS	04201409	Unnamed Tributary to W B Rocky R near Berea OH
+USGS	04201423	Plum Creek near Olmsted Falls OH
+USGS	04201429	Unnamed Trib to W B Rocky R near Olmsted Falls OH
+USGS	04201484	East Branch Rocky River near Strongsville OH
+USGS	04201495	Baldwin Creek at Strongsville OH
 USGS	04201500	Rocky River near Berea OH
+USGS	04201515	Abram Creek at Brook Park OH
 USGS	04201526	Abram Creek at Kolthoff Drive at Brook Park OH
 USGS	04202000	Cuyahoga River at Hiram Rapids OH
 USGS	04206000	Cuyahoga River at Old Portage OH
 USGS	04206413	Indian Creek near Macedonia OH
+USGS	04206416	Brandywine Creek near Macedonia OH
 USGS	04206425	Cuyahoga River at Jaite OH
 USGS	04206448	Chippewa Creek in Chippewa Met Pk near Brecksville
 USGS	04207200	Tinkers Creek at Bedford OH
 USGS	04208000	Cuyahoga River at Independence OH
+USGS	04208347	Mill Creek at Garfield Pkwy at Garfield Heights OH
 USGS	04208460	Mill Creek at Garfield Hts OH
+USGS	04208502	Big Creek at Cleveland OH
 USGS	04208504	Cuyahoga River near Newburgh Heights OH
 USGS	04208700	Euclid Creek at Cleveland OH
 USGS	04209000	Chagrin River at Willoughby OH
 USGS	04212100	Grand River near Painesville OH
 USGS	04213000	Conneaut Creek at Conneaut OH
+OH015	383638082103300	G-2
 USGS	390735084333300	Upper inflow weir at St. Francis, Cincinnati OH
 USGS	390735084333301	Lower inflow weir at St. Francis, Cincinnati OH
+USGS	390735084333302	Lower outflow weir at St. Francis, Cincinnati OH
+OH015	390841082535800	PI-3
+OH015	391214084470100	H-1
+USGS	391817084254900	Wildermuth overflow channel near West Chester OH
+USGS	391905084381000	BU-179
+OH015	392016082272400	V-100
+USGS	392236084334800	BU-70
+OH015	392553081281600	WA-2
+USGS	392808084283600	BU-32
+USGS	392902084255900	BU-282
+OH015	393153083322000	FA-1
+USGS	393318084190100	W-10
+OH015	394438084335901	PR-2A
+USGS	394442084111600	MT-426
+OH015	394533084113800	MT-6
+USGS	394915084103300	MT-73
+USGS	395316083593100	CL-11
+USGS	395417082314200	Buckeye Lake near Millersport OH
+USGS	395521081260500	Weather Station at Seneca Lake OH
+OH015	395847084085500	MI-3A
 USGS	400150083053401	Inflow 1 to rain garden, Griggs Resv, Columbus OH
 USGS	400150083053402	Inflow 2 to rain garden, Griggs Resv, Columbus OH
 USGS	400153083053600	Outflow from rain garden, Griggs Resv, Columbus OH
+USGS	400540082540400	FR-523 AT NGWA
+USGS	401122084143400	MI-43
+USGS	401133081125300	Weather Station at Piedmont Lake OH
+USGS	401434081132100	Weather Station at Clendening Lake
+OH015	401707084103100	SH-5
+USGS	402120081134200	Weather Station at Tappan Lake OH
+USGS	402815081114300	Weather station at Leesville Lake OH
+USGS	402823080552300	Yellow Creek at Amsterdam OH
 USGS	402913084285400	Chickasaw Creek at St. Marys OH
 USGS	402958084363300	Coldwater Creek at Coldwater OH
+USGS	403127081171000	Weather Station at Atwood Lake OH
+OH015	404648083412600	HN-2A
+OH015	404655081553100	WN-8
 USGS	405051083391001	Eagle Creek tile 1 near Williamstown OH
 USGS	405051083391201	Eagle Creek waterway 1 near Williamstown OH
+USGS	405209082393200	Rain Gage at Reservoir Number Two at Shelby OH
+OH015	405215084335400	VW-1
+USGS	405536081192600	Precipitation gage near Hartville OH
+OH015	405843081182300	ST-33
 USGS	410014081362600	Wolf Creek Outlet O&E Canal
 USGS	410121081330300	Long Lake Feeder O&E Canal OH
 USGS	410433081312500	Lock 1 Outlet O&E Canal
+USGS	411305083453101	OARDC NWARS test plot 1 subsurface drainage
+USGS	411305083453102	OARDC NWARS test plot 1 surface drainage
+USGS	411305083453103	OARDC NWARS test plot 2 subsurface drainage
+USGS	411305083453104	OARDC NWARS test plot 2 surface drainage
+USGS	411305083453105	OARDC NWARS test plot 3 surface drainage
+USGS	411305083453106	OARDC NWARS test plot 3 subsurface drainage
+USGS	411305083453107	OARDC NWARS test plot 4 surface drainage
+USGS	411305083453108	OARDC NWARS test plot 4 subsurface drainage
+USGS	411305083453109	OARDC NWARS test plot 5 subsurface drainage
+USGS	411305083453110	OARDC NWARS test plot 5 surface drainage
+USGS	411305083453111	OARDC NWARS test plot 6 subsurface drainage
+USGS	411305083453112	OARDC NWARS test plot 6 surface drainage
+USGS	411305083453113	OARDC NWARS test plot 7 surface drainage
+USGS	411305083453114	OARDC NWARS test plot 7 subsurface drainage
+USGS	411305083453115	OARDC NWARS test plot 8 surface drainage
+USGS	411305083453116	OARDC NWARS test plot 8 subsurface drainage
+USGS	411305083453117	OARDC NWARS Rain gage
+OH015	411438081085200	PO-124
+USGS	411819082493900	E-10
 USGS	412141081412100	West Creek at Pleasant Valley Road near Parma OH
 USGS	412325081415500	West Creek at Ridgewood Road at Parma OH
+USGS	412331081123000	GE-22
 USGS	412453081395500	West Creek at Brooklyn Heights OH
+USGS	412533081221500	Cawrse rain gage near Chagrin Falls OH
 USGS	412624081450700	East Branch Big Creek at Brooklyn OH
+USGS	412733081380500	Weather Station at E76th St, Slavic Village OH
+USGS	412738081381400	CU-34
+USGS	412742081380801	Inflow to rain garden, 75 south, Cleveland OH
+USGS	412743081380801	Inflow to rain garden, 75 north, Cleveland OH
+USGS	412743081381400	Weather Station at E72nd St, Slavic Village OH
+OH015	413108084415300	WM-12
+USGS	414514081174400	Weather station near Headlands State Park OH

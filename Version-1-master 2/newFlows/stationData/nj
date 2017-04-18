@@ -1,0 +1,307 @@
+#
+#
+# US Geological Survey
+# retrieved: 2017-04-17 23:11:06 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
+#
+# The Site File stores location and general information about groundwater,
+# surface water, and meteorological sites
+# for sites in USA.
+#
+# The following selected fields are included in this output:
+#
+#  agency_cd       -- Agency
+#  site_no         -- Site identification number
+#  station_nm      -- Site name
+#
+#
+# query started 2017-04-17 23:11:06 EDT
+#
+# there are 283 sites matching the search criteria.
+#
+#
+agency_cd	site_no	station_nm
+5s	15s	50s
+USGS	01367805	Papakating Creek at Roys NJ
+USGS	01376950	Lake Tappan at Old Tappan NJ
+USGS	01377000	Hackensack River at Rivervale NJ
+USGS	01377370	Pascack Brook at Park Ridge NJ
+USGS	01377450	Woodcliff Lake at Hillsdale NJ
+USGS	01377451	Pascack Bk at Woodcliff Lk outlet at Hillsdale NJ
+USGS	01377500	Pascack Brook at Westwood NJ
+USGS	01378480	Oradell Reservoir at Oradell NJ
+USGS	01378500	Hackensack River at New Milford NJ
+USGS	01378570	Hackensack River at Hackensack, NJ
+USGS	01379000	Passaic River near Millington NJ
+USGS	01379500	Passaic River near Chatham NJ
+USGS	01379530	Canoe Brook near Summit NJ
+USGS	01379773	Green Pond Brook at Picatinny Arsenal NJ
+USGS	01379780	Green Pond Bk blw Picatinny Lk at Picatinny Ars NJ
+USGS	01379845	Rockaway River at Warren Street at Dover NJ
+USGS	01380450	Rockaway River at Main Street at Boonton NJ
+USGS	01380900	Boonton Reservoir at Boonton NJ
+USGS	01381000	Rockaway River below Reservoir at Boonton NJ
+USGS	01381400	Whippany River near Morristown NJ
+USGS	01381500	Whippany River at Morristown NJ
+USGS	01381800	Whippany River near Pine Brook NJ
+USGS	01381900	Passaic River at Pine Brook NJ
+USGS	01381940	Passaic R at Horse Neck Bridge near Pine Bk NJ
+USGS	01382210	Pequannock River at Oak Ridge NJ
+USGS	01382385	Pequannock River at Green Pond Junction NJ
+USGS	01382500	Pequannock River at Macopin Intake Dam NJ
+USGS	01382800	Pequannock River at Riverdale NJ
+USGS	01383000	Greenwood Lake at Awosting NJ
+USGS	01383500	Wanaque River at Awosting NJ
+USGS	01384500	Ringwood Creek near Wanaque NJ
+USGS	01386000	West Brook near Wanaque NJ
+USGS	01386990	Wanaque Reservoir at Wanaque NJ
+USGS	01387000	Wanaque River at Wanaque NJ
+USGS	01387500	Ramapo River near Mahwah NJ
+USGS	01387905	Ramapo River at West Oakland Avenue at Oakland NJ
+USGS	01387940	Ramapo River at Lakeside Ave at Pompton Lakes NJ
+USGS	01387998	Ramapo River above dam at Pompton Lakes NJ
+USGS	01388000	Ramapo River at Pompton Lakes NJ
+USGS	01388100	Ramapo River at Dawes Highway at Pompton NJ
+USGS	01388500	Pompton River at Pompton Plains NJ
+USGS	01388700	Beaver Dam Brook at Lincoln Park NJ
+USGS	01388910	Pompton River at Mountain View NJ
+USGS	01389005	Passaic River below Pompton Riv at Two Bridges NJ
+USGS	01389010	Passaic River at I-80 at Singac NJ
+USGS	01389492	Passaic River abv Beatties Dam at Little Falls NJ
+USGS	01389500	Passaic River at Little Falls NJ
+USGS	01389534	Peckman River at Ozone Ave at Verona NJ
+USGS	01389550	Peckman River at Little Falls NJ
+USGS	01389765	Molly Ann Brook at North Haledon NJ
+USGS	01389802	Passaic R at Passaic (Great) Falls at Paterson NJ
+USGS	01389890	Passaic River at Dundee Dam at Clifton NJ
+USGS	01390450	Saddle River at Upper Saddle River NJ
+USGS	01390500	Saddle River at Ridgewood NJ
+USGS	01391000	Hohokus Brook at Ho-Ho-Kus NJ
+USGS	01391102	Saddle River below Hohokus Brook at Paramus NJ
+USGS	01391500	Saddle River at Lodi NJ
+USGS	01392170	Third River at Bloomfield NJ
+USGS	01392500	Second River at Belleville NJ
+USGS	01392650	Passaic River at PVSC at Newark, NJ
+USGS	01393450	Elizabeth River at Ursino Lake at Elizabeth NJ
+USGS	01393890	East Branch Rahway River at Maplewood NJ
+USGS	01393895	East Br Rahway Riv at Millburn Ave at Millburn NJ
+USGS	01394000	West Branch Rahway River at Millburn NJ
+USGS	01394500	Rahway River near Springfield NJ
+USGS	01394620	Rahway River at Kenilworth NJ
+USGS	01395000	Rahway River at Rahway NJ
+USGS	01396000	Robinsons Branch at Rahway NJ
+USGS	01396060	Arthur Kill at Perth Amboy NJ
+USGS	01396500	South Branch Raritan River near High Bridge NJ
+USGS	01396582	Spruce Run at Main Street at Glen Gardner NJ
+USGS	01396660	Mulhockaway Creek at Van Syckel NJ
+USGS	01396790	Spruce Run Reservoir at Clinton NJ
+USGS	01396800	Spruce Run at Clinton NJ
+USGS	01397000	South Branch Raritan River at Stanton NJ
+USGS	01397420	SB Raritan R at Black Point Rd at Neshanic Sta NJ
+USGS	01398000	Neshanic River at Reaville NJ
+USGS	01398102	South Branch Raritan River at South Branch NJ
+USGS	01398500	North Branch Raritan River near Far Hills NJ
+USGS	01399100	Middle Brook at Burnt Mills NJ
+USGS	01399500	Lamington (Black) River near Pottersville NJ
+USGS	01399670	South B Rockaway Creek at Whitehouse Station NJ
+USGS	01399780	Lamington River at Burnt Mills NJ
+USGS	01399830	North Branch Raritan River at North Branch NJ
+USGS	01400000	North Branch Raritan River near Raritan NJ
+USGS	01400010	North Branch Raritan River at South Branch NJ
+USGS	01400360	Peters Brook at Mercer St at Somerville NJ
+USGS	01400500	Raritan River at Manville NJ
+USGS	01401000	Stony Brook at Princeton NJ
+USGS	01401650	Pike Run at Belle Mead NJ
+USGS	01401750	Millstone River at Griggstown NJ
+USGS	01402000	Millstone River at Blackwells Mills NJ
+USGS	01402500	Millstone River at Millstone NJ
+USGS	01402540	Millstone River at Weston NJ
+USGS	01402630	Royce Brook at Hamilton Road near Manville NJ
+USGS	01403060	Raritan River below Calco Dam at Bound Brook NJ
+USGS	01403150	West Branch Middle Brook near Martinsville NJ
+USGS	01403200	Middle Brook at Bound Brook NJ
+USGS	01403400	Green Brook at Seeley Mills NJ
+USGS	01403540	Stony Brook at Watchung NJ
+USGS	01403570	Stony Brook at North Plainfield NJ
+USGS	01403600	Green Brook at Rock Avenue at Plainfield NJ
+USGS	01403900	Bound Brook at Middlesex NJ
+USGS	01405030	Lawrence Brook at Westons Mills NJ
+USGS	01405400	Manalapan Brook at Spotswood NJ
+USGS	01406050	Deep Run at Old Bridge NJ
+USGS	01407081	Raritan Bay at Keansburg, NJ
+USGS	01407290	Big Brook near Marlboro NJ
+USGS	01407498	Swimming River Reservoir near Red Bank NJ
+USGS	01407500	Swimming River near Red Bank NJ
+USGS	01407600	Shrewsbury River at Sea Bright, NJ
+USGS	01407705	Shark River near Neptune City NJ
+USGS	01407760	Jumping Brook near Neptune City NJ
+USGS	01407770	Shark River at Belmar, NJ
+USGS	01408000	Manasquan River at Squankum NJ
+USGS	01408029	Manasquan River near Allenwood NJ
+USGS	01408048	Watson Creek at Manasquan, NJ
+USGS	01408120	North Branch Metedeconk River near Lakewood NJ
+USGS	01408168	Barnegat Bay at Mantoloking , NJ
+USGS	01408205	Barnegat Bay at Route 37 bridge near Bay Shore NJ
+USGS	01408500	Toms River near Toms River NJ
+USGS	01408900	Cedar Creek at Western Blvd near Lanoka Harbor NJ
+USGS	01409110	Barnegat Bay at Waretown, NJ
+USGS	01409125	Barnegat Bay at Barnegat Light, NJ
+USGS	01409146	East Thorofare at Ship Bottom, NJ
+USGS	01409280	Westecunk Creek at Stafford Forge NJ
+USGS	01409335	Little Egg Inlet near Tuckerton, NJ
+USGS	01409400	Mullica River near Batsto NJ
+USGS	01409810	West Branch Wading River near Jenkins NJ
+USGS	01410000	Oswego River at Harrisville NJ
+USGS	01410150	East Branch Bass River near New Gretna NJ
+USGS	01410500	Absecon Creek at Absecon NJ
+USGS	01410510	Absecon Creek at Absecon, NJ
+USGS	01410560	Inside Thorofare at Atlantic City, NJ
+USGS	01410600	Absecon Channel at Atlantic City, NJ
+USGS	01410784	Great Egg Harbor R near Sicklerville NJ
+USGS	01410820	Great Egg Harbor River near Blue Anchor NJ
+USGS	01411000	Great Egg Harbor River at Folsom NJ
+USGS	01411300	Tuckahoe River at Head of River NJ
+USGS	01411320	Great Egg Harbor Bay at Ocean City, NJ
+USGS	01411330	Beach Thorofare at Margate, NJ
+USGS	01411350	Ludlum Thorofare at Sea Isle City, NJ
+USGS	01411355	Ingram Thorofare at Avalon, NJ
+USGS	01411360	Great Channel at Stone Harbor, NJ
+USGS	01411390	Cape May Harbor at Cape May, NJ
+USGS	01411435	Sluice Creek at South Dennis, NJ
+USGS	01411456	Little Ease Run near Clayton NJ
+USGS	01411500	Maurice River at Norma NJ
+USGS	01412150	Maurice River at Bivalve, NJ
+USGS	01412800	Cohansey River at Seeley NJ
+USGS	01413038	Cohansey River at Greenwich, NJ
+USGS	01440000	Flat Brook near Flatbrookville NJ
+USGS	01440200	Delaware River near Delaware Water Gap Pa
+USGS	01443280	East Branch Paulins Kill near Lafayette NJ
+USGS	01443500	Paulins Kill at Blairstown NJ
+USGS	01443900	Yards Creek near Blairstown NJ
+USGS	01445000	Pequest River at Huntsville NJ
+USGS	01445500	Pequest River at Pequest NJ
+USGS	01446000	Beaver Brook near Belvidere NJ
+USGS	01446500	Delaware River at Belvidere NJ
+USGS	01446995	Delaware River at US Route 22 at Phillipsburg NJ
+USGS	01455400	Lake Hopatcong at Landing NJ
+USGS	01455500	Musconetcong River at outlet of Lake Hopatcong NJ
+USGS	01457000	Musconetcong River near Bloomsbury NJ
+USGS	01457500	Delaware River at Riegelsville NJ
+USGS	01458500	Delaware River at Frenchtown NJ
+USGS	01460378	D&R Ca feeder US of gate at Washington Crossing NJ
+USGS	01460380	Del and Rar Ca feeder at Washington Crossing NJ
+USGS	01460415	Del and Rar fdr Ca at Perdicaris Pl at Trenton NJ
+USGS	01460440	Delaware and Raritan Canal at Port Mercer NJ
+USGS	01460500	Delaware and Raritan Canal at Kingston NJ
+USGS	01460595	Del & Rar Canal at Landing La at New Brunswick NJ
+USGS	01461500	Delaware River at Stockton NJ
+USGS	01462000	Delaware River at Lambertville NJ
+USGS	01462500	Delaware River at Washington Crossing NJ
+USGS	01463500	Delaware River at Trenton NJ
+USGS	01463620	Assunpink Creek near Clarksville NJ
+USGS	01463740	Shabakunk C at Sylva Lake Dam at Ewingville NJ
+USGS	01463882	Assunpink Creek below STP near Mercerville NJ
+USGS	01464000	Assunpink Creek at Trenton NJ
+USGS	01464500	Crosswicks Creek at Extonville NJ
+USGS	01465850	South Branch Rancocas Creek at Vincentown NJ
+USGS	01465880	Southwest Branch Rancocas Creek at Medford NJ
+USGS	01466500	McDonalds Branch in Byrne State Forest NJ
+USGS	01466900	Greenwood Branch at New Lisbon NJ
+USGS	01467000	North Branch Rancocas Creek at Pemberton NJ
+USGS	01467005	NB Rancocas C at Iron Works Park at Mount Holly NJ
+USGS	01467081	South Branch Pennsauken Creek at Cherry Hill NJ
+USGS	01467150	Cooper River at Haddonfield NJ
+USGS	01475001	Mantua Creek at East Holly Avenue at Pitman NJ
+USGS	01477120	Raccoon Creek near Swedesboro NJ
+USGS	01482500	Salem River at Woodstown NJ
+USGS	385655074532601	Cape May USGS weather station NJ
+USGS	390156074533401	090333-- Pump Pond N Obs
+USGS	390325074455401	Stone Harbor USGS weather station NJ
+USGS	392239074252401	Atlantic City USGS weather station NJ
+USGS	392245075211901	Greenwich USGS heated rain gage NJ
+USGS	392731075092401	110042-- Vocational School 2 Obs
+USGS	392732075092401	110043-- Vocational School 1 Obs
+USGS	392733075092401	110044-- Vocational School 3 Obs
+USGS	393333074442401	010256-- Scholler 1 Obs
+USGS	393541074510601	Folsom USGS heated rain gage NJ
+USGS	393838075194901	Woodstown USGS unheated rain gage NJ
+USGS	394236075272101	330342-- Penns Grove 24
+USGS	394354075025901	151033-- Washington Twp 1 Obs
+USGS	394540074062901	Barnegat Light USGS weather station NJ
+USGS	394728074452501	Shamong USGS heated rain gage NJ
+USGS	395150074284201	050689-- Lebanon Sf 23-D Obs
+USGS	395343074492501	Medford USGS unheated rain gage NJ
+USGS	395722074374001	New Lisbon USGS unheated rain gage NJ
+USGS	395928074502701	051476-- Rancocas St Pk MW3
+USGS	400232074213201	291060-- Lnas-Ec Obs
+USGS	400530074090901	Lakewood USGS unheated rain gage NJ
+USGS	400642074024101	Manasquan USGS weather station NJ
+USGS	401616074462401	Ewingville USGS unheated rain gage NJ
+USGS	401748074520101	Washington Crossing USGS heated rain gage NJ
+USGS	401804074432601	210364-- Cranston Farms 15 Obs
+USGS	402143074185201	230104-- Morrell 1 Obs
+USGS	402151074525301	190251-- Corsalo Rd 1 Obs
+USGS	402156073582901	Sea Bright USGS weather station NJ
+USGS	402414074584401	Stockton USGS heated rain gage NJ
+USGS	402454074205601	Old Bridge USGS heated rain gage NJ
+USGS	402504074414201	Skillman USGS unheated rain gage NJ
+USGS	402553074271701	230070-- Fischer Obs
+USGS	402758074431301	Sourland Mountain USGS unheated rain gage NJ
+USGS	402805074385601	Belle Mead USGS unheated rain gage NJ
+USGS	402955074312501	Middlebush USGS unheated rain gage NJ
+USGS	403328074434901	Readington USGS unheated rain gage NJ
+USGS	403338074325301	Bound Brook USGS heated rain gage NJ
+USGS	403430074365701	Somerville (Mercer St) USGS unheated rain gage NJ
+USGS	403455074514801	190276-- Environmental Ctr 1 Obs
+USGS	403506074302801	Middlesex USGS heated rain gage NJ
+USGS	403517074452501	190270-- Readington 11 Obs
+USGS	403541075112301	Riegelsville USGS heated rain gage NJ
+USGS	403644074352701	Martinsville USGS unheated rain gage NJ
+USGS	403719075091801	410387-- MW82
+USGS	403811074270501	Watchung USGS unheated rain gage NJ
+USGS	403824074545601	Clinton USGS heated rain gage NJ
+USGS	404059074223301	Mountainside USGS unheated rain gage NJ
+USGS	404106074171901	390119-- Union County Park Obs
+USGS	404217074294701	Basking Ridge USGS unheated rain gage NJ
+USGS	404218074413701	Pottersville USGS unheated rain gage NJ
+USGS	404223074381101	Far Hills USGS unheated rain gage NJ
+USGS	404247074072301	Newark USGS unheated rain gage NJ
+USGS	404405074161401	Maplewood USGS unheated rain gage NJ
+USGS	404440074211301	Canoe Brook USGS heated rain gage NJ
+USGS	404550074171600	Orange Reservoir USGS unheated rain gage NJ
+USGS	404751074250601	Morristown  USGS unheated rain gage NJ
+USGS	404822074442601	Four Bridges USGS unheated rain gage NJ
+USGS	404934074400501	271190-- Black River 10 Obs
+USGS	404955074171101	Essex Fells USGS unheated rain gage NJ
+USGS	405002074310001	Morris Plains USGS unheated rain gage NJ
+USGS	405030074380901	Ironia USGS unheated rain gage NJ
+USGS	405037074140501	Verona USGS unheated rain gage NJ
+USGS	405219074132001	Little Falls USGS unheated rain gage NJ
+USGS	405236074051801	Lodi USGS unheated rain gage NJ
+USGS	405305074105401	Garrett Mountain USGS unheated rain gage NJ
+USGS	405343074235201	Boonton Reservoir USGS heated rain gage NJ
+USGS	405424074355001	West Wharton USGS unheated rain gage NJ
+USGS	405437074151001	Wayne USGS unheated rain gage NJ
+USGS	405502074395601	Lake Hopatcong USGS heated rain gage NJ
+USGS	405529074180901	Lincoln Park USGS unheated rain gage NJ
+USGS	405658074332601	Picatinny Arsenal USGS heated rain gage NJ
+USGS	405811074165501	Pompton Plains USGS heated rain gage NJ
+USGS	405934074120201	Franklin Lakes USGS unheated rain gage NJ
+USGS	405934074164401	Pompton Lakes USGS heated rain gage NJ
+USGS	405939074084301	Ridgewood USGS unheated rain gage NJ
+USGS	410043074025301	Woodcliff Lake USGS unheated rain gage NJ
+USGS	410139074150001	Oakland USGS unheated rain gage NJ
+USGS	410148074252901	Charlottesburg USGS unheated rain gage NJ
+USGS	410207074270001	270028-- Green Pond 5 Obs
+USGS	410212074022101	Park Ridge USGS heated rain gage NJ
+USGS	410230074300001	Oak Ridge Reservoir USGS unheated rain gage NJ
+USGS	410239074173501	Wanaque USGS heated rain gage NJ
+USGS	410449074483301	370205-- Swartswood Park 5 Obs
+USGS	410622074570901	Flatbrookville USGS heated rain gage NJ
+USGS	410639074293001	Cannistear Reservoir USGS unheated rain gage NJ
+USGS	410716074141601	Ringwood USGS unheated rain gage NJ
+USGS	410800074204301	West Milford USGS unheated rain gage NJ
+USGS	410811074182801	Monksville  USGS unheated rain gage NJ
+USGS	410914074540401	370202-- Taylor Obs
+USGS	411011074392501	Roys USGS unheated rain gage NJ
+USGS	411130074252501	Wawayanda USGS unheated rain gage NJ
