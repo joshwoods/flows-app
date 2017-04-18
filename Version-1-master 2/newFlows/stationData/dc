@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:04:37 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 22:48:34 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,14 +15,16 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:04:37 EDT
+# query started 2017-04-17 22:48:34 EDT
 #
-# there are 4 sites matching the search criteria.
+# there are 6 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
 5s	15s	50s
+USGS	01647600	POTOMAC RIVER AT WISCONSIN AVE, WASHINGTON, DC
 USGS	01648000	ROCK CREEK AT SHERRILL DRIVE WASHINGTON, DC
 USGS	01648010	ROCK CREEK AT JOYCE RD WASHINGTON, DC
+USGS	01651750	ANACOSTIA RIVER AQUATIC GARDENS AT WASHINGTON, DC
 USGS	01651770	HICKEY RUN AT NATIONAL ARBORETUM AT WASHINGTON, DC
 USGS	01651800	WATTS BRANCH AT WASHINGTON, DC

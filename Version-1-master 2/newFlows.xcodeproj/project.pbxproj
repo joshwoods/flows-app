@@ -83,12 +83,6 @@
 		427B345A1CFE96C50032C5D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B34591CFE96C50032C5D5 /* SystemConfiguration.framework */; };
 		427B345C1CFE96D10032C5D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B345B1CFE96D10032C5D5 /* UIKit.framework */; };
 		4295AA571C9CB7CA006C729C /* NewAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4295AA561C9CB7CA006C729C /* NewAboutViewController.m */; };
-		42A34C191BBD8CAD004F7FB7 /* ct in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE51BBD8CAD004F7FB7 /* ct */; };
-		42A34C1A1BBD8CAD004F7FB7 /* dc in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE61BBD8CAD004F7FB7 /* dc */; };
-		42A34C1B1BBD8CAD004F7FB7 /* de in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE71BBD8CAD004F7FB7 /* de */; };
-		42A34C1C1BBD8CAD004F7FB7 /* fl in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE81BBD8CAD004F7FB7 /* fl */; };
-		42A34C1D1BBD8CAD004F7FB7 /* ga in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BE91BBD8CAD004F7FB7 /* ga */; };
-		42A34C1E1BBD8CAD004F7FB7 /* gu in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BEA1BBD8CAD004F7FB7 /* gu */; };
 		42A34C1F1BBD8CAD004F7FB7 /* hi in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BEB1BBD8CAD004F7FB7 /* hi */; };
 		42A34C201BBD8CAD004F7FB7 /* ia in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BEC1BBD8CAD004F7FB7 /* ia */; };
 		42A34C211BBD8CAD004F7FB7 /* id in Resources */ = {isa = PBXBuildFile; fileRef = 42A34BED1BBD8CAD004F7FB7 /* id */; };
@@ -208,6 +202,12 @@
 		9163620E1EA5B51A00E6D982 /* az in Resources */ = {isa = PBXBuildFile; fileRef = 9163620D1EA5B51A00E6D982 /* az */; };
 		916362101EA5B55700E6D982 /* ca in Resources */ = {isa = PBXBuildFile; fileRef = 9163620F1EA5B55700E6D982 /* ca */; };
 		916362121EA5B5A300E6D982 /* co in Resources */ = {isa = PBXBuildFile; fileRef = 916362111EA5B5A300E6D982 /* co */; };
+		916362141EA5B5E700E6D982 /* ct in Resources */ = {isa = PBXBuildFile; fileRef = 916362131EA5B5E700E6D982 /* ct */; };
+		916362161EA5B60F00E6D982 /* dc in Resources */ = {isa = PBXBuildFile; fileRef = 916362151EA5B60F00E6D982 /* dc */; };
+		916362181EA5B63500E6D982 /* de in Resources */ = {isa = PBXBuildFile; fileRef = 916362171EA5B63500E6D982 /* de */; };
+		9163621A1EA5B67500E6D982 /* fl in Resources */ = {isa = PBXBuildFile; fileRef = 916362191EA5B67500E6D982 /* fl */; };
+		9163621C1EA5B6B300E6D982 /* ga in Resources */ = {isa = PBXBuildFile; fileRef = 9163621B1EA5B6B300E6D982 /* ga */; };
+		9163621E1EA5B6ED00E6D982 /* gu in Resources */ = {isa = PBXBuildFile; fileRef = 9163621D1EA5B6ED00E6D982 /* gu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,12 +322,6 @@
 		427B345B1CFE96D10032C5D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4295AA551C9CB7CA006C729C /* NewAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAboutViewController.h; sourceTree = "<group>"; };
 		4295AA561C9CB7CA006C729C /* NewAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAboutViewController.m; sourceTree = "<group>"; };
-		42A34BE51BBD8CAD004F7FB7 /* ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct; sourceTree = "<group>"; };
-		42A34BE61BBD8CAD004F7FB7 /* dc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dc; sourceTree = "<group>"; };
-		42A34BE71BBD8CAD004F7FB7 /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = de; sourceTree = "<group>"; };
-		42A34BE81BBD8CAD004F7FB7 /* fl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fl; sourceTree = "<group>"; };
-		42A34BE91BBD8CAD004F7FB7 /* ga */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ga; sourceTree = "<group>"; };
-		42A34BEA1BBD8CAD004F7FB7 /* gu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gu; sourceTree = "<group>"; };
 		42A34BEB1BBD8CAD004F7FB7 /* hi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hi; sourceTree = "<group>"; };
 		42A34BEC1BBD8CAD004F7FB7 /* ia */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ia; sourceTree = "<group>"; };
 		42A34BED1BBD8CAD004F7FB7 /* id */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = id; sourceTree = "<group>"; };
@@ -463,6 +457,12 @@
 		9163620D1EA5B51A00E6D982 /* az */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = az; sourceTree = "<group>"; };
 		9163620F1EA5B55700E6D982 /* ca */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca; sourceTree = "<group>"; };
 		916362111EA5B5A300E6D982 /* co */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = co; sourceTree = "<group>"; };
+		916362131EA5B5E700E6D982 /* ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct; sourceTree = "<group>"; };
+		916362151EA5B60F00E6D982 /* dc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dc; sourceTree = "<group>"; };
+		916362171EA5B63500E6D982 /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = de; sourceTree = "<group>"; };
+		916362191EA5B67500E6D982 /* fl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fl; sourceTree = "<group>"; };
+		9163621B1EA5B6B300E6D982 /* ga */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ga; sourceTree = "<group>"; };
+		9163621D1EA5B6ED00E6D982 /* gu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gu; sourceTree = "<group>"; };
 		C12774532E8824C2AB33B483 /* Pods-newFlows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlows.release.xcconfig"; path = "Pods/Target Support Files/Pods-newFlows/Pods-newFlows.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -649,12 +649,12 @@
 				9163620D1EA5B51A00E6D982 /* az */,
 				9163620F1EA5B55700E6D982 /* ca */,
 				916362111EA5B5A300E6D982 /* co */,
-				42A34BE51BBD8CAD004F7FB7 /* ct */,
-				42A34BE61BBD8CAD004F7FB7 /* dc */,
-				42A34BE71BBD8CAD004F7FB7 /* de */,
-				42A34BE81BBD8CAD004F7FB7 /* fl */,
-				42A34BE91BBD8CAD004F7FB7 /* ga */,
-				42A34BEA1BBD8CAD004F7FB7 /* gu */,
+				916362131EA5B5E700E6D982 /* ct */,
+				916362151EA5B60F00E6D982 /* dc */,
+				916362171EA5B63500E6D982 /* de */,
+				916362191EA5B67500E6D982 /* fl */,
+				9163621B1EA5B6B300E6D982 /* ga */,
+				9163621D1EA5B6ED00E6D982 /* gu */,
 				42A34BEB1BBD8CAD004F7FB7 /* hi */,
 				42A34BEC1BBD8CAD004F7FB7 /* ia */,
 				42A34BED1BBD8CAD004F7FB7 /* id */,
@@ -1061,7 +1061,6 @@
 				916362121EA5B5A300E6D982 /* co in Resources */,
 				4272F6EC1C1CC8140062161F /* abbreviations.plist in Resources */,
 				42C8A95A1C8A17A9006BF832 /* city.json in Resources */,
-				42A34C1D1BBD8CAD004F7FB7 /* ga in Resources */,
 				9163620E1EA5B51A00E6D982 /* az in Resources */,
 				42A34C3F1BBD8CAD004F7FB7 /* va in Resources */,
 				42296B731D5ECF8E004F38B1 /* wind@2x.png in Resources */,
@@ -1083,11 +1082,13 @@
 				42A34C371BBD8CAD004F7FB7 /* pa in Resources */,
 				4214C3E61CDEF0220016B473 /* Localizable_full.strings in Resources */,
 				4253B96D1C96669A008AF6BA /* addStation@2x.png in Resources */,
+				916362141EA5B5E700E6D982 /* ct in Resources */,
 				42BEA0401CFCD09C0064593D /* AddIconEmpty@3x.png in Resources */,
 				42296B711D5ECF8E004F38B1 /* snow@3x.png in Resources */,
 				4272F6ED1C1CC8140062161F /* states.plist in Resources */,
 				42A34C3C1BBD8CAD004F7FB7 /* tn in Resources */,
 				4253B9671C937CE3008AF6BA /* BlueMapIcon@2x.png in Resources */,
+				9163621C1EA5B6B300E6D982 /* ga in Resources */,
 				42A34C401BBD8CAD004F7FB7 /* vi in Resources */,
 				42734B151C7C1C3D0061FAA2 /* icon40@2x.png in Resources */,
 				42EB71C61C38B94100D6215E /* 04d.png in Resources */,
@@ -1106,6 +1107,7 @@
 				42EB71A91C38B94100D6215E /* BackIcon@3x.png in Resources */,
 				42296B651D5ECF8E004F38B1 /* partly-cloudy-day@3x.png in Resources */,
 				42A34C321BBD8CAD004F7FB7 /* nv in Resources */,
+				916362161EA5B60F00E6D982 /* dc in Resources */,
 				42296B5C1D5ECF8E004F38B1 /* clear-night@3x.png in Resources */,
 				42A34C361BBD8CAD004F7FB7 /* or in Resources */,
 				42EB71E91C38B94100D6215E /* 50n@3x.png in Resources */,
@@ -1115,17 +1117,16 @@
 				42296B601D5ECF8E004F38B1 /* fog.png in Resources */,
 				42A34C391BBD8CAD004F7FB7 /* ri in Resources */,
 				42734B1A1C7C23740061FAA2 /* Default-568h@2x.png in Resources */,
+				916362181EA5B63500E6D982 /* de in Resources */,
 				4253B9681C937CE3008AF6BA /* BlueMapIcon@3x.png in Resources */,
 				42734B141C7C1C3D0061FAA2 /* icon29@3x.png in Resources */,
 				42296B681D5ECF8E004F38B1 /* partly-cloudy-night@3x.png in Resources */,
 				42A34C421BBD8CAD004F7FB7 /* wa in Resources */,
 				42A34C2F1BBD8CAD004F7FB7 /* ne in Resources */,
-				42A34C1E1BBD8CAD004F7FB7 /* gu in Resources */,
 				42296B6E1D5ECF8E004F38B1 /* sleet@3x.png in Resources */,
 				42EB71C51C38B94100D6215E /* 03n@3x.png in Resources */,
 				42A34C3A1BBD8CAD004F7FB7 /* sc in Resources */,
 				4253B9661C937CE3008AF6BA /* BlueMapIcon.png in Resources */,
-				42A34C191BBD8CAD004F7FB7 /* ct in Resources */,
 				42EB71C31C38B94100D6215E /* 03n.png in Resources */,
 				42D9FD331D58F33000C44584 /* na@2x.png in Resources */,
 				42734B181C7C1C3D0061FAA2 /* icon60@3x.png in Resources */,
@@ -1169,7 +1170,6 @@
 				42296B701D5ECF8E004F38B1 /* snow@2x.png in Resources */,
 				4253B9621C9379BA008AF6BA /* close@3x.png in Resources */,
 				42EB71DA1C38B94100D6215E /* 11d@3x.png in Resources */,
-				42A34C1B1BBD8CAD004F7FB7 /* de in Resources */,
 				42296B661D5ECF8E004F38B1 /* partly-cloudy-night.png in Resources */,
 				42EB71DD1C38B94100D6215E /* 11n@3x.png in Resources */,
 				4253B9761C970F1B008AF6BA /* button_normal@2x.png in Resources */,
@@ -1183,16 +1183,15 @@
 				42EB71D61C38B94100D6215E /* 10n@2x.png in Resources */,
 				42A34C431BBD8CAD004F7FB7 /* wi in Resources */,
 				42BEA03E1CFCD09C0064593D /* AddIconEmpty.png in Resources */,
-				42A34C1A1BBD8CAD004F7FB7 /* dc in Resources */,
 				42296B741D5ECF8E004F38B1 /* wind@3x.png in Resources */,
 				42EB71D11C38B94100D6215E /* 09n@3x.png in Resources */,
 				42EB71CB1C38B94100D6215E /* 04n@3x.png in Resources */,
 				42EB71D71C38B94100D6215E /* 10n@3x.png in Resources */,
 				42734B131C7C1C3D0061FAA2 /* icon29@2x.png in Resources */,
+				9163621E1EA5B6ED00E6D982 /* gu in Resources */,
 				42296B611D5ECF8E004F38B1 /* fog@2x.png in Resources */,
 				4253B96C1C96669A008AF6BA /* addStation.png in Resources */,
 				9163620C1EA5B4D500E6D982 /* ar in Resources */,
-				42A34C1C1BBD8CAD004F7FB7 /* fl in Resources */,
 				42EB71A81C38B94100D6215E /* BackIcon@2x.png in Resources */,
 				42A34C211BBD8CAD004F7FB7 /* id in Resources */,
 				42734B161C7C1C3D0061FAA2 /* icon40@3x.png in Resources */,
@@ -1203,6 +1202,7 @@
 				423ED4A81BB5BC58007772C8 /* Assets.xcassets in Resources */,
 				423ED4A61BB5BC58007772C8 /* Main.storyboard in Resources */,
 				42EB71A41C38B94100D6215E /* background.png in Resources */,
+				9163621A1EA5B67500E6D982 /* fl in Resources */,
 				42296B6C1D5ECF8E004F38B1 /* sleet.png in Resources */,
 				42EB71B31C38B94100D6215E /* infoicon@3x.png in Resources */,
 				42296B5F1D5ECF8E004F38B1 /* cloudy@3x.png in Resources */,
