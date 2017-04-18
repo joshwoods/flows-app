@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:05:58 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 22:54:47 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,66 +15,82 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:05:58 EDT
+# query started 2017-04-17 22:54:47 EDT
 #
-# there are 150 sites matching the search criteria.
+# there are 221 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
 5s	15s	50s
+USGS	05387320	Upper Iowa River at Lime Springs, IA
+USGS	05387405	Upper Iowa River at Kendallville, IA
 USGS	05387440	Upper Iowa River at Bluffton, IA
+USGS	05387490	Dry Run Creek near Decorah, IA
 USGS	05387500	Upper Iowa River at Decorah, IA
 USGS	05388250	Upper Iowa River near Dorchester, IA
+USGS	05388310	Waterloo Creek near Dorchester, IA
 USGS	05389000	Yellow River near Ion, IA
 USGS	05389400	Bloody Run Creek near Marquette, IA
+USGS	05389500	Mississippi River at McGregor, IA
+USGS	05411500	Mississippi River at Clayton, IA
 USGS	05411600	Turkey River at Spillville, IA
 USGS	05411850	Turkey River near Eldorado, IA
 USGS	05411900	Otter Creek at Elgin, IA
 USGS	05412020	Turkey River above French Hollow Cr at Elkader, IA
-USGS	05412340	Volga River at Fayette, IA
 USGS	05412400	Volga River at Littleport, IA
 USGS	05412500	Turkey River at Garber, IA
+USGS	05414400	Middle Fk Little Maquoketa R nr Rickardsville, IA
 USGS	05416900	Maquoketa River at Manchester, IA
-USGS	05418110	NF Maquoketa River below Bear Cr at Dyersville, IA
 USGS	05418400	North Fork Maquoketa River near Fulton, IA
 USGS	05418500	Maquoketa River near Maquoketa, IA
 USGS	05418720	Maquoketa River near Green Island, IA
+USGS	05420460	Beaver Slough at 3rd Street at Clinton, IA
 USGS	05420500	Mississippi River at Clinton, IA
 USGS	05420680	Wapsipinicon River near Tripoli, IA
+USGS	05420850	Little Wapsipinicon River near Oran, IA
 USGS	05421000	Wapsipinicon River at Independence, IA
-USGS	05421682	Buffalo Creek South of Prairieburg, IA
 USGS	05421740	Wapsipinicon River near Anamosa, IA
 USGS	05421760	Wapsipinicon River at Oxford Mills, IA
+USGS	05421890	Silver Creek at Welton, IA
 USGS	05422000	Wapsipinicon River near De Witt, IA
-USGS	05422560	Duck Creek at 110th Avenue at Davenport, IA
+USGS	05422470	Crow Creek at Bettendorf, IA
 USGS	05422600	Duck Creek at DC Golf Course at Davenport, IA
+USGS	05448400	West Main Drainage Ditch 1 and 2 near Britt, IA
 USGS	05449500	Iowa River near Rowan, IA
+USGS	05451080	South Fork Iowa River near Blairsburg, IA
 USGS	05451210	South Fork Iowa River NE of New Providence, IA
 USGS	05451500	Iowa River at Marshalltown, IA
 USGS	05451700	Timber Creek near Marshalltown, IA
 USGS	05451770	Iowa River at County Highway E49 near Tama, IA
 USGS	05451900	Richland Creek near Haven, IA
+USGS	05451955	Stein Creek near Clutier, IA
 USGS	05452000	Salt Creek near Elberon, IA
 USGS	05452200	Walnut Creek near Hartwick, IA
 USGS	05452500	Iowa River near Belle Plaine, IA
 USGS	05453000	Big Bear Creek at Ladora, IA
 USGS	05453100	Iowa River at Marengo, IA
+USGS	05453200	Price Creek at Amana, IA
 USGS	05453520	Iowa River below Coralville Dam nr Coralville, IA
 USGS	05454000	Rapid Creek near Iowa City, IA
 USGS	05454090	Muddy Creek at Coralville, IA
 USGS	05454220	Clear Creek near Oxford, IA
 USGS	05454300	Clear Creek near Coralville, IA
 USGS	05454500	Iowa River at Iowa City, IA
+USGS	05455010	South Branch Ralston Creek at Iowa City, IA
 USGS	05455100	Old Mans Creek near Iowa City, IA
+USGS	05455230	Deep River at Deep River, IA
 USGS	05455500	English River at Kalona, IA
 USGS	05455700	Iowa River near Lone Tree, IA
+USGS	05457440	Deer Creek near Carpenter, IA
 USGS	05457505	Cedar River at Osage, IA
 USGS	05457700	Cedar River at Charles City, IA
 USGS	05458000	Little Cedar River near Ionia, IA
 USGS	05458300	Cedar River at Waverly, IA
 USGS	05458500	Cedar River at Janesville, IA
 USGS	05458900	West Fork Cedar River at Finchford, IA
+USGS	05459490	Spring Creek near Mason City, IA
 USGS	05459500	Winnebago River at Mason City, IA
+USGS	05460000	Clear Lake at Clear Lake, IA
 USGS	05460400	Shell Rock River near Rockford, IA
 USGS	05462000	Shell Rock River at Shell Rock, IA
 USGS	05463000	Beaver Creek at New Hartford, IA
@@ -85,39 +101,54 @@ USGS	05464220	Wolf Creek near Dysart, IA
 USGS	05464315	Cedar River at Vinton, IA
 USGS	05464420	Cedar River at Blairs Ferry Road at Palo, IA
 USGS	05464500	Cedar River at Cedar Rapids, IA
-USGS	05464695	Indian Creek at Marion, IA
+USGS	05464730	Cedar River below Indian Creek at Cedar Rapids, IA
 USGS	05464780	Cedar River at Cedar Bluff, IA
+USGS	0546494140	WB Wapsinonoc Cr abv Baker Ave at West Branch, IA
+USGS	0546494150	Unnamed Trb to WB Wapsinonoc Cr at West Branch, IA
+USGS	0546494170	WB Wapsinonoc Cr at College St at West Branch, IA
 USGS	05464942	Hoover Cr at Hoover Nat Hist Site, West Branch, IA
+USGS	0546494205	Hoover Creek near 2nd Street at West Branch, IA
 USGS	05465000	Cedar River near Conesville, IA
 USGS	05465500	Iowa River at Wapello, IA
 USGS	05465700	Iowa River at Oakville, IA
+USGS	05469860	Mud Lake Drainage Ditch 71 at Jewell, IA
+USGS	05469990	Keigley Branch near Story City, IA
 USGS	05470000	South Skunk River near Ames, IA
 USGS	05470500	Squaw Creek at Ames, IA
 USGS	05471000	South Skunk River below Squaw Creek near Ames, IA
 USGS	05471050	South Skunk River at Colfax, IA
 USGS	05471200	Indian Creek near Mingo, IA
 USGS	05471500	South Skunk River near Oskaloosa, IA
+USGS	05472390	Middle Creek near Lacey, IA
 USGS	05472500	North Skunk River near Sigourney, IA
 USGS	05473065	Skunk River at Merrimac, IA
 USGS	05473400	Cedar Creek near Oakland Mills, IA
 USGS	05473450	Big Creek North of Mount Pleasant, IA
 USGS	05474000	Skunk River at Augusta, IA
+USGS	05476500	Des Moines River at Estherville, IA
 USGS	05476590	Des Moines River at Emmetsburg, IA
+USGS	05476735	Pilot Creek at County Hwy P15 near Rolfe, IA
 USGS	05476750	Des Moines River at Humboldt, IA
 USGS	05478265	East Fork Des Moines River near Algona, IA
 USGS	05479000	East Fork Des Moines River at Dakota City, IA
+USGS	05480080	Lizard Creek near Fort Dodge, IA
 USGS	05480500	Des Moines River at Fort Dodge, IA
-USGS	05480603	Prairie Creek at Otho, IA (S3)
 USGS	05480820	Boone River near Goldfield, IA
-USGS	05480986	Lyons Creek near Webster City, IA (L3)
+USGS	05480930	White Fox Creek at Clarion, IA
 USGS	05481000	Boone River near Webster City, IA
 USGS	05481300	Des Moines River near Stratford, IA
+USGS	05481510	Bluff Creek at Pilot Mound, IA
 USGS	05481650	Des Moines River near Saylorville, IA
 USGS	05481950	Beaver Creek near Grimes, IA
 USGS	05482000	Des Moines River at 2nd Avenue at Des Moines, IA
 USGS	05482300	North Raccoon River near Sac City, IA
+USGS	05482315	Black Hawk Lake at Lake View, IA
+USGS	05482430	North Raccoon River near Lanesboro, IA
 USGS	05482500	North Raccoon River near Jefferson, IA
+USGS	05483318	Brushy Fork Creek near Templeton, IA
+USGS	05483349	Middle Raccoon River Tributary at Carroll, IA
 USGS	05483450	Middle Raccoon River near Bayard, IA
+USGS	05483470	Lake Panorama at Panora, IA
 USGS	05483600	Middle Raccoon River at Panora, IA
 USGS	05484000	South Raccoon River at Redfield, IA
 USGS	05484500	Raccoon River at Van Meter, IA
@@ -141,34 +172,74 @@ USGS	05489500	Des Moines River at Ottumwa, IA
 USGS	05490500	Des Moines River at Keosauqua, IA
 USGS	05494300	Fox River at Bloomfield, IA
 USGS	06483290	Rock River below Tom Creek at Rock Rapids, IA
+USGS	06483495	Burr Oak Creek near Perkins, IA
 USGS	06483500	Rock River near Rock Valley, IA
 USGS	06485500	BIG SIOUX R AT AKRON,IA
 USGS	06485950	BIG SIOUX RIVER AT SIOUX CITY, IA
 USGS	06599900	Perry Creek near Millnerville, IA
+USGS	06599950	Perry Creek near Hinton, IA
+USGS	06600000	Perry Creek at 38th Street at Sioux City, IA
+USGS	06600030	Little Floyd River near Sanborn, IA
 USGS	06600100	Floyd River at Alton, IA
 USGS	06600500	Floyd River at James, IA
 USGS	06602020	West Fork Ditch at Hornick, IA
+USGS	06602190	Elliott Creek at Lawton, IA
 USGS	06602400	Monona-Harrison Ditch near Turin, IA
+USGS	06603750	WB Little Sioux Riv abv Silver Lk at Lake Park, IA
+USGS	06604000	Spirit Lake near Orleans, IA
+USGS	06604200	West Okoboji Lake at Lakeside Lab near Milford, IA
 USGS	06604440	Little Sioux River at 300th St near Spencer, IA
 USGS	06605000	Ocheyedan River near Spencer, IA
+USGS	06605750	Willow Creek near Cornell, IA
 USGS	06605850	Little Sioux River at Linn Grove, IA
 USGS	06606600	Little Sioux River at Correctionville, IA
 USGS	06607200	Maple River at Mapleton, IA
 USGS	06607500	Little Sioux River near Turin, IA
 USGS	06608500	Soldier River at Pisgah, IA
 USGS	06609500	Boyer River at Logan, IA
-USGS	06805850	Keg Creek at Epperson Avenue near Glenwood, IA
+USGS	06609560	Willow Creek near Soldier, IA
+USGS	06610505	Missouri River near Council Bluffs, IA
 USGS	06807410	West Nishnabotna River at Hancock, IA
 USGS	06808500	West Nishnabotna River at Randolph, IA
 USGS	06808820	West Nishnabotna River near Riverton, IA
 USGS	06809210	East Nishnabotna River near Atlantic, IA
 USGS	06809500	East Nishnabotna River at Red Oak, IA
-USGS	06809900	East Nishnabotna River at Riverton, IA
 USGS	06810000	Nishnabotna River above Hamburg, IA
+USGS	06811760	Tarkio River near Elliott, IA
+USGS	06811800	East Tarkio Creek near Stanton, IA
+USGS	06811875	Snake Creek near Yorktown, IA
+USGS	06816290	West Nodaway River at Massena, IA
 USGS	06817000	Nodaway River at Clarinda, IA
 USGS	06819185	East Fork 102 River at Bedford, IA
 USGS	06898000	Thompson River at Davis City, IA
 USGS	06903400	Chariton River near Chariton, IA
 USGS	06903700	South Fork Chariton River near Promise City, IA
+USGS	06903880	Rathbun Lake near Rathbun, IA
 USGS	06903900	Chariton River near Rathbun, IA
 USGS	06904010	Chariton River near Moulton, IA
+USGS	404629095500501	069N43W18CDB        1995FRET1A47 IADRN-7
+USCE	404753091054200	RAIN GAGE AT MISSISSIPPI RIVER AT BURLINGTON, IA
+USGS	405747093233201	McNay Research Stn nr Chariton, IA NADP Site IA23
+USGS	410057095075101	072N37W29BABA       1937IACRN-7
+USGS	411843092105101	075N11W07CCBB       1997NAWQA Keokuk Co IADRN-9
+USCE	412522091021200	RAIN GAGE AT MISSISSISSPI RIVER AT MUSCATINE, IA
+USGS	412927092575201	077N18W08BBDC       1997NAWQA Marion Co IADRN-8
+USGS	414010091210201	Raingage at Hoover Nat Hist Site, West Branch, IA
+USGS	414208091204701	Raingage at Baker Avenue at West Branch, IA
+USGS	414209091215801	Raingage at County Line Road at West Branch, IA
+USGS	414315091252002	080N05W22CBCB2      1941Elmira Depot 5 IACRN-4
+USGS	414345091253801	Raingage at Rapid Creek below Morse, IA
+USGS	414714091184901	Raingage at Cedar River at Cedar Bluff, IA
+USGS	414818092055401	081N11W14CCDA 27416 1985IGS & USGS IR-26A IADRN-10
+USGS	415439093094801	082N20W15DBC        2008IACRN-5
+USGS	415501096081201	082N45W18BCCC       1995MOT1A45 IADRN-6
+USGS	420117092505601	083N17W05DCDD       1997NAWQA Marshall Co IADRN-5
+USGS	420212095235701	083N39W04BBB        2008IACRN-6
+USGS	421115091250501	085N05W10BDCC       1997NAWQA IADRN-4
+USCE	421539090252100	RAIN GAGE AT MISS R @ L&D 12 AT BELLEVUE, IA
+USGS	422518092144701	088N12W21ACDC       1997NAWQA Black Hwk Co IADRN-3
+USGS	425435091281101	Big Spring Fish Hatchery near Elkader, IA NADP/NTN
+USGS	430159093403201	095N24W21ADAD       1996NAWQA IADRN-2
+USGS	430510093425101	096N24W32CBC        2008IACRN-2
+USGS	431226091570101	Raingage at Turkey River at Spillville, IA
+USGS	431316095135201	097N37W17ADDB 71668 1985IGS & USGS LSR-1U IADRN-1

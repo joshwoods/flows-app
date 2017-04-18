@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:05:07 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 22:54:04 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,27 +15,33 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:05:07 EDT
+# query started 2017-04-17 22:54:04 EDT
 #
-# there are 54 sites matching the search criteria.
+# there are 97 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
 5s	15s	50s
 USGS	16010000	Kawaikoi Stream nr Waimea, Kauai, HI
 USGS	16019000	Waialae Str at alt 3,820 ft nr Waimea, Kauai, HI
+USGS	16031000	Waimea River near Waimea, Kauai, HI
 USGS	16060000	SF Wailua River nr Lihue, Kauai, HI
 USGS	16068000	EB of NF Wailua River nr Lihue, Kauai, HI
 USGS	16071500	Left Branch Opaekaa Str nr Kapaa, Kauai, HI
+USGS	16094150	Ka Loko Reservoir near Kilauea, Kauai, HI
 USGS	16097500	Halaulani Str at alt 400 ft nr Kilauea, Kauai, HI
 USGS	16103000	Hanalei River nr Hanalei, Kauai, HI
 USGS	16108000	Wainiha River nr Hanalei, Kauai, HI
 USGS	16200000	NF Kaukonahua Str abv RB, nr Wahiawa, Oahu, HI
 USGS	16208000	SF Kaukonahua Str at E pump, nr Wahiawa, Oahu, HI
+USGS	16208400	Ku Tree Reservoir near Wahiawa, Oahu, HI
+USGS	16210000	Wahiawa Reservoir at Spillway at Wahiawa, Oahu, HI
 USGS	16210100	Wahiawa Ditch at Wahiawa, Oahu, HI
 USGS	16210200	Kaukonahua Stream blw Wahiawa Reservoir, Oahu, HI
+USGS	16210500	Kaukonahua Str at Waialua, Oahu, HI
 USGS	16211600	Makaha Str nr Makaha, Oahu, HI
 USGS	16212480	Honouliuli Stream Tributary near Waipahu, Oahu, HI
+USGS	16212490	Honouliuli Str at H-1 Freeway nr Waipahu, Oahu, HI
 USGS	16213000	Waikele Str at Waipahu, Oahu, HI
 USGS	16226200	N. Halawa Str nr Honolulu, Oahu, HI
 USGS	16226400	N. Halawa Str nr Quar. Stn. at Halawa, Oahu, HI
@@ -45,29 +51,35 @@ USGS	16238000	Makiki Stream at King St. bridge, Oahu, HI
 USGS	16238500	Waihi Stream at Honolulu, Oahu, HI
 USGS	16240500	Waiakeakua Str at Honolulu, Oahu, HI
 USGS	16241600	Manoa Stream at Woodlawn Drive, Oahu, HI
-USGS	16242500	Manoa Str at Kanewai Field, Honolulu, Oahu, HI
 USGS	16244000	Pukele Stream near Honolulu, Oahu, HI
 USGS	16247100	Manoa-Palolo Drainage Canal at Moiliili, Oahu, HI
-USGS	16247150	Makiki Stream at Aarohie Baker Park, Oahu, HI
 USGS	16249000	Waimanalo Str at Waimanalo, Oahu, HI
 USGS	16254000	Makawao Str nr Kailua, Oahu, HI
+USGS	16264600	Kawainui Marsh nr levee sta 15+00, Oahu, HI
+USGS	16264690	Kawainui Stream near Kailua, Oahu, HI
+USGS	16265000	Kawa Str at Kaneohe, Oahu, HI
+USGS	16274100	Kaneohe Str blw Kamehameha Hwy, Oahu, HI
 USGS	16275000	Heeia Stream at Haiku Valley nr Kaneohe, Oahu, HI
+USGS	16283200	Kahaluu Str nr Ahuimanu, Oahu, HI
 USGS	16284200	Waihee Str nr Kahaluu, Oahu, HI
 USGS	16294100	Waiahole Stream above Kamehameha Hwy, Oahu, HI
 USGS	16294900	Waikane Str at alt 75 ft at Waikane, Oahu, HI
 USGS	16296500	Kahana Str at alt 30 ft nr Kahana, Oahu, HI
 USGS	16301050	Punaluu Str abv Punaluu Ditch Intake, Oahu, HI
 USGS	16304200	Kaluanui Stream nr Punaluu, Oahu, HI
+USGS	16325000	Kamananui Str at Pupukea Mil Rd, Oahu, HI
 USGS	16330000	Kamananui Str at Maunawai, Oahu, HI
+USGS	16343100	Helemano Str at Joseph Leong Hwy, Haleiwa, Oahu,HI
 USGS	16345000	Opaeula Str nr Wahiawa, Oahu, HI
 USGS	16400000	Halawa Stream near Halawa, Molokai, HI
 USGS	16414200	Kaunakakai Gulch at altitude 75 feet, Molokai, HI
+USGS	16415600	Kawela Gulch near Moku, Molokai, HI
 USGS	16501200	Oheo Gulch at dam near Kipahulu, Maui, HI
 USGS	16508000	Hanawi Stream near Nahiku, Maui, HI
 USGS	16518000	West Wailuaiki Stream near Keanae, Maui, HI
 USGS	16552800	Waikamoi Str abv Kula PL intake nr Olinda, Maui,HI
 USGS	16587000	Honopou Stream near Huelo, Maui, HI
-USGS	16604500	Iao Stream at Kepaniwai Park nr Wailuku, Maui, HI
+USGS	16604500	Wailuku River at Kepaniwai Park, Maui, HI
 USGS	16614000	Waihee Rv abv Waihee Dtch intk nr Waihee, Maui, HI
 USGS	16618000	Kahakuloa Stream near Honokohau, Maui, HI
 USGS	16620000	Honokohau Stream near Honokohau, Maui, HI
@@ -75,4 +87,35 @@ USGS	16704000	Wailuku River at Piihonua, HI
 USGS	16717000	Honolii Stream nr Papaikou, HI
 USGS	16720000	Kawainui Stream nr Kamuela, HI
 USGS	16725000	Alakahi Stream near Kamuela, HI
+USGS	16759600	Waiaha Stream at Holualoa, HI
 USGS	16770500	Paauau Gulch at Pahala, HI
+USGS	190423155371501	8-0437-01 Waiohinu, HI
+USGS	194117155174801	83.0 Quarry Rain Gage at Saddle Rd, HI
+USGS	194945155534402	92.5 Kiholo Rain Gage, HI
+USGS	200518155405801	185.7 Kawainui Rain Gage near Kamuela, HI
+USGS	203721156151601	255.0 Kepuni Gulch Rain Gage, Maui, HI
+USGS	204916156083701	348.5 West Wailuaiki Rain Gage nr Keanae, Maui, HI
+USGS	205327156351102	380.0 Puu Kukui Rain Gage at alt 5,771 ft, Maui,HI
+USGS	205405156305401	6-5430-05 Waiehu Deep Monitor Well, Maui, HI
+USGS	205437156310501	6-5431-01 TH-B, Waiehu, Maui, HI
+USGS	205705156312401	6-5731-05 Kanoa TH, Maui, HI
+USGS	210605157012001	4-0601-01 Kaunakakai, Molokai, HI
+USGS	212359157502601	772.3 Moanalua RG No. 1 at alt 1,000 ft, Oahu, HI
+USGS	212428157511201	771.11 N. Halawa Valley RG at tunnel, Oahu, HI
+USGS	212855157504501	837.0 Waiahole RG at Kamehameha Hwy., Oahu, HI
+USGS	213016158105901	842.1 Makaha Rain Gage, Oahu, HI
+USGS	213133158014201	Upper Helemano Reservoir near Wahiawa, Oahu, HI
+USGS	213215157552800	883.12 Poamoho Rain Gage No 1, nr Wahiawa, Oahu,HI
+USGS	213237157530701	886.4 Kahana Rain Gage at alt. 95 ft., Oahu, HI
+USGS	213308158035601	Helemano 6 Reservoir, Oahu, HI
+USGS	213320158061401	Kemoo 5 Reservoir, Oahu, HI
+USGS	213335157540601	884.4 Punaluu Rain Gage at alt. 240 ft, Oahu, HI
+USGS	213608158011101	897.9 Pupukea Rd Rain Gage at alt 1,160 ft,Oahu,HI
+USGS	213732158010201	897.11 Kamananui Rain Gage at alt. 720 ft, Oahu,HI
+USGS	220126159261501	2-0126-01 NW Kilohana Mon. Well, Kauai, HI
+USGS	220356159281401	1051.0 N Wailua Ditch Rain Gage nr Lihue, Kauai,HI
+USGS	220427159300201	1047.0 Mt. Waialeale Rain Gage nr Lihue, Kauai, HI
+USGS	220523159341201	1042.0 Waialae Rain Gage nr Waimea, Kauai, HI
+USGS	220713159361201	1083.0 Mohihi Crsg Rain Gage nr Waimea, Kauai, HI
+USGS	220739159373001	1082.0 Waiakoali Rain Gage nr Waimea, Kauai, HI
+USGS	220927159355001	1084.0 Kilohana Rain Gage nr Hanalei, Kauai, HI
