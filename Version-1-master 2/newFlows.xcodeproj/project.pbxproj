@@ -83,8 +83,6 @@
 		427B345A1CFE96C50032C5D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B34591CFE96C50032C5D5 /* SystemConfiguration.framework */; };
 		427B345C1CFE96D10032C5D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B345B1CFE96D10032C5D5 /* UIKit.framework */; };
 		4295AA571C9CB7CA006C729C /* NewAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4295AA561C9CB7CA006C729C /* NewAboutViewController.m */; };
-		42A34C3F1BBD8CAD004F7FB7 /* va in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0B1BBD8CAD004F7FB7 /* va */; };
-		42A34C401BBD8CAD004F7FB7 /* vi in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0C1BBD8CAD004F7FB7 /* vi */; };
 		42A34C411BBD8CAD004F7FB7 /* vt in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0D1BBD8CAD004F7FB7 /* vt */; };
 		42A34C421BBD8CAD004F7FB7 /* wa in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0E1BBD8CAD004F7FB7 /* wa */; };
 		42A34C431BBD8CAD004F7FB7 /* wi in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0F1BBD8CAD004F7FB7 /* wi */; };
@@ -209,6 +207,8 @@
 		9163625C1EA5BD5800E6D982 /* tn in Resources */ = {isa = PBXBuildFile; fileRef = 9163625B1EA5BD5800E6D982 /* tn */; };
 		9163625E1EA5BD8600E6D982 /* tx in Resources */ = {isa = PBXBuildFile; fileRef = 9163625D1EA5BD8600E6D982 /* tx */; };
 		916362601EA5BDB000E6D982 /* ut in Resources */ = {isa = PBXBuildFile; fileRef = 9163625F1EA5BDB000E6D982 /* ut */; };
+		916362621EA5BDE400E6D982 /* va in Resources */ = {isa = PBXBuildFile; fileRef = 916362611EA5BDE400E6D982 /* va */; };
+		916362641EA5BE1500E6D982 /* vi in Resources */ = {isa = PBXBuildFile; fileRef = 916362631EA5BE1500E6D982 /* vi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,8 +323,6 @@
 		427B345B1CFE96D10032C5D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4295AA551C9CB7CA006C729C /* NewAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAboutViewController.h; sourceTree = "<group>"; };
 		4295AA561C9CB7CA006C729C /* NewAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAboutViewController.m; sourceTree = "<group>"; };
-		42A34C0B1BBD8CAD004F7FB7 /* va */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = va; sourceTree = "<group>"; };
-		42A34C0C1BBD8CAD004F7FB7 /* vi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vi; sourceTree = "<group>"; };
 		42A34C0D1BBD8CAD004F7FB7 /* vt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vt; sourceTree = "<group>"; };
 		42A34C0E1BBD8CAD004F7FB7 /* wa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wa; sourceTree = "<group>"; };
 		42A34C0F1BBD8CAD004F7FB7 /* wi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wi; sourceTree = "<group>"; };
@@ -465,6 +463,8 @@
 		9163625B1EA5BD5800E6D982 /* tn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tn; sourceTree = "<group>"; };
 		9163625D1EA5BD8600E6D982 /* tx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tx; sourceTree = "<group>"; };
 		9163625F1EA5BDB000E6D982 /* ut */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ut; sourceTree = "<group>"; };
+		916362611EA5BDE400E6D982 /* va */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = va; sourceTree = "<group>"; };
+		916362631EA5BE1500E6D982 /* vi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vi; sourceTree = "<group>"; };
 		C12774532E8824C2AB33B483 /* Pods-newFlows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlows.release.xcconfig"; path = "Pods/Target Support Files/Pods-newFlows/Pods-newFlows.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -691,8 +691,8 @@
 				9163625B1EA5BD5800E6D982 /* tn */,
 				9163625D1EA5BD8600E6D982 /* tx */,
 				9163625F1EA5BDB000E6D982 /* ut */,
-				42A34C0B1BBD8CAD004F7FB7 /* va */,
-				42A34C0C1BBD8CAD004F7FB7 /* vi */,
+				916362611EA5BDE400E6D982 /* va */,
+				916362631EA5BE1500E6D982 /* vi */,
 				42A34C0D1BBD8CAD004F7FB7 /* vt */,
 				42A34C0E1BBD8CAD004F7FB7 /* wa */,
 				42A34C0F1BBD8CAD004F7FB7 /* wi */,
@@ -1063,7 +1063,6 @@
 				4272F6EC1C1CC8140062161F /* abbreviations.plist in Resources */,
 				42C8A95A1C8A17A9006BF832 /* city.json in Resources */,
 				9163620E1EA5B51A00E6D982 /* az in Resources */,
-				42A34C3F1BBD8CAD004F7FB7 /* va in Resources */,
 				42296B731D5ECF8E004F38B1 /* wind@2x.png in Resources */,
 				42EB71B21C38B94100D6215E /* infoicon@2x.png in Resources */,
 				42EB71D01C38B94100D6215E /* 09n@2x.png in Resources */,
@@ -1094,7 +1093,6 @@
 				4253B9671C937CE3008AF6BA /* BlueMapIcon@2x.png in Resources */,
 				9163621C1EA5B6B300E6D982 /* ga in Resources */,
 				916362341EA5B97400E6D982 /* me in Resources */,
-				42A34C401BBD8CAD004F7FB7 /* vi in Resources */,
 				42734B151C7C1C3D0061FAA2 /* icon40@2x.png in Resources */,
 				42EB71C61C38B94100D6215E /* 04d.png in Resources */,
 				42296B6D1D5ECF8E004F38B1 /* sleet@2x.png in Resources */,
@@ -1111,6 +1109,7 @@
 				42296B651D5ECF8E004F38B1 /* partly-cloudy-day@3x.png in Resources */,
 				916362161EA5B60F00E6D982 /* dc in Resources */,
 				42296B5C1D5ECF8E004F38B1 /* clear-night@3x.png in Resources */,
+				916362621EA5BDE400E6D982 /* va in Resources */,
 				42EB71E91C38B94100D6215E /* 50n@3x.png in Resources */,
 				916362361EA5B9A900E6D982 /* mi in Resources */,
 				9163622A1EA5B87C00E6D982 /* ks in Resources */,
@@ -1151,6 +1150,7 @@
 				42296B5B1D5ECF8E004F38B1 /* clear-night@2x.png in Resources */,
 				423AEB3F1D1CBEBB00FFB7E3 /* New_Close_Icon@3x.png in Resources */,
 				42EB71E21C38B94100D6215E /* 13n@2x.png in Resources */,
+				916362641EA5BE1500E6D982 /* vi in Resources */,
 				916362581EA5BD0900E6D982 /* sc in Resources */,
 				42296B631D5ECF8E004F38B1 /* partly-cloudy-day.png in Resources */,
 				42296B5E1D5ECF8E004F38B1 /* cloudy@2x.png in Resources */,
