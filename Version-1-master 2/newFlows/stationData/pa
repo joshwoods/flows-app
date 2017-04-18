@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:08:54 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 23:16:20 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,9 +15,9 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:08:54 EDT
+# query started 2017-04-17 23:16:20 EDT
 #
-# there are 286 sites matching the search criteria.
+# there are 467 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
@@ -25,11 +25,15 @@ agency_cd	site_no	station_nm
 USGS	01427207	DELAWARE RIVER AT LORDVILLE NY
 USGS	01427510	DELAWARE RIVER AT CALLICOON NY
 USGS	01428750	West Branch Lackawaxen River near Aldenville, PA
+USGS	01428900	Prompton Reservoir at Prompton, PA
 USGS	01429000	West Branch Lackawaxen River at Prompton, PA
+USGS	01429400	General Edgar Jadwin Reservoir near Honesdale, PA
 USGS	01429500	Dyberry Creek near Honesdale, PA
 USGS	01430000	Lackawaxen River near Honesdale, PA
 USGS	01431500	Lackawaxen River at Hawley, PA
 USGS	01432110	Lackawaxen River at Rowland, PA
+USGS	01432160	DELAWARE RIVER AT BARRYVILLE NY
+USGS	01432805	DELAWARE RIVER AT POND EDDY NY
 USGS	01434000	DELAWARE RIVER AT PORT JERVIS NY
 USGS	01438500	Delaware River at Montague NJ
 USGS	01439500	Bush Kill at Shoemakers, PA
@@ -43,9 +47,11 @@ USGS	01446776	Bushkill Creek bl SR2017 bridge at Tatamy, PA
 USGS	01447500	Lehigh River at Stoddartsville, PA
 USGS	01447680	Tunkhannock Creek near Long Pond, PA
 USGS	01447720	Tobyhanna Creek near Blakeslee, PA
+USGS	01447780	Francis E. Walter Reservoir near White Haven, PA
 USGS	01447800	Lehigh R bl Francis E Walter Res nr White Haven PA
 USGS	01449000	Lehigh River at Lehighton, PA
 USGS	01449360	Pohopoco Creek at Kresgeville, PA
+USGS	01449790	Beltzville Lake near Parryville, PA
 USGS	01449800	Pohopoco Cr bl Beltzville Dam nr Parryville, PA
 USGS	01450500	Aquashicola Creek at Palmerton, PA
 USGS	01451000	Lehigh River at Walnutport, PA
@@ -64,6 +70,7 @@ USGS	01464907	Little Neshaminy C at Valley Road nr Neshaminy PA
 USGS	01465200	Neshaminy Creek near Penns Park, PA
 USGS	01465500	Neshaminy Creek near Langhorne, PA
 USGS	01465798	Poquessing Creek at Grant Ave. at Philadelphia, PA
+USGS	014670261	Delaware River nr Pennypack Woods, PA
 USGS	01467031	Pennypack Creek at Horsham, PA
 USGS	01467036	Pennypack Creek trib at Hatboro, PA
 USGS	01467039	Pennypack Creek near Willow Grove, PA
@@ -72,16 +79,19 @@ USGS	01467042	Pennypack Creek at Pine Road, at Philadelphia, PA
 USGS	01467048	Pennypack Cr at Lower Rhawn St Bdg, Phila., PA
 USGS	01467086	Tacony Creek ab Adams Avenue, Philadelphia, PA
 USGS	01467087	Frankford Creek at Castor Ave, Philadelphia, PA
+USGS	01467200	Delaware R at Ben Franklin Bridge at Philadelphia
 USGS	01468500	Schuylkill River at Landingville, PA
 USGS	01469500	Little Schuylkill River at Tamaqua, PA
 USGS	01470500	Schuylkill River at Berne, PA
 USGS	01470755	Maiden Creek near Virginville, PA
 USGS	01470779	Tulpehocken Creek near Bernville, PA
+USGS	01470870	Blue Marsh Lake near Bernville, PA
 USGS	01470960	Tulpehocken Cr at Blue Marsh Damsite near Reading
 USGS	01471000	Tulpehocken Creek near Reading, PA
 USGS	01471510	Schuylkill River at Reading, PA
 USGS	01471875	Manatawny Creek near Spangsville, PA
 USGS	01472000	Schuylkill River at Pottstown, PA
+USGS	01472104	Schuylkill River at Vincent Dam at Linfield, PA
 USGS	01472157	French Creek near Phoenixville, PA
 USGS	01472198	Perkiomen Creek at East Greenville, PA
 USGS	01472199	West Branch Perkiomen Creek at Hillegass, PA
@@ -90,18 +100,28 @@ USGS	01472810	East Branch Perkiomen Creek near Schwenksville, PA
 USGS	01473000	Perkiomen Creek at Graterford, PA
 USGS	01473169	Valley Creek at PA Turnpike Br near Valley Forge
 USGS	01473500	Schuylkill River at Norristown, PA
+USGS	01473800	Schuylkill River at Manayunk, Philadelphia, PA
 USGS	01473900	Wissahickon Creek at Fort Washington, PA
 USGS	01474000	Wissahickon Creek at Mouth, Philadelphia, PA
 USGS	01474500	Schuylkill River at Philadelphia, PA
+USGS	01474501	Schuylkill River near 30th St at Philadelphia, PA
+USGS	01474703	Delaware River at Fort Mifflin at Philadelphia, PA
 USGS	01475530	Cobbs Cr at U.S. Hghwy No. 1 at Philadelphia, PA
+USGS	014755456	Naylor Creek at Upper Darby, PA
 USGS	01475548	Cobbs Creek at Mt. Moriah Cemetery, Philadelphia
+USGS	01475553	Darby Creek at 84th St Bridge at Eastwick,PA
 USGS	01475850	Crum Creek near Newtown Square, PA
+USGS	01476035	Crum Creek near mouth at Leiperville,PA
 USGS	01476480	Ridley Creek at Media, PA
+USGS	01476529	Ridley Creek near mouth at Eddystone, PA
 USGS	01477000	Chester Creek near Chester, PA
+USGS	01477029	Chester Creek near mouth at Chester, PA
+USGS	01477050	Delaware River at Chester, PA
 USGS	01478120	East Branch White Clay Creek at Avondale, PA
 USGS	01478245	White Clay Creek near Strickersville, PA
 USGS	01479820	Red Clay Creek near Kennett Square, PA
 USGS	01480300	West Branch Brandywine Creek near Honey Brook, PA
+USGS	01480399	Chambers Lake near Wagontown, PA
 USGS	01480400	Birch Run near Wagontown, PA
 USGS	01480500	West Branch Brandywine Creek at Coatesville, PA
 USGS	01480617	West Branch Brandywine Creek at Modena, PA
@@ -113,15 +133,18 @@ USGS	01480870	East Branch Brandywine Creek below Downingtown, PA
 USGS	01481000	Brandywine Creek at Chadds Ford, PA
 USGS	01494850	East Branch Big Elk Creek at Forestville, PA
 USGS	01513550	Choconut Creek near Choconut, PA
-USGS	01514850	Wappansening Creek near Windham Center, PA
+USGS	01514850	Wappasening Creek near Windham Center, PA
 USGS	01515000	SUSQUEHANNA RIVER NEAR WAVERLY NY
 USGS	01516350	Tioga River near Mansfield, PA
 USGS	01516500	Corey Creek near Mainesburg, PA
+USGS	01517900	Tioga Lake at Tioga Dam at Tioga, PA
 USGS	01518000	Tioga River at Tioga, PA
 USGS	01518420	Crooked Cr bl Catlin Hollow at Middlebury Center
+USGS	01518498	Hammond Lake at Hammond Dam at Tioga, PA
 USGS	01518700	Tioga River at Tioga Junction, PA
 USGS	01518862	Cowanesque River at Westfield, PA
 USGS	01519200	Cowanesque River at Elkland, PA
+USGS	01519995	Cowanesque Lake at Lawrenceville, PA
 USGS	01520000	Cowanesque River near Lawrenceville, PA
 USGS	01531250	NB Sugar Creek Trib near Columbia Cross Roads, PA
 USGS	01531325	Sugar Creek at West Burlington, PA
@@ -130,7 +153,9 @@ USGS	01531908	Towanda Creek near Franklindale, PA
 USGS	01532000	Towanda Creek near Monroeton, PA
 USGS	01533400	Susquehanna River at Meshoppen, PA
 USGS	01534000	Tunkhannock Creek near Tunkhannock, PA
+USGS	01534180	Stillwater Lake near Forest City, PA
 USGS	01534300	Lackawanna River near Forest City, PA
+USGS	01534490	Aylesworth Creek Lake at Jermyn, PA
 USGS	01534500	Lackawanna River at Archbald, PA
 USGS	01534860	Lackawanna R bl Leggetts Creek at Scranton, PA
 USGS	01536000	Lackawanna River at Old Forge, PA
@@ -140,8 +165,10 @@ USGS	01538700	Susquehanna River at Bloomsburg, PA
 USGS	01539000	Fishing Creek near Bloomsburg, PA
 USGS	01540500	Susquehanna River at Danville, PA
 USGS	01541000	West Branch Susquehanna River at Bower, PA
+USGS	01541180	Curwensville Lake near Curwensville, PA
 USGS	01541200	WB Susquehanna River near Curwensville, PA
 USGS	01541303	West Branch Susquehanna River at Hyde, PA
+USGS	01541340	Glendale Lake near Flinton, PA
 USGS	01541500	Clearfield Creek at Dimeling, PA
 USGS	01542500	WB Susquehanna River at Karthaus, PA
 USGS	01542810	Waldy Run near Emporium, PA
@@ -149,8 +176,10 @@ USGS	01543000	Driftwood Br Sinnemahoning Cr at Sterling Run, PA
 USGS	01543500	Sinnemahoning Creek at Sinnemahoning, PA
 USGS	01543693	East Fork Sinnemahoning at Wharton Township, PA
 USGS	01543700	First Fork Sinnemahoning Creek at Wharton, PA
+USGS	01543900	First Fork Sinnemahoning Creek Reservoir
 USGS	01544000	First Fork Sinnemahoning Cr near Sinnemahoning, PA
 USGS	01544500	Kettle Creek at Cross Fork, PA
+USGS	01544800	Kettle Cr Lake at Kettle Cr Dam near Westport, PA
 USGS	01545000	Kettle Creek near Westport, PA
 USGS	01545500	West Branch Susquehanna River at Renovo, PA
 USGS	01545600	Young Womans Creek near Renovo, PA
@@ -159,6 +188,7 @@ USGS	01546400	Spring Creek at Houserville, PA
 USGS	01546500	Spring Creek near Axemann, PA
 USGS	01547100	Spring Creek at Milesburg, PA
 USGS	01547200	Bald Eagle Creek bl Spring Creek at Milesburg, PA
+USGS	01547480	Foster Joseph Sayers Lake near Blanchard, PA
 USGS	01547500	Bald Eagle Creek at Blanchard, PA
 USGS	01547700	Marsh Creek at Blanchard, PA
 USGS	01547950	Beech Creek at Monument, PA
@@ -175,9 +205,11 @@ USGS	01552000	Loyalsock Creek at Loyalsockville, PA
 USGS	01552500	Muncy Creek near Sonestown, PA
 USGS	01553005	Muncy Creek near Muncy, PA
 USGS	01553025	West Branch Susquehanna River at Allenwood, PA
+USGS	01553240	W Br Susquehanna River at West Milton, PA
 USGS	01553500	West Branch Susquehanna River at Lewisburg, PA
 USGS	01553700	Chillisquaque Creek at Washingtonville, PA
 USGS	01553850	Chillisquaque Creek near Potts Grove, PA
+USGS	01553990	Susquehanna River above Dam at Sunbury, PA
 USGS	01554000	Susquehanna River at Sunbury, PA
 USGS	01555000	Penns Creek at Penns Creek, PA
 USGS	01555500	East Mahantango Creek near Dalmatia, PA
@@ -188,6 +220,7 @@ USGS	01559000	Juniata River at Huntingdon, PA
 USGS	01559790	Raystown Branch Juniata River at Wolfsburg, PA
 USGS	01560000	Dunning Creek at Belden, PA
 USGS	01562000	Raystown Branch Juniata River at Saxton, PA
+USGS	01563100	Raystown Lake near Huntingdon, PA
 USGS	01563200	Rays Br Juniata R bl Rays Dam nr Huntingdon, PA
 USGS	01563500	Juniata River at Mapleton Depot, PA
 USGS	01564500	Aughwick Creek near Three Springs, PA
@@ -209,12 +242,14 @@ USGS	01572190	Swatara Creek near Inwood, PA
 USGS	01573000	Swatara Creek at Harper Tavern, PA
 USGS	01573160	Quittapahilla Creek near Bellegrove, PA
 USGS	01573560	Swatara Creek near Hershey, PA
+USGS	01573600	Swatara Creek at Middletown, PA
 USGS	01573695	Conewago Creek near Bellaire, PA
 USGS	01573710	Conewago Creek near Falmouth, PA
 USGS	01573825	West Conewago Creek at East Berlin, PA
 USGS	01573849	Bermudian Creek at Oxford Road nr Heidlersburg, PA
 USGS	01574000	West Conewago Creek near Manchester, PA
 USGS	01574500	Codorus Creek at Spring Grove, PA
+USGS	01574700	Indian Rock Dam near York, PA
 USGS	01575500	Codorus Creek near York, PA
 USGS	01575585	Codorus Creek at Pleasureville, PA
 USGS	01576000	Susquehanna River at Marietta, PA
@@ -225,86 +260,232 @@ USGS	015765195	Big Spring Run near Mylin Corners, PA
 USGS	01576754	Conestoga River at Conestoga, PA
 USGS	01576767	Pequea Creek near Ronks, PA
 USGS	01576787	Pequea Creek at Martic Forge, PA
+USGS	01576980	Susquehanna River at Holtwood Dam at Holtwood, PA
 USGS	01577500	Muddy Creek at Castle Fin, PA
 USGS	01601000	Wills Creek below Hyndman, PA
 USGS	01613050	Tonoloway Creek near Needmore, PA
 USGS	03007800	Allegheny River at Port Allegany, PA
 USGS	03010500	Allegheny River at Eldred, PA
 USGS	03010655	Oswayo Creek at Shinglehouse, PA
+USGS	03010955	Tunungwant Creek near South Bradford, PA
 USGS	03011800	Kinzua Creek near Guffey, PA
+USGS	03012520	Allegheny Reservoir near Warren, PA
 USGS	03012550	Allegheny River at Kinzua Dam, PA
 USGS	03015000	Conewango Creek at Russell, PA
 USGS	03015310	Allegheny River bl Conewango Creek at Warren, PA
 USGS	03015500	Brokenstraw Creek at Youngsville, PA
 USGS	03016000	Allegheny River at West Hickory, PA
 USGS	03017500	Tionesta Creek at Lynch, PA
+USGS	03019500	Tionesta Creek Reservoir at Tionesta Creek Dam, PA
 USGS	03020000	Tionesta Creek at Tionesta Creek Dam, PA
 USGS	03020500	Oil Creek at Rouseville, PA
 USGS	03021350	French Creek near Wattsburg, PA
+USGS	03021410	West Branch French Creek near Lowville, PA
+USGS	03021518	Union City Reservoir on French Ck nr Union City,PA
 USGS	03021520	French Creek near Union City, PA
 USGS	03022540	Woodcock Creek at Blooming Valley, PA
+USGS	03022550	Woodcock Creek Lake near Saegertown, PA
 USGS	03022554	Woodcock Creek at Woodcock Creek Dam, PA
 USGS	03023100	French Creek at Meadville, PA
 USGS	03024000	French Creek at Utica, PA
 USGS	03025500	Allegheny River at Franklin, PA
 USGS	03026480	East Branch Clarion River near Clermont, PA
 USGS	03026500	Sevenmile Run near Rasselas, PA
+USGS	03027000	East Branch Clarion River Lake near Glen Hazel, PA
+USGS	03027200	Weir 6 at East Branch Clarion River Dam, PA
+USGS	03027400	Weir 1 at East Branch Clarion River Dam, PA
 USGS	03027500	EB Clarion River at EB Clarion River Dam, PA
 USGS	03028000	West Branch Clarion River at Wilcox, PA
 USGS	03028500	Clarion River at Johnsonburg, PA
+USGS	03028900	Elk Creek at Ridgway, PA
 USGS	03029000	Clarion River at Ridgway, PA
 USGS	03029500	Clarion River at Cooksburg, PA
 USGS	03030500	Clarion River near Piney, PA
+USGS	03030515	Clarion River at Piney, PA
 USGS	03031500	Allegheny River at Parker, PA
+USGS	03031624	Sandy Lick Creek at Dubois, PA
+USGS	03031882	Redbank Creek at Brookville, PA
 USGS	03032500	Redbank Creek at St. Charles, PA
+USGS	03033000	Allegheny River near Rimer, PA
+USGS	03033001	Allegheny River (lower pool) near Rimer, PA
+USGS	03033215	Stump Creek at Sykesville, PA
+USGS	03033289	Mahoning Creek at Big Run, PA
 USGS	03034000	Mahoning Creek at Punxsutawney, PA
 USGS	03034500	Little Mahoning Creek at McCormick, PA
+USGS	03035500	Mahoning Creek Reservoir at Mahoning Creek Dam, PA
 USGS	03036000	Mahoning Creek at Mahoning Creek Dam, PA
+USGS	03036150	Allegheny River at Lock & Dam 8 nr Templeton, PA
+USGS	03036151	Allegheny R at L&D 8 (lower pool) nr Templeton, PA
 USGS	03036500	Allegheny River at Kittanning, PA
+USGS	03036501	Allegheny River (lower pool) at Kittanning, PA
 USGS	03038000	Crooked Creek at Idaho, PA
+USGS	03038500	Crooked Creek Lake near Ford City, PA
 USGS	03039000	Crooked Creek at Crooked Creek Dam near Ford City
+USGS	03039035	Allegheny River at Lock & Dam 6 at Clinton, PA
+USGS	03039036	Allegheny River below Lock & Dam 6 at Clinton, PA
+USGS	03039040	Allegheny River at Lock & Dam 5 near Freeport, PA
+USGS	03039041	Allegheny River bl Lock & Dam 5 near Freeport, PA
 USGS	03040000	Stonycreek River at Ferndale, PA
+USGS	03040050	Trout Run at Portage, PA
+USGS	03040100	Little Conemaugh River at Wilmore, PA
 USGS	03041000	Little Conemaugh River at East Conemaugh, PA
 USGS	03041029	Conemaugh River at Minersville, PA
 USGS	03041500	Conemaugh River at Seward, PA
 USGS	03042000	Blacklick Creek at Josephine, PA
 USGS	03042280	Yellow Creek near Homer City, PA
 USGS	03042500	Two Lick Creek at Graceton, PA
+USGS	03043500	Conemaugh Lake
+USGS	03043810	Conemaugh River below Conemaugh Dam, PA
 USGS	03044000	Conemaugh River at Tunnelton, PA
 USGS	03044810	Linn Run at Linn Run State Park near Rector, PA
 USGS	03045000	Loyalhanna Creek at Kingston, PA
+USGS	03045010	Loyalhanna Creek at Latrobe, PA
+USGS	03046500	Loyalhanna Creek Lake, PA
 USGS	03047000	Loyalhanna Creek at Loyalhanna Dam, PA
 USGS	03048500	Kiskiminetas River at Vandergrift, PA
 USGS	03048900	Buffalo Creek at Iron Bridge, PA
 USGS	03049000	Buffalo Creek near Freeport, PA
 USGS	03049500	Allegheny River at Natrona, PA
+USGS	03049501	Allegheny River (lower pool) at Natrona, PA
+USGS	03049640	Allegheny R at CW Bill Young L&D  at Acmetonia, PA
+USGS	03049641	Allegheny R at CW Bill Young (lower) Acmetonia, PA
+USGS	03049680	Allegheny R at Lock & Dam 2 at Aspinwall, PA
+USGS	03049681	Allegheny R at L&D 2 (lower pool) at Aspinwall, PA
 USGS	03049800	Little Pine Creek near Etna, PA
+USGS	03049807	Pine Creek at Grant Avenue at Etna, PA
+USGS	03049819	Girtys Run above Grant Avenue at Millvale, PA
+USGS	03062998	Monongahela R L&D8 (Upper Pool) @ Point Marion, PA
+USGS	03063000	Monongahela R L&D8 (Lower Pool) @ Point Marion, PA
+USGS	03071600	CHEAT RIVER AT LAKE LYNN, PA
+USGS	03071605	Cheat River at Davidson, PA
+USGS	03071690	Cheat River at Nilan, PA
 USGS	03072000	Dunkard Creek at Shannopin, PA
 USGS	03072655	Monongahela River near Masontown, PA
+USGS	03072656	Monongahela River (lower pool) near Masontown, PA
+USGS	03072890	Fonner Run near Deer Lick, PA
 USGS	03073000	South Fork Tenmile Creek at Jefferson, PA
+USGS	03073750	Monongahela R at Maxwell L&D Upper Pool @ Maxwell
+USGS	03073751	Monongahela R @ Maxwell L&D (lower pool) @ Maxwell
 USGS	03074500	Redstone Creek at Waltersburg, PA
+USGS	03074850	Pike Run at Granville, PA
+USGS	03074998	Monongahela R at L&D4 Upper Pool at Charleroi, PA
+USGS	03075000	Monongahela River at Charleroi, PA
 USGS	03075070	Monongahela River at Elizabeth, PA
+USGS	03075071	Monongahela River below Lock & Dam 3 at Elizabeth
+USGS	03077000	Youghiogheny River Lake at Dam nr Confluence, PA
+USGS	03077100	Youghiogheny R at dam outlet tunnel nr Confluence
 USGS	03077500	Youghiogheny River at Youghiogheny River Dam, PA
 USGS	03079000	Casselman River at Markleton, PA
 USGS	03080000	Laurel Hill Creek at Ursina, PA
 USGS	03081000	Youghiogheny River below Confluence, PA
 USGS	03081500	Youghiogheny River at Ohiopyle, PA
+USGS	03081800	Bear Run at Kauffman, PA
 USGS	03082500	Youghiogheny River at Connellsville, PA
 USGS	03083500	Youghiogheny River at Sutersville, PA
+USGS	03084698	Turtle Creek at Wilmerding, PA
+USGS	03084800	Thompson Run at Turtle Creek, PA
+USGS	03085000	Monongahela River at Braddock, PA
+USGS	03085002	Monongahela R at L&D2 Lower Pool at Braddock, PA
+USGS	03085152	Monongahela R at Point State Park at Pittsburgh
+USGS	03085213	Sawmill Run at Duquesne Heights nr Pittsburgh, PA
+USGS	03085250	Chartiers Creek at Canonsburg, PA
 USGS	03085500	Chartiers Creek at Carnegie, PA
+USGS	03085730	Ohio River at Emsworth Dam Upper Pool @ Emsworth
+USGS	03085734	Ohio River at Emsworth Dam Lower Pool @ Emsworth
 USGS	03086000	Ohio River at Sewickley, PA
+USGS	03086001	Ohio River (lower pool) at Sewickley, PA
 USGS	03101500	Shenango River at Pymatuning Dam, PA
 USGS	03102500	Little Shenango River at Greenville, PA
 USGS	03102850	Shenango River near Transfer, PA
+USGS	03103400	Shenango River Reservoir near Sharpsville, PA
 USGS	03103500	Shenango River at Sharpsville, PA
 USGS	03105500	Beaver River at Wampum, PA
+USGS	03105927	Crab Run near Connoquenessing, PA
 USGS	03106000	Connoquenessing Creek near Zelienople, PA
 USGS	03106300	Muddy Creek near Portersville, PA
 USGS	03106500	Slippery Rock Creek at Wurtemburg, PA
 USGS	03107500	Beaver River at Beaver Falls, PA
 USGS	03107698	Traverse Creek near Kendall, PA
 USGS	03108000	Raccoon Creek at Moffatts Mill, PA
+USGS	03108490	Ohio R ab Montgomery Dam & Locks at Ohioview, PA
+USGS	03108500	Ohio River at Montgomery Lock & Dam, Lower Pool
 USGS	03111200	Dunkle Run near Claysville, PA
+USGS	03111235	Unnamed trib to Dog Run at Dunsfort, PA
 USGS	03111675	Job Creek at Delphene, PA
+USGS	03111705	South Fork Dunkard Fork at Aleppo, PA
+USGS	03111890	Middle Wheeling Creek near Claysville, PA
 USGS	04213075	Brandy Run near Girard, PA
 USGS	04213152	Walnut Creek Upstream Pool, near Erie, PA
+USGS	394337079544201	MONONGAHELA RIVER AT POINT MARION, PA
+USGS	394430077225001	AD   808  Adams County Observation Well
+USGS	394655080014301	GR   118 Greene County Observation Well
+USGS	394755078135001	FU   249   Fulton County Observation Well
+USGS	394843079351401	FA    17 Fayette County Observation Well
+USGS	395322077365301	FR   818   Franklin County Observation Well
+USGS	395450075485401	CH    10 Chester County Observation Well
+USGS	395512075293701	DE   723 Delaware County Observation Well
+USGS	395846077040601	AD   146 Adams County Observation Well
+USGS	395920079021501	SO   854  Somerset County Observation Well
+USGS	400209077183301	CU     2  Cumberland County Observation Well
+USGS	400217078281901	BD   150  Bedford County Observation Well
+USGS	400229075104601	PH  1043 Philadelphia County Observation Well
+USGS	400233080261301	WS   155 Washington County Observation Well
+USGS	400916076492301	YO  1147 York County Observation Well
+USGS	401157075032001	BK  1020 Bucks County Observation Well
+USGS	401637076071501	LN  1351 Lancaster County Observation Well
+USGS	401733075171401	MG   917  Montgomery County Observation Well
+USGS	401843078075401	HU   301 Huntingdon County Observation Well
+USGS	402138079031802	WE   300 Westmoreland County Observation Well
+USGS	402207076180801	LB   372 Lebanon County Observation Well
+USGS	402255076422001	DA   868  Dauphin County Observation Well
+USGS	402411077374801	JU   351  Juniata County Observation Well
+USGS	402452078271301	BA    74  Blair County Observation Well
+USGS	402615075530501	BE   623 Berks County Observation Well
+USGS	402643075150501	BK   929 Bucks County Observation Well
+USGS	402735077100901	PE   684 Perry County Observation Well
+USGS	402750078452201	CA   462  Cambria County Observation Well
+USGS	403006080252301	BV   156  Beaver County Observation Well
+USGS	403429075392401	LE   644 Lehigh County Observation Well
+USGS	403734080063001	AG   700 Allegheny County Observation Well
+USGS	403939076591001	SN   130 Snyder County Observation Well
+USGS	404140077354001	MF   344  Mifflin County Observation Well
+USGS	404239076362001	NU   567  Northumberland County Observation Well
+USGS	404518077575501	CE   118 Centre County Observation Well
+USGS	404556077525101	CE   686  Centre County Observation Well
+USGS	404708076070701	SC   296  Schuylkill County Observation Well
+USGS	404745075184001	NP   820  Northampton County Observation Well
+USGS	405320078483901	IN   919  Indiana County Observation Well
+USGS	405344079380201	AR   109 Armstrong County Observation Well
+USGS	405928077115501	UN    51 Union County Observation Well
+USGS	410123075425401	CB   104 Carbon County Observation Well
+USGS	410501079524401	BT   311 Butler County Observation Well
+USGS	410538080280801	LA  1201 Lawrence County Observation Well
+USGS	410627078313601	CF   321  Clearfield County Observation Well
+USGS	410705076334901	CO   589  Columbia County Observation Well
+USGS	410727076402901	MT   258  Montour County Observation Well
+USGS	411223075234901	MO   190 Monroe County Observation Well
+USGS	411424077462201	CN     1 Clinton County Observation Well
+USGS	411734078522101	JE   425  Jefferson County Observation Well
+USGS	411756076162701	LU   294 Luzerne County Observation Well
+USGS	411833075133601	PI   522  Pike County Observation Well
+USGS	411958079540202	VE    57  Venango County Observation Well
+USGS	412020079133901	CR     3  Clarion County Observation Well
+USGS	412427076594401	LY   112 Lycoming County Observation Well
+USGS	412458078324601	EK   108 Elk County Observation Well
+USGS	412732078034201	CM    13 Cameron County Observation Well
+USGS	412739080104201	MR  3306 Mercer County Observation Well
+USGS	412823079030601	FO    11 Forest County Observation Well
+USGS	413026076352901	SU    34 Sullivan County Observation Well
+USGS	413346075421301	LK   508 Lackawanna County Observation Well
+USGS	413542080245002	CW   413 Crawford County Observation Well
+USGS	414159079213601	WR    50 Warren County Observation Well
+USGS	414330076280501	BR    92 Bradford County Observation Well
+USGS	414333075153201	WN    64 Wayne County Observation Well
+USGS	414513077333701	TI   100  Tioga County Observation Well
+USGS	414630077234901	TI   349
+USGS	414634077235801	TI   470
+USGS	414640077493801	PO    72 Potter County Observation Well
+USGS	414642077235101	TI   225
+USGS	415150078220401	MC   126 McKean County Observation Well
+USGS	415323077451301	SQ    61 Susquehanna County Observation Well
+USGS	415607080044601	ER    82 Erie County Observation Well

@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:09:37 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 23:20:19 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,24 +15,33 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:09:37 EDT
+# query started 2017-04-17 23:20:19 EDT
 #
-# there are 482 sites matching the search criteria.
+# there are 805 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
 5s	15s	50s
 USGS	07227420	Cramer Ck at US Hwy 54 nr Dalhart, TX
+USGS	07227460	E Fk Cheyenne Ck Trib nr Channing, TX
 USGS	07227500	Canadian Rv nr Amarillo, TX
 USGS	07227890	Big Blue Ck nr Fritch, TX
+USGS	07227900	Lk Meredith nr Sanford, TX
 USGS	07228000	Canadian Rv nr Canadian, TX
 USGS	07233500	Palo Duro Ck nr Spearman, TX
+USGS	07233550	Palo Duro Res nr Spearman, TX
 USGS	07235000	Wolf Ck at Lipscomb, TX
+USGS	07295450	Tierra Blanca Ck nr FM 1259 at Hereford, TX
 USGS	07295500	Tierra Blanca Ck abv Buffalo Lk nr Umbarger, TX
 USGS	07297910	Pr Dog Twn Fk Red Rv nr Wayside, TX
+USGS	07298100	MacKenzie Res nr Silverton, TX
+USGS	07298150	Rock Ck Trib nr Silverton, TX
 USGS	07298500	Pr Dog Twn Fk Red Rv nr Brice, TX
 USGS	07299540	Pr Dog Twn Fk Red Rv nr Childress, TX
+USGS	07299575	N Groesbeck Ck Trib nr Kirkland, TX
 USGS	07299670	Groesbeck Ck at SH 6 nr Quanah, TX
+USGS	07299825	Salt Fk Red Rv Trib at FM 294 nr Goodnight, TX
+USGS	07299840	Greenbelt Lk nr Clarendon, TX
 USGS	07299890	Lelia Lk Ck bl Bell Ck nr Hedley, TX
 USGS	07300000	Salt Fk Red Rv nr Wellington, TX
 USGS	07301300	N Fk Red Rv nr Shamrock, TX
@@ -42,133 +51,219 @@ USGS	07308500	Red Rv nr Burkburnett, TX
 USGS	07311700	N Wichita Rv nr Truscott, TX
 USGS	07311800	S Wichita Rv nr Benjamin, TX
 USGS	07311900	Wichita Rv nr Seymour, TX
+USGS	07312000	Lk Kemp nr Mabelle, TX
 USGS	07312100	Wichita Rv nr Mabelle, TX
+USGS	07312109	Diversion Lk nr Dundee, TX
 USGS	07312110	S Side Canal nr Dundee, TX
 USGS	07312200	Beaver Ck nr Electra, TX
+USGS	07312330	Wichita Rv at FM 368 nr Iowa Park, TX
+USGS	07312380	N Fk Buffalo Ck Res nr Iowa Pk, TX
 USGS	07312500	Wichita Rv at Wichita Falls, TX
 USGS	07312610	Holliday Ck at Wichita Falls, TX
 USGS	07312700	Wichita Rv nr Charlie, TX
+USGS	07314000	Lk Kickapoo nr Archer City, TX
 USGS	07314500	Little Wichita Rv nr Archer City, TX
+USGS	07314800	Lk Arrowhead nr Henrietta, TX
 USGS	07314900	Little Wichita Rv abv Henrietta, TX
 USGS	07315200	E Fk Little Wichita Rv nr Henrietta, TX
+USGS	07315510	Beaver Ck nr Ringgold, TX
+USGS	07315525	Belknap Ck nr Ringgold, TX
+USGS	07315600	Lk Nocona nr Nocona, TX
+USGS	07315950	Moss Lk nr Gainesville, TX
+USCE	07331500	USCOE Lk Texoma nr Denison, TX
 USGS	07331600	Red River at Denison Dam nr Denison, TX
+USGS	07332610	Lk Bonham nr Bonham, TX
 USGS	07332620	Bois D'Arc Ck at FM 1396 nr Honey Grove, TX
 USGS	07332622	Bois D'Arc Ck at FM 409 nr Honey Grove, TX
+USCE	07335390	USCOE Pat Mayse Lk nr Chicota, TX
+USGS	07335600	Lk Crook nr Paris, TX
 USGS	07336820	Red River near De Kalb, TX
 USGS	07342465	S Sulphur Rv at Commerce, TX
 USGS	07342480	Middle Sulphur Rv at Commerce, TX
+USGS	07342495	Jim L. Chapman Lk nr Cooper, TX
 USGS	07342500	S Sulphur Rv nr Cooper, TX
 USGS	07343000	N Sulphur Rv nr Cooper, TX
 USGS	07343200	Sulphur Rv nr Talco, TX
 USGS	07343356	Cuthand Ck at FM 910 nr Cuthand, TX
 USGS	07343450	Sulphur Rv at IH 30 nr Dalby Springs, TX
+USGS	07343460	Lk Sulphur Spgs nr Sulphur Springs, TX
 USGS	07343500	White Oak Ck nr Talco, TX
 USGS	07343840	White Oak Ck at IH 30 nr Omaha, TX
 USGS	07344100	Anderson Ck at Hwy 98 nr Simms, TX
+USGS	07344200	Wright Patman Lk nr Texarkana, TX
 USGS	07344210	Sulphur Rv nr Texarkana, TX
+USGS	07344484	Lk Cypress Spgs nr Mount Vernon, TX
+USGS	07344488	Monticello Res nr Mount Pleasant, TX
+USGS	07344489	Lk Bob Sandlin nr Mount Pleasant, TX
 USGS	07344493	Big Cypress Ck at US Hwy 271 nr Pittsburg, TX
 USGS	07344500	Big Cypress Ck nr Pittsburg, TX
+USGS	07345900	Lk O' the Pines nr Jefferson, TX
 USGS	07346000	Big Cypress Bayou nr Jefferson, TX
 USGS	07346045	Black Cypress Bayou at Jefferson, TX
+USGS	07346050	Little Cypress Ck nr Ore City, TX
 USGS	07346070	Little Cypress Bayou nr Jefferson, TX
 USGS	07346080	Big Cypress Ck abv SH 43 nr Karnack, TX
 USGS	08017200	Cowleech Fk Sabine Rv at Greenville, TX
 USGS	08017300	S Fk Sabine Rv nr Quinlan, TX
+USGS	08017400	Lk Tawakoni nr Wills Point, TX
 USGS	08017410	Sabine Rv nr Wills Point, TX
 USGS	08018500	Sabine Rv nr Mineola, TX
+USGS	08018800	Lake Fk Res nr Quitman, TX
 USGS	08019000	Lake Fk Ck nr Quitman, TX
 USGS	08019200	Sabine Rv nr Hawkins, TX
 USGS	08019500	Big Sandy Ck nr Big Sandy, TX
 USGS	08020000	Sabine Rv nr Gladewater, TX
 USGS	08020450	Sabine Rv abv Longview, TX
+USGS	08020700	Rabbit Ck at Kilgore, TX
 USGS	08020900	Sabine Rv bl Longview, TX
+USGS	08021400	Lk Cherokee nr Unnamed Trib nr Longview, TX
 USGS	08022040	Sabine Rv nr Beckville, TX
+USGS	08022060	Martin Lk nr Tatum, TX
+USGS	08022120	Sabine Rv nr Carthage, TX
+USGS	08022200	Murvaul Lk nr Gary, TX
+USGS	08022500	Sabine Rv at Logansport, LA
 USGS	08025360	Sabine Rv at Toledo Bd Res nr Burkeville, TX
 USGS	08026000	Sabine Rv nr Burkeville, TX
 USGS	08028500	Sabine Rv nr Bon Wier, TX
 USGS	08029500	Big Cow Ck nr Newton, TX
 USGS	08030500	Sabine Rv nr Ruliff, TX
+USGS	08030540	Sabine Rv (at Navy Pier) at Orange, TX
 USGS	08031000	Cow Bayou nr Mauriceville, TX
+USGS	08031290	Lk Athens nr Athens, TX
+USGS	08031400	Lk Palestine nr Frankston, TX
 USGS	08032000	Neches Rv nr Neches, TX
+USGS	08032200	Lk Jacksonville nr Jacksonville, TX
+USGS	08032500	Neches Rv nr Alto, TX
 USGS	08033000	Neches Rv nr Diboll, TX
 USGS	08033500	Neches Rv nr Rockland, TX
+USGS	08033810	Lk Striker nr Reklaw, TX
+USGS	08033900	E Fk Angelina Rv nr Cushing, TX
+USGS	08034000	Lk Tyler nr Whitehouse, TX
 USGS	08034500	Mud Ck nr Jacksonville, TX
 USGS	08036500	Angelina Rv nr Alto, TX
+USGS	08036700	Lk Nacogdoches nr Nacogdoches, TX
+USGS	08037050	Bayou Lanana at Nacogdoches, TX
 USGS	08038000	Attoyac Bayou nr Chireno, TX
 USGS	08039100	Ayish Bayou nr San Augustine, TX
+USGS	08039300	Sam Rayburn Res nr Jasper, TX
+USGS	08040000	B. A. Steinhagen Lk at Town Bluff, TX
 USGS	08040600	Neches Rv nr Town Bluff, TX
 USGS	08041000	Neches Rv at Evadale, TX
 USGS	08041500	Village Ck nr Kountze, TX
 USGS	08041700	Pine Island Bayou nr Sour Lake, TX
 USGS	08041749	Pine Island Bayou abv BI Pump Plant, Beaumont, TX
+USGS	08041770	LNVA Canal at Beaumont, TX
 USGS	08041780	Neches Rv Saltwater Barrier at Beaumont, TX
+USGS	08042522	Taylor-Alligator Bayou Pump Sta nr Port Arthur, TX
 USGS	08042558	W Fk Double Bayou at Eagle Ferry Rd nr Anahuac, TX
 USGS	08042800	W Fk Trinity Rv nr Jacksboro, TX
+USGS	08042820	Lost Ck Res nr Jacksboro, TX
+USGS	08043000	Bridgeport Res abv Bridgeport, TX
+USGS	08043700	Lk Amon G Carter nr Bowie, TX
 USGS	08044000	Big Sandy Ck nr Bridgeport, TX
 USGS	08044500	W Fk Trinity Rv nr Boyd, TX
 USGS	08044800	Walnut Ck at Reno, TX
+USGS	08045000	Eagle Mtn Res abv Ft Worth, TX
+USGS	08045400	Lk Worth abv Ft Worth, TX
 USGS	08045550	WFk TrinityRv at White Settlement Rd,Fort Worth,TX
+USGS	08045800	Lk Weatherford nr Weatherford, TX
 USGS	08045850	Clear Fk Trinity Rv nr Weatherford, TX
 USGS	08045995	Clear Fork Trinity Rv at Kelly Rd nr Aledo, TX
+USGS	08046500	Benbrook Lk nr Benbrook, TX
 USGS	08047000	Clear Fk Trinity Rv nr Benbrook, TX
 USGS	08047050	Marys Ck at Benbrook, TX
 USGS	08047500	Clear Fk Trinity Rv at Ft Worth, TX
 USGS	08048000	W Fk Trinity Rv at Ft Worth, TX
 USGS	08048543	W Fk Trinity Rv at Beach St, Ft Worth, TX
+USGS	08048800	Big Fossil Ck at Haltom City, TX
 USGS	08048970	Village Ck at Everman, TX
+USGS	08049200	Lk Arlington at Arlington, TX
+USGS	08049300	W Fk Trinity Rv at Greenbelt Rd, Fort Worth, TX
 USGS	08049500	W Fk Trinity Rv at Grand Prairie, TX
+USGS	0804956950	Bear Ck at Shady Grove Rd, Grand Prairie, TX
 USGS	08049580	Mountain Ck nr Venus, TX
 USGS	08049700	Walnut Ck nr Mansfield, TX
+USGS	08049800	Joe Pool Lk nr Duncanville, TX
+USGS	08050050	Mountain Ck Lk nr Grand Prairie, TX
 USGS	08050100	Mountain Ck at Grand Prairie, TX
 USGS	08050400	Elm Fk Trinity Rv at Gainesville, TX
 USGS	08050800	Timber Ck nr Collinsville, TX
 USGS	08050840	Range Ck nr Collinsville, TX
+USGS	08051100	Ray Roberts Lk nr Pilot Point, TX
 USGS	08051135	Elm Fk Trinity Rv at Greenbelt nr Pilot Point, TX
 USGS	08051500	Clear Ck nr Sanger, TX
 USGS	08052700	Little Elm Ck nr Aubrey, TX
 USGS	08052745	Doe Br at US Hwy 380 nr Prosper, TX
 USGS	08052780	Hickory Ck at Denton, TX
+USGS	08052800	Lewisville Lk nr Lewisville, TX
 USGS	08053000	Elm Fk Trinity Rv nr Lewisville, TX
 USGS	08053009	Indian Ck at FM 2281, Carrollton, TX
+USGS	08053430	Denton Ck at CR 2513 nr Decatur, TX
 USGS	08053500	Denton Ck nr Justin, TX
+USGS	08054500	Grapevine Lk nr Grapevine, TX
 USGS	08055000	Denton Ck nr Grapevine, TX
 USGS	08055500	Elm Fk Trinity Rv nr Carrollton, TX
 USGS	08055560	Elm Fk Trinity Rv at Spur 348, Irving, TX
+USGS	08056000	Elm Fk Trinity Rv at Frasier Dam, Dallas, TX
 USGS	08056500	Turtle Ck at Dallas, TX
 USGS	08057000	Trinity Rv at Dallas, TX
 USGS	08057200	White Rk Ck at Greenville Ave, Dallas, TX
+USGS	08057300	White Rk Ck at White Rk Lk, Dallas, TX
 USGS	08057410	Trinity Rv bl Dallas, TX
 USGS	08059000	E Fk Trinity Rv nr McKinney, TX
 USGS	08059350	Indian Ck at SH 78 nr Farmersville, TX
 USGS	08059400	Sister Grove Ck nr Blue Ridge, TX
+USGS	08059590	Wilson Ck Dws of Hwy 75 at McKinney, TX
+USGS	08060500	Lavon Lk nr Lavon, TX
 USGS	08061540	Rowlett Ck nr Sachse, TX
+USGS	08061548	Muddy Ck at Creek Crossing Ln nr Sachse, TX
+USGS	08061550	Lk Ray Hubbard nr Forney, TX
 USGS	08061551	E Fk Trinity Rv blw Lk Ray Hubbard nr Forney, TX
 USGS	08061750	E Fk Trinity Rv nr Forney, TX
 USGS	08062000	E Fk Trinity Rv nr Crandall, TX
 USGS	08062500	Trinity Rv nr Rosser, TX
 USGS	08062700	Trinity Rv at Trinidad, TX
+USGS	08062730	New Terrell City Lk nr Terrell, TX
 USGS	08062800	Cedar Ck nr Kemp, TX
 USGS	08062895	Kings Ck at SH 34 nr Kaufman, TX
+USGS	08063010	Cedar Ck Res nr Trinidad, TX
+USGS	08063030	Ash Ck at Hwy 171 nr Malone, TX
+USGS	08063040	Richland Ck at Hwy 22 nr Mertens, TX
 USGS	08063048	White Rk Ck at FM 308 nr Irene, TX
+USGS	08063050	Navarro Mills Lk nr Dawson, TX
 USGS	08063100	Richland Ck nr Dawson, TX
+USGS	08063562	Chambers Ck at FM 55 nr Avalon, TX
 USGS	08063590	Waxahachie Ck at Waxahachie, TX
+USGS	08063600	Lk Waxahachie nr Waxahachie, TX
+USGS	08063700	Bardwell Lk nr Ennis, TX
 USGS	08063800	Waxahachie Ck nr Bardwell, TX
 USGS	08064100	Chambers Ck nr Rice, TX
+USGS	08064510	Halbert Lk nr Corsicana, TX
+USGS	08064550	Richland-Chambers Res nr Kerens, TX
 USGS	08064700	Tehuacana Ck nr Streetman, TX
 USGS	08065000	Trinity Rv nr Oakwood, TX
 USGS	08065200	Upper Keechi Ck nr Oakwood, TX
+USGS	08065330	Houston County Lk nr Crockett, TX
 USGS	08065350	Trinity Rv nr Crockett, TX
 USGS	08065800	Bedias Ck nr Madisonville, TX
+USGS	08066000	Trinity Rv at Riverside, TX
 USGS	08066175	Kickapoo Ck at Onalaska, TX
+USGS	08066190	Livingston Res nr Goodrich, TX
 USGS	08066200	Long King Ck at Livingston, TX
 USGS	08066250	Trinity Rv nr Goodrich, TX
 USGS	08066300	Menard Ck nr Rye, TX
 USGS	08066500	Trinity Rv at Romayor, TX
 USGS	08067000	Trinity Rv at Liberty, TX
 USGS	08067070	CWA Canal nr Dayton, TX
+USGS	08067074	CWA Canal at Thompson Rd nr Baytown, TX
+USGS	08067100	Trinity Rv nr Moss Bluff, TX
+USGS	08067118	Lk Charlotte nr Anahuac, TX
+USGS	08067215	Old Rv Cutoff nr Moss Bluff, TX
+USGS	08067252	Trinity Rv at Wallisville, TX
 USGS	08067500	Cedar Bayou nr Crosby, TX
 USGS	08067525	Goose Ck at Baytown, TX
 USGS	08067548	W Fk San Jacinto Rv nr Huntsville, TX
+USGS	08067600	Lk Conroe nr Conroe, TX
 USGS	08067650	W Fk San Jacinto Rv bl Lk Conroe nr Conroe, TX
 USGS	08067920	Lake Ck at Sendera Ranch Rd nr Conroe, TX
 USGS	08068000	W Fk San Jacinto Rv nr Conroe, TX
@@ -179,21 +274,30 @@ USGS	08068390	Bear Br at Research Blvd, The Woodlands, TX
 USGS	08068400	Panther Br at Gosling Rd, The Woodlands, TX
 USGS	08068450	Panther Br nr Spring, TX
 USGS	08068500	Spring Ck nr Spring, TX
+USGS	08068700	Cypress Ck at Sharp Rd nr Hockley, TX
 USGS	08068720	Cypress Ck at Katy-Hockley Rd nr Hockley, TX
 USGS	08068740	Cypress Ck at House-Hahl Rd nr Cypress, TX
 USGS	08068780	Little Cypress Ck nr Cypress, TX
 USGS	08068800	Cypress Ck at Grant Rd nr Cypress, TX
 USGS	08068900	Cypress Ck at Stuebner-Airline Rd nr Westfield, TX
 USGS	08069000	Cypress Ck nr Westfield, TX
+USGS	08069500	W Fk San Jacinto Rv nr Humble, TX
 USGS	08070000	E Fk San Jacinto Rv nr Cleveland, TX
 USGS	08070200	E Fk San Jacinto Rv nr New Caney, TX
 USGS	08070500	Caney Ck nr Splendora, TX
 USGS	08071000	Peach Ck at Splendora, TX
 USGS	08071280	Luce Bayou abv Lk Houston nr Huffman, TX
+USGS	08072000	Lk Houston nr Sheldon, TX
+USGS	08072050	San Jacinto Rv nr Sheldon, TX
 USGS	08072300	Buffalo Bayou nr Katy, TX
+USGS	08072350	Buffalo Bayou nr Fulshear, TX
+USGS	08072500	Barker Res nr Addicks, TX
 USGS	08072600	Buffalo Bayou at State Hwy 6 nr Addicks, TX
+USGS	08072680	S Mayde Ck at Heathergold Dr nr Addicks, TX
 USGS	08072730	Bear Ck nr Barker, TX
 USGS	08072760	Langham Ck at W Little York Rd nr Addicks, TX
+USGS	08072800	Langham Ck nr Addicks, TX
+USGS	08073000	Addicks Res nr Addicks, TX
 USGS	08073100	Langham Ck at Addicks Res Outflow nr Addicks, TX
 USGS	08073500	Buffalo Bayou nr Addicks, TX
 USGS	08073600	Buffalo Bayou at W Belt Dr, Houston, TX
@@ -204,6 +308,8 @@ USGS	08074150	Cole Ck at Deihl Rd, Houston, TX
 USGS	08074250	Brickhouse Gully at Costa Rica St, Houston, TX
 USGS	08074500	Whiteoak Bayou at Houston, TX
 USGS	08074540	Little Whiteoak Bayou at Trimble St, Houston, TX
+USGS	08074598	Whiteoak Bayou at Main St, Houston, TX
+USGS	08074710	Buffalo Bayou at Turning Basin, Houston, TX
 USGS	08074760	Brays Bayou at Alief, TX
 USGS	08074800	Keegans Bayou at Roark Rd nr Houston, TX
 USGS	08074810	Brays Bayou at Gessner Dr, Houston, TX
@@ -223,66 +329,114 @@ USGS	08076500	Halls Bayou at Houston, TX
 USGS	08076700	Greens Bayou at Ley Rd, Houston, TX
 USGS	08076997	Clear Ck at Mykawa St nr Pearland, TX
 USGS	08077600	Clear Ck nr Friendswood, TX
+USGS	08077637	Clear Lk Second Outflow Channel at Kemah, TX
+USGS	08077650	Moses Lk-Galveston Bay nr Texas City, TX
+USGS	08077658	TX City Pump Sta at Texas City, TX
+USGS	08077740	La Marque Levee Pump Sta nr La Marque, TX
 USGS	08078000	Chocolate Bayou nr Alvin, TX
+USGS	08079120	Old Brazos Rv nr Freeport, TX
+USGS	08079510	N Fk DMF Brazos Rv at Loop 289 nr Lubbock, TX
 USGS	08079600	DMF Brazos Rv at Justiceburg, TX
+USGS	08079700	Lk Alan Henry Res nr Justiceburg, TX
 USGS	08080500	DMF Brazos Rv nr Aspermont, TX
 USGS	08080505	DMF Brazos Rv nr Rule, TX
+USGS	08080650	Running Water Draw at SH 214 nr Friona, TX
 USGS	08080700	Running Water Draw at Plainview, TX
+USGS	08080750	Callahan Draw nr Lockney, TX
+USGS	08080910	White Rv Res nr Spur, TX
 USGS	08082000	Salt Fk Brazos Rv nr Aspermont, TX
-USGS	08082450	Lk Creek nr Weinert, TX
 USGS	08082500	Brazos Rv at Seymour, TX
 USGS	08082700	Millers Ck nr Munday, TX
+USGS	08082800	Millers Ck Res nr Bomarton, TX
+USGS	08082900	N Elm Ck nr Throckmorton, TX
 USGS	08083100	Clear Fk Brazos Rv nr Roby, TX
+USGS	08083200	Lk Sweetwater nr Sweetwater, TX
 USGS	08083230	Clear Fk Brazos Rv nr Noodle, TX
+USGS	08083240	Clear Fk Brazos Rv at Hwy 83 nr Hawley, TX
+USGS	08083270	Lk Abilene nr Buffalo Gap, TX
 USGS	08083420	Cat Claw Ck at Abilene, TX
+USGS	08083460	Kirby Lk at Abilene, TX
 USGS	08083480	Cedar Ck at IH 20, Abilene, TX
+USGS	08083500	Ft Phantom Hill Res nr Nugent, TX
 USGS	08084000	Clear Fk Brazos Rv at Nugent, TX
 USGS	08084200	Clear Fk Brazos Rv at Lueders, TX
+USGS	08084500	Lk Stamford nr Haskell, TX
 USGS	08084800	California Ck nr Stamford, TX
 USGS	08085500	Clear Fk Brazos Rv at Ft Griffin, TX
 USGS	08086050	Deep Ck at Moran, TX
 USGS	08086212	Hubbard Ck bl Albany, TX
+USGS	08086215	Lk Cisco nr Cisco, TX
 USGS	08086290	Big Sandy Ck abv Breckenridge, TX
+USGS	08086400	Hubbard Ck Res nr Breckenridge, TX
+USGS	08086500	Hubbard Ck nr Breckenridge, TX
 USGS	08088000	Brazos Rv nr South Bend, TX
+USGS	08088400	Lk Graham nr Graham, TX
+USGS	08088435	Possum Kingdom Lk abv McGinnis Pt nr Graford, TX
+USGS	08088440	Possum Kingdom Lk at Sandy Beach nr Graford, TX
+USGS	08088500	Possum Kingdom Lk nr Graford, TX
 USGS	08088610	Brazos Rv nr Graford, TX
 USGS	08089000	Brazos Rv nr Palo Pinto, TX
+USGS	08090300	Lk Palo Pinto nr Santo, TX
+USGS	08090700	Lk Mineral Wells nr Mineral Wells, TX
 USGS	08090800	Brazos Rv nr Dennis, TX
+USGS	08090880	Lk Granbury at SH 51 nr Granbury, TX
+USGS	08090885	Lk Granbury at US Hwy 377, Granbury, TX
+USGS	08090900	Lk Granbury nr Granbury, TX
 USGS	08090905	Brazos Rv ds Lk Granbury nr Granbury, TX
 USGS	08091000	Brazos Rv nr Glen Rose, TX
 USGS	08091500	Paluxy Rv at Glen Rose, TX
+USGS	08091730	Squaw Ck Res nr Glen Rose, TX
+USGS	08091900	Lk Pat Cleburne nr Cleburne, TX
 USGS	08092000	Nolan Rv at Blum, TX
+USGS	08092500	Whitney Lk nr Whitney, TX
 USGS	08093100	Brazos Rv nr Aquilla, TX
+USGS	08093350	Aquilla Lk abv Aquilla, TX
 USGS	08093360	Aquilla Ck abv Aquilla, TX
 USGS	08094800	N Bosque Rv at Hico, TX
 USGS	08095000	N Bosque Rv nr Clifton, TX
 USGS	08095200	N Bosque Rv at Valley Mills, TX
 USGS	08095300	Middle Bosque Rv nr McGregor, TX
 USGS	08095400	Hog Ck nr Crawford, TX
+USGS	08095550	Waco Lk nr Waco, TX
 USGS	08096500	Brazos Rv at Waco, TX
 USGS	08098290	Brazos Rv nr Highbank, TX
 USGS	08098300	Little Pond Ck nr Burlington, TX
+USGS	08099000	Leon Res nr Ranger, TX
 USGS	08099100	Leon Rv nr De Leon, TX
 USGS	08099300	Sabana Rv nr De Leon, TX
+USGS	08099382	Copperas Ck at FM 2247 nr Comanche, TX
+USGS	08099400	Proctor Lk nr Proctor, TX
 USGS	08099500	Leon Rv nr Hasse, TX
 USGS	08100000	Leon Rv nr Hamilton, TX
 USGS	08100500	Leon Rv at Gatesville, TX
+USGS	08100630	Henson Ck at W Range Rd nr Gatesville, TX
 USGS	08101000	Cowhouse Ck at Pidcoke, TX
+USGS	08101300	Cowhouse Ck at W Range Rd nr Fort Hood, TX
+USGS	08101310	House Ck at Old Georgetown Rd nr Ft Hood, TX
+USGS	08101340	House Ck at W Range Rd nr Ft Hood, TX
+USGS	08102000	Belton Lk nr Belton, TX
 USGS	08102500	Leon Rv nr Belton, TX
 USGS	08103800	Lampasas Rv nr Kempner, TX
 USGS	08103900	S Fk Rocky Ck nr Briggs, TX
+USGS	08103940	Lampasas Rv at Ding Dong, TX
+USGS	08104050	Stillhouse Hollow Lk nr Belton, TX
 USGS	08104100	Lampasas Rv nr Belton, TX
 USGS	08104300	Salado Ck at Salado, TX
 USGS	08104500	Little Rv nr Little River, TX
 USGS	0810464660	N Fk San Gabriel Rv at Reagan Blvd nr Leander, TX
+USGS	08104650	Lk Georgetown nr Georgetown, TX
 USGS	08104700	N Fk San Gabriel Rv nr Georgetown, TX
 USGS	08104900	S Fk San Gabriel Rv at Georgetown, TX
 USGS	08105095	Berry Ck at Airport Rd nr Georgetown, TX
 USGS	08105505	Willis Ck nr Granger, TX
+USGS	08105600	Granger Lk nr Granger, TX
 USGS	08105700	San Gabriel Rv at Laneport, TX
 USGS	08105872	Brushy Ck at Cedar Park, TX
 USGS	08105883	Brushy Ck at IH 35, Round Rock, TX
 USGS	08105886	Lake Ck at Lake Ck Pkwy nr Austin, TX
+USGS	0810588650	Lake Ck at O'Connor Dr nr Round Rock, TX
 USGS	08105888	Brushy Ck at Kenney Fort Blvd at Round Rock, TX
+USGS	08105897	Brushy Ck at FM 973 nr Coupland, TX
 USGS	08106350	Little Rv nr Rockdale, TX
 USGS	08106500	Little Rv nr Cameron, TX
 USGS	08107950	N Elm Ck at Rosebud Rd nr Meeks, TX
@@ -290,12 +444,16 @@ USGS	08108250	Big Elm Ck at SH 77 nr Cameron, TX
 USGS	08108700	Brazos Rv at SH 21 nr Bryan, TX
 USGS	08109700	Middle Yegua Ck nr Dime Box, TX
 USGS	08109800	E Yegua Ck nr Dime Box, TX
+USGS	08109900	Somerville Lk nr Somerville, TX
 USGS	08110000	Yegua Ck nr Somerville, TX
 USGS	08110100	Davidson Ck nr Lyons, TX
+USGS	08110300	Lk Mexia nr Mexia, TX
 USGS	08110325	Navasota Rv abv Groesbeck, TX
 USGS	08110430	Big Ck nr Freestone, TX
+USGS	08110460	Lk Limestone at Lk Limestone Marina nr Farrar, TX
+USGS	08110470	Lk Limestone nr Marquez, TX
 USGS	08110500	Navasota Rv nr Easterly, TX
-USGS	08110800	Navasota Rv at Old Spanish Rd nr Bryan, TX
+USGS	08110800	Navasota Rv at Old San Antonio Rd nr Bryan, TX
 USGS	08111052	Bee Ck Main at College Station, TX
 USGS	08111054	Bee Ck Trib A at College Station, TX
 USGS	08111500	Brazos Rv nr Hempstead, TX
@@ -305,30 +463,58 @@ USGS	08114000	Brazos Rv at Richmond, TX
 USGS	08115000	Big Ck nr Needville, TX
 USGS	08116400	Dry Ck nr Rosenberg, TX
 USGS	08116650	Brazos Rv nr Rosharon, TX
+USGS	08116850	Brazos Rv nr West Columbia, TX
+USGS	08117300	Brazos Rv at GIWW Flood Gates nr Freeport, TX
 USGS	08117500	San Bernard Rv nr Boling, TX
 USGS	08117995	Colorado Rv nr Gail, TX
+USGS	08118000	Lk J. B. Thomas nr Vincent, TX
+USGS	08119500	Colorado Rv at Hwy 350 nr Ira, TX
 USGS	08120500	Deep Ck nr Dunn, TX
 USGS	08121000	Colorado Rv at Colorado City, TX
+USGS	08123000	Lk Colorado City nr Colorado City, TX
+USGS	08123600	Champion Ck Res nr Colorado City, TX
+USGS	08123620	Sulphur Spgs Draw nr Wellman, TX
+USGS	08123755	Moss Ck Lk nr Coahoma, TX
 USGS	08123800	Beals Ck nr Westbrook, TX
 USGS	08123850	Colorado Rv abv Silver, TX
+USGS	08123950	E. V. Spence Res nr Robert Lee, TX
 USGS	08124000	Colorado Rv at Robert Lee, TX
+USGS	08125500	Oak Ck Res nr Blackwell, TX
 USGS	08126380	Colorado Rv nr Ballinger, TX
 USGS	08127000	Elm Ck at Ballinger, TX
+USGS	08127090	S Concho Rv Trib nr Eldorado, TX
 USGS	08128000	S Concho Rv at Christoval, TX
+USGS	08128030	S Concho Rv abv Twin Buttes Res nr San Angelo, TX
+USGS	08128095	Tepee Draw Trib nr Barnhart, TX
 USGS	08128400	Middle Concho Rv abv Tankersley, TX
+USGS	08129300	Spring Ck abv Tankersley, TX
+USGS	08130500	Dove Ck at Knickerbocker, TX
 USGS	08130700	Spring Ck abv Twin Buttes Res nr San Angelo, TX
+USGS	08131200	Twin Buttes Res nr San Angelo, TX
 USGS	08131400	Pecan Ck nr San Angelo, TX
-USGS	08133250	N Concho Rv abv Sterling City, TX
+USGS	08132450	Red Arroyo at S. Chadbourne St. nr San Angelo, TX
+USGS	08133500	N Concho Rv at Sterling City, TX
 USGS	08134000	N Concho Rv nr Carlsbad, TX
-USGS	08134250	N Concho Rv nr Grape Creek, TX
+USGS	08134500	O. C. Fisher Lk at San Angelo, TX
 USGS	08136000	Concho Rv at San Angelo, TX
 USGS	08136500	Concho Rv at Paint Rock, TX
+USGS	08136600	O. H. Ivie Res nr Voss, TX
 USGS	08136700	Colorado Rv nr Stacy, TX
+USGS	08140700	Pecan Bayou nr Cross Cut, TX
+USGS	08140770	Lk Coleman nr Novice, TX
+USGS	08141000	Hords Ck Lk nr Valera, TX
+USGS	08142000	Hords Ck nr Coleman, TX
+USGS	08143000	Lk Brownwood nr Brownwood, TX
 USGS	08143600	Pecan Bayou nr Mullin, TX
+USGS	08143700	Browns Ck Trib nr Goldthwaite, TX
+USGS	08143990	Noyes Canal at Diversion pt nr. Menard, TX
 USGS	08144500	San Saba Rv at Menard, TX
+USGS	08144900	Brady Ck Res nr Brady, TX
 USGS	08145000	Brady Ck at Brady, TX
 USGS	08146000	San Saba Rv at San Saba, TX
 USGS	08147000	Colorado Rv nr San Saba, TX
+TX071	08148000	LCRA Lk Buchanan nr Burnet, TX
+TX071	08148100	LCRA Inks Lk nr Kingsland, TX
 USGS	08148500	N Llano Rv nr Junction, TX
 USGS	08149900	S Llano Rv at Flat Rock Ln at Junction, TX
 USGS	08150000	Llano Rv nr Junction, TX
@@ -336,9 +522,13 @@ USGS	08150700	Llano Rv nr Mason, TX
 USGS	08150800	Beaver Ck nr Mason, TX
 USGS	08151500	Llano Rv at Llano, TX
 USGS	08152000	Sandy Ck nr Kingsland, TX
+TX071	08152500	LCRA Lk LBJ nr Marble Falls, TX
+USGS	08152710	Felps Spgs nr Burnet, TX
 USGS	08152900	Pedernales Rv nr Fredericksburg, TX
 USGS	08153500	Pedernales Rv nr Johnson City, TX
+TX071	08154500	LCRA Lk Travis nr Austin, TX
 USGS	08154700	Bull Ck at Loop 360 nr Austin, TX
+TX071	08154900	LCRA Lk Austin at Austin, TX
 USGS	08155200	Barton Ck at SH 71 nr Oak Hill, TX
 USGS	08155240	Barton Ck at Lost Ck Blvd nr Austin, TX
 USGS	08155300	Barton Ck at Loop 360, Austin, TX
@@ -354,11 +544,13 @@ USGS	08158000	Colorado Rv at Austin, TX
 USGS	08158030	Boggy Ck at Manor Rd, Austin, TX
 USGS	08158035	Boggy Ck at Webberville Rd, Austin, TX
 USGS	08158045	Ft Br Boggy Ck at Manor Rd, Austin, TX
+USGS	08158110	Mills Pond at Wells Branch, TX
 USGS	08158200	Walnut Ck at Dessau Rd, Austin, TX
 USGS	08158380	Little Walnut Ck at Georgian Dr, Austin, TX
 USGS	08158600	Walnut Ck at Webberville Rd, Austin, TX
 USGS	08158700	Onion Ck nr Driftwood, TX
 USGS	08158810	Bear Ck bl FM 1826 nr Driftwood, TX
+USGS	08158813	Bear Ck at Spillar Ranch Rd nr Manchaca, TX
 USGS	08158827	Onion Ck at Twin Creeks Rd nr Manchaca, TX
 USGS	08158840	Slaughter Ck at FM 1826 nr Austin, TX
 USGS	08158860	Slaughter Ck at FM 2304 nr Austin, TX
@@ -374,13 +566,19 @@ USGS	08160800	Redgate Ck nr Columbus, TX
 USGS	08161000	Colorado Rv at Columbus, TX
 USGS	08162000	Colorado Rv at Wharton, TX
 USGS	08162500	Colorado Rv nr Bay City, TX
+USGS	08162501	Colorado Rv nr Wadsworth, TX
+USGS	08162506	Colorado Rv Bypass Channel nr Matagorda, TX
 USGS	08162600	Tres Palacios Rv nr Midfield, TX
+USGS	08163500	Lavaca Rv at Hallettsville, TX
 USGS	08164000	Lavaca Rv nr Edna, TX
 USGS	08164300	Navidad Rv nr Hallettsville, TX
+USGS	08164350	Navidad Rv nr Speaks, TX
+USGS	08164370	Navidad Rv at Morales, TX
 USGS	08164390	Navidad Rv at Strane Pk nr Edna, TX
 USGS	08164450	Sandy Ck nr Ganado, TX
 USGS	08164503	W Mustang Ck nr Ganado, TX
 USGS	08164504	E Mustang Ck nr Louise, TX
+USGS	08164525	Lk Texana nr Edna, TX
 USGS	08164600	Garcitas Ck nr Inez, TX
 USGS	08164800	Placedo Ck nr Placedo, TX
 USGS	08165300	N Fk Guadalupe Rv nr Hunt, TX
@@ -390,47 +588,67 @@ USGS	08166140	Guadalupe Rv abv Bear Ck at Kerrville, TX
 USGS	08166200	Guadalupe Rv at Kerrville, TX
 USGS	08166250	Guadalupe Rv nr Center Point, TX
 USGS	08167000	Guadalupe Rv at Comfort, TX
+USGS	08167200	Guadalupe Rv at FM 474 nr Bergheim, TX
 USGS	08167500	Guadalupe Rv nr Spring Branch, TX
+USGS	08167700	Canyon Lk nr New Braunfels, TX
 USGS	08167800	Guadalupe Rv at Sattler, TX
+USGS	08167870	Bear Ck at FM 2722 nr Sattler, TX
+USGS	08167900	Guadalupe Rv at Third Crossing nr Sattler, TX
 USGS	08168000	Hueco Spgs nr New Braunfels, TX
 USGS	08168500	Guadalupe Rv abv Comal Rv at New Braunfels, TX
+USGS	08168770	WFk Dry Comal Ck at Schuetz Dam, New Braunfels, TX
 USGS	08168797	Dry Comal Ck at Loop 337 nr New Braunfels, TX
 USGS	08168913	Comal Rv (oc) nr Landa Lk, New Braunfels, TX
 USGS	08168932	Comal Rv (nc) nr Landa Lk, New Braunfels, TX
 USGS	08169000	Comal Rv at New Braunfels, TX
+USGS	08169500	Guadalupe Rv at New Braunfels, TX
+USGS	08169740	Guadalupe Rv at Hwy 123-BR at Seguin, TX
 USGS	08169792	Guadalupe Rv at FM 1117 nr Seguin, TX
+USGS	08169845	Guadalupe Rv at CR 143 nr Gonzales, TX
 USGS	08170500	San Marcos Rv at San Marcos, TX
+USGS	08170800	Blanco Rv at Crabapple Rd nr Blanco, TX
+USGS	08170890	Little Blanco Rv at FM32 nr Fischer, TX
+USGS	08170950	Blanco Rv at Fischer Store Rd nr Fischer, TX
 USGS	08170990	Jacobs Well Spg nr Wimberley, TX
 USGS	08171000	Blanco Rv at Wimberley, TX
 USGS	08171290	Blanco Rv at Halifax Rch nr Kyle, TX
 USGS	08171300	Blanco Rv nr Kyle, TX
+USGS	08171350	Blanco Rv at San Marcos, TX
 USGS	08171400	San Marcos Rv nr Martindale, TX
 USGS	08172000	San Marcos Rv at Luling, TX
 USGS	08172400	Plum Ck at Lockhart, TX
 USGS	08173000	Plum Ck nr Luling, TX
 USGS	08173900	Guadalupe Rv at Gonzales, TX
+USGS	08174200	Sandy Fork Ck at Hwy 97 nr Waelder, TX
+USGS	08174550	Peach Creek at Hwy 90 nr Waelder, TX
 USGS	08174600	Peach Ck bl Dilworth, TX
+USGS	08174700	Guadalupe Rv at Hwy 183 nr Hochheim, TX
+USGS	08174970	Sandies Ck at FM 108 nr Smiley, TX
 USGS	08175000	Sandies Ck nr Westhoff, TX
 USGS	08175800	Guadalupe Rv at Cuero, TX
 USGS	08176500	Guadalupe Rv at Victoria, TX
 USGS	08176550	Fifteenmile Ck nr Weser, TX
 USGS	08176900	Coleto Ck at Arnold Rd Crsg nr Schroeder, TX
 USGS	08177300	Perdido Ck at FM 622 nr Fannin, TX
+USGS	08177400	Coleto Ck Res nr Victoria, TX
 USGS	08177500	Coleto Ck nr Victoria, TX
 USGS	08177520	Guadalupe Rv nr Bloomington, TX
 USGS	08177700	Olmos Ck at Dresden Dr, San Antonio, TX
 USGS	08178000	San Antonio Rv at San Antonio, TX
 USGS	08178050	San Antonio Rv at Mitchell St, San Antonio, TX
-USGS	08178504	San Pedro Ck at Probandt St at San Antonio, TX
+USGS	08178500	San Pedro Ck at Furnish St, San Antonio, TX
 USGS	08178565	San Antonio Rv at Loop 410, San Antonio, TX
 USGS	08178593	Salado Ck at Blanco Rd. San Antonio, Tx
 USGS	08178700	Salado Ck at Loop 410, San Antonio, TX
 USGS	08178800	Salado Ck at Loop 13, San Antonio, TX
 USGS	0817887350	Medina Rv at Patterson Rd at Medina, TX
 USGS	08178880	Medina Rv at Bandera, TX
+USGS	08179500	Medina Lk nr San Antonio, TX
+USGS	08180500	Medina Rv nr Riomedina, TX
 USGS	08180586	San Geronimo Ck nr Helotes, TX
 USGS	08180700	Medina Rv nr Macdona, TX
-USGS	08180720	Medina Rv nr Von Ormy, TX
+USGS	08180850	Medina Rv at Applewhite Rd, San Antonio, TX
+USGS	08180941	Culebra Ck in GCSNA nr Helotes, TX
 USGS	08181400	Helotes Ck at Helotes, TX
 USGS	08181435	Leon Ck at Lp 410 at San Antonio, TX
 USGS	08181480	Leon Ck at IH 35, San Antonio, TX
@@ -440,15 +658,19 @@ USGS	08181800	San Antonio Rv nr Elmendorf, TX
 USGS	08183200	San Antonio Rv nr Floresville, TX
 USGS	08183500	San Antonio Rv nr Falls City, TX
 USGS	08183900	Cibolo Ck nr Boerne, TX
+USGS	08183978	Cibolo Ck at Specht Rd nr. Bulverde, TX
+USGS	08184050	Cibolo Ck at Smithson Valley Rd nr Bulverde, TX
 USGS	08185000	Cibolo Ck at Selma, TX
 USGS	08185065	Cibolo Ck nr Saint Hedwig, TX
 USGS	08185100	Martinez Ck nr Saint Hedwig, TX
 USGS	08185500	Cibolo Ck at Sutherland Springs, TX
 USGS	08186000	Cibolo Ck nr Falls City, TX
 USGS	08186500	Ecleto Ck nr Runge, TX
+USGS	08187500	Escondido Ck at Kenedy, TX
 USGS	08188060	San Antonio Rv at SH 72 nr Runge, TX
 USGS	08188500	San Antonio Rv at Goliad, TX
 USGS	08188570	San Antonio Rv nr McFaddin, TX
+USGS	08188590	North end of GBRA Calhoun Canal nr Long Mott,TX
 USGS	08188800	Guadalupe Rv nr Tivoli, TX
 USGS	08188810	Guadalupe Rv at SH 35 nr Tivoli, TX
 USGS	08189200	Copano Ck nr Refugio, TX
@@ -466,7 +688,10 @@ USGS	08194200	San Casimiro Ck nr Freer, TX
 USGS	08194500	Nueces Rv nr Tilden, TX
 USGS	08195000	Frio Rv at Concan, TX
 USGS	08196000	Dry Frio Rv nr Reagan Wells, TX
+USGS	08196300	Dry Frio Rv at FM 2690 nr Knippa, TX
 USGS	08197500	Frio Rv bl Dry Frio Rv nr Uvalde, TX
+USGS	08197800	Blanco Ck at SH 127 nr Concan, TX
+USGS	08197936	Sabinal Rv bl Mill Ck nr Vanderpool, TX
 USGS	08198000	Sabinal Rv nr Sabinal, TX
 USGS	08198500	Sabinal Rv at Sabinal, TX
 USGS	08200000	Hondo Ck nr Tarpley, TX
@@ -474,33 +699,131 @@ USGS	08200720	Hondo Ck at SH 173 nr Hondo, TX
 USGS	08200977	Middle Verde Ck at SH 173 nr Bandera, TX
 USGS	08201500	Seco Ck at Miller Rh nr Utopia, TX
 USGS	08202700	Seco Ck at Rowe Rh nr D'Hanis, TX
+USGS	08203450	Leona Rv at CR 429A nr Uvalde, TX
 USGS	08204005	Leona Rv nr Uvalde, TX
 USGS	08205500	Frio Rv nr Derby, TX
 USGS	08206600	Frio Rv at Tilden, TX
 USGS	08206700	San Miguel Ck nr Tilden, TX
+USGS	08206900	Choke Canyon Res nr Three Rivers, TX
 USGS	08206910	Choke Canyon Res OWC nr Three Rivers, TX
 USGS	08207500	Atascosa Rv nr McCoy, TX
 USGS	08208000	Atascosa Rv at Whitsett, TX
 USGS	08210000	Nueces Rv nr Three Rivers, TX
 USGS	08210400	Lagarto Ck nr George West, TX
+USGS	08210500	Lk Corpus Christi nr Mathis, TX
 USGS	08211000	Nueces Rv nr Mathis, TX
 USGS	08211200	Nueces Rv at Bluntzer, TX
 USGS	08211500	Nueces Rv at Calallen, TX
 USGS	08211503	Rincon Bayou Channel nr Calallen, TX
+USGS	0821150305	Rincon Bayou Channel nr Odem, TX
 USGS	08211520	Oso Ck at Corpus Christi, TX
+USGS	08211800	San Diego Ck at Alice, TX
 USGS	08211900	San Fernando Ck at Alice, TX
+USGS	08212300	Tranquitas Ck at Kingsville, TX
 USGS	08212400	Los Olmos Ck nr Falfurrias, TX
+USGS	08364000	RIO GRANDE AT EL PASO, TX
+USGS	08371500	Rio Grande abv Rio Conchos nr Presidio, TX
+USGS	08374200	Rio Grande bl Rio Conchos nr Presidio, TX
+USGS	08374510	Rio Grande Dws Santa Elena Canyon, BBNP, TX
 USGS	08374550	Rio Grande nr Castolon, TX
 USGS	08375300	Rio Grande at Rio Grande Village, Big Bnd NP, TX
 USGS	08376300	Sanderson Ck at Sanderson, TX
+USGS	08377200	Rio Grande at Foster Rh nr Langtry, TX
+USGS	08407580	Unm Trib No. 1 Univ Draw nr Cornudas, TX
+USGS	08410000	Red Bluff Res nr Orla, TX
 USGS	08412500	Pecos Rv nr Orla, TX
-USGS	08420500	Pecos Rv at Pecos, TX
+USGS	08419000	Pecos Rv at FM 3398 nr Pecos, TX
 USGS	08427000	Giffin Spgs at Toyahvale, TX
 USGS	08433000	Barrilla Draw nr Saragosa, TX
 USGS	08437710	Pecos Rv at RR 1776 nr Grandfalls, TX
 USGS	08446500	Pecos Rv nr Girvin, TX
 USGS	08447000	Pecos Rv nr Sheffield, TX
+USGS	08447018	Caroline Springs at Oasis Ranch, TX
 USGS	08447020	Independence Ck nr Sheffield, TX
 USGS	08447300	Pecos Rv at Brotherton Rh nr Pandale, TX
+USGS	08447410	Pecos Rv nr Langtry, TX
 USGS	08449100	Dolan Ck abv Devils River nr Comstock, TX
+USGS	08456310	Las Moras Spgs Dws of pool at Brackettville,TX
+USGS	08458975	Manadas Ck at Laredo, TX
 USGS	08458995	Zacate Ck at Laredo, TX
+USGS	08470500	Arroyo Colorado at FM 106, Rio Hondo, TX
+USGS	283526096594800	ET Gage (treatment site) nr McFaddin, TX
+USGS	283534097002100	ET Gage (reference site) nr McFaddin, TX
+USGS	290350095334300	Brazos Rv nr Hwy 332 nr Brazoria, TX
+USGS	290802098232901	AY-68-53-928 (ASR-MW C8)
+USGS	292331098294501	AY-68-37-711 (Mission 7)
+USGS	292618099165901	TD-69-38-601 (Seco Creek Well)
+USGS	292943098354404	AY-68-36-132 (Z DED)
+USGS	293116098334101	AY-68-28-815 (Turtle Creek 3)
+USGS	293202099063501	TD-69-32-703 (MED-1)
+USGS	293252098380801	AY-68-27-610 (Parkwood Park)
+USGS	293348095070604	LJ-65-32-428 (Clear Lake Deep Extensometer)
+USGS	293516098325501	AY-68-28-211 (Shavano Park at Fawn Drive)
+USGS	294338095270402	LJ-65-21-226 (Southwest Monitor No. 1)
+USGS	294338095270403	LJ-65-21-230 (Southwest Piezometer No. 2)
+USGS	294643095035200	Lynchburg Res nr CWA Canal Inflow nr Baytown, TX
+USGS	294726095351101	LJ-65-12-725 (Addicks Piezometer No. 2)
+USGS	294726095351102	LJ-65-12-726 (Addicks Monitor No. 1)
+USGS	294726095351104	LJ-65-12-729 (Addicks Piezometer No. 1)
+USGS	294728095200103	LJ-65-14-738 (Northeast Piezometer No. 4)
+USGS	295204099340201	AS-69-12-206 (Bandera County Edwards GW Well 1)
+USGS	295449095084101	LJ-65-07-905 (Lake Houston Piezometer No. 2)
+USGS	295524095072701	SJRA E Industrial Canal nr Crosby, TX
+USGS	295554095093401	Lk Houston at mouth of Jack's Ditch nr Houston, TX
+USGS	295554095093402	Lk Hou at Jack's Ditch (Site 2) nr Houston, TX
+USGS	295826095082200	Lk Houston S Union Pacific RR Bridge nr Houston,TX
+USGS	300824095274701	TS-60-53-718 (Woodlands Piezometer No. 1-A)
+USGS	300849095143301	TS-60-55-710 (New Caney Piezometer No. 7-A)
+USGS	301228095272501	TS-60-53-516 (Needham Piezometer No. 4-A)
+USGS	301237097464801	YD-58-50-301 (Lovelady)
+USGS	301505095343702	TS-60-44-805 (Lake Creek Piezometer No. 3-B)
+USGS	301948095290002	TS-60-45-412 (City of Conroe Piezometer No. 1)
+USGS	301948095290004	TS-60-45-414 (City of Conroe Piezometer No. 3)
+USGS	302636095422801	TS-60-35-503 (Bailey Grove Piezometer No. 2-A)
+USGS	302636095422803	TS-60-35-505 (Bailey Grove Piezometer No. 2-C)
+USGS	302814097444799	UBCWCID Dam 8 nr Jollyville, TX
+USGS	302903097424999	UBCWCID Dam 9 nr Round Rock, TX
+USGS	302914097483500	UBCWCID Dam 6 nr Cedar Park, TX
+USGS	302926097322400	UBCWCID Dam 22 nr Hutto, TX
+USGS	302948095422501	TS-60-35-202 (Flower Follet)
+USGS	303022097331200	UBCWCID Dam 21 nr Hutto, TX
+USGS	303031097460200	UBCWCID Dam 7 nr Brushy Ck, TX
+USGS	303056097341300	UBCWCID Dam 20 nr Hutto, TX
+USGS	303114097355700	UBCWCID Dam 19 nr Hutto, TX
+USGS	303143095334801	YU-60-28-802 (Sam Hou. Nat. Forest Piezo. No. 1)
+USGS	303209097473000	UBCWCID Dam 4 nr Cedar Park, TX
+USGS	303212097373100	UBCWCID Dam 17 nr Round Rock, TX
+USGS	303216097423600	UBCWCID Dam 12 nr Brushy Ck, TX
+USGS	303223097450600	UBCWCID Dam 13A nr Brushy Ck, TX
+USGS	303227097404504	UBCWCID Dam 11 nr Round Rock, TX
+USGS	303231097394800	UBCWCID Dam 14 nr Round Rock, TX
+USGS	303234097345700	UBCWCID Dam 18 nr Hutto, TX
+USGS	303318097482000	UBCWCID Dam 3 nr Leander, TX
+USGS	303341097364800	UBCWCID Dam 15 nr Hutto, TX
+USGS	303401097374700	UBCWCID Dam 16 nr Round Rock, TX
+USGS	303410097424900	UBCWCID Dam 10B nr Brushy Ck, TX
+USGS	303439097465000	UBCWCID Dam 5 nr Leander, TX
+USGS	303443097502700	UBCWCID Dam 2 at Leander, TX
+USGS	303502097432000	UBCWCID Dam 10A nr Georgetown, TX
+USGS	303508097525399	UBCWCID Dam 1 nr Leander, TX
+USGS	305226094010000	Rain Gage nr Jasper, TX
+USGS	305236094184100	Rain Gage nr Colmesneil, TX
+USGS	312826098090600	Rain Gage at Evant HS, Evant, TX
+USGS	312922095080701	Rain Gage nr Kennard, TX
+USGS	315712106361801	MBOWN-236 - JL-49-04-474 (CWF-2A)
+USGS	315712106361802	MBOWN-237 - JL-49-04-475 (CWF-2B)
+USGS	315712106361803	MBOWN-238 - JL-49-04-476 (CWF-2C)
+USGS	315712106361804	MBOWN-239 - JL-49-04-477 (CWF-2D)
+USGS	320758099095000	Rain Gage at Cross Plains ISD, Cross Plains, TX
+USGS	325736095164800	Rain Gage at Winnsboro, TX
+USGS	325852094391200	Rain Gage at Hughes Springs, TX
+USGS	331143094293100	Rain Gage at Cass Well No. 7 nr Marietta, TX
+USGS	331957095234200	Rain Gage at Sulphur Bluff, TX
+USGS	332454095562700	Rain Gage at Ladonia, TX
+USGS	332846094370400	Rain Gage at DeKalb, TX
+USGS	332948094464101	Rain Gage at Avery, TX
+USGS	333241095432300	Rain Gage at Roxton, TX
+USGS	333934095151700	Rain Gage at Detroit, TX
+USGS	341010102240801	RU-10-53-602
+USGS	352614100163200	Wheeler Rain Gage at Wheeler, TX
+USGS	352631100484200	Lefors Weather Sta at Lefors, TX

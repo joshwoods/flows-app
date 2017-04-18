@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:09:18 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 23:17:35 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,9 +15,9 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:09:18 EDT
+# query started 2017-04-17 23:17:35 EDT
 #
-# there are 35 sites matching the search criteria.
+# there are 42 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
@@ -57,3 +57,10 @@ USGS	01117500	PAWCATUCK RIVER AT WOOD RIVER JUNCTION, RI
 USGS	01117800	WOOD RIVER NEAR ARCADIA, RI
 USGS	01118000	WOOD RIVER AT HOPE VALLEY, RI
 USGS	01118500	PAWCATUCK RIVER AT WESTERLY, RI
+USGS	411838071513000	WATCH HILL COVE TIDE GAGE WESTERLY, R.I.
+USGS	412154071462901	RI-WEW  522 WESTERLY, RI
+USGS	412844071422802	RI-RIW  600 RICHMOND, RI
+USGS	412918071321001	RI-SNW    6 SOUTH KINGSTOWN, RI
+USGS	412932071374302	RI-RIW  417 RICHMOND, RI
+USGS	413252071323601	RI-EXW  554 EXETER, RI
+USGS	413358071433801	RI-EXW  475 EXETER, RI
