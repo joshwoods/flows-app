@@ -24,16 +24,7 @@
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-    label.backgroundColor = [UIColor clearColor];
-    label.numberOfLines = 0;
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22.0f];
-    label.textColor = [UIColor whiteColor];
-    label.text = @"Disclaimer";
-    
-    [self.navigationItem.titleView sizeToFit];
-    self.navigationItem.titleView = label;
+    self.navigationItem.title = @"Disclaimer";
     self.navigationController.delegate = self;
     
     [[MKStoreKit sharedKit] startProductRequest];

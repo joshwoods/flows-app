@@ -33,17 +33,8 @@
     [super viewDidLoad];
     
     [self.mainTable setSeparatorColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-    label.backgroundColor = [UIColor clearColor];
-    label.numberOfLines = 0;
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f];
-    label.textColor = [UIColor whiteColor];
-    label.text = @"Add Station";
-    
-    [self.navigationItem.titleView sizeToFit];
-    self.navigationItem.titleView = label;
+
+    self.navigationItem.title = @"Add Station";
     
     self.navigationController.navigationBar.alpha = 1.0f;
     

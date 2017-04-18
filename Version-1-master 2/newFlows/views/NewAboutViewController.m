@@ -25,16 +25,7 @@
     
     self.navigationController.delegate = self;
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-    label.backgroundColor = [UIColor clearColor];
-    label.numberOfLines = 0;
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f];
-    label.textColor = [UIColor whiteColor];
-    label.text = @"Add Station";
-    
-    [self.navigationItem.titleView sizeToFit];
-    self.navigationItem.titleView = label;
+    self.navigationItem.title = @"Add Station";
     
     NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0], NSForegroundColorAttributeName: [UIColor colorWithHex:@"ACACAC"]};
     [[UIBarButtonItem appearance] setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];

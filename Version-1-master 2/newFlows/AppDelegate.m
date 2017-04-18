@@ -25,7 +25,7 @@
 @synthesize selectedStationArray;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [self applyAppearance];
     
     defaults = [NSUserDefaults standardUserDefaults];
     
@@ -66,8 +66,13 @@
     }
 }
 
-- (void)fireTestNotification{
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"testNotification" object:self];
+- (void)applyAppearance {
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                                           [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f], NSFontAttributeName, nil]];
+
 }
 
 #pragma mark - data pull
