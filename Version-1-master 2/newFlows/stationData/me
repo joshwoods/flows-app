@@ -1,8 +1,8 @@
 #
 #
 # US Geological Survey
-# retrieved: 2015-09-30 19:06:41 EDT
-# URL: http://nwis.waterdata.usgs.gov/nwis/current
+# retrieved: 2017-04-17 23:02:58 EDT
+# URL: https://nwis.waterdata.usgs.gov/nwis/current
 #
 # The Site File stores location and general information about groundwater,
 # surface water, and meteorological sites
@@ -15,9 +15,9 @@
 #  station_nm      -- Site name
 #
 #
-# query started 2015-09-30 19:06:41 EDT
+# query started 2017-04-17 23:02:58 EDT
 #
-# there are 62 sites matching the search criteria.
+# there are 111 sites matching the search criteria.
 #
 #
 agency_cd	site_no	station_nm
@@ -34,18 +34,21 @@ USGS	01017060	Hardwood Brook below Glidden Brk nr Caribou, Maine
 USGS	01017290	Little Madawaska River at Caribou, Maine
 USGS	01017550	Williams Brook at Phair, Maine
 USGS	01017960	Meduxnekeag R above S Br Medux. R nr Houlton, ME
-USGS	01018000	Meduxnekeag River near Houlton, Maine
 USGS	01018009	Pearce Brook at Route 1 at Houlton, Maine
 USGS	01018035	Meduxnekeag River at Lowery Rd. nr Houlton, Maine
 USGS	01018500	St. Croix River at Vanceboro, Maine
+USGS	01018900	West Grand Lake at Grand Lake Stream, Maine
 USGS	01019000	Grand Lake Stream at Grand Lake Stream, Maine
+USGS	01019300	Lewy Lake at Princeton, Maine
 USGS	01021000	St. Croix River at Baring, Maine
+USGS	01021050	St. Croix River at Milltown, Maine
+USGS	01021060	St. Croix River at Calais, Maine
 USGS	01021470	Libby Brook near Northfield, Maine
 USGS	01021480	Old Stream near Wesley, Maine
-USGS	01022294	East Br Bear Brook near Beddington, Maine
 USGS	01022500	Narraguagus River at Cherryfield, Maine
 USGS	01022840	Otter Creek near Bar Harbor, Maine
 USGS	01027200	North Branch Penobscot River nr Pittston Farm, ME
+USGS	01027240	S. Br. Penobscot River nr Canada Falls Lake, Maine
 USGS	01029200	Seboeis River near Shin Pond, Maine
 USGS	01029500	East Branch Penobscot River at Grindstone, Maine
 USGS	01030350	Wytopitlock Stream near Wytopitlock Maine
@@ -56,7 +59,9 @@ USGS	01031500	Piscataquis River near Dover-Foxcroft, Maine
 USGS	01031510	Black Stream near Dover-Foxcroft, Maine
 USGS	01034000	Piscataquis River at Medford, Maine
 USGS	01034500	Penobscot River at West Enfield, Maine
+USGS	01036390	Penobscot River at Eddington, Maine
 USGS	01037000	Kenduskeag Stream near Bangor, Maine
+USGS	01037050	Penobscot River at Bangor, Maine
 USGS	01037380	Ducktrap River near Lincolnville, Maine
 USGS	01038000	Sheepscot River at North Whitefield, Maine
 USGS	01042500	Kennebec River at The Forks, Maine
@@ -70,7 +75,11 @@ USGS	01047200	Sandy River near Madrid, Maine
 USGS	01048000	Sandy River near Mercer, Maine
 USGS	01048220	East Branch Wesserunsett Stream near Athens, Maine
 USGS	01049265	Kennebec River at North Sidney, Maine
+USGS	01049320	Kennebec River at Calumet Bridge at Augusta, Maine
 USGS	01049500	Cobbosseecontee Stream at Gardiner, Maine
+USGS	01049505	Kennebec River at Gardiner, Maine
+USGS	01051620	Umbagog Lake at Birch Camp, at Magalloway Plt, ME
+USGS	01051705	Umbagog Lake nr Dead Cambridge inlet, at Upton, ME
 USGS	01054200	Wild River at Gilead, Maine
 USGS	01054300	Ellis River at South Andover, Maine
 USGS	01054500	Androscoggin River at Rumford, Maine
@@ -79,8 +88,48 @@ USGS	01055500	Nezinscot River at Turner Center, Maine
 USGS	01057000	Little Androscoggin River near South Paris, Maine
 USGS	01059000	Androscoggin River near Auburn, Maine
 USGS	01063310	Stony Brook at East Sebago, Maine
+USGS	01063995	Sebago Lake near North Windham, Maine
+USGS	01064118	Presumpscot River at Westbrook, Maine
 USGS	01066000	Saco River at Cornish, Maine
 USGS	01067950	Kennebunk River near Kennebunk, Maine
 USGS	01068910	Mousam River at Route 4 near Sanford, Maine
 USGS	01069500	Mousam River near West Kennebunk, Maine
 USGS	01069700	Branch Brook near Kennebunk, Maine
+USGS	432310070393301	ME-YW807 Sanford, Maine
+USGS	432742070225401	Saco River at Camp Ellis near Saco, Maine
+USGS	434829070465101	Cornish Precipitation at Cornish, Maine
+USGS	434955070261401	ME-CW 2026 North Windham, Maine
+USGS	435453070013601	ME-CW26 Brunswick, Maine
+USGS	440213070203201	ME-ANW1135 Poland, Maine
+USGS	440810069553601	ME-KW872A Litchfield, Maine
+USGS	440823070291501	ME-OW1214 Oxford, Maine
+USGS	440918069564001	ME-KW766 Litchfield, Maine
+USGS	441801069455501	ME-K887 Augusta Arboretum Bedrock Well
+USGS	441815069483401	Augusta Climatological Station at Augusta, Maine
+USGS	442238068154101	ME-HW171 McFarland Hill near Bar Harbor, Maine
+USGS	442450068175201	ME-HW172 Crooked Road near Bar Harbor, Maine
+USGS	443305070323701	Rumford Precipitation at Rumford, Maine
+USGS	443647070552303	ME-OW 400B Middle Dam, Maine
+USGS	444227069561801	Mercer Precipitation near Mercer, Maine
+USGS	444302070252401	ME-FW916 Weld, Maine
+USGS	444950068220602	ME-HW1A Amherst, Maine
+USGS	445210069571901	North Anson Precipitation near North Anson, Maine
+USGS	445227067520101	ME-WW797 Township T24MD BPP (Hadley Lakes)
+USGS	445319068560101	ME-PEW456 Kenduskeag, Maine
+USGS	445810070463201	Oquossoc Climate Station nr Rangeley, Maine
+USGS	450306069531101	Bingham Precipitation at Bingham, Maine
+USGS	450705069384801	Kingsbury Precipitation at Kingsbury, Maine
+USGS	450713067162801	ME-WW796 Calais, Maine
+USGS	451031069185301	Dover-Foxcroft Precip near Dover-Foxcroft, Maine
+USGS	451105069270801	Abbot Precipitation at Abbot Village, Maine
+USGS	451128070280301	ME-FW893 Eustis, Maine
+USGS	451317070115201	Flagstaff Climate Station at Flagstaff Dam, Maine
+USGS	451603069350101	Blanchard Precipitation at Blanchard, Maine
+USGS	452025069574701	The Forks Precipitation at The Forks, Maine
+USGS	452156069371801	Shirley Precipitation at Shirley Mills, Maine
+USGS	453405067254501	Vanceboro Precipitation at Vanceboro, Maine
+USGS	453629068531801	ME-PEW 594 Millinocket, Maine
+USGS	463642069344601	ME-ARW891 Clayton Lake, Maine
+USGS	464200069425701	Ninemile Bridge Precip at Ninemile Bridge, Maine
+USGS	470646069052501	Dickey Precipitation at Dickey, Maine
+USGS	471457068353001	ME-ARW890 Fort Kent, Maine
