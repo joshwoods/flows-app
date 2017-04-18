@@ -83,11 +83,6 @@
 		427B345A1CFE96C50032C5D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B34591CFE96C50032C5D5 /* SystemConfiguration.framework */; };
 		427B345C1CFE96D10032C5D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B345B1CFE96D10032C5D5 /* UIKit.framework */; };
 		4295AA571C9CB7CA006C729C /* NewAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4295AA561C9CB7CA006C729C /* NewAboutViewController.m */; };
-		42A34C411BBD8CAD004F7FB7 /* vt in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0D1BBD8CAD004F7FB7 /* vt */; };
-		42A34C421BBD8CAD004F7FB7 /* wa in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0E1BBD8CAD004F7FB7 /* wa */; };
-		42A34C431BBD8CAD004F7FB7 /* wi in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C0F1BBD8CAD004F7FB7 /* wi */; };
-		42A34C441BBD8CAD004F7FB7 /* wv in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C101BBD8CAD004F7FB7 /* wv */; };
-		42A34C451BBD8CAD004F7FB7 /* wy in Resources */ = {isa = PBXBuildFile; fileRef = 42A34C111BBD8CAD004F7FB7 /* wy */; };
 		42A34C4A1BBDB53C004F7FB7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A34C491BBDB53C004F7FB7 /* MapKit.framework */; };
 		42A34C4C1BBDBEC6004F7FB7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A34C4B1BBDBEC6004F7FB7 /* CoreLocation.framework */; };
 		42A35B011BB5C28A00470D6D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A35B001BB5C28A00470D6D /* MainViewController.m */; };
@@ -209,6 +204,11 @@
 		916362601EA5BDB000E6D982 /* ut in Resources */ = {isa = PBXBuildFile; fileRef = 9163625F1EA5BDB000E6D982 /* ut */; };
 		916362621EA5BDE400E6D982 /* va in Resources */ = {isa = PBXBuildFile; fileRef = 916362611EA5BDE400E6D982 /* va */; };
 		916362641EA5BE1500E6D982 /* vi in Resources */ = {isa = PBXBuildFile; fileRef = 916362631EA5BE1500E6D982 /* vi */; };
+		916362661EA5BE6C00E6D982 /* vt in Resources */ = {isa = PBXBuildFile; fileRef = 916362651EA5BE6C00E6D982 /* vt */; };
+		916362681EA5BE9600E6D982 /* wa in Resources */ = {isa = PBXBuildFile; fileRef = 916362671EA5BE9600E6D982 /* wa */; };
+		9163626A1EA5BEC000E6D982 /* wi in Resources */ = {isa = PBXBuildFile; fileRef = 916362691EA5BEC000E6D982 /* wi */; };
+		9163626C1EA5BEE700E6D982 /* wv in Resources */ = {isa = PBXBuildFile; fileRef = 9163626B1EA5BEE700E6D982 /* wv */; };
+		9163626E1EA5BF0C00E6D982 /* wy in Resources */ = {isa = PBXBuildFile; fileRef = 9163626D1EA5BF0C00E6D982 /* wy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,11 +323,6 @@
 		427B345B1CFE96D10032C5D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4295AA551C9CB7CA006C729C /* NewAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAboutViewController.h; sourceTree = "<group>"; };
 		4295AA561C9CB7CA006C729C /* NewAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAboutViewController.m; sourceTree = "<group>"; };
-		42A34C0D1BBD8CAD004F7FB7 /* vt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vt; sourceTree = "<group>"; };
-		42A34C0E1BBD8CAD004F7FB7 /* wa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wa; sourceTree = "<group>"; };
-		42A34C0F1BBD8CAD004F7FB7 /* wi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wi; sourceTree = "<group>"; };
-		42A34C101BBD8CAD004F7FB7 /* wv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wv; sourceTree = "<group>"; };
-		42A34C111BBD8CAD004F7FB7 /* wy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wy; sourceTree = "<group>"; };
 		42A34C491BBDB53C004F7FB7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		42A34C4B1BBDBEC6004F7FB7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		42A35AFF1BB5C28A00470D6D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -465,6 +460,11 @@
 		9163625F1EA5BDB000E6D982 /* ut */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ut; sourceTree = "<group>"; };
 		916362611EA5BDE400E6D982 /* va */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = va; sourceTree = "<group>"; };
 		916362631EA5BE1500E6D982 /* vi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vi; sourceTree = "<group>"; };
+		916362651EA5BE6C00E6D982 /* vt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vt; sourceTree = "<group>"; };
+		916362671EA5BE9600E6D982 /* wa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wa; sourceTree = "<group>"; };
+		916362691EA5BEC000E6D982 /* wi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wi; sourceTree = "<group>"; };
+		9163626B1EA5BEE700E6D982 /* wv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wv; sourceTree = "<group>"; };
+		9163626D1EA5BF0C00E6D982 /* wy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wy; sourceTree = "<group>"; };
 		C12774532E8824C2AB33B483 /* Pods-newFlows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlows.release.xcconfig"; path = "Pods/Target Support Files/Pods-newFlows/Pods-newFlows.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -693,11 +693,11 @@
 				9163625F1EA5BDB000E6D982 /* ut */,
 				916362611EA5BDE400E6D982 /* va */,
 				916362631EA5BE1500E6D982 /* vi */,
-				42A34C0D1BBD8CAD004F7FB7 /* vt */,
-				42A34C0E1BBD8CAD004F7FB7 /* wa */,
-				42A34C0F1BBD8CAD004F7FB7 /* wi */,
-				42A34C101BBD8CAD004F7FB7 /* wv */,
-				42A34C111BBD8CAD004F7FB7 /* wy */,
+				916362651EA5BE6C00E6D982 /* vt */,
+				916362671EA5BE9600E6D982 /* wa */,
+				916362691EA5BEC000E6D982 /* wi */,
+				9163626B1EA5BEE700E6D982 /* wv */,
+				9163626D1EA5BF0C00E6D982 /* wy */,
 			);
 			path = stationData;
 			sourceTree = "<group>";
@@ -1083,6 +1083,7 @@
 				42EB71C41C38B94100D6215E /* 03n@2x .png in Resources */,
 				4214C3E61CDEF0220016B473 /* Localizable_full.strings in Resources */,
 				4253B96D1C96669A008AF6BA /* addStation@2x.png in Resources */,
+				9163626A1EA5BEC000E6D982 /* wi in Resources */,
 				916362141EA5B5E700E6D982 /* ct in Resources */,
 				42BEA0401CFCD09C0064593D /* AddIconEmpty@3x.png in Resources */,
 				42296B711D5ECF8E004F38B1 /* snow@3x.png in Resources */,
@@ -1123,7 +1124,6 @@
 				4253B9681C937CE3008AF6BA /* BlueMapIcon@3x.png in Resources */,
 				42734B141C7C1C3D0061FAA2 /* icon29@3x.png in Resources */,
 				42296B681D5ECF8E004F38B1 /* partly-cloudy-night@3x.png in Resources */,
-				42A34C421BBD8CAD004F7FB7 /* wa in Resources */,
 				42296B6E1D5ECF8E004F38B1 /* sleet@3x.png in Resources */,
 				42EB71C51C38B94100D6215E /* 03n@3x.png in Resources */,
 				4253B9661C937CE3008AF6BA /* BlueMapIcon.png in Resources */,
@@ -1148,6 +1148,7 @@
 				42296B6B1D5ECF8E004F38B1 /* rain@3x.png in Resources */,
 				42296B581D5ECF8E004F38B1 /* clear-day@2x.png in Resources */,
 				42296B5B1D5ECF8E004F38B1 /* clear-night@2x.png in Resources */,
+				9163626C1EA5BEE700E6D982 /* wv in Resources */,
 				423AEB3F1D1CBEBB00FFB7E3 /* New_Close_Icon@3x.png in Resources */,
 				42EB71E21C38B94100D6215E /* 13n@2x.png in Resources */,
 				916362641EA5BE1500E6D982 /* vi in Resources */,
@@ -1162,6 +1163,7 @@
 				42EB71AF1C38B94100D6215E /* HeaderLogo@2x.png in Resources */,
 				42EB71A61C38B94100D6215E /* background@3x.png in Resources */,
 				42EB71E71C38B94100D6215E /* 50n.png in Resources */,
+				9163626E1EA5BF0C00E6D982 /* wy in Resources */,
 				916362101EA5B55700E6D982 /* ca in Resources */,
 				42EB71C91C38B94100D6215E /* 04n.png in Resources */,
 				42EB71DB1C38B94100D6215E /* 11n.png in Resources */,
@@ -1181,7 +1183,6 @@
 				4253B9741C970F1B008AF6BA /* button_highlight@2x.png in Resources */,
 				42296B5A1D5ECF8E004F38B1 /* clear-night.png in Resources */,
 				42EB71D61C38B94100D6215E /* 10n@2x.png in Resources */,
-				42A34C431BBD8CAD004F7FB7 /* wi in Resources */,
 				42BEA03E1CFCD09C0064593D /* AddIconEmpty.png in Resources */,
 				42296B741D5ECF8E004F38B1 /* wind@3x.png in Resources */,
 				42EB71D11C38B94100D6215E /* 09n@3x.png in Resources */,
@@ -1200,12 +1201,12 @@
 				42734B161C7C1C3D0061FAA2 /* icon40@3x.png in Resources */,
 				9163623E1EA5BA7400E6D982 /* nd in Resources */,
 				42EB71C71C38B94100D6215E /* 04d@2x.png in Resources */,
-				42A34C411BBD8CAD004F7FB7 /* vt in Resources */,
 				42EB71E11C38B94100D6215E /* 13n.png in Resources */,
 				423ED4A81BB5BC58007772C8 /* Assets.xcassets in Resources */,
 				916362401EA5BAA100E6D982 /* ne in Resources */,
 				423ED4A61BB5BC58007772C8 /* Main.storyboard in Resources */,
 				42EB71A41C38B94100D6215E /* background.png in Resources */,
+				916362661EA5BE6C00E6D982 /* vt in Resources */,
 				9163621A1EA5B67500E6D982 /* fl in Resources */,
 				42296B6C1D5ECF8E004F38B1 /* sleet.png in Resources */,
 				916362281EA5B85000E6D982 /* in in Resources */,
@@ -1213,15 +1214,14 @@
 				42296B5F1D5ECF8E004F38B1 /* cloudy@3x.png in Resources */,
 				4214C3E51CDEF0220016B473 /* Localizable.strings in Resources */,
 				42EB71E81C38B94100D6215E /* 50n@2x.png in Resources */,
+				916362681EA5BE9600E6D982 /* wa in Resources */,
 				423AEB401D1CBEBB00FFB7E3 /* New_Close_Icon@2x.png in Resources */,
 				42EB71C81C38B94100D6215E /* 04d@3x.png in Resources */,
 				42EB71A71C38B94100D6215E /* BackIcon.png in Resources */,
-				42A34C451BBD8CAD004F7FB7 /* wy in Resources */,
 				9163620A1EA5B0DA00E6D982 /* ak in Resources */,
 				42296B5D1D5ECF8E004F38B1 /* cloudy.png in Resources */,
 				916362421EA5BAD300E6D982 /* nh in Resources */,
 				42296B721D5ECF8E004F38B1 /* wind.png in Resources */,
-				42A34C441BBD8CAD004F7FB7 /* wv in Resources */,
 				916362081EA5B0B800E6D982 /* al in Resources */,
 				42EB71AD1C38B94100D6215E /* GreyMapIcon@3x.png in Resources */,
 				42EB71AC1C38B94100D6215E /* GreyMapIcon@2x.png in Resources */,
