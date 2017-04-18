@@ -9,6 +9,7 @@
 #import "Reachability.h"
 #import "FLminMaxFlows.h"
 #import <CoreLocation/CoreLocation.h>
+#import "UIColor+Hexadecimal.h"
 
 @interface AppDelegate ()
 
@@ -73,6 +74,8 @@
                                                            [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
                                                            [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f], NSFontAttributeName, nil]];
 
+    NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0], NSForegroundColorAttributeName: [UIColor colorWithHex:@"ACACAC"]};
+    [[UIBarButtonItem appearance] setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];
 }
 
 #pragma mark - data pull

@@ -27,9 +27,6 @@
     
     self.navigationItem.title = @"Add Station";
     
-    NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0], NSForegroundColorAttributeName: [UIColor colorWithHex:@"ACACAC"]};
-    [[UIBarButtonItem appearance] setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];
-    
     [self.navigationItem setHidesBackButton:YES animated:NO];
 }
 

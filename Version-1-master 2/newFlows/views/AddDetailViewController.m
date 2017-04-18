@@ -77,9 +77,6 @@
     
     self.navigationItem.title = selectedState;
     
-    NSDictionary *barButtonAppearanceDict = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0], NSForegroundColorAttributeName: [UIColor colorWithHex:@"ACACAC"]};
-    [[UIBarButtonItem appearance] setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];
-    
     [self createAlphabetArray];
     
     if (alphabetsArray.count > 10) {
