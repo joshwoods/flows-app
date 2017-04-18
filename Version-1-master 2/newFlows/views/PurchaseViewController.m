@@ -66,8 +66,8 @@
 - (void)purchaseUpgradewithNote:(NSNotification*)incomingNote{
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"Purchased/Subscribed to product with id: %@", [incomingNote object]);
-        [[NSUserDefaults standardUserDefaults] setBool:[NSNumber numberWithBool:YES] forKey:@"upgradePurchased"];
-        [[NSUserDefaults standardUserDefaults] setBool:[NSNumber numberWithBool:YES] forKey:@"segueToRivers"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"upgradePurchased"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"segueToRivers"];
         CATransition *transition = [CATransition animation];
         transition.duration = 0.5;
         transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
@@ -115,13 +115,8 @@
 
 - (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
 {
-    NSString *text = nil;
-    UIFont *font = nil;
-    UIColor *textColor = nil;
-    
-    text = @"Upgrade";
-    font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0f];
-    textColor = [UIColor colorWithHex:(state == UIControlStateNormal) ? @"ffffff" : @"acacac"];
+    UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0f];
+    UIColor *textColor = [UIColor colorWithHex:(state == UIControlStateNormal) ? @"ffffff" : @"acacac"];
     NSMutableDictionary *attributes = [NSMutableDictionary new];
     if (font) [attributes setObject:font forKey:NSFontAttributeName];
     if (textColor) [attributes setObject:textColor forKey:NSForegroundColorAttributeName];

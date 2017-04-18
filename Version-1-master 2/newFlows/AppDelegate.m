@@ -108,7 +108,7 @@
     });
 }
 
-- (void)runLiveUpdate{
+- (void)runLiveUpdate {
     selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
     if (selectedStationArray.count > 0) {
 #pragma mark - TODO refresh

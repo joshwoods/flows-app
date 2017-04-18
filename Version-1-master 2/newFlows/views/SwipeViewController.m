@@ -162,7 +162,7 @@
                     view.resultLabel.text = @"N/A";
                     [view.resultLabel setTextColor:[UIColor whiteColor]];
                 }else{
-                    string = @"";
+                    string = [[NSMutableAttributedString alloc] initWithString:@"" attributes:nil];
                     [view.resultLabel setTextColor:[UIColor whiteColor]];
                 }
             }else{
@@ -227,12 +227,10 @@
                     case 0:
                     {
                         if (shouldOffset) {
-                            NSMutableAttributedString *hiAttrString = [NSMutableAttributedString new];
-                            hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
+                            NSMutableAttributedString *hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
                             [hiAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0,hiAttrString.length)];
                             
-                            NSMutableAttributedString *loAttrString = [NSMutableAttributedString new];
-                            loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
+                            NSMutableAttributedString *loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
                             [loAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0] range:NSMakeRange(0,loAttrString.length)];
                             
                             [hiAttrString appendAttributedString:loAttrString];
@@ -245,12 +243,10 @@
                     case 1:
                     {
                         if (shouldOffset) {
-                            NSMutableAttributedString *hiAttrString = [NSMutableAttributedString new];
-                            hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
+                            NSMutableAttributedString *hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
                             [hiAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0,hiAttrString.length)];
                             
-                            NSMutableAttributedString *loAttrString = [NSMutableAttributedString new];
-                            loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
+                            NSMutableAttributedString *loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
                             [loAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0] range:NSMakeRange(0,loAttrString.length)];
                             
                             [hiAttrString appendAttributedString:loAttrString];
@@ -260,12 +256,10 @@
                             [view.weatherTwoImageView setImage:[UIImage imageNamed:weatherDict[@"iconString"]]];
                             [view.weatherTwoDateLabel setText:[NSString stringWithFormat:@"%@", weatherDict[@"dateString"]]];
                         }else{
-                            NSMutableAttributedString *hiAttrString = [NSMutableAttributedString new];
-                            hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
+                            NSMutableAttributedString *hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
                             [hiAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0,hiAttrString.length)];
                             
-                            NSMutableAttributedString *loAttrString = [NSMutableAttributedString new];
-                            loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
+                            NSMutableAttributedString *loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
                             [loAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0] range:NSMakeRange(0,loAttrString.length)];
                             
                             [hiAttrString appendAttributedString:loAttrString];
@@ -280,12 +274,10 @@
                     {
                         if (shouldOffset) {
                             //orig code
-                            NSMutableAttributedString *hiAttrString = [NSMutableAttributedString new];
-                            hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
+                            NSMutableAttributedString *hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
                             [hiAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0,hiAttrString.length)];
                             
-                            NSMutableAttributedString *loAttrString = [NSMutableAttributedString new];
-                            loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
+                            NSMutableAttributedString *loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
                             [loAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0] range:NSMakeRange(0,loAttrString.length)];
                             
                             [hiAttrString appendAttributedString:loAttrString];
@@ -295,12 +287,10 @@
                             [view.weatherThreeImageView setImage:[UIImage imageNamed:weatherDict[@"iconString"]]];
                             [view.weatherThreeDateLabel setText:[NSString stringWithFormat:@"%@", weatherDict[@"dateString"]]];
                         }else{
-                            NSMutableAttributedString *hiAttrString = [NSMutableAttributedString new];
-                            hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
+                            NSMutableAttributedString *hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
                             [hiAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0,hiAttrString.length)];
                             
-                            NSMutableAttributedString *loAttrString = [NSMutableAttributedString new];
-                            loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
+                            NSMutableAttributedString *loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
                             [loAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0] range:NSMakeRange(0,loAttrString.length)];
                             
                             [hiAttrString appendAttributedString:loAttrString];
@@ -315,12 +305,10 @@
                     case 3:
                     {
                         if (!shouldOffset) {
-                            NSMutableAttributedString *hiAttrString = [NSMutableAttributedString new];
-                            hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
+                            NSMutableAttributedString *hiAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@° ", [formatter stringFromNumber:weatherDict[@"highNum"]]]];
                             [hiAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0,hiAttrString.length)];
                             
-                            NSMutableAttributedString *loAttrString = [NSMutableAttributedString new];
-                            loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
+                            NSMutableAttributedString *loAttrString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@°", [formatter stringFromNumber:weatherDict[@"lowNum"]]]];
                             [loAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0] range:NSMakeRange(0,loAttrString.length)];
                             
                             [hiAttrString appendAttributedString:loAttrString];

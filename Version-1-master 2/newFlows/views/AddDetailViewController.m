@@ -293,7 +293,7 @@
                 default:
                     break;
             }
-            NSArray *titleArray = [NSArray new];
+
             NSString *selectedString;
             switch (selectedBreak) {
                 case 0:
@@ -315,7 +315,7 @@
                     break;
             }
             
-            titleArray = [siteName componentsSeparatedByString:[NSString stringWithFormat:@" %@ ", selectedString]];
+            NSArray *titleArray = [siteName componentsSeparatedByString:[NSString stringWithFormat:@" %@ ", selectedString]];
             
             if (titleArray.count > 2) {
                 switch (titleArray.count) {
@@ -346,8 +346,8 @@
                 locationHolder = [NSString stringWithFormat:@"%@ %@", selectedString, locationHolder];
             }
             
-            nameHolder = [nameHolder capitalizedString];
-            locationHolder = [locationHolder capitalizedString];
+            nameHolder = nameHolder != nil ? [nameHolder capitalizedString] : @"";
+            locationHolder =  locationHolder != nil ? [locationHolder capitalizedString] : @"";
             
             [returnDict setObject:nameHolder forKey:@"nameHolder"];
             [returnDict setObject:locationHolder forKey:@"locationHolder"];

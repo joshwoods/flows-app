@@ -138,7 +138,7 @@
     NSTimeInterval secondsSinceUpdateInterval = [lastUSGSupdateDate timeIntervalSinceNow];
     int minutesSinceUpdateInterval = secondsSinceUpdateInterval*-1/60;
     if (minutesSinceUpdateInterval>30) {
-        [[[UIApplication sharedApplication] delegate] performSelector:@selector(runLiveUpdate)];
+        [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
     }else{
         [_refreshControl endRefreshing];
     }
@@ -166,15 +166,15 @@
             [_mainTable reloadEmptyDataSet];
         }
         [_spinnerView forceBeginRefreshing];
-        [[[UIApplication sharedApplication] delegate] performSelector:@selector(runLiveUpdate)];
+        [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
     }else if ([defaults boolForKey:@"shouldUpdate"] && [defaults boolForKey:@"reachable"]){
         [_spinnerView forceBeginRefreshing];
         [defaults setObject:[NSNumber numberWithBool:NO] forKey:@"shouldUpdate"];
-        [[[UIApplication sharedApplication] delegate] performSelector:@selector(refreshData)];
+        [(AppDelegate *)[[UIApplication sharedApplication] delegate] refreshData];
     }else if (![defaults boolForKey:@"oneTwoFix"] && [defaults boolForKey:@"reachable"]){
         [_spinnerView forceBeginRefreshing];
         [defaults setBool:YES forKey:@"oneTwoFix"];
-        [[[UIApplication sharedApplication] delegate] performSelector:@selector(runLiveUpdate)];
+        [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
     }else if (![defaults boolForKey:@"reachable"]){
         //offline message here??
         resultArray = [defaults objectForKey:@"resultArray"];
@@ -191,7 +191,7 @@
             }
             if (selectedStationArray.count > 0) {
                 [_spinnerView forceBeginRefreshing];
-                [[[UIApplication sharedApplication] delegate] performSelector:@selector(runLiveUpdate)];
+                [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
             }
         }
     }
@@ -308,14 +308,9 @@
 
 - (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
 {
-    NSString *text = nil;
-    UIFont *font = nil;
-    UIColor *textColor = nil;
-    
-    text = @"Add a Station";
-    font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0f];
-    textColor = [UIColor colorWithHex:(state == UIControlStateNormal) ? @"ffffff" : @"acacac"];
-    //textColor = [UIColor colorWithHex:@"ffffff"];
+    UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0f];
+    UIColor *textColor = [UIColor colorWithHex:(state == UIControlStateNormal) ? @"ffffff" : @"acacac"];
+
     NSMutableDictionary *attributes = [NSMutableDictionary new];
     if (font) [attributes setObject:font forKey:NSFontAttributeName];
     if (textColor) [attributes setObject:textColor forKey:NSForegroundColorAttributeName];

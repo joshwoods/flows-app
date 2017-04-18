@@ -11,4 +11,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property NSMutableArray *selectedStationArray;
 
+- (void)runLiveUpdate;
+- (void)refreshData;
+
 @end
