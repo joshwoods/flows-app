@@ -46,6 +46,7 @@
     queryHolder = [[NSMutableArray alloc] initWithObjects:@"al", @"ak", @"az", @"ar", @"ca", @"co", @"ct", @"de", @"dc", @"fl", @"ga", @"gu", @"hi", @"id", @"il", @"in", @"ia", @"ks", @"ky", @"la", @"me", @"md", @"ma", @"mi", @"mn", @"mo", @"mt", @"ne", @"nv", @"nh", @"nj", @"nm", @"ny", @"nc", @"nd", @"oh", @"ok", @"or", @"pa", @"pr", @"ri", @"sc", @"sd", @"tn", @"tx", @"ut", @"vt", @"va", @"vi", @"wa", @"wv", @"wi", @"wy", nil];
     
     alphabetsArray = [[NSMutableArray alloc] init];
+    
     [self createAlphabetArray];
     
     [_mainTable setBackgroundColor:[UIColor clearColor]];
