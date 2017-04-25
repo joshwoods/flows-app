@@ -177,7 +177,7 @@
     [alphabetsArray removeAllObjects];
 
     for (int i = 0; i < [stateHolder count]; i++) {
-        NSString *letterString = [[stateHolder objectAtIndex:i] substringToIndex:1];
+        NSString *letterString = [[stateHolder objectAtIndex:i] substringToIndex:1].uppercaseString;
         if (![alphabetsArray containsObject:letterString]) {
             [alphabetsArray addObject:letterString];
         }

@@ -33,19 +33,19 @@ USGS	02492511	East Pearl River at I-59 near Nicholson, MS
 USGS	02492519	Pearl River Navigation Canal Lock and Dam No. 1
 USGS	02492600	Pearl River at Pearl River, LA
 USGS	02492700	Pearl River at I-10 near Slidell, LA
-USGS	07294800	(COE) Mississippi River at Knox Landing, LA
+USGS	07294800	Mississippi River at Knox Landing, LA
 USGS	07344400	Red River near Hosston, LA.
 USGS	07344425	Cross Bayou at Hwy 80 west of Greenwood, LA
 USGS	07344450	Paw Paw Bayou near Greenwood, LA
 USGS	07344460	Shettleworth Bayou near Blanchard, LA
 USGS	07344480	Cross Lake at Shreveport, LA
-USGS	07346310	(COE) Caddo Lake at Dam near Mooringsport, LA
+USGS	07346310	Caddo Lake at Dam near Mooringsport, LA
 USGS	07346450	Black Bayou at Rodessa, LA
 USGS	07348000	Twelvemile Bayou near Dixie, LA
 USGS	07348098	McCain Creek near Blanchard, LA
-USGS	07348500	(COE) Red River at Shreveport, LA
-USGS	07348550	(COE) Red River at L&D No. 5 (Upper) nr Howard
-USGS	07348555	(COE) Red River at L&D No. 5 (Lower) nr Howard
+USGS	07348500	Red River at Shreveport, LA
+USGS	07348550	Red River at L&D No. 5 (Upper) nr Howard
+USGS	07348555	Red River at L&D No. 5 (Lower) nr Howard
 USGS	07348700	Bayou Dorcheat near Springhill, LA
 USGS	07349000	Bayou Dorcheat near Minden, LA
 USGS	07349250	Lake Bistineau near Ringgold, LA
@@ -53,21 +53,21 @@ USGS	07349298	Flat River at Shed Rd. near Bossier City, LA
 USGS	07349374	Flat River near Curtis, LA
 USGS	07349450	Bodcau Bayou near Springhill, LA
 USGS	07349500	Bodcau Bayou near Sarepta, LA
-USGS	07349650	(COE) Byu Bodcau Lake nr Shreveport, LA (Landside)
-USGS	07349660	(COE) Byu Bodcau at Byu Bodcau Dam nr Shreveport
+USGS	07349650	Byu Bodcau Lake nr Shreveport, LA (Landside)
+USGS	07349660	Byu Bodcau at Byu Bodcau Dam nr Shreveport
 USGS	07349815	Cypress Bayou Lake near Benton, LA
 USGS	07349849	Red Chute Bayou at Dogwood Tr. Rd. nr Bossier City
 USGS	07349860	Red Chute Bayou at Sligo, LA
 USGS	07349890	Red Chute Bayou near Elm Grove, LA.
 USGS	07349898	Willow Chute Bayou at Swan Lake Rd nr Bossier City
 USGS	07349910	Flat River at High Island, LA
-USGS	07350500	(COE) Red River at Coushatta
-USGS	07350505	(COE) Red River at L&D No.4 (Upper) nr Red Oak
+USGS	07350500	Red River at Coushatta
+USGS	07350505	Red River at L&D No.4 (Upper) nr Red Oak
 USGS	07350700	Bayou Pierre at Shreveport, LA
 USGS	07350985	Boggy Bayou N of Spring Ridge, LA
 USGS	07351275	Gilmer Bayou near Shreveport, LA
 USGS	07351500	Cypress Bayou near Keithville, LA
-USGS	07351550	(COE) Wallace Lake near Shreveport, LA
+USGS	07351550	Wallace Lake near Shreveport, LA
 USGS	07351750	Bayou Pierre near Lake End, LA
 USGS	07351755	Bayou Pierre near Powhatan, LA.
 USGS	07352000	Saline Bayou near Lucky, LA
@@ -98,8 +98,8 @@ USGS	07372190	Little River at Rochelle, LA.
 USGS	07372200	Little River near Rochelle, LA
 USGS	07373000	Big Creek at Pollock, LA
 USGS	07374000	Mississippi River at Baton Rouge, LA
-USGS	07374370	(COE) Mississippi River at Bonnet Carre Spillway
-USGS	07374510	(COE) Mississippi River at New Orleans, LA
+USGS	07374370	Mississippi River at Bonnet Carre Spillway
+USGS	07374510	Mississippi River at New Orleans, LA
 USGS	073745235	Bayou Dupree Sector Gate near Violet, LA
 USGS	073745245	Caernarvon Canal Sector Gate at Caernarvon, La
 USGS	07374525	Mississippi River at Belle Chasse, LA
@@ -109,7 +109,7 @@ USGS	073745258	Cow Bayou at American Bay nr Pointe-A-La-Hache, LA
 USGS	07374526	Black Bay nr Snake Island nr Pointe-A-La-Hache, LA
 USGS	07374527	Northeast Bay Gardene near Point-A-LA-Hache, LA
 USGS	073745275	Black Bay nr Stone Island nr Pointe-A-La-Hache, LA
-USGS	07374550	(COE) Mississippi River at Venice, LA
+USGS	07374550	Mississippi River at Venice, LA
 USGS	07374581	Bayou Liberty near Slidell,LA
 USGS	07375000	Tchefuncte River near Folsom, LA
 USGS	07375050	Tchefuncte River near Covington, LA
@@ -196,7 +196,7 @@ USGS	07381454	Belle River at Hwy 70 near Pierre Part, LA
 USGS	073814675	Bayou Boeuf at Railroad Bridge at Amelia, LA
 USGS	07381482	Old River Outflow Channel below Hydropower Channel
 USGS	07381490	Atchafalaya River at Simmesport, LA
-USGS	07381495	(COE) Atchafalaya River at Melville, LA
+USGS	07381495	Atchafalaya River at Melville, LA
 USGS	07381515	Atchafalaya River at Butte La Rose, LA
 USGS	073815450	Chicot Pass near Myette Point near Charenton, LA
 USGS	07381567	Buffalo Cove at Round Island near Charenton, LA

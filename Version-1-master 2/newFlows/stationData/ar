@@ -23,8 +23,8 @@
 agency_cd	site_no	station_nm
 5s	15s	50s
 USGS	07047855	Whiteman's Crk at Ind Dr at Jonesboro, AR
-USGS	07047942	LAnguille River near Colt, AR
-USGS	07047950	LAnguille River at Palestine, AR
+USGS	07047942	Languille River near Colt, AR
+USGS	07047950	Languille River at Palestine, AR
 USGS	07048495	Town Branch at Armstrong St. at Fayetteville, AR
 USGS	07048550	West Fork White River east of Fayetteville, AR
 USGS	07048600	White River near Fayetteville, AR
@@ -210,7 +210,6 @@ USGS	331609093144902	Magnolia
 USGS	332205092433001	Smackover
 USGS	335258091152301	near Watson
 USGS	341453091544101	near Pine Bluff
-USGS	341836091435101	13 5 FRNT SHORTY
 USGS	342211091443701	JETER 8 in
 USGS	342649091251916	Rice Research Center
 USGS	343048093030401	Hot Springs Mountain Dr

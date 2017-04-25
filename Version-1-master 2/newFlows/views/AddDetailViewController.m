@@ -116,7 +116,7 @@
     for (int i = 0; i < [arrayForTable count]; i++) {
         NSDictionary *holderDict = arrayForTable[i];
         NSString *siteName = holderDict[@"siteName"];
-        NSString *letterString = [siteName substringToIndex:1];
+        NSString *letterString = [siteName substringToIndex:1].uppercaseString;
         if (![alphabetsArray containsObject:letterString]) {
             [alphabetsArray addObject:letterString];
         }
