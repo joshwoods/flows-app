@@ -12,35 +12,34 @@
 
 @interface AddDetailViewController () <UITableViewDelegate, UITableViewDataSource, GDIIndexBarDelegate, UINavigationControllerDelegate, UIViewControllerTransitioningDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *mainTable;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSArray *arrayForTable;
+@property (strong, nonatomic) NSMutableArray *alphabetsArray;
+
+@property (strong, nonatomic) NSData *dataToPass;
+
+@property (strong, nonatomic) GDIIndexBar *indexBar;
 
 @end
 
-@implementation AddDetailViewController{
-    NSArray *arrayForTable;
-    GDIIndexBar *indexBar;
-    NSMutableArray *alphabetsArray;
-    NSData *dataToPass;
-    NSUserDefaults *defaults;
-}
-
-@synthesize incomingValue;
-@synthesize selectedState;
+@implementation AddDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    arrayForTable = [NSArray new];
-    alphabetsArray = [NSMutableArray new];
-    defaults = [NSUserDefaults standardUserDefaults];
+    self.arrayForTable = [NSArray new];
+    self.alphabetsArray = [NSMutableArray new];
     
-    NSURL *dataPath = [[NSBundle mainBundle] URLForResource:incomingValue withExtension:@""];
+    NSURL *dataPath = [[NSBundle mainBundle] URLForResource:self.incomingValue withExtension:@""];
     NSString *stringPath = [dataPath absoluteString];
     
-    [self.mainTable setSeparatorColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
+    self.tableView.estimatedRowHeight = 70.0;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.tableFooterView = [UIView new];
     
-    _mainTable.tableFooterView = [UIView new];
-    
+    self.navigationItem.title = self.selectedState;
+
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:stringPath]];
     
     NSString *responseHolder = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -48,8 +47,6 @@
     NSArray *components = [responseHolder componentsSeparatedByString:@"\n"];
     
     NSMutableArray *workingDataArray = [[NSMutableArray alloc] initWithArray:components];
-    
-    [self.navigationItem setTitle:selectedState];
     
     NSMutableArray *tempForSort = [[NSMutableArray alloc] init];
     
@@ -73,20 +70,18 @@
     NSSortDescriptor *siteDescriptor = [[NSSortDescriptor alloc] initWithKey:@"siteName" ascending:YES];
     NSArray *sortDescriptors = [NSArray arrayWithObject:siteDescriptor];
     
-    arrayForTable = [tempForSort sortedArrayUsingDescriptors:sortDescriptors];
-    
-    self.navigationItem.title = selectedState;
+    self.arrayForTable = [tempForSort sortedArrayUsingDescriptors:sortDescriptors];
     
     [self createAlphabetArray];
     
-    if (alphabetsArray.count > 10) {
-        indexBar = [[GDIIndexBar alloc] initWithTableView:_mainTable];
+    if (self.alphabetsArray.count > 10) {
+        self.indexBar = [[GDIIndexBar alloc] initWithTableView:self.tableView];
         [[GDIIndexBar appearance] setTextColor:[UIColor colorWithHex:@"ACACAC"]];
         [[GDIIndexBar appearance] setBackgroundColor:[UIColor clearColor]];
-        indexBar.delegate = self;
-        indexBar.textFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0f];
-        [indexBar setTextOffset:UIOffsetMake(2.0, 0.0)];
-        [self.view addSubview:indexBar];
+        self.indexBar.delegate = self;
+        self.indexBar.textFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0f];
+        [self.indexBar setTextOffset:UIOffsetMake(2.0, 0.0)];
+        [self.view addSubview:self.indexBar];
     }
 }
 
@@ -110,15 +105,19 @@
 }
 
 #pragma mark - Create Alphabet Array
-- (void)createAlphabetArray {
-    [alphabetsArray removeAllObjects];
+
+- (void)createAlphabetArray
+{
+    self.alphabetsArray = [NSMutableArray new];
     
-    for (int i = 0; i < [arrayForTable count]; i++) {
-        NSDictionary *holderDict = arrayForTable[i];
+    [self.alphabetsArray removeAllObjects];
+    
+    for (int i = 0; i < [self.arrayForTable count]; i++) {
+        NSDictionary *holderDict = self.arrayForTable[i];
         NSString *siteName = holderDict[@"siteName"];
         NSString *letterString = [siteName substringToIndex:1].uppercaseString;
-        if (![alphabetsArray containsObject:letterString]) {
-            [alphabetsArray addObject:letterString];
+        if (![self.alphabetsArray containsObject:letterString]) {
+            [self.alphabetsArray addObject:letterString];
         }
     }
 }
@@ -127,39 +126,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return alphabetsArray.count;
+    return self.alphabetsArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSArray *sectionArray = [arrayForTable filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(siteName beginswith[c] %@)", [alphabetsArray objectAtIndex:section]]];
+    NSArray *sectionArray = [self.arrayForTable filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(siteName beginswith[c] %@)", [self.alphabetsArray objectAtIndex:section]]];
     return sectionArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"addDetail";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    NSArray *sectionArray = [arrayForTable filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(siteName beginswith[c] %@)", [alphabetsArray objectAtIndex:indexPath.section]]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddDetailCellIdentifier" forIndexPath:indexPath];
+    
+    NSArray *sectionArray = [self.arrayForTable filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(siteName beginswith[c] %@)", [self.alphabetsArray objectAtIndex:indexPath.section]]];
     NSDictionary *cellDict = sectionArray[indexPath.row];
     NSString *siteOrigin = cellDict[@"siteName"];
     NSString *siteName = [siteOrigin stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     siteName = [siteName uppercaseString];
     
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f], NSForegroundColorAttributeName: [UIColor whiteColor]};
-    
     if ([siteName length] && isnumber([siteName characterAtIndex:0])) {
-        NSAttributedString *cellString = [[NSAttributedString alloc] initWithString:siteName attributes:attributes];
-        [cell.textLabel setAttributedText:cellString];
-    }else{
+        cell.textLabel.text = siteName;
+    }
+    else {
         NSMutableDictionary *location = [self locationName:siteName];
-        NSDictionary *detailAttributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f], NSForegroundColorAttributeName:[UIColor colorWithHex:@"ACACAC"]};
-        
-        NSAttributedString *cellString = [[NSAttributedString alloc] initWithString:[location objectForKey:@"nameHolder"] attributes:attributes];
-        NSAttributedString *cellDetailString = [[NSAttributedString alloc] initWithString:[location objectForKey:@"locationHolder"] attributes:detailAttributes];
-        [cell.textLabel setAttributedText:cellString];
-        [cell.detailTextLabel setAttributedText:cellDetailString];
+
+        cell.textLabel.text = [location objectForKey:@"nameHolder"];
+        cell.detailTextLabel.text = [location objectForKey:@"locationHolder"];
     }
     
     return cell;
@@ -167,29 +160,20 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return alphabetsArray[section];
+    return self.alphabetsArray[section];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
     if ([view isKindOfClass:[UITableViewHeaderFooterView class]]) {
-        ((UITableViewHeaderFooterView *)view).backgroundView.backgroundColor = [UIColor colorWithRed:0.09 green:0.09 blue:0.09 alpha:1.0];
+        ((UITableViewHeaderFooterView *)view).backgroundView.backgroundColor =[UIColor colorWithRed:0.09 green:0.09 blue:0.09 alpha:1.0];
     }
     
-    UIView *topSeperatorView = [[UIView alloc] initWithFrame:CGRectMake(0, -0.5f, view.bounds.size.width, 0.5f)];
-    [topSeperatorView setBackgroundColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
-    
-    UIView *bottomSeperatorView = [[UIView alloc] initWithFrame:CGRectMake(0, view.bounds.size.height-0.5f, view.bounds.size.width, 0.5f)];
-    [bottomSeperatorView setBackgroundColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
-    
-    [view addSubview:bottomSeperatorView];
-    [view addSubview:topSeperatorView];
-    
     header.textLabel.textColor = [UIColor whiteColor];
-    header.textLabel.font = [UIFont boldSystemFontOfSize:18];
+    header.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f];
     CGRect headerFrame = header.frame;
     header.textLabel.frame = headerFrame;
-    header.textLabel.textAlignment = NSTextAlignmentJustified;
+//    header.textLabel.textAlignment = NSTextAlignmentJustified;
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -197,11 +181,6 @@
     [cell setSeparatorInset:UIEdgeInsetsZero];
     [cell setPreservesSuperviewLayoutMargins:NO];
     [cell setLayoutMargins:UIEdgeInsetsZero];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 70;
 }
 
 #pragma mark - custom dictionary
@@ -378,7 +357,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *sectionArray = [arrayForTable filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(siteName beginswith[c] %@)", [alphabetsArray objectAtIndex:indexPath.section]]];
+    NSArray *sectionArray = [self.arrayForTable filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(siteName beginswith[c] %@)", [self.alphabetsArray objectAtIndex:indexPath.section]]];
     NSDictionary *cellDict = sectionArray[indexPath.row];
     
     NSString *siteName = cellDict[@"siteName"];
@@ -390,7 +369,8 @@
         location = [self locationName:siteName];
     }
     
-    NSMutableArray *selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *selectedStationArray = [[userDefaults objectForKey:@"selectedStationArray"] mutableCopy];
     if (!selectedStationArray) {
         selectedStationArray = [NSMutableArray new];
     }
@@ -398,25 +378,25 @@
     //add station
     NSMutableDictionary *holderDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:cellDict[@"siteName"], @"stationTitle", cellDict[@"siteNumber"], @"stationNumber", location, @"cleanedTitle", nil];
     [selectedStationArray addObject:holderDict];
-    [defaults setObject:selectedStationArray forKey:@"selectedStationArray"];
-    [defaults setObject:[NSNumber numberWithBool:YES] forKey:@"selectedStationUpdated"];
+    [userDefaults setObject:selectedStationArray forKey:@"selectedStationArray"];
+    [userDefaults setObject:[NSNumber numberWithBool:YES] forKey:@"selectedStationUpdated"];
 }
 
 #pragma mark - index bar
 
 - (NSUInteger)numberOfIndexesForIndexBar:(GDIIndexBar *)indexBar
 {
-    return alphabetsArray.count;
+    return self.alphabetsArray.count;
 }
 
 - (NSString *)stringForIndex:(NSUInteger)index
 {
-    return [alphabetsArray objectAtIndex:index];
+    return [self.alphabetsArray objectAtIndex:index];
 }
 
 - (void)indexBar:(GDIIndexBar *)indexBar didSelectIndex:(NSUInteger)index
 {
-    [_mainTable scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index]
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index]
                       atScrollPosition:UITableViewScrollPositionTop
                               animated:NO];
 }
