@@ -80,7 +80,6 @@
 		42734B1A1C7C23740061FAA2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42734B191C7C23740061FAA2 /* Default-568h@2x.png */; };
 		427B345A1CFE96C50032C5D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B34591CFE96C50032C5D5 /* SystemConfiguration.framework */; };
 		427B345C1CFE96D10032C5D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B345B1CFE96D10032C5D5 /* UIKit.framework */; };
-		4295AA571C9CB7CA006C729C /* NewAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4295AA561C9CB7CA006C729C /* NewAboutViewController.m */; };
 		42A34C4A1BBDB53C004F7FB7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A34C491BBDB53C004F7FB7 /* MapKit.framework */; };
 		42A34C4C1BBDBEC6004F7FB7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A34C4B1BBDBEC6004F7FB7 /* CoreLocation.framework */; };
 		42A35B011BB5C28A00470D6D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A35B001BB5C28A00470D6D /* MainViewController.m */; };
@@ -317,8 +316,6 @@
 		427B34571CFE96B40032C5D5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		427B34591CFE96C50032C5D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		427B345B1CFE96D10032C5D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4295AA551C9CB7CA006C729C /* NewAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAboutViewController.h; sourceTree = "<group>"; };
-		4295AA561C9CB7CA006C729C /* NewAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAboutViewController.m; sourceTree = "<group>"; };
 		42A34C491BBDB53C004F7FB7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		42A34C4B1BBDBEC6004F7FB7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		42A35AFF1BB5C28A00470D6D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -695,8 +692,6 @@
 				42A35B1F1BB654D100470D6D /* AddDetailViewController.m */,
 				42D5FEFD1C19405E000E8D0B /* SwipeViewController.h */,
 				42D5FEFE1C19405E000E8D0B /* SwipeViewController.m */,
-				4295AA551C9CB7CA006C729C /* NewAboutViewController.h */,
-				4295AA561C9CB7CA006C729C /* NewAboutViewController.m */,
 				42A610E01CA3910C00B931AD /* DisclaimerViewController.h */,
 				42A610E11CA3910C00B931AD /* DisclaimerViewController.m */,
 				42D84E921CAB55FF00EC8EEA /* LeftSegue.h */,
@@ -1285,7 +1280,6 @@
 				42A35B151BB5D7FF00470D6D /* Reachability.m in Sources */,
 				4228A9251CC934C2003B7DA7 /* popAnimator.m in Sources */,
 				42D5FEF41C18C4B4000E8D0B /* FLminMaxFlows.m in Sources */,
-				4295AA571C9CB7CA006C729C /* NewAboutViewController.m in Sources */,
 				42BEDABF1C85256300113431 /* CustomSwipeview.m in Sources */,
 				42A35B011BB5C28A00470D6D /* MainViewController.m in Sources */,
 				42BEDAB91C84B1B700113431 /* customNavBar.m in Sources */,

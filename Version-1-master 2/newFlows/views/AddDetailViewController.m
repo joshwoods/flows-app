@@ -173,7 +173,7 @@
     header.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f];
     CGRect headerFrame = header.frame;
     header.textLabel.frame = headerFrame;
-//    header.textLabel.textAlignment = NSTextAlignmentJustified;
+    header.textLabel.textAlignment = NSTextAlignmentJustified;
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
