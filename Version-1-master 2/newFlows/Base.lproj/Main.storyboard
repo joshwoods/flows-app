@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIr-XO-4VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059.375" y="1112.3239436619717"/>
+            <point key="canvasLocation" x="1059" y="1215"/>
         </scene>
         <!--Add Station View Controller-->
         <scene sceneID="t9k-uL-kMj">
@@ -266,7 +266,7 @@
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddDetailCellIdentifier" textLabel="oKX-Hu-GvL" detailTextLabel="YeG-Dh-roY" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="zl6-Lk-C16">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddDetailCellIdentifier" textLabel="oKX-Hu-GvL" detailTextLabel="YeG-Dh-roY" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="zl6-Lk-C16">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zl6-Lk-C16" id="V4Q-xX-ni6">
@@ -337,7 +337,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLt-Pw-q97" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xEg-Qp-yIG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2638" y="752"/>
+            <point key="canvasLocation" x="2638" y="871"/>
         </scene>
         <!--Custom Navigation View Controller-->
         <scene sceneID="KD3-4f-t4Z">
@@ -529,11 +529,8 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bo0-eL-Og3">
-                                <rect key="frame" x="-4" y="0.0" width="383" height="603"/>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$1.99 gets you access to 10 stations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-0B-Svm">
-                                <rect key="frame" x="166" y="185" width="251" height="72"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.99 gets you access to 10 stations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-0B-Svm">
+                                <rect key="frame" x="62" y="271" width="251" height="61.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="B9C-e3-6HP"/>
                                     <constraint firstAttribute="height" constant="72" id="vtW-3B-jPG"/>
@@ -549,7 +546,7 @@
                                 </variation>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="stB-cx-trx">
-                                <rect key="frame" x="-4" y="0.0" width="383" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="euB-QQ-kRH" id="W9s-0c-Y6S"/>
@@ -559,18 +556,15 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="stB-cx-trx" secondAttribute="trailing" constant="-20" id="6mz-T1-Ksk"/>
-                            <constraint firstItem="bo0-eL-Og3" firstAttribute="leading" secondItem="ygN-Lf-mZw" secondAttribute="leadingMargin" constant="-20" id="8Nl-zL-GJ1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bo0-eL-Og3" secondAttribute="trailing" constant="-20" id="8OF-Ux-7Kb"/>
+                            <constraint firstAttribute="trailing" secondItem="stB-cx-trx" secondAttribute="trailing" id="2hk-wb-9Mc"/>
+                            <constraint firstItem="stB-cx-trx" firstAttribute="leading" secondItem="ygN-Lf-mZw" secondAttribute="leading" id="Ba2-LD-5rT"/>
                             <constraint firstItem="hm8-Tg-L5z" firstAttribute="top" secondItem="stB-cx-trx" secondAttribute="bottom" id="Fr6-F9-SHh"/>
-                            <constraint firstItem="hm8-Tg-L5z" firstAttribute="top" secondItem="bo0-eL-Og3" secondAttribute="bottom" id="TUo-VL-4Tj"/>
-                            <constraint firstItem="stB-cx-trx" firstAttribute="leading" secondItem="ygN-Lf-mZw" secondAttribute="leadingMargin" constant="-20" id="Zqd-s5-9s5"/>
-                            <constraint firstItem="bo0-eL-Og3" firstAttribute="top" secondItem="ygN-Lf-mZw" secondAttribute="topMargin" id="aFN-tp-zbT"/>
+                            <constraint firstItem="v5J-0B-Svm" firstAttribute="centerY" secondItem="ygN-Lf-mZw" secondAttribute="centerY" id="TGn-dS-uXr"/>
                             <constraint firstItem="v5J-0B-Svm" firstAttribute="top" secondItem="emF-hM-D59" secondAttribute="bottom" constant="45" id="b3l-wM-08a"/>
-                            <constraint firstItem="bo0-eL-Og3" firstAttribute="top" secondItem="v5J-0B-Svm" secondAttribute="bottom" constant="-257" id="i3q-cA-pBy"/>
                             <constraint firstItem="stB-cx-trx" firstAttribute="top" secondItem="emF-hM-D59" secondAttribute="bottom" id="lQG-tF-zhW"/>
-                            <constraint firstItem="v5J-0B-Svm" firstAttribute="centerX" secondItem="bo0-eL-Og3" secondAttribute="centerX" constant="-8.5" id="vwN-Py-y0t"/>
+                            <constraint firstItem="v5J-0B-Svm" firstAttribute="centerX" secondItem="ygN-Lf-mZw" secondAttribute="centerX" id="nzO-ra-tjU"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -597,7 +591,6 @@
     </scenes>
     <resources>
         <image name="BackIcon.png" width="16" height="14"/>
-        <image name="background.png" width="414" height="736"/>
         <image name="close.png" width="20" height="20"/>
     </resources>
 </document>
