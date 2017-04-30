@@ -13,26 +13,27 @@
 
 @interface AddStationViewController () <UITableViewDataSource, UITableViewDelegate, GDIIndexBarDelegate, UINavigationControllerDelegate, UIViewControllerTransitioningDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *mainTable;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSMutableArray *alphabetsAray;
+@property (strong, nonatomic) NSMutableArray *riverAlphabetsArray;
+@property (strong, nonatomic) NSMutableArray *stateHolder;
+@property (strong, nonatomic) NSMutableArray *queryHolder;
+@property (strong, nonatomic) NSMutableArray *sortedDetailForTable;
+
+@property (assign, nonatomic) BOOL isInState;
+
+@property (strong, nonatomic) NSString *stateToPass;
+@property (strong, nonatomic) NSString *longStateToPass;
+
+@property (strong, nonatomic) GDIIndexBar *indexBar;
 
 @end
 
-@implementation AddStationViewController{
-    BOOL isInState;
-    NSMutableArray *alphabetsArray;
-    NSMutableArray *riverAlphabetsArray;
-    NSMutableArray *stateHolder;
-    NSMutableArray *queryHolder;
-    NSMutableArray *sortedDetailForTable;
-    GDIIndexBar *indexBar;
-    NSString *stateToPass;
-    NSString *longStateToPass;
-}
+@implementation AddStationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.mainTable setSeparatorColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
 
     self.navigationItem.title = @"Add Station";
     
@@ -40,26 +41,23 @@
     
     [self.navigationItem setHidesBackButton:YES animated:NO];
     
-    _mainTable.tableFooterView = [UIView new];
+    self.tableView.estimatedRowHeight = 50.0;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.tableFooterView = [UIView new];
     
-    stateHolder = [[NSMutableArray alloc] initWithObjects:@"Alabama", @"Alaska", @"Arizona", @"Arkansas", @"California", @"Colorado", @"Connecticut", @"Delaware", @"Dist. of Columbia", @"Florida", @"Georgia", @"Guam", @"Hawaii", @"Idaho", @"Illinois", @"Indiana", @"Iowa", @"Kansas", @"Kentucky", @"Louisiana", @"Maine", @"Maryland", @"Massachusetts", @"Michigan", @"Minnesota", @"Missouri", @"Montana", @"Nebraska", @"Nevada", @"New Hampshire", @"New Jersey", @"New Mexico", @"New York", @"North Carolina", @"North Dakota", @"Ohio", @"Oklahoma", @"Oregon", @"Pennsylvania", @"Puerto Rico", @"Rhode Island", @"South Carolina", @"South Dakota", @"Tennessee", @"Texas", @"Utah", @"Vermont", @"Virginia", @"Virgin Islands", @"Washington", @"West Virginia", @"Wisconsin", @"Wyoming", nil];
-    queryHolder = [[NSMutableArray alloc] initWithObjects:@"al", @"ak", @"az", @"ar", @"ca", @"co", @"ct", @"de", @"dc", @"fl", @"ga", @"gu", @"hi", @"id", @"il", @"in", @"ia", @"ks", @"ky", @"la", @"me", @"md", @"ma", @"mi", @"mn", @"mo", @"mt", @"ne", @"nv", @"nh", @"nj", @"nm", @"ny", @"nc", @"nd", @"oh", @"ok", @"or", @"pa", @"pr", @"ri", @"sc", @"sd", @"tn", @"tx", @"ut", @"vt", @"va", @"vi", @"wa", @"wv", @"wi", @"wy", nil];
-    
-    alphabetsArray = [[NSMutableArray alloc] init];
+    self.stateHolder = [[NSMutableArray alloc] initWithObjects:@"Alabama", @"Alaska", @"Arizona", @"Arkansas", @"California", @"Colorado", @"Connecticut", @"Delaware", @"Dist. of Columbia", @"Florida", @"Georgia", @"Guam", @"Hawaii", @"Idaho", @"Illinois", @"Indiana", @"Iowa", @"Kansas", @"Kentucky", @"Louisiana", @"Maine", @"Maryland", @"Massachusetts", @"Michigan", @"Minnesota", @"Missouri", @"Montana", @"Nebraska", @"Nevada", @"New Hampshire", @"New Jersey", @"New Mexico", @"New York", @"North Carolina", @"North Dakota", @"Ohio", @"Oklahoma", @"Oregon", @"Pennsylvania", @"Puerto Rico", @"Rhode Island", @"South Carolina", @"South Dakota", @"Tennessee", @"Texas", @"Utah", @"Vermont", @"Virginia", @"Virgin Islands", @"Washington", @"West Virginia", @"Wisconsin", @"Wyoming", nil];
+    self.queryHolder = [[NSMutableArray alloc] initWithObjects:@"al", @"ak", @"az", @"ar", @"ca", @"co", @"ct", @"de", @"dc", @"fl", @"ga", @"gu", @"hi", @"id", @"il", @"in", @"ia", @"ks", @"ky", @"la", @"me", @"md", @"ma", @"mi", @"mn", @"mo", @"mt", @"ne", @"nv", @"nh", @"nj", @"nm", @"ny", @"nc", @"nd", @"oh", @"ok", @"or", @"pa", @"pr", @"ri", @"sc", @"sd", @"tn", @"tx", @"ut", @"vt", @"va", @"vi", @"wa", @"wv", @"wi", @"wy", nil];
     
     [self createAlphabetArray];
     
-    [_mainTable setBackgroundColor:[UIColor clearColor]];
-    
-    indexBar = [[GDIIndexBar alloc] initWithTableView:_mainTable];
+    self.indexBar = [[GDIIndexBar alloc] initWithTableView:self.tableView];
     [[GDIIndexBar appearance] setTextColor:[UIColor colorWithHex:@"ACACAC"]];
     [[GDIIndexBar appearance] setBackgroundColor:[UIColor clearColor]];
     [[GDIIndexBar appearance] setBarBackgroundColor:[UIColor clearColor]];
-    indexBar.textFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0f];
-    indexBar.delegate = self;
-    [indexBar setTextOffset:UIOffsetMake(5.0, 0.0)];
-    [self.view addSubview:indexBar];
-    
+    self.indexBar.textFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0f];
+    self.indexBar.delegate = self;
+    [self.indexBar setTextOffset:UIOffsetMake(5.0, 0.0)];
+    [self.view addSubview:self.indexBar];
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"segueToRivers"]) {
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"segueToRivers"];
@@ -68,6 +66,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    
     self.navigationController.delegate = self;
 }
 
@@ -85,21 +84,21 @@
     return nil;
 }
 
-- (IBAction)backClicked:(id)sender{
+- (IBAction)backClicked:(id)sender
+{
     [self.navigationController popViewControllerAnimated:NO];
-    NSLog(@"back clicked");
 }
 
 #pragma mark - TableView Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return alphabetsArray.count;
+    return self.alphabetsAray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSArray *sectionArray = [stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [alphabetsArray objectAtIndex:section]]];
+    NSArray *sectionArray = [self.stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [self.alphabetsAray objectAtIndex:section]]];
     return sectionArray.count;
     
 }
@@ -113,24 +112,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"addCell";
-    
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    
-    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    
-    NSArray *sectionArray = [stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [alphabetsArray objectAtIndex:indexPath.section]]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddStationCellIdentifier" forIndexPath:indexPath];
+        
+    NSArray *sectionArray = [self.stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [self.alphabetsAray objectAtIndex:indexPath.section]]];
     
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Thin" size:20.0f], NSForegroundColorAttributeName: [UIColor whiteColor]};
     
     NSAttributedString *cellString = [[NSAttributedString alloc] initWithString:[sectionArray objectAtIndex:indexPath.row] attributes:attributes];
     
     [cell.textLabel setAttributedText:cellString];
-    
-    [cell.textLabel setTextColor:[UIColor whiteColor]];
-    cell.backgroundColor = [UIColor clearColor];
-    cell.contentView.backgroundColor = [UIColor clearColor];
-    
+        
     return cell;
     
 }
@@ -144,10 +135,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *sectionArray = [queryHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [alphabetsArray objectAtIndex:indexPath.section]]];
-    NSArray *stateNameArray = [stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [alphabetsArray objectAtIndex:indexPath.section]]];
-    stateToPass = [sectionArray objectAtIndex:indexPath.row];
-    longStateToPass= [stateNameArray objectAtIndex:indexPath.row];
+    NSArray *sectionArray = [self.queryHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [self.alphabetsAray objectAtIndex:indexPath.section]]];
+    NSArray *stateNameArray = [self.stateHolder filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", [self.alphabetsAray objectAtIndex:indexPath.section]]];
+    self.stateToPass = [sectionArray objectAtIndex:indexPath.row];
+    self.longStateToPass = [stateNameArray objectAtIndex:indexPath.row];
     [self performSegueWithIdentifier:@"stationDetailView" sender:self];
 }
 
@@ -155,17 +146,17 @@
 
 - (NSUInteger)numberOfIndexesForIndexBar:(GDIIndexBar *)indexBar
 {
-    return alphabetsArray.count;
+    return self.alphabetsAray.count;
 }
 
 - (NSString *)stringForIndex:(NSUInteger)index
 {
-    return [alphabetsArray objectAtIndex:index];
+    return [self.alphabetsAray objectAtIndex:index];
 }
 
 - (void)indexBar:(GDIIndexBar *)indexBar didSelectIndex:(NSUInteger)index
 {
-    [_mainTable scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index]
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:index]
                       atScrollPosition:UITableViewScrollPositionTop
                               animated:NO];
 }
@@ -174,12 +165,14 @@
 
 #pragma mark - Create Alphabet Array
 - (void)createAlphabetArray {
-    [alphabetsArray removeAllObjects];
+    self.alphabetsAray = [[NSMutableArray alloc] init];
 
-    for (int i = 0; i < [stateHolder count]; i++) {
-        NSString *letterString = [[stateHolder objectAtIndex:i] substringToIndex:1].uppercaseString;
-        if (![alphabetsArray containsObject:letterString]) {
-            [alphabetsArray addObject:letterString];
+    [self.alphabetsAray removeAllObjects];
+
+    for (int i = 0; i < [self.stateHolder count]; i++) {
+        NSString *letterString = [[self.stateHolder objectAtIndex:i] substringToIndex:1].uppercaseString;
+        if (![self.alphabetsAray containsObject:letterString]) {
+            [self.alphabetsAray addObject:letterString];
         }
     }
 }
@@ -193,8 +186,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     AddDetailViewController *vc = [segue destinationViewController];
-    [vc setIncomingValue:stateToPass];
-    [vc setSelectedState:longStateToPass];
+    [vc setIncomingValue:self.stateToPass];
+    [vc setSelectedState:self.longStateToPass];
 }
 
 @end
