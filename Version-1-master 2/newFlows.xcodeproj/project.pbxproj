@@ -103,6 +103,7 @@
 		91B9BE4D1EB6C81B00A4864C /* StationDetailForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */; };
 		91B9BE4F1EB6C83200A4864C /* StationDetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4E1EB6C83200A4864C /* StationDetailMapViewController.swift */; };
 		91B9BE511EB6C8A900A4864C /* StationDetailTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE501EB6C8A900A4864C /* StationDetailTabBarViewController.swift */; };
+		91B9BE531EB6E8A400A4864C /* 1024x1024 App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B9BE521EB6E8A400A4864C /* 1024x1024 App Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +253,7 @@
 		91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailForecastViewController.swift; path = "Detail Tab View/StationDetailForecastViewController.swift"; sourceTree = "<group>"; };
 		91B9BE4E1EB6C83200A4864C /* StationDetailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailMapViewController.swift; path = "Detail Tab View/StationDetailMapViewController.swift"; sourceTree = "<group>"; };
 		91B9BE501EB6C8A900A4864C /* StationDetailTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailTabBarViewController.swift; path = "Detail Tab View/StationDetailTabBarViewController.swift"; sourceTree = "<group>"; };
+		91B9BE521EB6E8A400A4864C /* 1024x1024 App Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1024x1024 App Icon.png"; sourceTree = "<group>"; };
 		C12774532E8824C2AB33B483 /* Pods-newFlows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlows.release.xcconfig"; path = "Pods/Target Support Files/Pods-newFlows/Pods-newFlows.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -365,6 +367,7 @@
 		423ED49B1BB5BC58007772C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91B9BE521EB6E8A400A4864C /* 1024x1024 App Icon.png */,
 				91B9BE491EB6C7F700A4864C /* newFlows-Bridging-Header.h */,
 				423ED49C1BB5BC58007772C8 /* main.m */,
 			);
@@ -724,6 +727,7 @@
 				916362361EA5B9A900E6D982 /* mi in Resources */,
 				9163622A1EA5B87C00E6D982 /* ks in Resources */,
 				42BEDABC1C85252A00113431 /* SwipeView.xib in Resources */,
+				91B9BE531EB6E8A400A4864C /* 1024x1024 App Icon.png in Resources */,
 				916362461EA5BB3800E6D982 /* nv in Resources */,
 				916362181EA5B63500E6D982 /* de in Resources */,
 				9163624E1EA5BC3200E6D982 /* ok in Resources */,

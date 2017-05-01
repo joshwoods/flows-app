@@ -59,9 +59,6 @@
     
     self.navigationController.delegate = self;
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
     
     self.refreshControl = [[UIRefreshControl alloc] init];

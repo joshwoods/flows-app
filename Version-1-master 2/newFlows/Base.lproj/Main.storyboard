@@ -189,6 +189,9 @@
                     <navigationItem key="navigationItem" id="aTa-dX-sRM">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="80s-F1-uen">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="exitTapped" destination="VfC-da-nIk" id="sH7-9W-9lp"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -205,13 +208,17 @@
                         <viewControllerLayoutGuide type="bottom" id="gOb-X9-6IY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jM8-Qr-Orm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="8Kk-Vm-7rd">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="1MT-pO-TyO">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="exitTapped" destination="OUE-OG-wIl" id="E17-ak-Eu8"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -223,10 +230,11 @@
         <scene sceneID="gQB-q5-JKK">
             <objects>
                 <tabBarController id="Hrn-e6-kWJ" customClass="StationDetailTabBarViewController" customModule="newFlows" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8k7-88-7xG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="feI-1p-U1B" kind="relationship" relationship="viewControllers" id="9eT-n6-M76"/>
@@ -430,7 +438,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egl-Nm-mY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330" y="416.19718309859149"/>
+            <point key="canvasLocation" x="529" y="416"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="Nlv-Qw-MGB">
@@ -673,22 +681,27 @@
                     <navigationItem key="navigationItem" id="tcF-4u-zbu">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="pqt-h0-DxZ">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="exitTapped" destination="HhD-uS-8OA" id="xoo-iW-arB"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPq-0Q-ewY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="2848.4257871064469"/>
+            <point key="canvasLocation" x="2068" y="2876"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Z73-Mn-5a2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="feI-1p-U1B" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Item 1" id="dxh-0K-76v"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A8h-wH-RQo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="A8h-wH-RQo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -735,7 +748,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSz-sF-dyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.8" y="2848.4257871064469"/>
+            <point key="canvasLocation" x="1129" y="2877"/>
         </scene>
     </scenes>
     <resources>
