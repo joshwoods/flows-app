@@ -232,7 +232,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="oiB-UO-RXQ">
-                        <barButtonItem key="rightBarButtonItem" image="close.png" id="IU9-ti-VdZ">
+                        <barButtonItem key="rightBarButtonItem" image="close" id="IU9-ti-VdZ">
                             <color key="tintColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancelClicked:" destination="jZz-gT-UX5" id="6BX-Fg-9iE"/>
@@ -317,13 +317,13 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="QGL-NS-jaz">
-                        <barButtonItem key="leftBarButtonItem" image="BackIcon.png" id="rrr-eD-phc">
+                        <barButtonItem key="leftBarButtonItem" image="BackIcon" id="rrr-eD-phc">
                             <color key="tintColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="backClicked:" destination="une-uv-sbA" id="sEa-oG-x0c"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="close.png" id="S0U-iU-Jvv">
+                        <barButtonItem key="rightBarButtonItem" image="close" id="S0U-iU-Jvv">
                             <color key="tintColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancelClicked:" destination="une-uv-sbA" id="QzM-WQ-i9e"/>
@@ -443,7 +443,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CEt-S3-N2u">
-                        <barButtonItem key="leftBarButtonItem" image="close.png" id="Rua-ns-Kpm">
+                        <barButtonItem key="leftBarButtonItem" image="close" id="Rua-ns-Kpm">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancelClicked:" destination="yFY-AM-URM" id="x2M-oc-gCS"/>
@@ -505,7 +505,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IoE-b3-1AY">
-                        <barButtonItem key="leftBarButtonItem" image="BackIcon.png" id="gNh-bO-gKC">
+                        <barButtonItem key="leftBarButtonItem" image="BackIcon" id="gNh-bO-gKC">
                             <color key="tintColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="exitClicked:" destination="mI5-a2-wKs" id="vHl-73-QRu"/>
@@ -529,7 +529,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$.99 gets you access to 10 stations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-0B-Svm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$.99 gets you access to 10 stations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-0B-Svm">
                                 <rect key="frame" x="69.5" y="271" width="236.5" height="61.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="B9C-e3-6HP"/>
@@ -545,9 +545,13 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyx-Nn-ZzD">
-                                <rect key="frame" x="157" y="348.5" width="60" height="30"/>
-                                <state key="normal" title="Upgrade"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyx-Nn-ZzD">
+                                <rect key="frame" x="87.5" y="348.5" width="200" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Upgrade" backgroundImage="addStation"/>
+                                <connections>
+                                    <action selector="upgradeTapped:" destination="euB-QQ-kRH" eventType="touchUpInside" id="1DA-IK-8Tg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -565,7 +569,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="nEe-5p-oyE">
-                        <barButtonItem key="leftBarButtonItem" image="close.png" id="MYH-J1-aP3">
+                        <barButtonItem key="leftBarButtonItem" image="close" id="MYH-J1-aP3">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancelTapped:" destination="euB-QQ-kRH" id="UQs-sM-hKv"/>
@@ -582,7 +586,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackIcon.png" width="16" height="14"/>
-        <image name="close.png" width="20" height="20"/>
+        <image name="BackIcon" width="16" height="14"/>
+        <image name="addStation" width="200" height="40"/>
+        <image name="close" width="20" height="20"/>
     </resources>
 </document>
