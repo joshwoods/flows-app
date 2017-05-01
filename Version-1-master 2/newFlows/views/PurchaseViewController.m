@@ -10,8 +10,9 @@
 #import "UIScrollView+EmptyDataSet.h"
 #import "MKStoreKit.h"
 
-@interface PurchaseViewController () <UITableViewDataSource, UITableViewDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *mainTable;
+@interface PurchaseViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *upgradeButton;
 
 @end
 
@@ -59,11 +60,10 @@
     
     UIImageView* img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HeaderLogo"]];
     self.navigationItem.titleView = img;
-    
-    _mainTable.tableFooterView = [UIView new];
 }
 
-- (void)purchaseUpgradewithNote:(NSNotification*)incomingNote{
+- (void)purchaseUpgradewithNote:(NSNotification*)incomingNote
+{
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"Purchased/Subscribed to product with id: %@", [incomingNote object]);
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"upgradePurchased"];
@@ -79,7 +79,8 @@
     });
 }
 
-- (IBAction)cancelClicked:(id)sender {
+- (IBAction)cancelTapped:(id)sender
+{
     CATransition *transition = [CATransition animation];
     transition.duration = 0.5;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
@@ -91,27 +92,6 @@
 }
 
 #pragma mark - EmptyDataset
-
-- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
-{
-    NSString *text = @"$.99 gets you access to 10 stations";
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.headIndent = 20.0;
-    paragraphStyle.alignment = NSTextAlignmentCenter;
-    paragraphStyle.firstLineHeadIndent = 20.0;
-    paragraphStyle.tailIndent = -20.0;
-    
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Thin" size:26.0f],
-                                 NSForegroundColorAttributeName: [UIColor colorWithHex:@"FFFFFF"],
-                                 NSParagraphStyleAttributeName: paragraphStyle};
-    
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:attributes];
-    [attributedString addAttribute:NSKernAttributeName
-                             value:@(-2.0)
-                             range:NSMakeRange(22, 3)];
-    
-    return attributedString;
-}
 
 - (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
 {

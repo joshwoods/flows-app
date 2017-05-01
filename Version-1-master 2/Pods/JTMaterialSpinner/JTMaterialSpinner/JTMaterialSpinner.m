@@ -45,8 +45,10 @@
     _circleLayer.strokeColor = [UIColor orangeColor].CGColor;
     _circleLayer.strokeStart = 0;
     _circleLayer.strokeEnd = 0;
-
+    
     self.isAnimating = NO;
+    
+    self.animationDuration = 2.0;
 }
 
 - (void)layoutSubviews
@@ -87,7 +89,7 @@
     }
     
     self.isAnimating = YES;
-
+    
     CAKeyframeAnimation *rotateAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
     rotateAnimation.values = @[
                                @0,
@@ -97,32 +99,32 @@
     
     CABasicAnimation *headAnimation = [CABasicAnimation animation];
     headAnimation.keyPath = @"strokeStart";
-    headAnimation.duration = 1;
+    headAnimation.duration = (self.animationDuration / 2.0);
     headAnimation.fromValue = @0;
     headAnimation.toValue = @.25;
     
     CABasicAnimation *tailAnimation = [CABasicAnimation animation];
     tailAnimation.keyPath = @"strokeEnd";
-    tailAnimation.duration = 1;
+    tailAnimation.duration = (self.animationDuration / 2.0);
     tailAnimation.fromValue = @0;
     tailAnimation.toValue = @1;
     
     CABasicAnimation *endHeadAnimation = [CABasicAnimation animation];
     endHeadAnimation.keyPath = @"strokeStart";
-    endHeadAnimation.beginTime = 1.;
-    endHeadAnimation.duration = 1;
+    endHeadAnimation.beginTime = (self.animationDuration / 2.0);
+    endHeadAnimation.duration = (self.animationDuration / 2.0);
     endHeadAnimation.fromValue = @.25;
     endHeadAnimation.toValue = @1;
     
     CABasicAnimation *endTailAnimation = [CABasicAnimation animation];
     endTailAnimation.keyPath = @"strokeEnd";
-    endTailAnimation.beginTime = 1;
-    endTailAnimation.duration = 1;
+    endTailAnimation.beginTime = (self.animationDuration / 2.0);
+    endTailAnimation.duration = (self.animationDuration / 2.0);
     endTailAnimation.fromValue = @1;
     endTailAnimation.toValue = @1;
     
     CAAnimationGroup *animations = [CAAnimationGroup animation];
-    animations.duration = 2;
+    animations.duration = self.animationDuration;
     animations.animations = @[
                               rotateAnimation,
                               headAnimation,

@@ -41,7 +41,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="391" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5A-G9-cJh" customClass="SSDynamicLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5A-G9-cJh">
                                                     <rect key="frame" x="91.5" y="50" width="281.5" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,13 +50,13 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kce-6h-xEE">
                                                     <rect key="frame" x="25" y="23.5" width="56.5" height="53"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-h8-dut" customClass="SSDynamicLabel">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-h8-dut">
                                                             <rect key="frame" x="0.0" y="0.0" width="56.5" height="30"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSm-3F-ws9" customClass="SSDynamicLabel">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSm-3F-ws9">
                                                             <rect key="frame" x="0.0" y="32" width="56.5" height="21"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -371,7 +371,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For those who call the river home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01s-qs-kwF" customClass="SSDynamicLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For those who call the river home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01s-qs-kwF">
                                 <rect key="frame" x="82" y="32" width="212" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="4En-19-cwS"/>
@@ -381,7 +381,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water levels are gathered from the United States Geologic Survey (USGS) and displayed in cubic feet per second (cfs)." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNa-Kh-eFc" customClass="SSDynamicLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water levels are gathered from the United States Geologic Survey (USGS) and displayed in cubic feet per second (cfs)." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNa-Kh-eFc">
                                 <rect key="frame" x="30" y="139" width="315" height="60.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -473,7 +473,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-Rz-g0N" customClass="SSDynamicLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-Rz-g0N">
                                 <rect key="frame" x="30" y="31" width="315" height="160.5"/>
                                 <string key="text">The real-time data provided by FLOWS is gathered from the United States Geologic Survey (USGS). Provisional data may be inaccurate due to instrument malfunctions, internet connectivity issues, or physical changes beyond the control of this application and its developers.
 </string>
@@ -517,7 +517,7 @@
             </objects>
             <point key="canvasLocation" x="2637.5999999999999" y="52.623688155922046"/>
         </scene>
-        <!--Empty Data Set Delegate-->
+        <!--Purchase View Controller-->
         <scene sceneID="eiu-M7-STh">
             <objects>
                 <viewController id="euB-QQ-kRH" customClass="PurchaseViewController" sceneMemberID="viewController">
@@ -529,8 +529,8 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.99 gets you access to 10 stations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-0B-Svm">
-                                <rect key="frame" x="62" y="271" width="251" height="61.5"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$.99 gets you access to 10 stations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-0B-Svm">
+                                <rect key="frame" x="69.5" y="271" width="236.5" height="61.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="B9C-e3-6HP"/>
                                     <constraint firstAttribute="height" constant="72" id="vtW-3B-jPG"/>
@@ -545,25 +545,17 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="stB-cx-trx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="euB-QQ-kRH" id="W9s-0c-Y6S"/>
-                                    <outlet property="delegate" destination="euB-QQ-kRH" id="OHP-Jc-2HT"/>
-                                    <outlet property="emptyDataSetDelegate" destination="euB-QQ-kRH" id="dm1-Xi-qLg"/>
-                                    <outlet property="emptyDataSetSource" destination="euB-QQ-kRH" id="10a-cd-Zyk"/>
-                                </connections>
-                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyx-Nn-ZzD">
+                                <rect key="frame" x="157" y="348.5" width="60" height="30"/>
+                                <state key="normal" title="Upgrade"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="stB-cx-trx" secondAttribute="trailing" id="2hk-wb-9Mc"/>
-                            <constraint firstItem="stB-cx-trx" firstAttribute="leading" secondItem="ygN-Lf-mZw" secondAttribute="leading" id="Ba2-LD-5rT"/>
-                            <constraint firstItem="hm8-Tg-L5z" firstAttribute="top" secondItem="stB-cx-trx" secondAttribute="bottom" id="Fr6-F9-SHh"/>
+                            <constraint firstItem="eyx-Nn-ZzD" firstAttribute="top" secondItem="v5J-0B-Svm" secondAttribute="bottom" constant="16" id="8uK-Tt-Jno"/>
                             <constraint firstItem="v5J-0B-Svm" firstAttribute="centerY" secondItem="ygN-Lf-mZw" secondAttribute="centerY" id="TGn-dS-uXr"/>
                             <constraint firstItem="v5J-0B-Svm" firstAttribute="top" secondItem="emF-hM-D59" secondAttribute="bottom" constant="45" id="b3l-wM-08a"/>
-                            <constraint firstItem="stB-cx-trx" firstAttribute="top" secondItem="emF-hM-D59" secondAttribute="bottom" id="lQG-tF-zhW"/>
+                            <constraint firstItem="eyx-Nn-ZzD" firstAttribute="centerX" secondItem="v5J-0B-Svm" secondAttribute="centerX" id="id6-nZ-s5R"/>
                             <constraint firstItem="v5J-0B-Svm" firstAttribute="centerX" secondItem="ygN-Lf-mZw" secondAttribute="centerX" id="nzO-ra-tjU"/>
                         </constraints>
                         <variation key="default">
@@ -576,12 +568,12 @@
                         <barButtonItem key="leftBarButtonItem" image="close.png" id="MYH-J1-aP3">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="cancelClicked:" destination="euB-QQ-kRH" id="JMx-DX-Abq"/>
+                                <action selector="cancelTapped:" destination="euB-QQ-kRH" id="UQs-sM-hKv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mainTable" destination="stB-cx-trx" id="zsU-FQ-RYg"/>
+                        <outlet property="upgradeButton" destination="eyx-Nn-ZzD" id="Dox-6z-FrS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1c-6I-VQa" userLabel="First Responder" sceneMemberID="firstResponder"/>

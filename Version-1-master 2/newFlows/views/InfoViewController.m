@@ -8,8 +8,6 @@
 #import "UIColor+Hexadecimal.h"
 #import <MessageUI/MessageUI.h>
 #import <QuartzCore/QuartzCore.h>
-#import "infoCell.h"
-
 
 @interface InfoViewController () <MFMailComposeViewControllerDelegate>
 
@@ -19,22 +17,17 @@
 
 @end
 
-@implementation InfoViewController{
-    
-}
+@implementation InfoViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self applyDesign];
 }
 
-- (IBAction)backClicked:(id)sender{
-    
-    [self.navigationController popViewControllerAnimated:NO];
-}
-
-- (void)applyDesign {
+- (void)applyDesign
+{
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
                                                   forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
@@ -59,7 +52,13 @@
 
 #pragma mark - IBActions
 
-- (IBAction)feedbackTapped:(id)sender {
+- (IBAction)backClicked:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:NO];
+}
+
+- (IBAction)feedbackTapped:(id)sender
+{
     if ([MFMailComposeViewController canSendMail])
     {
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
@@ -84,7 +83,8 @@
     }
 }
 
-- (IBAction)disclaimerTapped:(id)sender {
+- (IBAction)disclaimerTapped:(id)sender
+{
     [self performSegueWithIdentifier:@"disclaimerSegue" sender:self];
 }
 
@@ -94,7 +94,8 @@
 }
 
 
-- (IBAction)cancelClicked:(id)sender {
+- (IBAction)cancelClicked:(id)sender
+{
     CATransition *transition = [CATransition animation];
     transition.duration = 0.5;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
