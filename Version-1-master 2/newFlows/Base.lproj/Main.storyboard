@@ -182,7 +182,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zcd-qv-htr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hvl-vc-M8Z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -208,7 +208,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gOb-X9-6IY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jM8-Qr-Orm">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -230,11 +230,11 @@
         <scene sceneID="gQB-q5-JKK">
             <objects>
                 <tabBarController id="Hrn-e6-kWJ" customClass="StationDetailTabBarViewController" customModule="newFlows" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="8k7-88-7xG">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="8k7-88-7xG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.047058823529411764" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="feI-1p-U1B" kind="relationship" relationship="viewControllers" id="9eT-n6-M76"/>
@@ -674,7 +674,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jxn-cA-PwR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U7w-eF-l8Z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -691,14 +691,13 @@
             </objects>
             <point key="canvasLocation" x="2068" y="2876"/>
         </scene>
-        <!--Item 1-->
+        <!--Navigation Controller-->
         <scene sceneID="Z73-Mn-5a2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="feI-1p-U1B" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="dxh-0K-76v"/>
+                    <tabBarItem key="tabBarItem" title="" image="graph_tab_bar_icon_inactive" selectedImage="graph_tab_bar_icon_active" id="dxh-0K-76v"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="A8h-wH-RQo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="A8h-wH-RQo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -712,11 +711,11 @@
             </objects>
             <point key="canvasLocation" x="1130.4000000000001" y="1431.6341829085459"/>
         </scene>
-        <!--Item 2-->
+        <!--Navigation Controller-->
         <scene sceneID="ux5-00-qRY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8gy-R5-avn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="SY4-AW-VZj"/>
+                    <tabBarItem key="tabBarItem" title="" image="weather_tab_bar_icon_inactive" selectedImage="weather_tab_bar_icon_active" id="SY4-AW-VZj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Apm-6h-wPr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -731,11 +730,11 @@
             </objects>
             <point key="canvasLocation" x="1128.8" y="2118.8905547226386"/>
         </scene>
-        <!--Item 3-->
+        <!--Navigation Controller-->
         <scene sceneID="8y9-Lf-IlM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9uv-zI-TpH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 3" id="qRF-Ll-QQV"/>
+                    <tabBarItem key="tabBarItem" title="" image="map_tab_bar_icon_inactive" selectedImage="map_tab_bar_icon_active" id="qRF-Ll-QQV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pkS-hT-IYR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -756,6 +755,12 @@
         <image name="BackIcon" width="16" height="14"/>
         <image name="addStation" width="200" height="40"/>
         <image name="close" width="20" height="20"/>
+        <image name="graph_tab_bar_icon_active" width="30" height="30"/>
+        <image name="graph_tab_bar_icon_inactive" width="30" height="30"/>
         <image name="infoicon" width="20" height="20"/>
+        <image name="map_tab_bar_icon_active" width="30" height="30"/>
+        <image name="map_tab_bar_icon_inactive" width="30" height="30"/>
+        <image name="weather_tab_bar_icon_active" width="30" height="30"/>
+        <image name="weather_tab_bar_icon_inactive" width="30" height="30"/>
     </resources>
 </document>

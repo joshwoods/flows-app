@@ -20,7 +20,6 @@ class StationDetailTabBarViewController: UITabBarController {
     
     private func applyDesign() {
         tabBar.tintColor = .white
-        tabBar.barTintColor = .black
     }
     
 }
