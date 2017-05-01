@@ -23,84 +23,56 @@
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate, UINavigationControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *mainTable;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (weak, nonatomic) IBOutlet JTMaterialSpinner *spinnerView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *infoButton;
 
 @property (strong, nonatomic) NSString *updateString;
 
+@property (strong, nonatomic) NSMutableArray *selectedStationArray;
+@property (strong, nonatomic) NSNumber *stationNumber;
+@property (strong, nonatomic) NSString *stationTitle;
+@property (strong, nonatomic) NSMutableArray *resultArray;
+@property (strong, nonatomic) NSMutableArray *minMaxArray;
+
+@property (assign, nonatomic) BOOL hasTappedRow;
+
+@property (strong, nonatomic) Forecastr *forecastr;
+
 @end
 
-@implementation MainViewController{
-    
-    NSMutableArray *selectedStationArray;
-    
-    NSUserDefaults *defaults;
-    NSNumber *stationNumber;
-    NSString *stationTitle;
-    NSMutableArray *resultArray;
-    NSMutableArray *minMaxArray;
-    
-    //NSString *detailData;
-    
-    UITableViewHeaderFooterView *header;
-    UILabel *headerLabel;
-    BOOL hasTappedRow;
-    
-    UIBarButtonItem *rightItem;
-    Forecastr *forecastr;
-}
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    forecastr = [Forecastr sharedManager];
-    forecastr.apiKey = @"5decbd5c3ac3d3dc35a9ae7666dcfa65";
+    self.forecastr = [Forecastr sharedManager];
+    self.forecastr.apiKey = @"5decbd5c3ac3d3dc35a9ae7666dcfa65";
     
     // Customize the line width
-    _spinnerView.circleLayer.lineWidth = 2.0;
+    self.spinnerView.circleLayer.lineWidth = 2.0;
     
     // Change the color of the line
-    _spinnerView.circleLayer.strokeColor = [UIColor whiteColor].CGColor;
+    self.spinnerView.circleLayer.strokeColor = [UIColor whiteColor].CGColor;
     
     self.navigationController.delegate = self;
-#pragma mark - TODO refresh control
-    
-    [self.mainTable setSeparatorColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
                                                   forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
     
-    _refreshControl = [[UIRefreshControl alloc] init];
-    [_refreshControl addTarget:self action:@selector(pullToRefresh) forControlEvents:UIControlEventValueChanged];
-    [_mainTable addSubview:_refreshControl];
-    
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"infoicon"]
-                                                                 style:UIBarButtonItemStylePlain
-                                                                target:self action:@selector(leftButtonPressed:)];
-    [leftItem setTintColor:[UIColor colorWithRed:0.60 green:0.60 blue:0.60 alpha:1.0]];
-    
-    rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIcon"]
-                                                 style:UIBarButtonItemStylePlain
-                                                target:self action:@selector(addClicked:)];
-    [rightItem setTintColor:[UIColor colorWithRed:0.60 green:0.60 blue:0.60 alpha:1.0]];
-    
-    self.navigationItem.rightBarButtonItem = rightItem;
-    self.navigationItem.leftBarButtonItem = leftItem;
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(pullToRefresh) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:self.refreshControl];
     
     UIImageView* img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HeaderLogo"]];
     self.navigationItem.titleView = img;
     
-    defaults = [NSUserDefaults standardUserDefaults];
-    
-    _mainTable.allowsMultipleSelectionDuringEditing = NO;
-    selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
-    
-    // A little trick for removing the cell separators
-    _mainTable.tableFooterView = [UIView new];
+    self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
+    self.tableView.tableFooterView = [UIView new];
     
     self.navigationController.navigationBarHidden = YES;
     
@@ -133,83 +105,71 @@
 }
 
 - (void)pullToRefresh{
-    NSDate *lastUSGSupdateDate = [defaults objectForKey:@"lastUSGSupdateDate"];
-    //NSDate *currentDate = [NSDate date];
+    NSDate *lastUSGSupdateDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastUSGSupdateDate"];
     NSTimeInterval secondsSinceUpdateInterval = [lastUSGSupdateDate timeIntervalSinceNow];
     int minutesSinceUpdateInterval = secondsSinceUpdateInterval*-1/60;
     if (minutesSinceUpdateInterval>30) {
         [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
-    }else{
-        [_refreshControl endRefreshing];
+    }
+    else {
+        [self.refreshControl endRefreshing];
     }
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
     
-    Reachability* reach = [Reachability reachabilityWithHostname:@"www.apple.com"];
+    self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
     
-    NetworkStatus internetStatus = [reach currentReachabilityStatus];
-    
-    if(internetStatus==0){
-        //@"NoAccess";
-        [defaults setBool:NO forKey:@"reachable"];
-    }else{
-        [defaults setBool:YES forKey:@"reachable"];
+    Reachability *reach = [Reachability reachabilityWithHostname:@"www.apple.com"];
+    if([reach currentReachabilityStatus] == 0) {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"reachable"];
+    }
+    else {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"reachable"];
     }
     
-    if ([defaults boolForKey:@"segueToRivers"]) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"segueToRivers"]) {
         [self performSegueWithIdentifier:@"addStationSegue" sender:self];
-    }else if ([defaults boolForKey:@"selectedStationUpdated"]) {
-        if (selectedStationArray.count==1) {
-            [_mainTable reloadEmptyDataSet];
+    }
+    else if ([[NSUserDefaults standardUserDefaults] boolForKey:@"selectedStationUpdated"]) {
+        if (self.selectedStationArray.count==1) {
+            [self.tableView reloadEmptyDataSet];
         }
-        [_spinnerView forceBeginRefreshing];
+        [self.spinnerView forceBeginRefreshing];
         [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
-    }else if ([defaults boolForKey:@"shouldUpdate"] && [defaults boolForKey:@"reachable"]){
-        [_spinnerView forceBeginRefreshing];
-        [defaults setObject:[NSNumber numberWithBool:NO] forKey:@"shouldUpdate"];
+    }
+    else if ([[NSUserDefaults standardUserDefaults] boolForKey:@"shouldUpdate"] && [[NSUserDefaults standardUserDefaults] boolForKey:@"reachable"]){
+        [self.spinnerView forceBeginRefreshing];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"shouldUpdate"];
         [(AppDelegate *)[[UIApplication sharedApplication] delegate] refreshData];
-    }else if (![defaults boolForKey:@"oneTwoFix"] && [defaults boolForKey:@"reachable"]){
-        [_spinnerView forceBeginRefreshing];
-        [defaults setBool:YES forKey:@"oneTwoFix"];
+    }
+    else if (![[NSUserDefaults standardUserDefaults] boolForKey:@"oneTwoFix"] && [[NSUserDefaults standardUserDefaults] boolForKey:@"reachable"]){
+        [self.spinnerView forceBeginRefreshing];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"oneTwoFix"];
         [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
-    }else if (![defaults boolForKey:@"reachable"]){
-        //offline message here??
-        resultArray = [defaults objectForKey:@"resultArray"];
-        minMaxArray = [defaults objectForKey:@"minMaxArray"];
-        [_mainTable reloadData];
-    }else{
-        if (selectedStationArray.count == resultArray.count) {
-            resultArray = [defaults objectForKey:@"resultArray"];
-            minMaxArray = [defaults objectForKey:@"minMaxArray"];
-            [_mainTable reloadData];
-        }else{
-            if (selectedStationArray.count==1) {
-                [_mainTable reloadEmptyDataSet];
+    }
+    else if (![[NSUserDefaults standardUserDefaults] boolForKey:@"reachable"]){
+        // offline message here??
+        self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
+        self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
+        [self.tableView reloadData];
+    }
+    else {
+        if (self.selectedStationArray.count == self.resultArray.count) {
+            self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
+            self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
+            [self.tableView reloadData];
+        }
+        else {
+            if (self.selectedStationArray.count==1) {
+                [self.tableView reloadEmptyDataSet];
             }
-            if (selectedStationArray.count > 0) {
-                [_spinnerView forceBeginRefreshing];
+            if (self.selectedStationArray.count > 0) {
+                [self.spinnerView forceBeginRefreshing];
                 [(AppDelegate *)[[UIApplication sharedApplication] delegate] runLiveUpdate];
             }
         }
-    }
-    
-    if (selectedStationArray.count == 10) {
-        self.navigationItem.rightBarButtonItem = nil;
-        rightItem = nil;
-        rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIconEmpty"]
-                                                     style:UIBarButtonItemStylePlain
-                                                    target:self action:@selector(addNoneClicked:)];
-        [self.navigationItem.rightBarButtonItem setEnabled:NO];
-        [self.navigationController.navigationBar setNeedsLayout];
-    }else if (selectedStationArray.count < 10){
-        rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIcon"]
-                                                     style:UIBarButtonItemStylePlain
-                                                    target:self action:@selector(addClicked:)];
-        [self.navigationItem.rightBarButtonItem setEnabled:YES];
-        [self.navigationController.navigationBar setNeedsLayout];
     }
 }
 
@@ -227,58 +187,56 @@
     return nil;
 }
 
+#pragma mark - TODO refresh
+
 - (void)receiveLiveUpdateNotification:(NSNotification *) notification{
-    resultArray = [defaults objectForKey:@"resultArray"];
-    minMaxArray = [defaults objectForKey:@"minMaxArray"];
-    [_mainTable reloadData];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:selectedStationArray.count-1 inSection:0];
-    [_mainTable scrollToRowAtIndexPath:indexPath
+    self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
+    self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
+    [self.tableView reloadData];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.selectedStationArray.count-1 inSection:0];
+    [self.tableView scrollToRowAtIndexPath:indexPath
                       atScrollPosition:UITableViewScrollPositionBottom
                               animated:YES];
-#pragma mark - TODO refresh
-    [_refreshControl endRefreshing];
-    [_spinnerView endRefreshing];
+    [self.refreshControl endRefreshing];
+    [self.spinnerView endRefreshing];
 }
 
 - (void)receiveRefreshNotification:(NSNotification *) notification{
-    resultArray = [defaults objectForKey:@"resultArray"];
-    minMaxArray = [defaults objectForKey:@"minMaxArray"];
-    [_refreshControl endRefreshing];
-    [_spinnerView endRefreshing];
-    [_mainTable reloadData];
-    
+    self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
+    self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
+    [self.refreshControl endRefreshing];
+    [self.spinnerView endRefreshing];
+    [self.tableView reloadData];
 }
 
 - (void)receiveRefreshSpinNotification:(NSNotification *) notification{
-    resultArray = [defaults objectForKey:@"resultArray"];
-    minMaxArray = [defaults objectForKey:@"minMaxArray"];
-    [_mainTable reloadData];
-#pragma mark - TODO refresh
-    [_refreshControl endRefreshing];
-    [_spinnerView endRefreshing];
+    self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
+    self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
+    [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
+    [self.spinnerView endRefreshing];
 }
 
-- (IBAction)addNoneClicked:(id)sender {
-    //should never hit? nil method
-}
-
-- (IBAction)addClicked:(id)sender {
+- (IBAction)addTapped:(id)sender {
     // for the moment total stations are capped at 10?
     // test for station array count and hasPurchased bool
-    NSLog(@"%@", [NSNumber numberWithBool:[defaults boolForKey:@"upgradePurchased"]]);
+    NSLog(@"%@", [NSNumber numberWithBool:[[NSUserDefaults standardUserDefaults] boolForKey:@"upgradePurchased"]]);
     
-    if ([defaults boolForKey:@"upgradePurchased"]) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"upgradePurchased"]) {
         // in-app upgrade
-        if (selectedStationArray.count < 10) {
+        if (self.selectedStationArray.count < 10) {
             [self performSegueWithIdentifier:@"addStationSegue" sender:self];
-        }else{
+        }
+        else {
             // at max stations
         }
-    }else{
+    }
+    else {
         // free version
-        if (selectedStationArray.count < 3) {
+        if (self.selectedStationArray.count < 3) {
             [self performSegueWithIdentifier:@"addStationSegue" sender:self];
-        }else{
+        }
+        else {
             [self performSegueWithIdentifier:@"purchaseSegue" sender:self];
         }
     }
@@ -319,13 +277,12 @@
 }
 
 - (UIImage *)buttonBackgroundImageForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state{
-    NSString *imageName = @"addStation.png";
-    return [[[UIImage imageNamed:imageName] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] imageWithAlignmentRectInsets:UIEdgeInsetsMake(0, -self.view.bounds.size.width/4, 0, -self.view.bounds.size.width/4)];
+    return [[[UIImage imageNamed:@"addStation"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] imageWithAlignmentRectInsets:UIEdgeInsetsMake(0, -self.view.bounds.size.width/4, 0, -self.view.bounds.size.width/4)];
 }
 
 - (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView
 {
-    return self.view.bounds.size.height/8;
+    return self.view.bounds.size.height / 8;
 }
 
 - (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView
@@ -337,11 +294,7 @@
 
 - (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
 {
-    if (selectedStationArray.count>0) {
-        return NO;
-    }else{
-        return YES;
-    }
+    return self.selectedStationArray.count > 0;
 }
 
 #pragma mark - UITableviewDelegate
@@ -356,20 +309,23 @@
     return 27.0f;
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
-    header = (UITableViewHeaderFooterView *)view;
-    if ([view isKindOfClass:[UITableViewHeaderFooterView class]] && selectedStationArray.count != 0) {
-        ((UITableViewHeaderFooterView *)view).backgroundView.backgroundColor = [UIColor colorWithRed:0.09 green:0.09 blue:0.09 alpha:1.0];
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    if ([view isKindOfClass:[UITableViewHeaderFooterView class]] && self.selectedStationArray.count != 0) {
+        UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+
+        ((UITableViewHeaderFooterView *)view).backgroundView.backgroundColor = [UIColor clearColor];
         
         UIView *bottomSeperatorView = [[UIView alloc] initWithFrame:CGRectMake(0, view.bounds.size.height-0.5f, view.bounds.size.width, 0.5f)];
-        [bottomSeperatorView setBackgroundColor:[UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0]];
+        [bottomSeperatorView setBackgroundColor:[UIColor colorWithRed:0.09 green:0.09 blue:0.09 alpha:1.0]];
         
         [view addSubview:bottomSeperatorView];
         
         if (header.textLabel.text.length > 0) {
-            if ([defaults boolForKey:@"reachable"]) {
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"reachable"]) {
                 header.textLabel.text = [NSString stringWithFormat:@"%@%@", [[header.textLabel.text substringToIndex:12] capitalizedString], [[header.textLabel.text substringFromIndex:12] uppercaseString]];
-            }else{
+            }
+            else {
                 header.textLabel.text = [NSString stringWithFormat:@"%@%@", [[header.textLabel.text substringToIndex:21] capitalizedString], [[header.textLabel.text substringFromIndex:21] uppercaseString]];
             }
             
@@ -380,55 +336,50 @@
     }
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (selectedStationArray.count > 0) {
-        NSString *updateString = [defaults objectForKey:@"updateString"];
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (self.selectedStationArray.count > 0) {
+        NSString *updateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"updateString"];
+        
         if (updateString.length == 0) {
             return @"Last updated at: N/A";
-        }else if (![defaults boolForKey:@"reachable"]){
+        }
+        else if (![[NSUserDefaults standardUserDefaults] boolForKey:@"reachable"]){
             return [NSString stringWithFormat:@"Offline, Last updated: %@", updateString];
-        }else{
+        }
+        else {
             return [NSString stringWithFormat:@"Last updated: %@", updateString];
         }
-    }else{
-        return @"";
     }
+    
+    return @"";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return selectedStationArray.count;
+    return self.selectedStationArray.count;
 }
 
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        if (selectedStationArray.count == 10) {
-            rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"AddIcon"]
-                                                         style:UIBarButtonItemStylePlain
-                                                        target:self action:@selector(addClicked:)];
-            [rightItem setTintColor:[UIColor colorWithRed:0.60 green:0.60 blue:0.60 alpha:1.0]];
-            self.navigationItem.rightBarButtonItem = rightItem;
-            [self.navigationItem.rightBarButtonItem setEnabled:YES];
-            [self.navigationController.navigationBar setNeedsLayout];
-        }
+        [self.selectedStationArray removeObjectAtIndex:indexPath.row];
         
-        [selectedStationArray removeObjectAtIndex:indexPath.row];
-        
-        [defaults setObject:selectedStationArray forKey:@"selectedStationArray"];
+        [[NSUserDefaults standardUserDefaults] setObject:self.selectedStationArray forKey:@"selectedStationArray"];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
-        [defaults setObject:[NSNumber numberWithBool:YES] forKey:@"pullNewWeather"];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"pullNewWeather"];
         
-        if (selectedStationArray.count == 0) {
-            [_mainTable beginUpdates];
-            //Update your data model here
-            [_mainTable reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationTop];
-            [_mainTable reloadEmptyDataSet];
-            [_mainTable endUpdates];
+        if (self.selectedStationArray.count == 0) {
+            [tableView beginUpdates];
+            [tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationTop];
+            [tableView reloadEmptyDataSet];
+            [tableView endUpdates];
         }
     }
 }
@@ -450,49 +401,55 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"mainCell";
-    MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    NSMutableDictionary *cellDict = selectedStationArray[indexPath.row];
+    MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainTableViewCellIdentifier" forIndexPath:indexPath];
+
+    NSMutableDictionary *cellDict = self.selectedStationArray[indexPath.row];
     NSMutableDictionary *titleDict = [NSMutableDictionary new];
+    
     if (cellDict[@"cleanedTitle"]){
         titleDict = cellDict[@"cleanedTitle"];
-    }else{
+    }
+    else {
         [titleDict setObject:cellDict[@"stationTitle"] forKey:@"nameHolder"];
     }
-    if (resultArray.count > 0 && minMaxArray.count > 0) {
-        for (NSDictionary *resultDict in resultArray) {
+    
+    if (self.resultArray.count > 0 && self.minMaxArray.count > 0) {
+        for (NSDictionary *resultDict in self.resultArray) {
             if ([resultDict[@"siteNumber"] isEqualToString:cellDict[@"stationNumber"]]) {
                 if ([resultDict[@"siteValue"] doubleValue] > 0) {
                     cell.resultLabel.text = resultDict[@"siteValue"];
-                }else{
+                }
+                else {
                     cell.resultLabel.text = @"N/A";
                 }
                 
-                for (NSDictionary *meanDict in minMaxArray) {
+                for (NSDictionary *meanDict in self.minMaxArray) {
                     
                     if (meanDict[@"missingData"]) {
                         //code for missing mean min
+                        cell.resultLabel.textColor = [UIColor whiteColor];
+                        
                         if ([resultDict[@"siteValue"] isEqualToString:@"Ssn"] || [resultDict[@"siteValue"] isEqualToString:@"Dis"] || [resultDict[@"siteValue"] isEqualToString:@"Ice"]) {
                             cell.resultLabel.text = @"N/A";
-                            [cell.resultLabel setTextColor:[UIColor whiteColor]];
-                        }else{
-                            [cell.resultLabel setTextColor:[UIColor whiteColor]];
                         }
-                    }else{
+                    }
+                    else {
                         if ([meanDict[@"siteNumber"] isEqualToString:cellDict[@"stationNumber"]]) {
                             NSLog(@"%f", [meanDict[@"25Value"] doubleValue]);
                             if ([resultDict[@"siteValue"] isEqualToString:@"Ssn"] || [resultDict[@"siteValue"] isEqualToString:@"Dis"] || [resultDict[@"siteValue"] isEqualToString:@"Ice"]) {
                                 cell.resultLabel.text = @"N/A";
                                 [cell.resultLabel setTextColor:[UIColor whiteColor]];
-                            }else{
+                            }
+                            else {
                                 if ([resultDict[@"siteValue"] doubleValue] < [meanDict[@"25Value"] doubleValue] && meanDict[@"25Value"] != [NSNull null]) {
                                     //red
                                     [cell.resultLabel setTextColor:[UIColor colorWithRed:0.93 green:0.39 blue:0.25 alpha:1.0]];
-                                }else if ([resultDict[@"siteValue"] doubleValue] > [meanDict[@"75Value"] doubleValue] && meanDict[@"75Value"] != [NSNull null]){
+                                }
+                                else if ([resultDict[@"siteValue"] doubleValue] > [meanDict[@"75Value"] doubleValue] && meanDict[@"75Value"] != [NSNull null]){
                                     //blue
                                     [cell.resultLabel setTextColor:[UIColor colorWithRed:0.15 green:0.58 blue:1.00 alpha:1.0]];
-                                }else{
+                                }
+                                else{
                                     //green
                                     [cell.resultLabel setTextColor:[UIColor colorWithRed:0.42 green:0.91 blue:0.46 alpha:1.0]];
                                 }
@@ -519,32 +476,34 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [_spinnerView beginRefreshing];
-    if (!hasTappedRow) {
-        hasTappedRow = YES;
+    [self.spinnerView beginRefreshing];
+    if (self.hasTappedRow == NO) {
+        self.hasTappedRow = YES;
 
-        [defaults setInteger:indexPath.row forKey:@"selectedIndex"];
+        [[NSUserDefaults standardUserDefaults] setInteger:indexPath.row forKey:@"selectedIndex"];
         
-        BOOL pullNewWeather = [defaults boolForKey:@"pullNewWeather"];
+        BOOL pullNewWeather = [[NSUserDefaults standardUserDefaults] boolForKey:@"pullNewWeather"];
         
-        NSDate *lastWeatherPullDate = [defaults objectForKey:@"updatedWeatherDate"];
+        NSDate *lastWeatherPullDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"updatedWeatherDate"];
         
-        selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
+        self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
         
         if (lastWeatherPullDate == nil) {
-            [self pullFromDarkWeather:selectedStationArray];
-        }else{
+            [self pullFromDarkWeather:self.selectedStationArray];
+        }
+        else {
             NSDate *todaysDate = [NSDate date];
             NSCalendar *gregorian = [NSCalendar currentCalendar];
             NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
             [dateComponents setHour:3];
             NSDate *targetDate = [gregorian dateByAddingComponents:dateComponents toDate:lastWeatherPullDate options:0];
             if ([targetDate compare:todaysDate] == NSOrderedAscending || pullNewWeather) {
-                [self pullFromDarkWeather:selectedStationArray];
-            }else{
-                [_spinnerView endRefreshing];
-                hasTappedRow = NO;
-                [self performSegueWithIdentifier:@"swipeSegue" sender:self];
+                [self pullFromDarkWeather:self.selectedStationArray];
+            }
+            else {
+                [self.spinnerView endRefreshing];
+                self.hasTappedRow = NO;
+                [self performSegueWithIdentifier:@"StationDetailSegue" sender:self];
             }
         }
     }
@@ -557,14 +516,13 @@
     dispatch_group_t group = dispatch_group_create();
     
     for (NSMutableDictionary *stationDict in incomingDataArray) {
-        //code here
         dispatch_group_enter(group);
         
         NSArray *tmpExclusions = @[kFCAlerts, kFCFlags, kFCMinutelyForecast, kFCHourlyForecast];
         
-        forecastr.cacheEnabled = NO;
+        self.forecastr.cacheEnabled = NO;
         
-        [forecastr getForecastForLatitude:[stationDict[@"latTotal"] doubleValue] longitude:[stationDict[@"longTotal"] doubleValue] time:nil exclusions:tmpExclusions extend:nil success:^(id JSON) {
+        [self.forecastr getForecastForLatitude:[stationDict[@"latTotal"] doubleValue] longitude:[stationDict[@"longTotal"] doubleValue] time:nil exclusions:tmpExclusions extend:nil success:^(id JSON) {
             NSDictionary *testRespDict = [NSDictionary dictionaryWithDictionary:JSON];
             
             NSDictionary *dailyDict = testRespDict[@"daily"];
@@ -613,18 +571,17 @@
             dispatch_group_leave(group);
             NSLog(@"test");
         } failure:^(NSError *error, id response) {
-            NSLog(@"Error while retrieving forecast: %@", [forecastr messageForError:error withResponse:response]);
+            NSLog(@"Error while retrieving forecast: %@", [self.forecastr messageForError:error withResponse:response]);
         }];
     }
     
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        // Do whatever you need to do when all requests are finished
-        [defaults setObject:weatherDataArray forKey:@"weatherArray"];
+        // All Requests have finished
+        [[NSUserDefaults standardUserDefaults] setObject:weatherDataArray forKey:@"weatherArray"];
 #pragma mark - TODO refresh
-        [_spinnerView endRefreshing];
-        hasTappedRow = NO;
-        [self performSegueWithIdentifier:@"swipeSegue" sender:self];
-        NSLog(@"finished?");
+        [self.spinnerView endRefreshing];
+        self.hasTappedRow = NO;
+        [self performSegueWithIdentifier:@"StationDetailSegue" sender:self];
     });
 }
 

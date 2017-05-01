@@ -512,12 +512,10 @@
 }
 
 - (void)swipeViewDidEndScrollingAnimation:(SwipeView *)swipeView{
-    NSLog(@"did end");
     pageControl.currentPage = swipeView.currentPage;
 }
 
 - (void)swipeViewCurrentItemIndexDidChange:(SwipeView *)swipeView{
-    NSLog(@"did scroll");
     pageControl.currentPage = swipeView.currentPage;
 }
 
