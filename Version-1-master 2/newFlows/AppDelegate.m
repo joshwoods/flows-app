@@ -97,7 +97,7 @@
         int minutesSinceUpdateInterval = secondsSinceUpdateInterval*-1/60;
         
         [defaults setObject:[NSDate date] forKey:@"lastUSGSupdateDate"];
-        return [NSURLConnection GET:[NSString stringWithFormat:@"http://waterservices.usgs.gov/nwis/iv/?format=rdb&modifiedSince=PT%iM&sites=%@&parameterCd=00060", minutesSinceUpdateInterval, md5]];
+        return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterservices.usgs.gov/nwis/iv/?format=rdb&modifiedSince=PT%iM&sites=%@&parameterCd=00060", minutesSinceUpdateInterval, md5]];
     }).then(^(NSString *returnData){
         return [self currentDataPull:returnData isFirstPull:NO];
         
@@ -116,7 +116,7 @@
             return [self urlStringfromStations:selectedStationArray];
         }).then(^(NSString *md5){
             [defaults setObject:[NSDate date] forKey:@"lastUSGSupdateDate"];
-            return [NSURLConnection GET:[NSString stringWithFormat:@"http://waterservices.usgs.gov/nwis/iv/?format=rdb&sites=%@&parameterCd=00060", md5]];
+            return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterservices.usgs.gov/nwis/iv/?format=rdb&sites=%@&parameterCd=00060", md5]];
         }).then(^(NSString *returnData){
             return [self currentDataPull:returnData isFirstPull:YES];
         }).then(^(NSMutableArray *returnArray){
@@ -139,12 +139,12 @@
                 }).then(^{
                     return [self urlStringfromStations:selectedStationArray];
                 }).then(^(NSString *md5){
-                    return [NSURLConnection GET:[NSString stringWithFormat:@"http://waterdata.usgs.gov/nwis/dvstat/?site_no=%@&format=rdb&submitted_form=parameter_selection_list&PARAmeter_cd=00060", md5]];
+                    return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterdata.usgs.gov/nwis/dvstat/?site_no=%@&format=rdb&submitted_form=parameter_selection_list&PARAmeter_cd=00060", md5]];
                 }).then(^(NSString *returnData){
                     [self fetchedFlowData:returnData];
                     return [self urlStringfromStations:selectedStationArray];
                 }).then(^(NSString *md5){
-                    return [NSURLConnection GET:[NSString stringWithFormat:@"http://waterdata.usgs.gov/nwis/inventory?agency_code=USGS&site_no=%@&format=rdb", md5]];
+                    return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterdata.usgs.gov/nwis/inventory?agency_code=USGS&site_no=%@&format=rdb", md5]];
                 }).then(^(NSString *responseString){
                     return [self detailDataPull:responseString];
                 }).then(^(NSMutableArray *responseArray){
