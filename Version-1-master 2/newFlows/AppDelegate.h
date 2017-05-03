@@ -9,7 +9,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property NSMutableArray *selectedStationArray;
+@property (strong, nonatomic) NSMutableArray *selectedStationArray;
 
 - (void)runLiveUpdate;
 - (void)refreshData;

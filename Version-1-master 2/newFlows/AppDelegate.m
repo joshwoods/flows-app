@@ -13,26 +13,21 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) NSMutableArray *resultArray;
+@property (strong, nonatomic) NSMutableArray *minMaxArray;
+@property (strong, nonatomic) NSMutableArray *testlocationArray;
+@property (strong, nonatomic) NSString *detailData;
+
 @end
 
-@implementation AppDelegate{
-    NSUserDefaults *defaults;
-    NSMutableArray *resultArray;
-    NSString *detailData;
-    NSMutableArray *minMaxArray;
-    NSMutableArray *testlocationArray;
-}
-
-@synthesize selectedStationArray;
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self applyAppearance];
     
-    defaults = [NSUserDefaults standardUserDefaults];
+    self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
     
-    selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
-    
-    minMaxArray = [NSMutableArray new];
+    self.minMaxArray = [NSMutableArray new];
     
     Reachability* reach = [Reachability reachabilityWithHostname:@"www.apple.com"];
     
@@ -40,14 +35,14 @@
     reach.reachableBlock = ^(Reachability*reach)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [defaults setBool:YES forKey:@"reachable"];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"reachable"];
         });
     };
     
     reach.unreachableBlock = ^(Reachability*reach)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [defaults setBool:NO forKey:@"reachable"];
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"reachable"];
         });
     };
     
@@ -55,14 +50,14 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    if (selectedStationArray.count > 0) {
-        NSDate *lastUSGSupdateDate = [defaults objectForKey:@"lastUSGSupdateDate"];
+    if (self.selectedStationArray.count > 0) {
+        NSDate *lastUSGSupdateDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastUSGSupdateDate"];
         NSTimeInterval secondsSinceUpdateInterval = [lastUSGSupdateDate timeIntervalSinceNow];
         int minutesSinceUpdateInterval = secondsSinceUpdateInterval*-1/60;
         if (minutesSinceUpdateInterval > 30) {
-            [defaults setObject:[NSNumber numberWithBool:YES] forKey:@"shouldUpdate"];
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"shouldUpdate"];
         } else {
-            [defaults setObject:[NSNumber numberWithBool:NO] forKey:@"shouldUpdate"];
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"shouldUpdate"];
         }
     }
 }
@@ -84,7 +79,7 @@
 #pragma mark - data pull
 -(void)refreshData {
     dispatch_promise(^{
-        return [self urlStringfromStations:selectedStationArray];
+        return [self urlStringfromStations:self.selectedStationArray];
     }).then(^(NSString *md5){
         //example from USGS
         
@@ -95,11 +90,11 @@
         //&modifiedSince=PT30M
         //&parameterCd=00060
         
-        NSDate *lastUSGSupdateDate = [defaults objectForKey:@"lastUSGSupdateDate"];
+        NSDate *lastUSGSupdateDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastUSGSupdateDate"];
         NSTimeInterval secondsSinceUpdateInterval = [lastUSGSupdateDate timeIntervalSinceNow];
         int minutesSinceUpdateInterval = secondsSinceUpdateInterval*-1/60;
         
-        [defaults setObject:[NSDate date] forKey:@"lastUSGSupdateDate"];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"lastUSGSupdateDate"];
         return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterservices.usgs.gov/nwis/iv/?format=rdb&modifiedSince=PT%iM&sites=%@&parameterCd=00060", minutesSinceUpdateInterval, md5]];
     }).then(^(NSString *returnData){
         return [self currentDataPull:returnData isFirstPull:NO];
@@ -112,20 +107,20 @@
 }
 
 - (void)runLiveUpdate {
-    selectedStationArray = [[defaults objectForKey:@"selectedStationArray"] mutableCopy];
-    if (selectedStationArray.count > 0) {
+    self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
+    if (self.selectedStationArray.count > 0) {
 #pragma mark - TODO refresh
         dispatch_promise(^{
-            return [self urlStringfromStations:selectedStationArray];
+            return [self urlStringfromStations:self.selectedStationArray];
         }).then(^(NSString *md5){
-            [defaults setObject:[NSDate date] forKey:@"lastUSGSupdateDate"];
+            [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"lastUSGSupdateDate"];
             return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterservices.usgs.gov/nwis/iv/?format=rdb&sites=%@&parameterCd=00060", md5]];
         }).then(^(NSString *returnData){
             return [self currentDataPull:returnData isFirstPull:YES];
         }).then(^(NSMutableArray *returnArray){
-            BOOL selectedStationUpdated = [defaults boolForKey:@"selectedStationUpdated"];
+            BOOL selectedStationUpdated = [[NSUserDefaults standardUserDefaults] boolForKey:@"selectedStationUpdated"];
             
-            NSDate *savedDate = [defaults objectForKey:@"updatedDate"];
+            NSDate *savedDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"updatedDate"];
             
             NSDate *todaysDate = [NSDate date];
             NSCalendar *gregorian = [NSCalendar currentCalendar];
@@ -140,19 +135,19 @@
                     //pull station ID here!!
                     NSLog(@"stationtest");
                 }).then(^{
-                    return [self urlStringfromStations:selectedStationArray];
+                    return [self urlStringfromStations:self.selectedStationArray];
                 }).then(^(NSString *md5){
                     return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterdata.usgs.gov/nwis/dvstat/?site_no=%@&format=rdb&submitted_form=parameter_selection_list&PARAmeter_cd=00060", md5]];
                 }).then(^(NSString *returnData){
                     [self fetchedFlowData:returnData];
-                    return [self urlStringfromStations:selectedStationArray];
+                    return [self urlStringfromStations:self.selectedStationArray];
                 }).then(^(NSString *md5){
                     return [NSURLConnection GET:[NSString stringWithFormat:@"https://waterdata.usgs.gov/nwis/inventory?agency_code=USGS&site_no=%@&format=rdb", md5]];
                 }).then(^(NSString *responseString){
                     return [self detailDataPull:responseString];
                 }).then(^(NSMutableArray *responseArray){
-                    [defaults setObject:[NSNumber numberWithBool:NO] forKey:@"selectedStationUpdated"];
-                    [defaults setObject:[NSNumber numberWithBool:YES] forKey:@"pullNewWeather"];
+                    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:@"selectedStationUpdated"];
+                    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"pullNewWeather"];
                     dispatch_async(dispatch_get_main_queue(),^{
                         [[NSNotificationCenter defaultCenter] postNotificationName:@"LiveUpdateNotification" object:self];
                     });
@@ -160,7 +155,7 @@
             } else {
                 //local pull
                 dispatch_promise(^{
-                    NSString* flowData = [defaults objectForKey:@"minMaxData"];
+                    NSString* flowData = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxData"];
                     return [self fetchedFlowData:flowData];
                 }).then(^(NSString *responseString){
                     dispatch_async(dispatch_get_main_queue(),^{
@@ -174,13 +169,13 @@
 
 - (NSString*)urlStringfromStations:(NSMutableArray*)incomingStations {
     NSString *tempHolderString = [NSString new];
-    for (int i = 0;i < selectedStationArray.count; i++) {
-        NSMutableDictionary *tempDict = selectedStationArray[i];
+    for (int i = 0;i < self.selectedStationArray.count; i++) {
+        NSMutableDictionary *tempDict = self.selectedStationArray[i];
         NSString *tempString = tempDict[@"stationNumber"];
-        if (i < selectedStationArray.count-1) {
+        if (i < self.selectedStationArray.count-1) {
             NSString *commaString = [NSString stringWithFormat:@"%@,", tempString];
             tempHolderString = [NSString stringWithFormat:@"%@%@", tempHolderString, commaString];
-        }else if(selectedStationArray.count == 1){
+        }else if(self.selectedStationArray.count == 1){
             tempHolderString = [NSString stringWithFormat:@"%@%@", tempHolderString, tempString];
         }else{
             tempHolderString = [NSString stringWithFormat:@"%@%@", tempHolderString, tempString];
@@ -193,10 +188,10 @@
 #pragma mark - pull data
 
 - (NSMutableArray*)currentDataPull:(NSString *)responseHolder isFirstPull:(BOOL)firstPull{
-    resultArray = [[defaults objectForKey:@"resultArray"] mutableCopy];
+    self.resultArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"] mutableCopy];
     
-    if (resultArray.count == 0 || firstPull) {
-        resultArray = [NSMutableArray new];
+    if (self.resultArray.count == 0 || firstPull) {
+        self.resultArray = [NSMutableArray new];
     }
     
     NSArray *components = [responseHolder componentsSeparatedByString:@"\n"];
@@ -213,12 +208,12 @@
             NSDictionary *tempHolder = [[NSDictionary alloc] initWithObjectsAndKeys:[tempHolderArray objectAtIndex:1], @"siteNumber", [tempHolderArray objectAtIndex:4], @"siteValue", [tempHolderArray objectAtIndex:3], @"timeZone", [tempHolderArray objectAtIndex:2], @"timeStamp", nil];
             
             if (firstPull) {
-                [resultArray addObject:tempHolder];
+                [self.resultArray addObject:tempHolder];
             } else {
-                for (int i=0; i<resultArray.count; i++) {
-                    NSDictionary *dictionaryToReplace = resultArray[i];
+                for (int i=0; i < self.resultArray.count; i++) {
+                    NSDictionary *dictionaryToReplace = self.resultArray[i];
                     if ([tempHolder[@"siteNumber"] isEqualToString:dictionaryToReplace[@"siteNumber"]]) {
-                        [resultArray replaceObjectAtIndex:i withObject:tempHolder];
+                        [self.resultArray replaceObjectAtIndex:i withObject:tempHolder];
                     }
                 }
             }
@@ -229,22 +224,22 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     dateFormatter.dateFormat = @"hh:mm a";
     NSString *updateString = [NSString stringWithFormat:@"%@", [dateFormatter stringFromDate:date]];
-    [defaults setObject:updateString forKey:@"updateString"];
+    [[NSUserDefaults standardUserDefaults] setObject:updateString forKey:@"updateString"];
 #pragma mark - TODO update time string
     // _updateString = [NSString stringWithFormat:@"%@", [dateFormatter stringFromDate:date]];
     
-    [defaults setObject:resultArray forKey:@"resultArray"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.resultArray forKey:@"resultArray"];
     
-    return resultArray;
+    return self.resultArray;
 }
 
 - (NSMutableArray*)detailDataPull:(NSString *)responseHolder {
     
-    [defaults setObject:responseHolder forKey:@"gpsData"];
+    [[NSUserDefaults standardUserDefaults] setObject:responseHolder forKey:@"gpsData"];
     NSArray *components = [responseHolder componentsSeparatedByString:@"\n"];
     NSMutableArray *returnArray = [NSMutableArray arrayWithArray:components];
-    detailData = responseHolder;
-    [defaults setObject:detailData forKey:@"detailData"];
+    self.detailData = responseHolder;
+    [[NSUserDefaults standardUserDefaults] setObject:self.detailData forKey:@"detailData"];
     [self pullGeoLocationForTest];
     
     return returnArray;
@@ -254,9 +249,9 @@
 
 - (NSMutableArray*)fetchedFlowData:(NSString *)responseHolder {
     
-    [defaults setObject:responseHolder forKey:@"minMaxData"];
+    [[NSUserDefaults standardUserDefaults] setObject:responseHolder forKey:@"minMaxData"];
     NSDate *todaysDate = [NSDate date];
-    [defaults setObject:todaysDate forKey:@"updatedDate"];
+    [[NSUserDefaults standardUserDefaults] setObject:todaysDate forKey:@"updatedDate"];
     NSArray *components = [responseHolder componentsSeparatedByString:@"\n"];
     NSMutableArray *workingDataArray = [[NSMutableArray alloc] initWithArray:components];
     NSMutableArray *cleanedHolderArray = [[NSMutableArray alloc] init];
@@ -306,7 +301,7 @@
             if ([temp.dayNu isEqualToString:[NSString stringWithFormat:@"%li", (long)day]]) {
                 
                 NSDictionary *holderDict = [[NSDictionary alloc] initWithObjectsAndKeys:temp.meanVa, @"meanValue", temp.p25Va, @"25Value", temp.p75Va, @"75Value", temp.siteNum, @"siteNumber", nil];
-                [minMaxArray addObject:holderDict];
+                [self.minMaxArray addObject:holderDict];
                 foundValue = 1;
             }
         }
@@ -314,16 +309,16 @@
     
     if (foundValue==-1) {
         NSDictionary *holderDict = [[NSDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithBool:YES], @"missingData", siteNumberString, @"siteNumber", nil];
-        [minMaxArray addObject:holderDict];
+        [self.minMaxArray addObject:holderDict];
     }
     
-    [defaults setObject:minMaxArray forKey:@"minMaxArray"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.minMaxArray forKey:@"minMaxArray"];
     
-    return minMaxArray;
+    return self.minMaxArray;
 }
 
 -(void)pullGeoLocationForTest {
-    NSArray *components = [detailData componentsSeparatedByString:@"\n"];
+    NSArray *components = [self.detailData componentsSeparatedByString:@"\n"];
     NSMutableArray *workingArray = [[NSMutableArray alloc] initWithArray:components];
     NSMutableArray *stationArray = [NSMutableArray new];
     
@@ -336,7 +331,7 @@
         }
     }
     
-    testlocationArray = [NSMutableArray new];
+    self.testlocationArray = [NSMutableArray new];
     
     for (int i=0; i<stationArray.count; i++) {
         NSArray *tempHolderArray = stationArray[i];
@@ -386,14 +381,14 @@
         double LatSeconds = [latSec doubleValue] / 3600;
         double latTotal = [endOneLatString doubleValue] + latMinutes + LatSeconds;
         
-        for (int i=0; i<selectedStationArray.count; i++) {
-            NSMutableDictionary *stationDict = [selectedStationArray[i] mutableCopy];
+        for (int i=0; i < self.selectedStationArray.count; i++) {
+            NSMutableDictionary *stationDict = [self.selectedStationArray[i] mutableCopy];
             if ([stationDict[@"stationNumber"] isEqualToString:tempStationNumber]) {
                 [stationDict setObject:[NSNumber numberWithDouble:longTotal] forKey:@"longTotal"];
                 [stationDict setObject:[NSNumber numberWithDouble:latTotal] forKey:@"latTotal"];
 #pragma mark - TODO test for nil weatherInfo station data
-                [selectedStationArray replaceObjectAtIndex:i withObject:stationDict];
-                [defaults setObject:selectedStationArray forKey:@"selectedStationArray"];
+                [self.selectedStationArray replaceObjectAtIndex:i withObject:stationDict];
+                [[NSUserDefaults standardUserDefaults] setObject:self.selectedStationArray forKey:@"selectedStationArray"];
             }
         }
     }
