@@ -347,7 +347,6 @@
 				4218847B1CD6803A0039BCCB /* storeKit */,
 				4253B9771C970FF8008AF6BA /* helperClasses */,
 				42BEDAC01C8535A900113431 /* SwipeView */,
-				42A34BDD1BBD8CAD004F7FB7 /* stationData */,
 				42A35B161BB632F700470D6D /* dataObjects */,
 				42A35B121BB5D7FF00470D6D /* reachability */,
 				42A35B081BB5C35D00470D6D /* cells */,
@@ -458,7 +457,8 @@
 				9163626B1EA5BEE700E6D982 /* wv */,
 				9163626D1EA5BF0C00E6D982 /* wy */,
 			);
-			path = stationData;
+			name = stationData;
+			path = ../stationData;
 			sourceTree = "<group>";
 		};
 		42A35AFE1BB5C27000470D6D /* views */ = {
@@ -511,6 +511,7 @@
 		42A35B161BB632F700470D6D /* dataObjects */ = {
 			isa = PBXGroup;
 			children = (
+				42A34BDD1BBD8CAD004F7FB7 /* stationData */,
 				42C8A9591C8A17A9006BF832 /* city.json */,
 				4272F6EA1C1CC8140062161F /* abbreviations.plist */,
 				4272F6EB1C1CC8140062161F /* states.plist */,
@@ -1003,7 +1004,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CD113D332DFD3F5240DA9BE /* Pods-newFlows.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1029,7 +1029,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C12774532E8824C2AB33B483 /* Pods-newFlows.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
