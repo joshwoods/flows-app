@@ -42,7 +42,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5A-G9-cJh">
-                                                    <rect key="frame" x="80" y="50" width="293" height="0.0"/>
+                                                    <rect key="frame" x="80" y="50" width="277" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -184,8 +184,26 @@
                     <view key="view" contentMode="scaleToFill" id="Hvl-vc-M8Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAh-JI-6Lj">
+                                <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="9wf-SS-cDC"/>
+                                    <constraint firstAttribute="height" constant="44" id="Bz3-9i-Tjc"/>
+                                </constraints>
+                                <state key="normal" image="BackIcon"/>
+                                <connections>
+                                    <action selector="exitTapped" destination="VfC-da-nIk" eventType="touchUpInside" id="Ky9-BE-4ed"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DAh-JI-6Lj" firstAttribute="top" secondItem="Hvl-vc-M8Z" secondAttribute="topMargin" constant="20" id="YPb-Vl-4Tn"/>
+                            <constraint firstItem="DAh-JI-6Lj" firstAttribute="leading" secondItem="Hvl-vc-M8Z" secondAttribute="leading" constant="10" id="kWt-wB-Eu2"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="weather_tab_bar_icon_inactive" selectedImage="weather_tab_bar_icon_active" id="4Sa-rD-zYK"/>
                     <navigationItem key="navigationItem" id="aTa-dX-sRM">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="80s-F1-uen">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -197,22 +215,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpY-x8-qAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="2118.8905547226386"/>
+            <point key="canvasLocation" x="1129" y="2119"/>
         </scene>
         <!--Station Detail Graph View Controller-->
         <scene sceneID="CpF-Y0-19K">
             <objects>
-                <viewController id="OUE-OG-wIl" customClass="StationDetailGraphViewController" customModule="newFlows" sceneMemberID="viewController">
+                <viewController id="OUE-OG-wIl" customClass="StationDetailGraphViewController" customModule="newFlows" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C9W-34-0Ph"/>
                         <viewControllerLayoutGuide type="bottom" id="gOb-X9-6IY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jM8-Qr-Orm">
-                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lai-Ke-wuC">
+                                <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IH7-aa-AeN"/>
+                                    <constraint firstAttribute="width" constant="44" id="jVa-hJ-ykx"/>
+                                </constraints>
+                                <state key="normal" image="BackIcon"/>
+                                <connections>
+                                    <action selector="exitTapped" destination="OUE-OG-wIl" eventType="touchUpInside" id="xVY-ch-dHy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lai-Ke-wuC" firstAttribute="leading" secondItem="jM8-Qr-Orm" secondAttribute="leading" constant="10" id="EKM-y0-nYR"/>
+                            <constraint firstItem="lai-Ke-wuC" firstAttribute="top" secondItem="jM8-Qr-Orm" secondAttribute="topMargin" constant="20" id="qXX-y5-Oxo"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="" image="graph_tab_bar_icon_inactive" selectedImage="graph_tab_bar_icon_active" id="1mF-lr-go5"/>
                     <navigationItem key="navigationItem" id="8Kk-Vm-7rd">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="1MT-pO-TyO">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -224,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ah-wH-kGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2069.5999999999999" y="1431.6341829085459"/>
+            <point key="canvasLocation" x="1129" y="1463"/>
         </scene>
         <!--Station Detail Tab Bar View Controller-->
         <scene sceneID="gQB-q5-JKK">
@@ -237,9 +273,9 @@
                         <color key="barTintColor" red="0.047058823529411764" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="feI-1p-U1B" kind="relationship" relationship="viewControllers" id="9eT-n6-M76"/>
-                        <segue destination="8gy-R5-avn" kind="relationship" relationship="viewControllers" id="weJ-SK-uCo"/>
-                        <segue destination="9uv-zI-TpH" kind="relationship" relationship="viewControllers" id="Nmc-Wp-8zi"/>
+                        <segue destination="OUE-OG-wIl" kind="relationship" relationship="viewControllers" id="dta-62-7sE"/>
+                        <segue destination="VfC-da-nIk" kind="relationship" relationship="viewControllers" id="6YQ-bB-3bU"/>
+                        <segue destination="HhD-uS-8OA" kind="relationship" relationship="viewControllers" id="GR9-ds-28Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9w-TI-vyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -676,8 +712,26 @@
                     <view key="view" contentMode="scaleToFill" id="U7w-eF-l8Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlS-6G-xBC">
+                                <rect key="frame" x="10" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="gjf-8w-1we"/>
+                                    <constraint firstAttribute="height" constant="44" id="wnl-NY-OQ1"/>
+                                </constraints>
+                                <state key="normal" image="BackIcon"/>
+                                <connections>
+                                    <action selector="exitTapped" destination="HhD-uS-8OA" eventType="touchUpInside" id="jO6-F5-cXa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PlS-6G-xBC" firstAttribute="leading" secondItem="U7w-eF-l8Z" secondAttribute="leading" constant="10" id="WpG-ce-rdh"/>
+                            <constraint firstItem="PlS-6G-xBC" firstAttribute="top" secondItem="U7w-eF-l8Z" secondAttribute="topMargin" constant="20" id="blB-Wr-ezY"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="map_tab_bar_icon_inactive" selectedImage="map_tab_bar_icon_active" id="A8d-WS-AJn"/>
                     <navigationItem key="navigationItem" id="tcF-4u-zbu">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="pqt-h0-DxZ">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -689,65 +743,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPq-0Q-ewY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="2876"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Z73-Mn-5a2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="feI-1p-U1B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="graph_tab_bar_icon_inactive" selectedImage="graph_tab_bar_icon_active" id="dxh-0K-76v"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="A8h-wH-RQo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="OUE-OG-wIl" kind="relationship" relationship="rootViewController" id="0WL-sH-Mf1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eoy-D4-Ssa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1130.4000000000001" y="1431.6341829085459"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ux5-00-qRY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8gy-R5-avn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="weather_tab_bar_icon_inactive" selectedImage="weather_tab_bar_icon_active" id="SY4-AW-VZj"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Apm-6h-wPr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="VfC-da-nIk" kind="relationship" relationship="rootViewController" id="vr1-OR-Uzg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iHK-Zy-RAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1128.8" y="2118.8905547226386"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8y9-Lf-IlM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9uv-zI-TpH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="map_tab_bar_icon_inactive" selectedImage="map_tab_bar_icon_active" id="qRF-Ll-QQV"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pkS-hT-IYR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="HhD-uS-8OA" kind="relationship" relationship="rootViewController" id="HCX-e1-Jlm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OSz-sF-dyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1129" y="2877"/>
+            <point key="canvasLocation" x="1129" y="2811"/>
         </scene>
     </scenes>
     <resources>
