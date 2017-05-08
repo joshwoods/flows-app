@@ -11,7 +11,6 @@
 #import "SwipeViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <PromiseKit/PromiseKit.h>
-#import "Forecastr.h"
 #import "UIColor+Hexadecimal.h"
 #import "customNavBar.h"
 #import "pushAnimator.h"
