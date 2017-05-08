@@ -22,11 +22,12 @@ PODS:
     - AFNetworking/NSURLSession
   - DZNEmptyDataSet (1.8.1)
   - Facade (1.1.1)
+  - ForecastIO (4.0.0)
   - Forecastr (0.2.3):
     - AFNetworking (~> 2.6.0)
   - GDIIndexBar (0.3.5)
   - JSONModel (0.9.3)
-  - JTMaterialSpinner (1.0.4)
+  - JTMaterialSpinner (2.0.3)
   - OMGHTTPURLRQ (2.1.3):
     - OMGHTTPURLRQ/RQ (= 2.1.3)
   - OMGHTTPURLRQ/FormURLEncode (2.1.3)
@@ -72,23 +73,25 @@ PODS:
 DEPENDENCIES:
   - DZNEmptyDataSet
   - Facade
+  - ForecastIO
   - Forecastr
   - GDIIndexBar
   - JSONModel (~> 0.9.1)
-  - JTMaterialSpinner (~> 1.0.2)
+  - JTMaterialSpinner
   - PromiseKit (~> 1.5)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Facade: 3c5c6fb1ba042d20885cfe5a290050f5b9351ca2
+  ForecastIO: d449959139efdc9a2c111a2dba691a67706bb619
   Forecastr: 2f0967abf9e439f5ac1f6717fc56239647dfbfa1
   GDIIndexBar: 38a250ad02cea73fcb50a1cdad815b726a13a39e
   JSONModel: d9d4d64fb24abd81a02c8d4ecb7a922effa728fd
-  JTMaterialSpinner: 8d0b72f50bbdb673ca99ea60f8c8725fc7bb7fc6
+  JTMaterialSpinner: 3c4279fc0b72438c9e29712fd37cf616d20c613e
   OMGHTTPURLRQ: c4268dea4295b585d711055dbcd87bfa82badd5f
   PromiseKit: 102844c7b5ccff53f693e0710365c445d8df3871
 
-PODFILE CHECKSUM: 26bad5f72177c612259ee07afe1b7d35b7586047
+PODFILE CHECKSUM: ad6c077c325e0e90d2053b3aff8f081334574f9c
 
 COCOAPODS: 1.2.1

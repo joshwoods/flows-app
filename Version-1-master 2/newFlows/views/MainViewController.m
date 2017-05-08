@@ -10,7 +10,6 @@
 #import "AppDelegate.h"
 #import "SwipeViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import <JTMaterialSpinner/JTMaterialSpinner.h>
 #import <PromiseKit/PromiseKit.h>
 #import "Forecastr.h"
 #import "UIColor+Hexadecimal.h"
@@ -18,6 +17,8 @@
 #import "pushAnimator.h"
 #import "popAnimator.h"
 #import "Reachability.h"
+@import JTMaterialSpinner;
+#import "newFlows-Swift.h"
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
 
@@ -37,19 +38,12 @@
 @property (strong, nonatomic) NSMutableArray *resultArray;
 @property (strong, nonatomic) NSMutableArray *minMaxArray;
 
-@property (assign, nonatomic) BOOL hasTappedRow;
-
-@property (strong, nonatomic) Forecastr *forecastr;
-
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.forecastr = [Forecastr sharedManager];
-    self.forecastr.apiKey = @"5decbd5c3ac3d3dc35a9ae7666dcfa65";
     
     // Customize the line width
     self.spinnerView.circleLayer.lineWidth = 2.0;
@@ -115,8 +109,6 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
     
     Reachability *reach = [Reachability reachabilityWithHostname:@"www.apple.com"];
     if([reach currentReachabilityStatus] == 0) {
@@ -473,114 +465,115 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.spinnerView beginRefreshing];
-    if (self.hasTappedRow == NO) {
-        self.hasTappedRow = YES;
+    StationManager.shared.selectedStation = self.selectedStationArray[indexPath.row];
+    [self performSegueWithIdentifier:@"StationDetailSegue" sender:self];
 
-        [[NSUserDefaults standardUserDefaults] setInteger:indexPath.row forKey:@"selectedIndex"];
-        
-        BOOL pullNewWeather = [[NSUserDefaults standardUserDefaults] boolForKey:@"pullNewWeather"];
-        
-        NSDate *lastWeatherPullDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"updatedWeatherDate"];
-        
-        self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
-        
-        if (lastWeatherPullDate == nil) {
-            [self pullFromDarkWeather:self.selectedStationArray];
-        }
-        else {
-            NSDate *todaysDate = [NSDate date];
-            NSCalendar *gregorian = [NSCalendar currentCalendar];
-            NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
-            [dateComponents setHour:3];
-            NSDate *targetDate = [gregorian dateByAddingComponents:dateComponents toDate:lastWeatherPullDate options:0];
-            if ([targetDate compare:todaysDate] == NSOrderedAscending || pullNewWeather) {
-                [self pullFromDarkWeather:self.selectedStationArray];
-            }
-            else {
-                [self.spinnerView endRefreshing];
-                self.hasTappedRow = NO;
-                [self performSegueWithIdentifier:@"StationDetailSegue" sender:self];
-            }
-        }
-    }
+//    [self.spinnerView beginRefreshing];
+//    if (self.hasTappedRow == NO) {
+//        self.hasTappedRow = YES;
+//
+//        [[NSUserDefaults standardUserDefaults] setInteger:indexPath.row forKey:@"selectedIndex"];
+//        
+//        BOOL pullNewWeather = [[NSUserDefaults standardUserDefaults] boolForKey:@"pullNewWeather"];
+//        
+//        NSDate *lastWeatherPullDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"updatedWeatherDate"];
+//        
+//        self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
+//        
+//        if (lastWeatherPullDate == nil) {
+//            [self pullFromDarkWeather:self.selectedStationArray];
+//        }
+//        else {
+//            NSDate *todaysDate = [NSDate date];
+//            NSCalendar *gregorian = [NSCalendar currentCalendar];
+//            NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+//            [dateComponents setHour:3];
+//            NSDate *targetDate = [gregorian dateByAddingComponents:dateComponents toDate:lastWeatherPullDate options:0];
+//            if ([targetDate compare:todaysDate] == NSOrderedAscending || pullNewWeather) {
+//                [self pullFromDarkWeather:self.selectedStationArray];
+//            }
+//            else {
+//                [self.spinnerView endRefreshing];
+//                self.hasTappedRow = NO;
+//            }
+//        }
+//    }
 }
 
-- (void)pullFromDarkWeather:(NSMutableArray*)incomingDataArray{
-    
-    NSMutableArray *weatherDataArray = [NSMutableArray new];
-    
-    dispatch_group_t group = dispatch_group_create();
-    
-    for (NSMutableDictionary *stationDict in incomingDataArray) {
-        dispatch_group_enter(group);
-        
-        NSArray *tmpExclusions = @[kFCAlerts, kFCFlags, kFCMinutelyForecast, kFCHourlyForecast];
-        
-        self.forecastr.cacheEnabled = NO;
-        
-        [self.forecastr getForecastForLatitude:[stationDict[@"latTotal"] doubleValue] longitude:[stationDict[@"longTotal"] doubleValue] time:nil exclusions:tmpExclusions extend:nil success:^(id JSON) {
-            NSDictionary *testRespDict = [NSDictionary dictionaryWithDictionary:JSON];
-            
-            NSDictionary *dailyDict = testRespDict[@"daily"];
-            
-            NSNumber *offsetNumber = testRespDict[@"offset"];
-            
-            NSArray *dailyArray = dailyDict[@"data"];
-            
-            NSMutableArray *intermediateArray = [NSMutableArray new];
-            
-            for (int i=0; i<4; i++){
-                NSDictionary *innerDict = dailyArray[i];
-                NSNumber *secondsPerHour = @(3600);
-                int offsetInSeconds = [offsetNumber intValue] * [secondsPerHour intValue];
-                NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-                
-                int finalSeconds = [innerDict[@"time"] intValue] + offsetInSeconds;
-                NSDate *preOffsetDate = [NSDate dateWithTimeIntervalSince1970:[innerDict[@"time"] intValue]];
-                NSDate *date = [NSDate dateWithTimeIntervalSince1970:finalSeconds];
-                
-                formatter.locale = [NSLocale currentLocale];
-                [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-                
-                NSDateFormatter *df = [[NSDateFormatter alloc] init];
-                df.locale = [NSLocale currentLocale];
-                [df setDateFormat:@"EEEE"];
-                
-                NSString *dateString = [df stringFromDate:preOffsetDate];
-                
-                NSLog(@"intial %@", [formatter stringFromDate:preOffsetDate]);
-                NSLog(@"intial %@", [df stringFromDate:preOffsetDate]);
-                NSLog(@"%@", [formatter stringFromDate:date]);
-                NSLog(@"%@", [df stringFromDate:date]);
-
-                NSNumber *lowNum = innerDict[@"temperatureMin"];
-                NSNumber *highNum = innerDict[@"temperatureMax"];
-                
-                NSString *iconString = innerDict[@"icon"];
-                
-                NSDictionary *weatherDict = [[NSDictionary alloc] initWithObjectsAndKeys:lowNum, @"lowNum", highNum, @"highNum", dateString, @"dateString", iconString, @"iconString", stationDict[@"stationNumber"], @"stationNumber", nil];
-                
-                [intermediateArray addObject:weatherDict];
-            }
-            
-            [weatherDataArray addObject:intermediateArray];
-            dispatch_group_leave(group);
-            NSLog(@"test");
-        } failure:^(NSError *error, id response) {
-            NSLog(@"Error while retrieving forecast: %@", [self.forecastr messageForError:error withResponse:response]);
-        }];
-    }
-    
-    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        // All Requests have finished
-        [[NSUserDefaults standardUserDefaults] setObject:weatherDataArray forKey:@"weatherArray"];
-#pragma mark - TODO refresh
-        [self.spinnerView endRefreshing];
-        self.hasTappedRow = NO;
-        [self performSegueWithIdentifier:@"StationDetailSegue" sender:self];
-    });
-}
+//- (void)pullFromDarkWeather:(NSMutableArray*)incomingDataArray{
+//    
+//    NSMutableArray *weatherDataArray = [NSMutableArray new];
+//    
+//    dispatch_group_t group = dispatch_group_create();
+//    
+//    for (NSMutableDictionary *stationDict in incomingDataArray) {
+//        dispatch_group_enter(group);
+//        
+//        NSArray *tmpExclusions = @[kFCAlerts, kFCFlags, kFCMinutelyForecast, kFCHourlyForecast];
+//        
+//        [[Forecastr sharedManager] getForecastForLatitude:[stationDict[@"latTotal"] doubleValue] longitude:[stationDict[@"longTotal"] doubleValue] time:nil exclusions:tmpExclusions extend:nil success:^(id JSON) {
+//            NSDictionary *testRespDict = [NSDictionary dictionaryWithDictionary:JSON];
+//            
+//            NSDictionary *dailyDict = testRespDict[@"daily"];
+//            
+//            NSNumber *offsetNumber = testRespDict[@"offset"];
+//            
+//            NSArray *dailyArray = dailyDict[@"data"];
+//            
+//            NSMutableArray *intermediateArray = [NSMutableArray new];
+//            
+//            for (int i = 0; i < 4; i++){
+//                NSDictionary *innerDict = dailyArray[i];
+//                NSNumber *secondsPerHour = @(3600);
+//                int offsetInSeconds = [offsetNumber intValue] * [secondsPerHour intValue];
+//                NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+//                
+//                int finalSeconds = [innerDict[@"time"] intValue] + offsetInSeconds;
+//                NSDate *preOffsetDate = [NSDate dateWithTimeIntervalSince1970:[innerDict[@"time"] intValue]];
+//                NSDate *date = [NSDate dateWithTimeIntervalSince1970:finalSeconds];
+//                
+//                formatter.locale = [NSLocale currentLocale];
+//                [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+//                
+//                NSDateFormatter *df = [[NSDateFormatter alloc] init];
+//                df.locale = [NSLocale currentLocale];
+//                [df setDateFormat:@"EEEE"];
+//                
+//                NSString *dateString = [df stringFromDate:preOffsetDate];
+//                
+//                NSLog(@"intial %@", [formatter stringFromDate:preOffsetDate]);
+//                NSLog(@"intial %@", [df stringFromDate:preOffsetDate]);
+//                NSLog(@"%@", [formatter stringFromDate:date]);
+//                NSLog(@"%@", [df stringFromDate:date]);
+//                
+//                NSNumber *lowNum = innerDict[@"temperatureMin"];
+//                NSNumber *highNum = innerDict[@"temperatureMax"];
+//                
+//                NSString *iconString = innerDict[@"icon"];
+//                
+//                NSDictionary *weatherDict = [[NSDictionary alloc] initWithObjectsAndKeys:lowNum, @"lowNum", highNum, @"highNum", dateString, @"dateString", iconString, @"iconString", stationDict[@"stationNumber"], @"stationNumber", nil];
+//                
+//                [intermediateArray addObject:weatherDict];
+//            }
+//            
+//            [weatherDataArray addObject:intermediateArray];
+//            dispatch_group_leave(group);
+//            NSLog(@"test");
+//        } failure:^(NSError *error, id response) {
+//            NSLog(@"Error while retrieving forecast.\n\n%@\n\n%@", error, response);
+//        }];
+//        
+//    }
+//    
+//    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+//        // All Requests have finished
+//        [[NSUserDefaults standardUserDefaults] setObject:weatherDataArray forKey:@"weatherArray"];
+//#pragma mark - TODO refresh
+//        [self.spinnerView endRefreshing];
+//
+//        [self performSegueWithIdentifier:@"StationDetailSegue" sender:self];
+//    });
+//}
 
 - (IBAction)unwindToHome:(UIStoryboardSegue *)unwindSegue
 {

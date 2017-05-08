@@ -45,7 +45,6 @@
 		42D5FEF41C18C4B4000E8D0B /* FLminMaxFlows.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D5FEF31C18C4B4000E8D0B /* FLminMaxFlows.m */; };
 		42D5FEFF1C19405E000E8D0B /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D5FEFE1C19405E000E8D0B /* SwipeViewController.m */; };
 		42D84E941CAB55FF00EC8EEA /* LeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D84E931CAB55FF00EC8EEA /* LeftSegue.m */; };
-		77893ED3D290D7940455110C /* libPods-newFlows.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E248833100223D1832BE3B /* libPods-newFlows.a */; };
 		916362061EA5AEDD00E6D982 /* mo in Resources */ = {isa = PBXBuildFile; fileRef = 916362051EA5AEDD00E6D982 /* mo */; };
 		916362081EA5B0B800E6D982 /* al in Resources */ = {isa = PBXBuildFile; fileRef = 916362071EA5B0B800E6D982 /* al */; };
 		9163620A1EA5B0DA00E6D982 /* ak in Resources */ = {isa = PBXBuildFile; fileRef = 916362091EA5B0DA00E6D982 /* ak */; };
@@ -99,11 +98,17 @@
 		9163626A1EA5BEC000E6D982 /* wi in Resources */ = {isa = PBXBuildFile; fileRef = 916362691EA5BEC000E6D982 /* wi */; };
 		9163626C1EA5BEE700E6D982 /* wv in Resources */ = {isa = PBXBuildFile; fileRef = 9163626B1EA5BEE700E6D982 /* wv */; };
 		9163626E1EA5BF0C00E6D982 /* wy in Resources */ = {isa = PBXBuildFile; fileRef = 9163626D1EA5BF0C00E6D982 /* wy */; };
+		9185BBEC1EBFB82C0012A736 /* SelectedStationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBEB1EBFB82C0012A736 /* SelectedStationManager.swift */; };
+		9185BBEE1EC0140B0012A736 /* StationDetailLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBED1EC0140B0012A736 /* StationDetailLoadingViewController.swift */; };
+		9185BBF11EC015DC0012A736 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF01EC015DC0012A736 /* Instantiable.swift */; };
+		9185BBF41EC0163A0012A736 /* StationDetailTabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF31EC0163A0012A736 /* StationDetailTabBarItemModel.swift */; };
+		9185BBF61EC017B30012A736 /* StationDetailTabBarViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF51EC017B30012A736 /* StationDetailTabBarViewDataModel.swift */; };
 		91B9BE4B1EB6C7F800A4864C /* StationDetailGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4A1EB6C7F800A4864C /* StationDetailGraphViewController.swift */; };
 		91B9BE4D1EB6C81B00A4864C /* StationDetailForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */; };
 		91B9BE4F1EB6C83200A4864C /* StationDetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4E1EB6C83200A4864C /* StationDetailMapViewController.swift */; };
 		91B9BE511EB6C8A900A4864C /* StationDetailTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE501EB6C8A900A4864C /* StationDetailTabBarViewController.swift */; };
 		91B9BE531EB6E8A400A4864C /* 1024x1024 App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B9BE521EB6E8A400A4864C /* 1024x1024 App Icon.png */; };
+		C0683255B9A7884947E0015C /* Pods_newFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2338F2B7064BF35956AAF5 /* Pods_newFlows.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +129,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C2338F2B7064BF35956AAF5 /* Pods_newFlows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newFlows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421884761CD12A960039BCCB /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		421884771CD12A960039BCCB /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
 		421884791CD5189E0039BCCB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -194,7 +200,6 @@
 		42D84E921CAB55FF00EC8EEA /* LeftSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSegue.h; sourceTree = "<group>"; };
 		42D84E931CAB55FF00EC8EEA /* LeftSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSegue.m; sourceTree = "<group>"; };
 		5CD113D332DFD3F5240DA9BE /* Pods-newFlows.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlows.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newFlows/Pods-newFlows.debug.xcconfig"; sourceTree = "<group>"; };
-		79E248833100223D1832BE3B /* libPods-newFlows.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newFlows.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		916362051EA5AEDD00E6D982 /* mo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mo; sourceTree = "<group>"; };
 		916362071EA5B0B800E6D982 /* al */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = al; sourceTree = "<group>"; };
 		916362091EA5B0DA00E6D982 /* ak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ak; sourceTree = "<group>"; };
@@ -248,6 +253,11 @@
 		916362691EA5BEC000E6D982 /* wi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wi; sourceTree = "<group>"; };
 		9163626B1EA5BEE700E6D982 /* wv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wv; sourceTree = "<group>"; };
 		9163626D1EA5BF0C00E6D982 /* wy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wy; sourceTree = "<group>"; };
+		9185BBEB1EBFB82C0012A736 /* SelectedStationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectedStationManager.swift; path = newFlows/helperClasses/SelectedStationManager.swift; sourceTree = SOURCE_ROOT; };
+		9185BBED1EC0140B0012A736 /* StationDetailLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationDetailLoadingViewController.swift; sourceTree = "<group>"; };
+		9185BBF01EC015DC0012A736 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Instantiable.swift; path = Protocols/Instantiable.swift; sourceTree = "<group>"; };
+		9185BBF31EC0163A0012A736 /* StationDetailTabBarItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailTabBarItemModel.swift; path = "Detail Tab View/StationDetailTabBarItemModel.swift"; sourceTree = "<group>"; };
+		9185BBF51EC017B30012A736 /* StationDetailTabBarViewDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailTabBarViewDataModel.swift; path = "Detail Tab View/StationDetailTabBarViewDataModel.swift"; sourceTree = "<group>"; };
 		91B9BE491EB6C7F700A4864C /* newFlows-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "newFlows-Bridging-Header.h"; path = "views/newFlows-Bridging-Header.h"; sourceTree = "<group>"; };
 		91B9BE4A1EB6C7F800A4864C /* StationDetailGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailGraphViewController.swift; path = "Detail Tab View/StationDetailGraphViewController.swift"; sourceTree = "<group>"; };
 		91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailForecastViewController.swift; path = "Detail Tab View/StationDetailForecastViewController.swift"; sourceTree = "<group>"; };
@@ -269,7 +279,7 @@
 				42A610E41CA392C800B931AD /* QuartzCore.framework in Frameworks */,
 				42A34C4C1BBDBEC6004F7FB7 /* CoreLocation.framework in Frameworks */,
 				42A34C4A1BBDB53C004F7FB7 /* MapKit.framework in Frameworks */,
-				77893ED3D290D7940455110C /* libPods-newFlows.a in Frameworks */,
+				C0683255B9A7884947E0015C /* Pods_newFlows.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +354,7 @@
 		423ED49A1BB5BC58007772C8 /* newFlows */ = {
 			isa = PBXGroup;
 			children = (
+				9185BBEF1EC015C40012A736 /* Protocols */,
 				4218847B1CD6803A0039BCCB /* storeKit */,
 				4253B9771C970FF8008AF6BA /* helperClasses */,
 				42BEDAC01C8535A900113431 /* SwipeView */,
@@ -394,6 +405,7 @@
 		4253B9771C970FF8008AF6BA /* helperClasses */ = {
 			isa = PBXGroup;
 			children = (
+				9185BBEA1EBFB7F70012A736 /* SelectedStationManager */,
 				4253B9781C970FF8008AF6BA /* UIColor+Hexadecimal.h */,
 				4253B9791C970FF8008AF6BA /* UIColor+Hexadecimal.m */,
 			);
@@ -556,18 +568,46 @@
 				42BEDAC41C87834200113431 /* MobileCoreServices.framework */,
 				42A34C4B1BBDBEC6004F7FB7 /* CoreLocation.framework */,
 				42A34C491BBDB53C004F7FB7 /* MapKit.framework */,
-				79E248833100223D1832BE3B /* libPods-newFlows.a */,
+				3C2338F2B7064BF35956AAF5 /* Pods_newFlows.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9185BBEA1EBFB7F70012A736 /* SelectedStationManager */ = {
+			isa = PBXGroup;
+			children = (
+				9185BBEB1EBFB82C0012A736 /* SelectedStationManager.swift */,
+			);
+			name = SelectedStationManager;
+			path = ../views;
+			sourceTree = "<group>";
+		};
+		9185BBEF1EC015C40012A736 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9185BBF01EC015DC0012A736 /* Instantiable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		9185BBF21EC0160B0012A736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9185BBF31EC0163A0012A736 /* StationDetailTabBarItemModel.swift */,
+				9185BBF51EC017B30012A736 /* StationDetailTabBarViewDataModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		91B9BE481EB6C79E00A4864C /* Detail Tab View */ = {
 			isa = PBXGroup;
 			children = (
+				9185BBF21EC0160B0012A736 /* Model */,
 				91B9BE4A1EB6C7F800A4864C /* StationDetailGraphViewController.swift */,
 				91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */,
 				91B9BE4E1EB6C83200A4864C /* StationDetailMapViewController.swift */,
 				91B9BE501EB6C8A900A4864C /* StationDetailTabBarViewController.swift */,
+				9185BBED1EC0140B0012A736 /* StationDetailLoadingViewController.swift */,
 			);
 			name = "Detail Tab View";
 			sourceTree = "<group>";
@@ -837,15 +877,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9185BBEE1EC0140B0012A736 /* StationDetailLoadingViewController.swift in Sources */,
 				42A35B0E1BB5C3BD00470D6D /* MainTableViewCell.m in Sources */,
+				9185BBF41EC0163A0012A736 /* StationDetailTabBarItemModel.swift in Sources */,
 				91B9BE4F1EB6C83200A4864C /* StationDetailMapViewController.swift in Sources */,
 				42A610DF1CA3865500B931AD /* InfoViewController.m in Sources */,
 				42D84E941CAB55FF00EC8EEA /* LeftSegue.m in Sources */,
+				9185BBF61EC017B30012A736 /* StationDetailTabBarViewDataModel.swift in Sources */,
 				91B9BE4D1EB6C81B00A4864C /* StationDetailForecastViewController.swift in Sources */,
 				423ED4A01BB5BC58007772C8 /* AppDelegate.m in Sources */,
 				421884801CD6803A0039BCCB /* MKStoreKit.m in Sources */,
+				9185BBEC1EBFB82C0012A736 /* SelectedStationManager.swift in Sources */,
 				91B9BE4B1EB6C7F800A4864C /* StationDetailGraphViewController.swift in Sources */,
 				91B9BE511EB6C8A900A4864C /* StationDetailTabBarViewController.swift in Sources */,
+				9185BBF11EC015DC0012A736 /* Instantiable.swift in Sources */,
 				4228A9221CC934B1003B7DA7 /* pushAnimator.m in Sources */,
 				42BEDAC31C8535A900113431 /* SwipeView.m in Sources */,
 				421884841CD859E70039BCCB /* PurchaseViewController.m in Sources */,
@@ -1007,6 +1052,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = T2T3MPSQKU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1032,6 +1078,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = T2T3MPSQKU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

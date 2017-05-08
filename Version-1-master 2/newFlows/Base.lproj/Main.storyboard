@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnR-TU-ioy" customClass="JTMaterialSpinner">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnR-TU-ioy" customClass="JTMaterialSpinner" customModule="JTMaterialSpinner">
                                 <rect key="frame" x="162.5" y="276.5" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -171,18 +171,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIr-XO-4VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="928"/>
+            <point key="canvasLocation" x="-124" y="1003"/>
         </scene>
         <!--Station Detail Forecast View Controller-->
         <scene sceneID="jg2-Dt-wln">
             <objects>
-                <viewController id="VfC-da-nIk" customClass="StationDetailForecastViewController" customModule="newFlows" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StationDetailForecastViewController" id="VfC-da-nIk" customClass="StationDetailForecastViewController" customModule="newFlows" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dsy-7g-74V"/>
                         <viewControllerLayoutGuide type="bottom" id="Zcd-qv-htr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hvl-vc-M8Z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAh-JI-6Lj">
@@ -203,7 +203,6 @@
                             <constraint firstItem="DAh-JI-6Lj" firstAttribute="leading" secondItem="Hvl-vc-M8Z" secondAttribute="leading" constant="10" id="kWt-wB-Eu2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="weather_tab_bar_icon_inactive" selectedImage="weather_tab_bar_icon_active" id="4Sa-rD-zYK"/>
                     <navigationItem key="navigationItem" id="aTa-dX-sRM">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="80s-F1-uen">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -220,13 +219,13 @@
         <!--Station Detail Graph View Controller-->
         <scene sceneID="CpF-Y0-19K">
             <objects>
-                <viewController id="OUE-OG-wIl" customClass="StationDetailGraphViewController" customModule="newFlows" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StationDetailGraphViewController" id="OUE-OG-wIl" customClass="StationDetailGraphViewController" customModule="newFlows" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C9W-34-0Ph"/>
                         <viewControllerLayoutGuide type="bottom" id="gOb-X9-6IY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jM8-Qr-Orm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lai-Ke-wuC">
@@ -248,7 +247,6 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="" image="graph_tab_bar_icon_inactive" selectedImage="graph_tab_bar_icon_active" id="1mF-lr-go5"/>
                     <navigationItem key="navigationItem" id="8Kk-Vm-7rd">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="1MT-pO-TyO">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -262,6 +260,41 @@
             </objects>
             <point key="canvasLocation" x="1129" y="1463"/>
         </scene>
+        <!--Station Detail Loading View Controller-->
+        <scene sceneID="2xM-zr-9Wq">
+            <objects>
+                <viewController storyboardIdentifier="StationDetailLoadingViewController" id="G0z-f3-KiT" customClass="StationDetailLoadingViewController" customModule="newFlows" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ggj-YE-Abp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gel-Jy-Kpw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j72-fU-JJg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85E-w4-IJ7" customClass="JTMaterialSpinner" customModule="JTMaterialSpinner">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="L9s-GV-yMB"/>
+                                    <constraint firstAttribute="height" constant="50" id="nCY-ZD-6oy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="85E-w4-IJ7" firstAttribute="centerY" secondItem="j72-fU-JJg" secondAttribute="centerY" id="8FK-yX-OSm"/>
+                            <constraint firstItem="85E-w4-IJ7" firstAttribute="centerX" secondItem="j72-fU-JJg" secondAttribute="centerX" id="9q0-1Q-SkM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spinnerView" destination="85E-w4-IJ7" id="oIb-ES-TMF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udB-0U-8hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717" y="2120"/>
+        </scene>
         <!--Station Detail Tab Bar View Controller-->
         <scene sceneID="gQB-q5-JKK">
             <objects>
@@ -272,11 +305,6 @@
                         <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.047058823529411764" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="OUE-OG-wIl" kind="relationship" relationship="viewControllers" id="dta-62-7sE"/>
-                        <segue destination="VfC-da-nIk" kind="relationship" relationship="viewControllers" id="6YQ-bB-3bU"/>
-                        <segue destination="HhD-uS-8OA" kind="relationship" relationship="viewControllers" id="GR9-ds-28Z"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9w-TI-vyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -474,7 +502,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egl-Nm-mY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="416"/>
+            <point key="canvasLocation" x="297" y="416"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="Nlv-Qw-MGB">
@@ -704,13 +732,13 @@
         <!--Station Detail Map View Controller-->
         <scene sceneID="mW7-ll-eo4">
             <objects>
-                <viewController id="HhD-uS-8OA" customClass="StationDetailMapViewController" customModule="newFlows" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StationDetailMapViewController" id="HhD-uS-8OA" customClass="StationDetailMapViewController" customModule="newFlows" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JXu-cF-UQ1"/>
                         <viewControllerLayoutGuide type="bottom" id="jxn-cA-PwR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U7w-eF-l8Z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlS-6G-xBC">
@@ -731,7 +759,6 @@
                             <constraint firstItem="PlS-6G-xBC" firstAttribute="top" secondItem="U7w-eF-l8Z" secondAttribute="topMargin" constant="20" id="blB-Wr-ezY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="map_tab_bar_icon_inactive" selectedImage="map_tab_bar_icon_active" id="A8d-WS-AJn"/>
                     <navigationItem key="navigationItem" id="tcF-4u-zbu">
                         <barButtonItem key="leftBarButtonItem" image="BackIcon" id="pqt-h0-DxZ">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -751,12 +778,6 @@
         <image name="BackIcon" width="16" height="14"/>
         <image name="addStation" width="200" height="40"/>
         <image name="close" width="20" height="20"/>
-        <image name="graph_tab_bar_icon_active" width="30" height="30"/>
-        <image name="graph_tab_bar_icon_inactive" width="30" height="30"/>
         <image name="infoicon" width="20" height="20"/>
-        <image name="map_tab_bar_icon_active" width="30" height="30"/>
-        <image name="map_tab_bar_icon_inactive" width="30" height="30"/>
-        <image name="weather_tab_bar_icon_active" width="30" height="30"/>
-        <image name="weather_tab_bar_icon_inactive" width="30" height="30"/>
     </resources>
 </document>

@@ -1,0 +1,6 @@
+framework module GDIIndexBar {
+  umbrella header "GDIIndexBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

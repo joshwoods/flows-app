@@ -1,0 +1,6 @@
+framework module Forecastr {
+  umbrella header "Forecastr-umbrella.h"
+
+  export *
+  module * { export * }
+}

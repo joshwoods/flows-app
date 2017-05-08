@@ -12,7 +12,14 @@ class StationDetailForecastViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        applyDesign()
+    }
+    
+    // MARK: - Private
+    
+    private func applyDesign() {
+        tabBarController?.tabBar.isHidden = false
     }
     
     // MARK: - Actions
