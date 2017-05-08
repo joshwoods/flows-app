@@ -8,7 +8,6 @@
 #import <PromiseKit/PromiseKit.h>
 #import "Reachability.h"
 #import "FLminMaxFlows.h"
-#import <CoreLocation/CoreLocation.h>
 #import "UIColor+Hexadecimal.h"
 
 @interface AppDelegate ()
