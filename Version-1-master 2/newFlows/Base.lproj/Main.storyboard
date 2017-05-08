@@ -113,6 +113,9 @@
                     <navigationItem key="navigationItem" id="rCc-Sv-S0k">
                         <barButtonItem key="leftBarButtonItem" image="infoicon" id="FtM-ZW-4r4">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="BYZ-38-t0r" id="Oj8-vS-67g"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="AddIcon" id="18z-zM-kXt">
                             <color key="tintColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -436,9 +439,6 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="xEg-Qp-yIG" kind="unwind" unwindAction="unwindToHome:" id="tYq-gO-BUN"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -480,7 +480,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLt-Pw-q97" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="xEg-Qp-yIG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3576.8000000000002" y="870.31484257871068"/>
         </scene>

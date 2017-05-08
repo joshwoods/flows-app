@@ -230,7 +230,8 @@
     }
 }
 
-- (void)leftButtonPressed:(id)sender{
+- (IBAction)infoButtonTapped:(id)sender
+{
     [self performSegueWithIdentifier:@"aboutSegue" sender:self];
 }
 
@@ -573,10 +574,5 @@
 //        [self performSegueWithIdentifier:@"StationDetailSegue" sender:self];
 //    });
 //}
-
-- (IBAction)unwindToHome:(UIStoryboardSegue *)unwindSegue
-{
-    
-}
 
 @end
