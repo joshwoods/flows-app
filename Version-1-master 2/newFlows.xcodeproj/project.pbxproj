@@ -98,7 +98,7 @@
 		9163626A1EA5BEC000E6D982 /* wi in Resources */ = {isa = PBXBuildFile; fileRef = 916362691EA5BEC000E6D982 /* wi */; };
 		9163626C1EA5BEE700E6D982 /* wv in Resources */ = {isa = PBXBuildFile; fileRef = 9163626B1EA5BEE700E6D982 /* wv */; };
 		9163626E1EA5BF0C00E6D982 /* wy in Resources */ = {isa = PBXBuildFile; fileRef = 9163626D1EA5BF0C00E6D982 /* wy */; };
-		9185BBEC1EBFB82C0012A736 /* SelectedStationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBEB1EBFB82C0012A736 /* SelectedStationManager.swift */; };
+		9185BBEC1EBFB82C0012A736 /* StationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBEB1EBFB82C0012A736 /* StationManager.swift */; };
 		9185BBEE1EC0140B0012A736 /* StationDetailLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBED1EC0140B0012A736 /* StationDetailLoadingViewController.swift */; };
 		9185BBF11EC015DC0012A736 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF01EC015DC0012A736 /* Instantiable.swift */; };
 		9185BBF41EC0163A0012A736 /* StationDetailTabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF31EC0163A0012A736 /* StationDetailTabBarItemModel.swift */; };
@@ -253,7 +253,7 @@
 		916362691EA5BEC000E6D982 /* wi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wi; sourceTree = "<group>"; };
 		9163626B1EA5BEE700E6D982 /* wv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wv; sourceTree = "<group>"; };
 		9163626D1EA5BF0C00E6D982 /* wy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wy; sourceTree = "<group>"; };
-		9185BBEB1EBFB82C0012A736 /* SelectedStationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectedStationManager.swift; path = newFlows/helperClasses/SelectedStationManager.swift; sourceTree = SOURCE_ROOT; };
+		9185BBEB1EBFB82C0012A736 /* StationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationManager.swift; path = newFlows/helperClasses/StationManager.swift; sourceTree = SOURCE_ROOT; };
 		9185BBED1EC0140B0012A736 /* StationDetailLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationDetailLoadingViewController.swift; sourceTree = "<group>"; };
 		9185BBF01EC015DC0012A736 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Instantiable.swift; path = Protocols/Instantiable.swift; sourceTree = "<group>"; };
 		9185BBF31EC0163A0012A736 /* StationDetailTabBarItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailTabBarItemModel.swift; path = "Detail Tab View/StationDetailTabBarItemModel.swift"; sourceTree = "<group>"; };
@@ -405,7 +405,7 @@
 		4253B9771C970FF8008AF6BA /* helperClasses */ = {
 			isa = PBXGroup;
 			children = (
-				9185BBEA1EBFB7F70012A736 /* SelectedStationManager */,
+				9185BBEA1EBFB7F70012A736 /* StationManager */,
 				4253B9781C970FF8008AF6BA /* UIColor+Hexadecimal.h */,
 				4253B9791C970FF8008AF6BA /* UIColor+Hexadecimal.m */,
 			);
@@ -573,12 +573,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9185BBEA1EBFB7F70012A736 /* SelectedStationManager */ = {
+		9185BBEA1EBFB7F70012A736 /* StationManager */ = {
 			isa = PBXGroup;
 			children = (
-				9185BBEB1EBFB82C0012A736 /* SelectedStationManager.swift */,
+				9185BBEB1EBFB82C0012A736 /* StationManager.swift */,
 			);
-			name = SelectedStationManager;
+			name = StationManager;
 			path = ../views;
 			sourceTree = "<group>";
 		};
@@ -887,7 +887,7 @@
 				91B9BE4D1EB6C81B00A4864C /* StationDetailForecastViewController.swift in Sources */,
 				423ED4A01BB5BC58007772C8 /* AppDelegate.m in Sources */,
 				421884801CD6803A0039BCCB /* MKStoreKit.m in Sources */,
-				9185BBEC1EBFB82C0012A736 /* SelectedStationManager.swift in Sources */,
+				9185BBEC1EBFB82C0012A736 /* StationManager.swift in Sources */,
 				91B9BE4B1EB6C7F800A4864C /* StationDetailGraphViewController.swift in Sources */,
 				91B9BE511EB6C8A900A4864C /* StationDetailTabBarViewController.swift in Sources */,
 				9185BBF11EC015DC0012A736 /* Instantiable.swift in Sources */,

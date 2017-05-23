@@ -7,7 +7,12 @@
 import UIKit
 
 class StationDetailForecastViewController: UIViewController {
+
+    // MARK: - Outlets
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
+
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -20,6 +25,15 @@ class StationDetailForecastViewController: UIViewController {
     
     private func applyDesign() {
         tabBarController?.tabBar.isHidden = false
+        
+        if let titleDict = StationManager.shared.selectedStation?["cleanedTitle"] as? [String : String] {
+            titleLabel.text = titleDict["nameHolder"]
+            subTitleLabel.text = titleDict["locationHolder"]
+        }
+        else {
+            titleLabel.text = ""
+            subTitleLabel.text = ""
+        }
     }
     
     // MARK: - Actions
