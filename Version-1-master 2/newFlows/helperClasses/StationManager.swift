@@ -38,7 +38,8 @@ class StationManager: NSObject {
             return
         }
         
-        client.getForecast(latitude: latitude, longitude: longitude, extendHourly: false, excludeFields: [.alerts, .flags, .minutely, .hourly]) { (result) in
+        client.getForecast(latitude: latitude, longitude: longitude, extendHourly: false, excludeFields: [.alerts, .flags, .minutely, .hourly]) { [weak self] (result) in
+            guard let weakSelf = self else { return }
             switch result {
             case .success(let currentForecast, _):
                 guard currentForecast.daily?.data.isEmpty == false else {
@@ -46,7 +47,7 @@ class StationManager: NSObject {
                     return
                 }
                 
-                self.forecast = currentForecast
+                weakSelf.forecast = currentForecast
                 completionHandler(true)
             default:
                 completionHandler(false)

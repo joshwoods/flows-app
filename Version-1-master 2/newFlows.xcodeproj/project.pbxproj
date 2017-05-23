@@ -103,6 +103,7 @@
 		9185BBF11EC015DC0012A736 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF01EC015DC0012A736 /* Instantiable.swift */; };
 		9185BBF41EC0163A0012A736 /* StationDetailTabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF31EC0163A0012A736 /* StationDetailTabBarItemModel.swift */; };
 		9185BBF61EC017B30012A736 /* StationDetailTabBarViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185BBF51EC017B30012A736 /* StationDetailTabBarViewDataModel.swift */; };
+		9194329C1ED3CA7F003E5B7D /* StationDetailForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194329B1ED3CA7F003E5B7D /* StationDetailForecastTableViewCell.swift */; };
 		91B9BE4B1EB6C7F800A4864C /* StationDetailGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4A1EB6C7F800A4864C /* StationDetailGraphViewController.swift */; };
 		91B9BE4D1EB6C81B00A4864C /* StationDetailForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */; };
 		91B9BE4F1EB6C83200A4864C /* StationDetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BE4E1EB6C83200A4864C /* StationDetailMapViewController.swift */; };
@@ -258,6 +259,7 @@
 		9185BBF01EC015DC0012A736 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Instantiable.swift; path = Protocols/Instantiable.swift; sourceTree = "<group>"; };
 		9185BBF31EC0163A0012A736 /* StationDetailTabBarItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailTabBarItemModel.swift; path = "Detail Tab View/StationDetailTabBarItemModel.swift"; sourceTree = "<group>"; };
 		9185BBF51EC017B30012A736 /* StationDetailTabBarViewDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailTabBarViewDataModel.swift; path = "Detail Tab View/StationDetailTabBarViewDataModel.swift"; sourceTree = "<group>"; };
+		9194329B1ED3CA7F003E5B7D /* StationDetailForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailForecastTableViewCell.swift; path = "Detail Tab View/StationDetailForecastTableViewCell.swift"; sourceTree = "<group>"; };
 		91B9BE491EB6C7F700A4864C /* newFlows-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "newFlows-Bridging-Header.h"; path = "views/newFlows-Bridging-Header.h"; sourceTree = "<group>"; };
 		91B9BE4A1EB6C7F800A4864C /* StationDetailGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailGraphViewController.swift; path = "Detail Tab View/StationDetailGraphViewController.swift"; sourceTree = "<group>"; };
 		91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailForecastViewController.swift; path = "Detail Tab View/StationDetailForecastViewController.swift"; sourceTree = "<group>"; };
@@ -605,6 +607,7 @@
 				9185BBF21EC0160B0012A736 /* Model */,
 				91B9BE4A1EB6C7F800A4864C /* StationDetailGraphViewController.swift */,
 				91B9BE4C1EB6C81B00A4864C /* StationDetailForecastViewController.swift */,
+				9194329B1ED3CA7F003E5B7D /* StationDetailForecastTableViewCell.swift */,
 				91B9BE4E1EB6C83200A4864C /* StationDetailMapViewController.swift */,
 				91B9BE501EB6C8A900A4864C /* StationDetailTabBarViewController.swift */,
 				9185BBED1EC0140B0012A736 /* StationDetailLoadingViewController.swift */,
@@ -884,6 +887,7 @@
 				42A610DF1CA3865500B931AD /* InfoViewController.m in Sources */,
 				42D84E941CAB55FF00EC8EEA /* LeftSegue.m in Sources */,
 				9185BBF61EC017B30012A736 /* StationDetailTabBarViewDataModel.swift in Sources */,
+				9194329C1ED3CA7F003E5B7D /* StationDetailForecastTableViewCell.swift in Sources */,
 				91B9BE4D1EB6C81B00A4864C /* StationDetailForecastViewController.swift in Sources */,
 				423ED4A01BB5BC58007772C8 /* AppDelegate.m in Sources */,
 				421884801CD6803A0039BCCB /* MKStoreKit.m in Sources */,
