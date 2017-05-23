@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
   - DZNEmptyDataSet (1.8.1)
   - Facade (1.1.1)
   - ForecastIO (4.0.0)
@@ -48,6 +51,7 @@ PODS:
     - PromiseKit/Promise
 
 DEPENDENCIES:
+  - Charts
   - DZNEmptyDataSet
   - Facade
   - ForecastIO
@@ -57,6 +61,7 @@ DEPENDENCIES:
   - PromiseKit (~> 1.5)
 
 SPEC CHECKSUMS:
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Facade: 3c5c6fb1ba042d20885cfe5a290050f5b9351ca2
   ForecastIO: d449959139efdc9a2c111a2dba691a67706bb619
@@ -66,6 +71,6 @@ SPEC CHECKSUMS:
   OMGHTTPURLRQ: c4268dea4295b585d711055dbcd87bfa82badd5f
   PromiseKit: 102844c7b5ccff53f693e0710365c445d8df3871
 
-PODFILE CHECKSUM: 618b8b3a377367fbe7010af0745be1f0c4ea50a7
+PODFILE CHECKSUM: 3e01634959a1abc61b074e22faf4b18143318d19
 
 COCOAPODS: 1.2.1

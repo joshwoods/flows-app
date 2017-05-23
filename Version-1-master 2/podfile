@@ -10,5 +10,6 @@ pod 'JTMaterialSpinner'
 pod 'JSONModel', '~> 0.9.1'
 pod 'PromiseKit', '~> 1.5'
 pod 'ForecastIO'
+pod 'Charts'
 
 end
