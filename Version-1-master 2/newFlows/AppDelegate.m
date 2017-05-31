@@ -33,16 +33,12 @@
     // Set the blocks
     reach.reachableBlock = ^(Reachability*reach)
     {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"reachable"];
-        });
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"reachable"];
     };
     
     reach.unreachableBlock = ^(Reachability*reach)
     {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"reachable"];
-        });
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"reachable"];
     };
     
     return YES;

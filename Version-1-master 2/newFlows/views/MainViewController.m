@@ -58,8 +58,7 @@
     [self.refreshControl addTarget:self action:@selector(pullToRefresh) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:self.refreshControl];
     
-    UIImageView* img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HeaderLogo"]];
-    self.navigationItem.titleView = img;
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HeaderLogo"]];
     
     self.selectedStationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"selectedStationArray"] mutableCopy];
     self.tableView.tableFooterView = [UIView new];
@@ -182,27 +181,36 @@
     self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
     [self.tableView reloadData];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.selectedStationArray.count-1 inSection:0];
-    [self.tableView scrollToRowAtIndexPath:indexPath
-                      atScrollPosition:UITableViewScrollPositionBottom
-                              animated:YES];
-    [self.refreshControl endRefreshing];
-    [self.spinnerView endRefreshing];
+    
+    dispatch_async(dispatch_get_main_queue(),^{
+        [self.tableView scrollToRowAtIndexPath:indexPath
+                              atScrollPosition:UITableViewScrollPositionBottom
+                                      animated:YES];
+        [self.refreshControl endRefreshing];
+        [self.spinnerView endRefreshing];
+    });
 }
 
 - (void)receiveRefreshNotification:(NSNotification *) notification{
     self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
     self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
-    [self.refreshControl endRefreshing];
-    [self.spinnerView endRefreshing];
-    [self.tableView reloadData];
+    
+    dispatch_async(dispatch_get_main_queue(),^{
+        [self.refreshControl endRefreshing];
+        [self.spinnerView endRefreshing];
+        [self.tableView reloadData];
+    });
 }
 
 - (void)receiveRefreshSpinNotification:(NSNotification *) notification{
     self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
     self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
-    [self.tableView reloadData];
-    [self.refreshControl endRefreshing];
-    [self.spinnerView endRefreshing];
+    
+    dispatch_async(dispatch_get_main_queue(),^{
+        [self.refreshControl endRefreshing];
+        [self.spinnerView endRefreshing];
+        [self.tableView reloadData];
+    });
 }
 
 - (IBAction)addTapped:(id)sender {
@@ -378,7 +386,7 @@
 - (void)emptyDataSetDidTapButton:(UIScrollView *)scrollView
 {
     [self performSegueWithIdentifier:@"addStationSegue" sender:self];
-    [_spinnerView beginRefreshing];
+    [self.spinnerView beginRefreshing];
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
