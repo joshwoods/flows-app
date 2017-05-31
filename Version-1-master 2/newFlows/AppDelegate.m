@@ -122,11 +122,10 @@
             
             NSDate *savedDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"updatedDate"];
             
-            NSDate *todaysDate = [NSDate date];
             NSCalendar *gregorian = [NSCalendar currentCalendar];
             NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
             [dateComponents setYear:1];
-            NSDate *targetDate = [gregorian dateByAddingComponents:dateComponents toDate:todaysDate options:0];
+            NSDate *targetDate = [gregorian dateByAddingComponents:dateComponents toDate:[NSDate date] options:0];
             
             if ([savedDate compare:targetDate] == NSOrderedDescending || selectedStationUpdated) {
                 //web pull
@@ -250,8 +249,7 @@
 - (NSMutableArray*)fetchedFlowData:(NSString *)responseHolder {
     
     [[NSUserDefaults standardUserDefaults] setObject:responseHolder forKey:@"minMaxData"];
-    NSDate *todaysDate = [NSDate date];
-    [[NSUserDefaults standardUserDefaults] setObject:todaysDate forKey:@"updatedDate"];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"updatedDate"];
     NSArray *components = [responseHolder componentsSeparatedByString:@"\n"];
     NSMutableArray *workingDataArray = [[NSMutableArray alloc] initWithArray:components];
     NSMutableArray *cleanedHolderArray = [[NSMutableArray alloc] init];
@@ -383,7 +381,7 @@
         
         for (int i=0; i < self.selectedStationArray.count; i++) {
             NSMutableDictionary *stationDict = [self.selectedStationArray[i] mutableCopy];
-            if ([stationDict[@"stationNumber"] isEqualToString:tempStationNumber]) {
+            if ([stationDict[@"stationNu4mber"] isEqualToString:tempStationNumber]) {
                 [stationDict setObject:[NSNumber numberWithDouble:longTotal] forKey:@"longTotal"];
                 [stationDict setObject:[NSNumber numberWithDouble:latTotal] forKey:@"latTotal"];
 #pragma mark - TODO test for nil weatherInfo station data

@@ -35,10 +35,10 @@
                                 <color key="separatorColor" red="0.047058823529411764" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainTableViewCellIdentifier" rowHeight="100" id="12d-ur-5Uw" customClass="MainTableViewCell">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12d-ur-5Uw" id="eBX-1G-GQI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5A-G9-cJh">
@@ -139,43 +139,6 @@
             </objects>
             <point key="canvasLocation" x="1059.375" y="416.19718309859149"/>
         </scene>
-        <!--Data Source-->
-        <scene sceneID="Iae-tC-i7j">
-            <objects>
-                <viewController id="f2g-Ah-QNA" customClass="SwipeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p3z-At-Ysu"/>
-                        <viewControllerLayoutGuide type="bottom" id="2hc-10-l90"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="b0G-c9-FvM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynS-ab-dV6" customClass="SwipeView">
-                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="f2g-Ah-QNA" id="HlB-X0-x05"/>
-                                    <outlet property="delegate" destination="f2g-Ah-QNA" id="2fF-dd-e8f"/>
-                                </connections>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ynS-ab-dV6" firstAttribute="leading" secondItem="b0G-c9-FvM" secondAttribute="leadingMargin" constant="-20" id="E8F-fn-2vx"/>
-                            <constraint firstItem="ynS-ab-dV6" firstAttribute="top" secondItem="b0G-c9-FvM" secondAttribute="topMargin" id="GrM-zL-1WO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ynS-ab-dV6" secondAttribute="trailing" constant="-20" id="jWy-CJ-cXw"/>
-                            <constraint firstItem="2hc-10-l90" firstAttribute="top" secondItem="ynS-ab-dV6" secondAttribute="bottom" id="oBI-uI-fIj"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="swipeView" destination="ynS-ab-dV6" id="HUy-tf-DD1"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BIr-XO-4VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-124" y="1118"/>
-        </scene>
         <!--Station Detail Forecast View Controller-->
         <scene sceneID="jg2-Dt-wln">
             <objects>
@@ -236,7 +199,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJF-zu-s6l" id="MaC-qD-t3j">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YsG-a1-l30">
@@ -551,7 +514,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zl6-Lk-C16" id="V4Q-xX-ni6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oKX-Hu-GvL">
