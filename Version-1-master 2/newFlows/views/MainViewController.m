@@ -73,6 +73,8 @@
                         [self.navigationController setNavigationBarHidden: NO animated: NO];
                     }
                     completion: nil ];
+    
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -180,12 +182,14 @@
     self.resultArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"resultArray"];
     self.minMaxArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"minMaxArray"];
     [self.tableView reloadData];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.selectedStationArray.count-1 inSection:0];
     
     dispatch_async(dispatch_get_main_queue(),^{
-        [self.tableView scrollToRowAtIndexPath:indexPath
-                              atScrollPosition:UITableViewScrollPositionBottom
-                                      animated:YES];
+        if (self.selectedStationArray.count > 0) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.selectedStationArray.count-1 inSection:0];
+            [self.tableView scrollToRowAtIndexPath:indexPath
+                                  atScrollPosition:UITableViewScrollPositionBottom
+                                          animated:YES];
+        }
         [self.refreshControl endRefreshing];
         [self.spinnerView endRefreshing];
     });

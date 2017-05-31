@@ -160,6 +160,10 @@
             }
         });
     }
+    else {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"LiveUpdateNotification" object:self];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshSpinNotification" object:self];
+    }
 }
 
 - (NSString*)urlStringfromStations:(NSMutableArray*)incomingStations {
